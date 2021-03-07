@@ -1,16 +1,118 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-size: 22px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    @apply text-black bg-tan;
+  }
+
+  h1 {
+    @apply text-5xl font-medium leading-none tracking-tight mb-8;
+  }
+
+  h2 {
+    @apply text-2xl font-medium mt-6;
+  }
+
+  h3 {
+    @apply text-xl font-medium mt-6;
+  }
+
+  h4 {
+    @apply text-black-lighter mt-6;
+  }
+
+  h5 {
+    @apply text-black-lighter font-medium mt-2;
+  }
+
+  strong {
+    @apply font-medium;
+  }
+
+  a {
+    @apply border-b-2 border-yellow;
+  }
+
+  a:hover {
+    @apply bg-yellow rounded-sm;
+  }
+
+  p,
+  ul,
+  ol {
+    @apply mt-4;
+  }
+
+  ul {
+    @apply list-disc mt-8 ml-8;
+  }
+
+  ul li,
+  menu li {
+    @apply pb-2;
+  }
+
+  ul:last-child,
+  menu:last-child {
+    @apply pt-0;
+  }
+
+  hr {
+    @apply mt-8 mb-8 opacity-10;
+  }
+
+  p + hr {
+    @apply mt-10;
+  }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: "CalibreWeb";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/CalibreWeb-Regular.woff") format("woff"),
+    url("/fonts/CalibreWeb-Regular.woff2") format("woff2");
 }
 
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family: "CalibreWeb";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/CalibreWeb-Semibold.woff") format("woff"),
+    url("/fonts/CalibreWeb-Semibold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "TiemposTextWeb";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/TiemposTextWebRegular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TiemposTextWeb";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/fonts/TiemposTextWeb-RegularItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TiemposTextWeb";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/TiemposTextWeb-Semibold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TiemposTextWeb";
+  font-style: italic;
+  font-weight: 500;
+  src: url("/fonts/TiemposTextWeb-SemiboldItalic.woff") format("woff");
 }
