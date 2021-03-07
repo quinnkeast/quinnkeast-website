@@ -41,7 +41,7 @@
   }
 
   a:hover {
-    @apply bg-yellow rounded-sm;
+    @apply text-yellow rounded-sm;
   }
 
   p,
@@ -80,6 +80,31 @@
   .post-content li {
     @apply font-serif text-sm leading-relaxed;
     -webkit-font-smoothing: initial;
+  }
+
+  .post-content h2,
+  .post-content h3 {
+    @apply leading-tight tracking-tight;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .post-content p + h2,
+  .post-content ul + h2,
+  .post-content ol + h2 {
+    @apply mt-8;
+  }
+
+  .post-content ol {
+    @apply list-decimal;
+  }
+
+  .icon-shift {
+    position: relative;
+    margin-top: -4px;
+  }
+
+  .publisher-badge {
+    margin-top: 0.185rem;
   }
 }
 

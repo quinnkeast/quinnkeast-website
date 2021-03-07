@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3">
           <div className="col-span-1">
             <h5>Semi-Social</h5>
-            <ul className="list-none ml-0">
+            <ul className="list-none ml-0 mt-2">
               <li>
                 <a
                   href="https://www.linkedin.com/in/quinn-keast/"
@@ -36,7 +36,7 @@ export default function Footer() {
           </div>
           <div className="col-span-1">
             <h5>Other fun stuff</h5>
-            <ul className="list-none ml-0">
+            <ul className="list-none ml-0 mt-2">
               <li>
                 <a href="https://caribou.co" target="_blank">
                   Caribou

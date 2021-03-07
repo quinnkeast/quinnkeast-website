@@ -1,0 +1,18 @@
+---
+title: "Distress Signals: User-generated Solutions to Usability Problems"
+subtitle: "What a parking kiosk can tell us about the state of an experience"
+date: "2017-03-31"
+author:
+  name: Quinn Keast
+  picture: "/assets/quinn-portrait.jpg"
+ogImage:
+  url: "/assets/blog/hello-world/cover.jpg"
+published: true
+external:
+  url: https://medium.com/good-human/distress-signals-user-generated-solutions-to-usability-problems-5d6d3bed223a
+  publisher: UX Collective
+tags:
+  - accessibility
+  - culture
+  - remote work
+---
