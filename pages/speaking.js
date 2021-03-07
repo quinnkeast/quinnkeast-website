@@ -11,9 +11,9 @@ function Speaking() {
           that you will, too.
         </p>
       </PageHeader>
-      <div className="grid md:grid-cols-3 border-t mt-12 pt-16">
+      <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-12 pt-8">
         <div className="col-span-1">
-          <h2 className="text-base text-black-lighter">
+          <h2 className="text-base text-black-lighter font-normal">
             Conferences & presentations
           </h2>
         </div>
@@ -120,9 +120,9 @@ function Speaking() {
           </p>
         </div>
       </div>
-      <div className="grid md:grid-cols-3 border-t mt-12 pt-16">
+      <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-12 pt-8">
         <div className="col-span-1">
-          <h2 className="text-base text-black-lighter">Book Me</h2>
+          <h2 className="text-base text-black-lighter font-normal">Book Me</h2>
         </div>
         <div className="md:col-span-2">
           <h2>Interested in having me speak?</h2>
