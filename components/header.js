@@ -44,7 +44,7 @@ export default function Header() {
         </Link>
       </div>
       <div className="col-2">
-        <menu className="grid grid-flow-col gap-12 list-none px-0 my-0 text-black-lighter">
+        <menu className="grid grid-flow-col gap-10 list-none px-0 my-0 text-black-lighter">
           {menuItems.map((item) => menuLink(item.label, item.path))}
         </menu>
       </div>
