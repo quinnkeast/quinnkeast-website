@@ -11,7 +11,7 @@ export default function Author({ author, date }) {
         />
       </div>
       <div className="text-sm leading-tight">
-        {author.name}
+        <span className="font-medium">{author.name}</span>
         <br />
         <span className="text-black-lighter">
           <DateFormatter dateString={date} />

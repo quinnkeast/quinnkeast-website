@@ -1,5 +1,5 @@
 ---
-title: "These are Design Principles for real-time captions in video calls"
+title: "These are Design Principles for Real-time Captions in Video Calls"
 subtitle: "Here’s a set of design principles for creating usable and inclusive real-time captions in video calling platforms."
 date: "2020-05-03"
 author:
@@ -8,6 +8,11 @@ author:
 ogImage:
   url: "/assets/blog/hello-world/cover.jpg"
 published: true
+tags:
+  - accessibility
+  - usability
+  - ethics
+  - design
 ---
 
 Over the last few months, workplace conversation and communication has adapted to the rise in remote work by shifting largely to some form of video calling. For people living with hearing loss, video calls are broadly inaccessible and exclusive. But we’re at a threshold where the technology exists to make these tools accessible to everyone. [Google Meet](https://meet.google.com/ "Google Meet") now has real-time captions. Other real-time speech-to-text tools like [Otter](https://otter.ai/ "Otter") are flourishing.
@@ -16,7 +21,7 @@ The challenge: [real-time captioning in video calls is a new problem space with 
 
 **These are design principles I’ve identified that I believe any implementation of real-time captioning in video calling should adhere to.** These principles together provide a positive, usable, and inclusive experience for participants who rely on captions for accessibility.
 
-### Design Principles for Real-Time Captions in Video Calling Platforms
+## Design Principles for Real-Time Captions in Video Calling Platforms
 
 1.  **Captions for video calling are their own medium with their own challenges.**  
     The purpose and context that surrounds video calling is very different from watching television or movies. Treat captions for video calls as a unique challenge with its own context, constraints, and opportunities.
@@ -60,7 +65,7 @@ The challenge: [real-time captioning in video calls is a new problem space with 
 17. **Captions must be movable and adjustable.**  
     People relying on captions may need to relocate the caption element to meet specific individual needs that we may not be able to predict. Provide a sensible, well-designed default, but provide the ability to pop-out, move, and adjust the caption element according to individual needs.
 
-### Living Principles
+## Living Principles
 
 These principles represent my own perspective on how to design inclusive real-time captioning for video calls. As we collectively explore this problem space, I fully expect these principles will need to be adjusted and expanded in response to new insights and opportunities.
 

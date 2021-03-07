@@ -3,6 +3,7 @@ import ErrorPage from "next/error";
 import Layout from "../../components/layout";
 import PostHeader from "../../components/post-header";
 import PostBody from "../../components/post-body";
+import Tags from "../../components/tags";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
 import Head from "next/head";
 import markdownToHtml from "../../lib/markdownToHtml";
@@ -30,6 +31,7 @@ export default function Post({ post, morePosts, preview }) {
               author={post.author}
             />
             <PostBody content={post.content} />
+            {post.tags && <Tags tags={post.tags} />}
           </article>
         </>
       )}
@@ -48,7 +50,10 @@ export async function getStaticProps({ params }) {
     "content",
     "ogImage",
     "coverImage",
+    "tags",
+    "external",
   ]);
+
   const content = await markdownToHtml(post.content || "");
 
   return {
