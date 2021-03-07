@@ -1,65 +1,45 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Layout from "../components/layout";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <Layout>
+      <div className="grid md:grid-cols-3">
+        <div className="md:col-span-2 md:col-start-2">
+          <h1 className="mb-8">
+            Quinn Keast is a user experience & product designer. He solves
+            interesting problems by putting people first—from product vision to
+            the last 5%.
+          </h1>
+          <h2>
+            Partner & Designer at{" "}
+            <a href="https://caribou.co" target="_blank">
+              Caribou
+            </a>
+            . Also Product Designer at{" "}
+            <a href="https://sourcegraph.com" target="_blank">
+              Sourcegraph
+            </a>
+            .
+          </h2>
+          <div className="grid md:grid-cols-3 mt-8">
+            <div className="col-1">
+              <p>
+                <strong>Current location</strong>
+              </p>
+              <p>Berlin, Germany</p>
+            </div>
+            <div className="col-1">
+              <p>
+                <strong>Say hello</strong>
+              </p>
+              <p>
+                <a href="mailto:hello@quinnkeast.com">hello@quinnkeast.com</a>
+              </p>
+            </div>
+          </div>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
-  )
+      </div>
+    </Layout>
+  );
 }
