@@ -12,13 +12,15 @@ function About() {
         </p>
         <img
           src="/assets/quinn-portrait.jpg"
-          className="w-72 mt-8 mb-6"
+          className="w-72 mt-8"
           alt="Portrait of Quinn Keast, the handsome devil"
         />
       </PageHeader>
-      <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-12 pt-16">
+      <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-16 pt-8">
         <div className="col-span-1">
-          <h2 className="text-base text-black-lighter">The nitty gritty</h2>
+          <h2 className="font-medium text-base text-black-lighter">
+            The nitty gritty
+          </h2>
         </div>
         <div className="md:col-span-2 max-w-md">
           <p>
@@ -62,9 +64,9 @@ function About() {
           </p>
         </div>
       </div>
-      <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-12 pt-16">
+      <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-12 pt-8">
         <div className="col-span-1">
-          <h2 className="text-base text-black-lighter">Timeline</h2>
+          <h2 className="font-medium text-base text-black-lighter">Timeline</h2>
         </div>
         <div className="md:col-span-2">
           <p>

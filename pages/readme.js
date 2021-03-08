@@ -13,7 +13,7 @@ function ReadMe() {
           me better and help us work together.
         </p>
       </PageHeader>
-      <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-12 pt-16">
+      <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-12 pt-12">
         <div className="col-span-1">
           <menu className="sticky top-12 list-none m-0 p-0">
             <li>
