@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import Layout from "../components/layout";
 import PageHeader from "../components/page-header";
@@ -5,6 +6,9 @@ import PageHeader from "../components/page-header";
 function About() {
   return (
     <Layout>
+      <Head>
+        <title>About | Quinn Keast</title>
+      </Head>
       <PageHeader>
         <h1>About</h1>
         <p className="text-2xl">

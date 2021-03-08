@@ -1,6 +1,12 @@
+import Head from "next/head";
+import Layout from "../components/layout";
+
 function Impressum() {
   return (
     <div>
+      <Head>
+        <title>Impessum | Quinn Keast</title>
+      </Head>
       <h3>Quinn Keast-Wiatrowski</h3>
       <p>
         <a href="mailto:hello@quinnkeast.com">hello@quinnkeast.com</a>

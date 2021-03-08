@@ -1,14 +1,9 @@
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
-//import Container from '../../components/container'
-//import ProjectBody from '../../components/post-body'
-//import Header from '../../components/header'
-//import ProjectHeader from '../../components/post-header'
-//import Layout from '../../components/layout'
 import { getProjectBySlug, getAllProjects } from "../../lib/api";
-import ProjectTitle from "../../components/post-title";
 import Head from "next/head";
 import markdownToHtml from "../../lib/markdownToHtml";
+import Layout from "../../components/layout";
 
 export default function Project({ post, moreProjects, preview }) {
   const router = useRouter();
@@ -17,28 +12,19 @@ export default function Project({ post, moreProjects, preview }) {
   }
   return (
     <Layout preview={preview}>
-      <Container>
-        <Header />
-        {router.isFallback ? (
-          <ProjectTitle>Loading…</ProjectTitle>
-        ) : (
-          <>
-            <article className="mb-32">
-              <Head>
-                <title>{post.title} | Next.js Blog Example</title>
-                <meta property="og:image" content={post.ogImage.url} />
-              </Head>
-              <ProjectHeader
-                title={post.title}
-                coverImage={post.coverImage}
-                date={post.date}
-                author={post.author}
-              />
-              <ProjectBody content={post.content} />
-            </article>
-          </>
-        )}
-      </Container>
+      {router.isFallback ? (
+        <ProjectTitle>Loading…</ProjectTitle>
+      ) : (
+        <>
+          <article className="mb-32">
+            <Head>
+              <title>{post.title} | Quinn Keast</title>
+              <meta property="og:image" content={post.ogImage.url} />
+            </Head>
+            <p>Placeholder</p>
+          </article>
+        </>
+      )}
     </Layout>
   );
 }

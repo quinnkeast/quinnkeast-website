@@ -33,7 +33,7 @@ export default function PostItem({ post, hero }) {
           )}
         </h2>
         {post.external && (
-          <span className="text-xs uppercase text-black-lighter flex-shrink-0 publisher-badge">
+          <span className="text-xs uppercase text-black-lighter leading-none flex-shrink-0 publisher-badge">
             {post.external.publisher}
             <svg
               xmlns="http://www.w3.org/2000/svg"

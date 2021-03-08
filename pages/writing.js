@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Layout from "../components/layout";
 import PageHeader from "../components/page-header";
 import PostItem from "../components/post-item";

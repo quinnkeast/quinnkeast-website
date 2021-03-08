@@ -1,12 +1,15 @@
+import Head from "next/head";
 import Layout from "../components/layout";
 import PageHeader from "../components/page-header";
-//import PostItem from "../components/post-item";
 import { getAllFavourites } from "../lib/api";
 
 export default function Index({ allFavourites }) {
   const books = allFavourites.books;
   return (
     <Layout>
+      <Head>
+        <title>Favourites | Quinn Keast</title>
+      </Head>
       <PageHeader>
         <h1>Favourites</h1>
         <p className="text-2xl">
