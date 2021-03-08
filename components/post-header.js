@@ -6,6 +6,7 @@ export default function PostHeader({
   coverImage,
   date,
   author,
+  time,
 }) {
   return (
     <div className="max-w-lg mx-auto post-header">
@@ -15,7 +16,7 @@ export default function PostHeader({
           {subtitle}
         </p>
       )}
-      <Author author={author} date={date} />
+      <Author author={author} date={date} time={time} />
     </div>
   );
 }

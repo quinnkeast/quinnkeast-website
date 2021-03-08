@@ -20,21 +20,21 @@ export default function Index({ allFavourites }) {
             Favourites
           </span>
         </div>
-        <div className="grid md:grid-cols-4 gap-x-12 gap-y-10 md:col-span-4">
+        <div className="grid md:grid-cols-4 gap-x-12 gap-y-10 md:col-span-4 align-baseline">
           {books.map((book, i) => (
-            <div className="col-span-1 self-end" key={i}>
+            <div className="col-span-1" key={i}>
               <img
                 src={book.cover}
                 alt={book.title}
-                className="block w-full align-baseline"
+                className="inline-block w-full"
               />
-              <h3 className="mt-4 text-base leading-tight">{book.title}</h3>
-              <p
-                className="m-0 leading-tight text-black-lighter
-              "
-              >
-                {book.author}
-              </p>
+              <h3 className="mt-4 text-base leading-tight">
+                {book.title}
+                <br />
+                <span className="m-0 leading-tight text-black-lighter">
+                  {book.author}
+                </span>
+              </h3>
             </div>
           ))}
         </div>

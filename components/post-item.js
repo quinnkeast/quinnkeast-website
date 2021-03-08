@@ -10,7 +10,7 @@ export default function PostItem({ post, hero }) {
         </span>
       </div>
       <div className="col-span-2 col-start-2 border-b border-black border-opacity-10 mt-3 pb-3 flex flex-row justify-between">
-        <h2 className="m-0 text-base leading-snug font-serif font-normal pr-8">
+        <h2 className="m-0 text-sm leading-snug font-serif font-normal pr-8 subpixel-antialiased">
           {hero && (
             <svg
               xmlns="http://www.w3.org/2000/svg"

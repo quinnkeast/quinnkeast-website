@@ -6,6 +6,7 @@ import PostBody from "../../components/post-body";
 import Tags from "../../components/tags";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
 import Head from "next/head";
+
 import markdownToHtml from "../../lib/markdownToHtml";
 
 export default function Post({ post, morePosts, preview }) {
@@ -13,6 +14,7 @@ export default function Post({ post, morePosts, preview }) {
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;
   }
+
   return (
     <Layout>
       {router.isFallback ? (
@@ -29,6 +31,7 @@ export default function Post({ post, morePosts, preview }) {
               subtitle={post.subtitle}
               date={post.date}
               author={post.author}
+              time={post.readingTime}
             />
             <PostBody content={post.content} />
             {post.tags && <Tags tags={post.tags} />}
