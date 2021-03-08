@@ -16,7 +16,7 @@ export default function Index({ allFavourites }) {
       </PageHeader>
       <div className="grid md:grid-cols-5 border-t border-black border-opacity-10 mt-12 pt-8">
         <div className="col-span-1">
-          <span className="text-sm text-black-lighter inline-block leading-snug pr-8 mt-3.5">
+          <span className="text-black-lighter inline-block leading-snug pr-8 mt-3.5">
             Favourites
           </span>
         </div>
