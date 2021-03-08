@@ -106,6 +106,19 @@
   .publisher-badge {
     margin-top: 0.185rem;
   }
+
+  .book {
+    @apply overflow-hidden relative;
+  }
+
+  .book .fill {
+    @apply w-full;
+    padding-bottom: 157.5%;
+  }
+
+  .book img {
+    @apply absolute top-0 left-0 w-full object-cover object-center;
+  }
 }
 
 @font-face {
