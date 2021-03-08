@@ -1,6 +1,6 @@
 import DateFormatter from "./date-formatter";
 
-export default function Author({ author, date }) {
+export default function Author({ author, date, time }) {
   return (
     <div className="flex flex-row items-center mt-4">
       <div className="flex items-center">
@@ -14,7 +14,7 @@ export default function Author({ author, date }) {
         <span className="font-medium">{author.name}</span>
         <br />
         <span className="text-black-lighter">
-          <DateFormatter dateString={date} />
+          <DateFormatter dateString={date} /> • {time.text}
         </span>
       </div>
     </div>

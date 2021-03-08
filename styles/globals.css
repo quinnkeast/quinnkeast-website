@@ -78,14 +78,12 @@
 
   .post-content p,
   .post-content li {
-    @apply font-serif text-sm leading-relaxed;
-    -webkit-font-smoothing: initial;
+    @apply font-serif text-sm leading-relaxed subpixel-antialiased;
   }
 
   .post-content h2,
   .post-content h3 {
-    @apply leading-tight tracking-tight;
-    -webkit-font-smoothing: antialiased;
+    @apply leading-tight tracking-tight subpixel-antialiased antialiased;
   }
 
   .post-content p + h2,
