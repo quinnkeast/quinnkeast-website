@@ -1,8 +1,13 @@
+import Head from "next/head";
 import Layout from "../components/layout";
 import PageHeader from "../components/page-header";
+
 function Speaking() {
   return (
     <Layout>
+      <Head>
+        <title>Readme | Quinn Keast</title>
+      </Head>
       <PageHeader>
         <h1>Speaking</h1>
         <p className="text-2xl">
