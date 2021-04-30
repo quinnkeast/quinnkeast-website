@@ -24,6 +24,19 @@ function Speaking() {
         </div>
         <div className="md:col-span-2">
           <p>
+            Roundtable at{" "}
+            <a href="https://uxcopenhagen.com/">
+              UX Copenhagen 2021: Commoning
+            </a>
+            <br />
+            <strong>
+              “The tension between inclusion & accessibility and the demands of
+              product-market fit”
+            </strong>
+            <br />
+            March 2021
+          </p>
+          <p>
             Speaker at Content Strategy Lausanne
             <br />
             <strong>“Nobody’s a Copywriter, but Everybody Writes Copy”</strong>
