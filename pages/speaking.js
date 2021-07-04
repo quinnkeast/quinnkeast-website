@@ -24,6 +24,18 @@ function Speaking() {
         </div>
         <div className="md:col-span-2">
           <p>
+            Speaker at{" "}
+            <a href="https://ecosia.org/">
+              Ecosia Accessibility Day
+            </a>
+            <br />
+            <strong>
+              “Inclusion as a Catalyst for Design”
+            </strong>
+            <br />
+            June 2021
+          </p>
+          <p>
             Roundtable at{" "}
             <a href="https://uxcopenhagen.com/">
               UX Copenhagen 2021: Commoning
