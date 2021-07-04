@@ -2,12 +2,12 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="grid md:grid-cols-3 mt-8 pt-8 mb-8 border-t border-black border-opacity-10 mt-16 pt-12">
+    <div className="grid md:grid-cols-3 mb-4 md:mb-8 border-t border-black border-opacity-10 mt-8 md:mt-16 pt-4 md:pt-12">
       <div className="col-1">
         <h4>Contact</h4>
       </div>
-      <div className="md:col-span-2 mb-8">
-        <p className="text-2xl mb-12 font-medium">
+      <div className="md:col-span-2 mb-4 md:mb-8">
+        <p className="text-lg md:text-2xl mb-4 md:mb-12 font-medium">
           <a href="mailto:hello@quinnkeast.com">hello@quinnkeast.com</a>
         </p>
         <div className="grid md:grid-cols-3">

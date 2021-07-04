@@ -10,13 +10,16 @@ export default function Index({ allPosts }) {
 
   return (
     <Layout>
+      <Head>
+        <title>Writing | Quinn Keast</title>
+      </Head>
       <PageHeader>
         <h1>Writing</h1>
-        <p className="text-2xl">
+        <p className="text-base md:text-2xl subpixel-antialiased">
           A collection of thinking on user experience, design, and business.
         </p>
       </PageHeader>
-      <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-12 pt-0 post-list">
+      <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-8 md:mt-12 pt-0 post-list">
         <PostItem post={heroPost} hero={true} />
         {morePosts.map((post, i) => (
           <PostItem post={post} key={i} />

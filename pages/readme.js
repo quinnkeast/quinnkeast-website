@@ -7,17 +7,17 @@ function ReadMe() {
   return (
     <Layout>
       <Head>
-        <title>Readme | Quinn Keast</title>
+        <title>Quinn.ReadMe | Quinn Keast</title>
       </Head>
       <PageHeader>
         <h1>Quinn.ReadMe</h1>
-        <p className="text-2xl">
+        <p className="text-base md:text-2xl">
           This is a user guide on me and how I work. It captures my guiding
           values, how I work as a human, and will hopefully help you understand
           me better and help us work together.
         </p>
       </PageHeader>
-      <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-12 pt-12">
+      <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-8 md:mt-12 pt-8 md:pt-12">
         <div className="col-span-1">
           <menu className="sticky top-12 list-none m-0 p-0">
             <li>
@@ -30,12 +30,15 @@ function ReadMe() {
               <a href="#ethical-principles">Ethical Principles</a>
             </li>
             <li>
+              <a href="#nuance">Nuance</a>
+            </li>
+            <li>
               <a href="#errata">Errata</a>
             </li>
           </menu>
         </div>
         <div className="md:col-span-2 max-w-md">
-          <h2 className="mt-0" id="north-star-ideals">
+          <h2 className="mt-4 md:mt-0" id="north-star-ideals">
             North Star Ideals
           </h2>
           <p>
@@ -89,7 +92,7 @@ function ReadMe() {
             team members, and environments.
           </p>
           <hr />
-          <h2>Nuance</h2>
+          <h2 id="nuance">Nuance</h2>
           <p>
             <strong>I like to use people as a sounding board.</strong>{" "}
             Sometimes, I’m not actually looking for an answer or solution.
