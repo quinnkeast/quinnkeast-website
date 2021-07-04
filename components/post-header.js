@@ -10,9 +10,9 @@ export default function PostHeader({
 }) {
   return (
     <div className="max-w-lg mx-auto post-header">
-      <h1 className="mb-4">{title}</h1>
+      <h1 className="text-xl md:text-4xl mb-2 md:mb-4 leading-none">{title}</h1>
       {subtitle && (
-        <p className="text-black-lighter font-normal font-serif text-lg leading-snug">
+        <p className="text-black-lighter font-normal font-serif text-base md:text-lg leading-snug mt-0">
           {subtitle}
         </p>
       )}

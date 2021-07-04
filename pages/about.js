@@ -11,7 +11,7 @@ function About() {
       </Head>
       <PageHeader>
         <h1>About</h1>
-        <p className="text-2xl">
+        <p className="text-base md:text-2xl">
           I’m Quinn Keast, a user experience & product designer.
         </p>
         <img
@@ -20,7 +20,7 @@ function About() {
           alt="Portrait of Quinn Keast, the handsome devil"
         />
       </PageHeader>
-      <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-16 pt-8">
+      <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-8 md:mt-16 pt-4 md:pt-8">
         <div className="col-span-1">
           <h2 className="font-medium text-base text-black-lighter">
             The nitty gritty

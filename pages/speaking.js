@@ -6,17 +6,17 @@ function Speaking() {
   return (
     <Layout>
       <Head>
-        <title>Readme | Quinn Keast</title>
+        <title>Speaking | Quinn Keast</title>
       </Head>
       <PageHeader>
         <h1>Speaking</h1>
-        <p className="text-2xl">
+        <p className="text-base md:text-2xl">
           I’ve had the honour to speak at events around the world on topics and
           ideas that I find personally exciting or inspiring—and that I think
           that you will, too.
         </p>
       </PageHeader>
-      <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-12 pt-8">
+      <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-8 md:mt-12 pt-4 md:pt-8">
         <div className="col-span-1">
           <h2 className="text-base text-black-lighter font-normal">
             Conferences & presentations
@@ -25,13 +25,9 @@ function Speaking() {
         <div className="md:col-span-2">
           <p>
             Speaker at{" "}
-            <a href="https://ecosia.org/">
-              Ecosia Accessibility Day
-            </a>
+            <a href="https://ecosia.org/">Ecosia Accessibility Day</a>
             <br />
-            <strong>
-              “Inclusion as a Catalyst for Design”
-            </strong>
+            <strong>“Inclusion as a Catalyst for Design”</strong>
             <br />
             June 2021
           </p>
@@ -150,13 +146,12 @@ function Speaking() {
           </p>
         </div>
       </div>
-      <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-12 pt-8">
+      <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-8 md:mt-12 pt-4 md:pt-8">
         <div className="col-span-1">
           <h2 className="text-base text-black-lighter font-normal">Book Me</h2>
         </div>
         <div className="md:col-span-2">
           <h2>Interested in having me speak?</h2>
-
           <p>
             I’m always interested in new speaking engagements on existing topics
             or new ideas. If you’re interested in having me speak at your event

@@ -4,13 +4,13 @@ import DateFormatter from "../components/date-formatter";
 export default function PostItem({ post, hero }) {
   return (
     <>
-      <div className="col-span-1 text-right">
+      <div className="md:col-span-1 md:text-right">
         <span className="text-sm text-black-lighter inline-block leading-snug pr-8 mt-3.5">
           <DateFormatter dateString={post.date} />
         </span>
       </div>
-      <div className="col-span-2 col-start-2 border-b border-black border-opacity-10 mt-3 pb-3 flex flex-row justify-between">
-        <h2 className="m-0 text-sm leading-snug font-serif font-normal pr-8 subpixel-antialiased">
+      <div className="md:col-span-2 md:col-start-2 border-b border-black border-opacity-10 md:mt-3 pb-3 md:flex md:flex-row justify-between">
+        <h2 className="m-0 text-sm leading-snug font-serif font-normal md:pr-8 subpixel-antialiased">
           {hero && (
             <svg
               xmlns="http://www.w3.org/2000/svg"
