@@ -1,22 +1,5 @@
 module.exports = {
-  purge: {
-    content: [
-      "./pages/**/*.{js,ts,jsx,tsx}", 
-      "./components/**/*.{js,ts,jsx,tsx}",
-      "./_posts/**/*.{md}",
-      "./_projects/**/*.{md}",
-      "./_talks/**/*.{md}"
-    ],
-    safeList: [
-      'iframe-container',
-      'responsive-iframe'
-    ],
-    transform: {
-      md: (content) => {
-        return remark().process(content)
-      }
-    },  
-  },
+  purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
