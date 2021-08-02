@@ -6,7 +6,7 @@ author:
   name: Quinn Keast
   picture: "/assets/quinn-portrait.jpg"
 ogImage:
-  url: "/assets/blog/hello-world/cover.jpg"
+  url: "/assets/writing/closeness-cover.jpeg"
 published: true
 external:
   url: https://medium.com/human-experience/a-close-look-at-closeness-1dd300a922ac

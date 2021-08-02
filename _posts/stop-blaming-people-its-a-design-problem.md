@@ -6,7 +6,7 @@ author:
   name: Quinn Keast
   picture: "/assets/quinn-portrait.jpg"
 ogImage:
-  url: "/assets/writing/cathedral-fire.jpg"
+  url: "/assets/writing/cathedral-fire.jpeg"
 published: true
 tags:
   - accessibility

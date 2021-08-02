@@ -6,7 +6,7 @@ author:
   name: Quinn Keast
   picture: "/assets/quinn-portrait.jpg"
 ogImage:
-  url: "/assets/blog/hello-world/cover.jpg"
+  url: "/assets/writing/gut-decisions-cover.jpeg"
 published: true
 external:
   url: "https://uxdesign.cc/stop-relying-on-gut-decisions-and-define-your-principles-4761b43d9a09"

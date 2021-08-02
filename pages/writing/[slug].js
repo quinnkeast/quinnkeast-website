@@ -34,10 +34,10 @@ export default function Post({ post, morePosts, preview }) {
               author={post.author}
               time={post.readingTime}
             />
-            {post.ogImage && <PostHero
+            {/*{post.ogImage && <PostHero
               image={post.ogImage}
               title={post.title}
-            />}
+            />}*/}
             <PostBody content={post.content} />
             {post.tags && <Tags tags={post.tags} />}
           </article>
