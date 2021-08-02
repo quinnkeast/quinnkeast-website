@@ -7,12 +7,12 @@ export default function Footer() {
         <h4>Contact</h4>
       </div>
       <div className="md:col-span-2 mb-4 md:mb-8">
-        <p className="text-lg md:text-2xl mb-4 md:mb-12 font-medium">
+        <p className="text-base md:text-2xl mb-2 md:mb-12 font-medium">
           <a href="mailto:hello@quinnkeast.com">hello@quinnkeast.com</a>
         </p>
         <div className="grid md:grid-cols-3">
           <div className="col-span-1">
-            <h5>Semi-Social</h5>
+            <h5 className="text-sm md:text-base">Semi-Social</h5>
             <ul className="list-none ml-0 mt-2">
               <li>
                 <a
@@ -35,8 +35,18 @@ export default function Footer() {
             </ul>
           </div>
           <div className="col-span-1">
-            <h5>Other fun stuff</h5>
+            <h5 className="text-sm md:text-base">Other fun stuff</h5>
             <ul className="list-none ml-0 mt-2">
+              <li>
+                <a href="https://uxcopy.quinnkeast.com" target="_blank">
+                  Product Language Framework
+                </a>
+              </li>
+              <li>
+                <a href="https://manipulativepatterns.com" target="_blank">
+                  Manipulative Patterns
+                </a>
+              </li>
               <li>
                 <a href="https://caribou.co" target="_blank">
                   Caribou

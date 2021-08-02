@@ -23,7 +23,7 @@ export default function Talk({ talk, moreTalks, preview }) {
         <>
           <article>
             <Head>
-              <title>{talk.title} | Next.js Blog Example</title>
+              <title>{talk.title} | Quinn Keast</title>
               {/*<meta property="og:image" content={post.ogImage.url} />*/}
             </Head>
             <PostHeader

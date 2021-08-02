@@ -15,6 +15,12 @@ tags:
   - design team
 ---
 
+<div class="iframe-container mb-8">
+<iframe src="https://app.pitch.com/app/embed/536f5646-68bf-41a4-be60-891007442c2d" allow="fullscreen" allowfullscreen="" class="responsive-iframe" style="border:0"></iframe>
+</div>
+
+## Transcript 
+
 Hi folks! Great to be here today. I’m really happy that the Ecosia team is coming together for an event like this—it’s a great idea and something that I’d love to see embraced by companies everywhere.
 
 Today I’m going to be talking about inclusion as a catalyst for design. I figure I’ll take about 30, at most 40 minutes to run through some thoughts, and then we’ll have plenty of time for extra discussion.

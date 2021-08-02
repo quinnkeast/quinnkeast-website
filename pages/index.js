@@ -9,12 +9,12 @@ export default function Home() {
       </Head>
       <div className="grid md:grid-cols-3">
         <div className="md:col-span-2 md:col-start-2">
-          <h1 className="mb-4 md:mb-8 text-2xl md:text-5xl leading-none md:leading-snug">
+          <h1 className="mb-4 md:mb-8 text-2xl md:text-5xl leading-none md:leading-none">
             Quinn Keast is a user experience & product designer. He solves
             interesting problems by putting people first—from product vision to
             the last 5%.
           </h1>
-          <h2 className="text-lg md:text-2xl font-normal tracking-snug leading-tight md:leading-normal">
+          <h2 className="text-base md:text-2xl font-normal tracking-snug leading-tight md:leading-tight">
             Partner & designer at{" "}
             <a href="https://caribou.co" target="_blank">
               Caribou

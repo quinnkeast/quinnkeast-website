@@ -10,13 +10,13 @@ function About() {
         <title>About | Quinn Keast</title>
       </Head>
       <PageHeader>
-        <h1>About</h1>
-        <p className="text-base md:text-2xl">
+        <h1  className="text-2xl md:text-4xl">About</h1>
+        <p className="text-base md:text-2xl mt-0 subpixel-antialiased">
           I’m Quinn Keast, a user experience & product designer.
         </p>
         <img
           src="/assets/quinn-portrait.jpg"
-          className="w-72 mt-8"
+          className="w-72 mt-4 md:mt-8"
           alt="Portrait of Quinn Keast, the handsome devil"
         />
       </PageHeader>
