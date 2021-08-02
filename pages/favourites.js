@@ -11,8 +11,8 @@ export default function Index({ allFavourites }) {
         <title>Favourites | Quinn Keast</title>
       </Head>
       <PageHeader>
-        <h1>Favourites</h1>
-        <p className="text-base md:text-2xl">
+        <h1 className="text-2xl md:text-4xl">Favourites</h1>
+        <p className="text-base md:text-2xl mt-0 subpixel-antialiased">
           “Man’s mind, once stretched by a new idea, never regains its original
           dimensions.”
           <br />
@@ -20,7 +20,7 @@ export default function Index({ allFavourites }) {
         </p>
       </PageHeader>
       <div className="grid md:grid-cols-5 border-t border-black border-opacity-10 mt-8 md:mt-12 pt-4 md:pt-8">
-        <div className="col-span-1">
+        <div className="col-span-1 hidden md:flex">
           <span className="text-black-lighter inline-block leading-snug pr-8 mt-3.5">
             Favourites
           </span>

@@ -9,8 +9,8 @@ function Speaking() {
         <title>Speaking | Quinn Keast</title>
       </Head>
       <PageHeader>
-        <h1>Speaking</h1>
-        <p className="text-base md:text-2xl">
+        <h1 className="text-2xl md:text-4xl">Speaking</h1>
+        <p className="text-base md:text-2xl mt-0 subpixel-antialiased">
           I’ve had the honour to speak at events around the world on topics and
           ideas that I find personally exciting or inspiring—and that I think
           that you will, too.

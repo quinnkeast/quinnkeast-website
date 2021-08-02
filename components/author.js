@@ -14,7 +14,7 @@ export default function Author({ author, date, time }) {
         <span className="font-medium">{author.name}</span>
         <br />
         <span className="text-black-lighter">
-          <DateFormatter dateString={date} /> • {time.text}
+          <DateFormatter dateString={date} /> <span className="text-xs">•</span> {time.text}
         </span>
       </div>
     </div>

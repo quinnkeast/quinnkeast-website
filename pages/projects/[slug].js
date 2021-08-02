@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
+import PageHeader from "../../components/page-header";
 import { getProjectBySlug, getAllProjects } from "../../lib/api";
 import Head from "next/head";
 import markdownToHtml from "../../lib/markdownToHtml";
@@ -21,7 +22,13 @@ export default function Project({ post, moreProjects, preview }) {
               <title>{post.title} | Quinn Keast</title>
               <meta property="og:image" content={post.ogImage.url} />
             </Head>
-            <p>Placeholder</p>
+            <PageHeader>
+              <h1>{post.title}</h1>
+              <p className="text-2xl">
+                This section has been temporarily removed while I redo some of my
+                website’s foundations.
+              </p>
+            </PageHeader>
           </article>
         </>
       )}

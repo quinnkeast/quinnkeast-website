@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import Layout from "../../components/layout";
 import PostHeader from "../../components/post-header";
+import PostHero from "../../components/post-hero";
 import PostBody from "../../components/post-body";
 import Tags from "../../components/tags";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
@@ -23,8 +24,8 @@ export default function Post({ post, morePosts, preview }) {
         <>
           <article>
             <Head>
-              <title>{post.title} | Next.js Blog Example</title>
-              {/*<meta property="og:image" content={post.ogImage.url} />*/}
+              <title>{post.title} | Quinn Keast</title>
+              {<meta property="og:image" content={post.ogImage.url} />}
             </Head>
             <PostHeader
               title={post.title}
@@ -33,6 +34,10 @@ export default function Post({ post, morePosts, preview }) {
               author={post.author}
               time={post.readingTime}
             />
+            {post.ogImage && <PostHero
+              image={post.ogImage}
+              title={post.title}
+            />}
             <PostBody content={post.content} />
             {post.tags && <Tags tags={post.tags} />}
           </article>
@@ -52,7 +57,6 @@ export async function getStaticProps({ params }) {
     "author",
     "content",
     "ogImage",
-    "coverImage",
     "tags",
     "external",
   ]);
