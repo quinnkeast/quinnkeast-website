@@ -8,7 +8,7 @@ function Privacy() {
         <title>Privacy Policy | Quinn Keast</title>
       </Head>
       <div className="grid md:grid-cols-5">
-        <div className="col-span-3 col-start-2 content">
+        <div className="col-span-3 col-start-2 post-content">
           <h1>Privacy policy</h1>
           <p className="text-xl">
             Quinn Keast-Wiatrowski operates the quinnkeast.com website, which

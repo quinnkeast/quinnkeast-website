@@ -6,7 +6,7 @@ author:
   name: Quinn Keast
   picture: "/assets/quinn-portrait.jpg"
 ogImage:
-  url: "/assets/writing/ship-something.jpeg"
+  url: "/assets/writing/ship-something-cover.jpg"
 published: true
 tags:
   - accessibility

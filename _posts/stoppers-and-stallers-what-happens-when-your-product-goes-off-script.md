@@ -6,7 +6,7 @@ author:
   name: Quinn Keast
   picture: "/assets/quinn-portrait.jpg"
 ogImage:
-  url: "/assets/blog/hello-world/cover.jpg"
+  url: "/assets/writing/stoppers-stallers-cover.jpg"
 published: true
 tags:
   - accessibility

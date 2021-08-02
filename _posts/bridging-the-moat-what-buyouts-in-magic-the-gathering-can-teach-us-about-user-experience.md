@@ -6,7 +6,7 @@ author:
   name: Quinn Keast
   picture: "/assets/quinn-portrait.jpg"
 ogImage:
-  url: "/assets/blog/hello-world/cover.jpg"
+  url: "/assets/writing/bridging-moat-cover.jpg"
 published: true
 external:
   url: https://medium.com/human-experience/bridging-the-moat-what-buyouts-in-magic-the-gathering-can-teach-us-about-user-experience-bafedf102479
