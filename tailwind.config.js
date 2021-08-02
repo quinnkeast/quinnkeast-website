@@ -7,6 +7,10 @@ module.exports = {
       "./_projects/**/*.{md}",
       "./_talks/**/*.{md}"
     ],
+    safeList: [
+      'iframe-container',
+      'responsive-iframe'
+    ],
     transform: {
       md: (content) => {
         return remark().process(content)
