@@ -1,15 +1,17 @@
 module.exports = {
-  purge: [
-    "./pages/**/*.{js,ts,jsx,tsx}", 
-    "./components/**/*.{js,ts,jsx,tsx}",
-    "./_posts/*.{md}",
-    "./_projects/*.{md}",
-    "./_talks/*.{md}"
-  ],
-  transform: {
-    md: (content) => {
-      return remark().process(content)
-    }
+  purge: {
+    content: [
+      "./pages/**/*.{js,ts,jsx,tsx}", 
+      "./components/**/*.{js,ts,jsx,tsx}",
+      "./_posts/**/*.{md}",
+      "./_projects/**/*.{md}",
+      "./_talks/**/*.{md}"
+    ],
+    transform: {
+      md: (content) => {
+        return remark().process(content)
+      }
+    },  
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
