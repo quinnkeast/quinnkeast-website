@@ -1,6 +1,7 @@
-export default function PostBody({ content }) {
+export default function PostBody({ content, wide }) {
+  const maxWidth = wide ? 'max-w-3xl' : 'max-w-lg';
   return (
-    <div className="max-w-lg mx-auto py-2 md:py-8 post-content">
+    <div className={`${maxWidth} mx-auto py-2 md:py-8 post-content`}>
       <div dangerouslySetInnerHTML={{ __html: content }} />
     </div>
   );

@@ -32,9 +32,10 @@ export default function Talk({ talk, moreTalks, preview }) {
               date={talk.date}
               author={talk.author}
               time={talk.readingTime}
+              wide={talk.wide}
             />
-            <PostBody content={talk.content} />
-            {talk.tags && <Tags tags={talk.tags} />}
+            <PostBody content={talk.content} wide={talk.wide} />
+            {talk.tags && <Tags tags={talk.tags} wide={talk.wide} />}
           </article>
         </>
       )}
@@ -55,6 +56,7 @@ export async function getStaticProps({ params }) {
     "coverImage",
     "tags",
     "external",
+    "wide",
   ]);
 
   const content = await markdownToHtml(talk.content || "");
