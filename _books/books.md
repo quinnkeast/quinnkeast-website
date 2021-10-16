@@ -1,6 +1,18 @@
 ---
 - year: 2021
   books:
+  - title: The Unfinished Land
+    author: Greg Bear
+    date: October
+    reading: true
+  - title: Utopia Avenue
+    author: David Mitchell
+    date: October
+    reading: true
+  - title: Tears of the Truffle-Pig
+    author: Fernando A. Flores
+    date: October
+    reading: true
   - title: The Last Graduate
     author: Naomi Novik
     date: October
@@ -12,7 +24,6 @@
   - title: The Exiled Fleet
     author: J. S. Dewes
     date: October
-    thoughts: 
   - title: The Hunt for Red October
     author: Tom Clancy
     date: September
@@ -24,7 +35,6 @@
   - title: Clear and Present Danger
     author: Tom Clancy
     date: September
-    thoughts: 
   - title: Billy Summers
     author: Stephen King
     date: September
@@ -32,11 +42,9 @@
   - title: The Great Mistake
     author: Jonathan Lee
     date: August
-    thoughts: 
   - title: A History of What Comes Next
     author: Sylvain Neuvel
     date: August
-    thoughts: 
   - title: The Library of the Dead
     author: T. L. Huchu
     date: August
@@ -52,7 +60,10 @@
   - title: Later
     author: Stephen King
     date: July
-    thoughts: This is what I thought about it
+  - title: Turn the Ship Around!
+    author: L. David Marquet
+    date: July
+    thoughts: Love that he digs into his method failing as well as thriving
   - title: The Last Watch
     author: J.S. Dewes
     thoughts: Compelling idea, good characterization in points of views
@@ -70,7 +81,6 @@
     thoughts: COMMUNICATION
   - title: The Lost Apothecary
     author: Sara Penner
-    thoughts: 
   - title: The Invisible Life of Addie Larue
     author: V. E. Schwab
     thoughts: The best cover
@@ -79,30 +89,91 @@
     thoughts: Fell off, didn't finish
   - title: A Memory Called Empire
     author: Arkady Martine
-    thoughts: 
   - title: The Watchmaker of Filigree Street
     author: Natasha Pulley
     thoughts: Compelling
   - title: The Forever War
     author: Joe Haldeman
-    thoughts: 
   - title: The Starless Sea
     author: Erin Morgenster
-    thoughts: 
   - title: To Sleep in a Sea of Stars
     author: Christopher Paolini
-    thoughts: 
+  - title: The Long Way to a Small Angry Planet
+    author: Becky Chambers
+    thoughts: Pleasant read, optimistic
+  - title: Velocity Weapon
+    author: Megan E. O'Keefe
+  - title: Seveneves
+    author: Neal Stephenson
+  - title: Beowulf
+    author: Maria Dahvana Headley
+    thoughts: Bro!
+  - title: Bone Silence
+    author: Alastair Reynolds
+  - title: Revenger
+    author: ALastair Reynolds
   - title: Rhythm of War
     author: Brandon Sanderson
-    thoughts: 
+  - title: Org Design for Design Orgs
+    author: Merholz & Skinner
+  - title: Radical Candor
+    author: Kim Scott
+    thoughts: Good ideas, often used as an excuse to be a jerk
+  - title: Mismatch
+    author: Kat Holmes
+    thoughts: Wonderful read around inclusive design
+  - title: Post-Truth
+    author: Matthew D'Ancona
+  - title: The Loneliness of the Long-Distance Cartoonist
+    author: Adrian Tomine
+    thoughts: Lovely graphic novel
+  - title: How to Rule an Empire and Get Away With It
+    author: K. J. Parker
+  - title: Sixteen Ways to Defend a Walled City
+    author: K. J. Parker
+    thoughts: Fun and quick
+  - title: A Peculiar Peril
+    author: Jeff Vandermeer
+    thoughts: Honestly, I have trouble getting into Vandermeer after his original trilogy
+  - title: A History of the World in Twelve Maps
+    author: Jerry Brotton
+  - title: Finder
+    author: Suzanne Palmer
+    thoughts: Aw yea
+  - title: Do Androids Dream of Electric Sheep?
+    author: Philip K. Dick
+    thoughts: Finally got to it
+  - title: Sixteenth Watch
+    author: Myke Cole
+  - title: The Doors of Eden
+    author: Adrian Tchaikovsky
 - year: 2020
   books: 
+  - title: Early Risers
+    author: Jasper Fforde
+  - title: The Hollow Ones
+    author: Guillemo del Toro & Chuck Hogan
+  - title: Upheaval
+    author: Jared Diamond
+  - title: Great North Road
+    author: Peter F. Hamilton
+  - title: Bird by Bird
+    author: Anne Lamott
+    thoughts: I like this a lot
+  - title: Kingdom of Copper
+    author: S. A. Chakraborty
+    thoughts: I love this cultural mythology
+  - title: The Empire of Gold
+    author: S. A. Chakraborty
+    thoughts: I love this cultural mythology
   - title: Dead Astronauts
     author: Jeff Vandermeer
     thoughts: Fell off
   - title: Fuzzy Nation
     author: John Scalzi
     thoughts: Dunno what I expected, wasn't that, loved it
+  - title: Why I'm No Longer Talking About Race
+    author: Reni Eddo-Lodge
   - title: "Take Off Your Pants: Outline Your Books for Faster, Better Writing"
     author: Libbie Hawker
     thoughts: Excellent read to procrastinate writing
@@ -114,73 +185,57 @@
     thoughts: Popcorn
   - title: The Light Brigade
     author: Kameron Hurley
-    thoughts:
   - title: The Migration
     author: Helen Marshall
-    thoughts: 
   - title: If It Bleeds
     author: Stephen King
     thoughts: Don't usually like novellas, but these struck a chord
   - title: The Last Astronaut
     author: David Wellington
-    thoughts:
   - title: The Hitchhiker's Guide to the Galaxy
     author: Douglas Adams
     thoughts: Must read every year
   - title: Cage of Souls
     author: Adrian Tchaikovsky
-    thoughts: 
   - title: The City We Became
     author: N. K. Jemisin
     thoughts: Fell off
   - title: The Priory of the Orange Tree
     author: Samantha Shannon
-    thoughts: 
   - title: Driving the Deep
     author: Suzanne Palmer
-    thoughts:
   - title: The Escapement
     author: K. J. Parker
-    thoughts: 
   - title: Evil for Evil
     author: K. J. Parker
-    thoughts: 
+    thoughts: Interesting how I can't decide who's the good characters
+  - title: Devices and Desires
+    author: K. J. Parker
+    thoughts: Nice prose
   - title: The Library of the Unwritten
     author: A. J. Hackwith
-    thoughts: 
   - title: The Man Who Mistook His Wife for a Hat
     author: Oliver Sacks
-    thoughts: 
   - title: The Hidden Life of Trees
     author: Peter Wohlleben
-    thoughts: 
   - title: Through the Language Glass
     author: Guy Deutscher
-    thoughts: 
   - title: The Last Emperox
     author: John Scalzi
-    thoughts: 
   - title: Salvation
     author: Peter F. Hamilton
-    thoughts: 
   - title: Gravity
     author: Tess Gerritsen
-    thoughts: 
   - title: "Subliminal: How Your Unconscious Mind Rules Your Behaviour"
     author: Leonard Mlodinow
-    thoughts: 
   - title: The Lies of Locke Lamora
     author: Scott Lynch
-    thoughts: 
   - title: The Book Thief
     author: Merkus Zusak
-    thoughts: 
   - title: The Anatomy of a Story
     author: John Truby
-    thoughts: 
   - title: The Buried Giant
     author: Kazuo Ishiguro
-    thoughts: 
   - title: Ninth House
     author: Leigh Bardugo
     thoughts: Best cover
@@ -189,22 +244,36 @@
     thoughts: Aw yeah kickin off a pandemic
   - title: Hogfather
     author: Terry Pratchett
-    thoughts: 
   - title: Good Strategy Bad Strategy
     author: Richard Rumelt
-    thoughts: 
   - title: Children of Ruin
     author: Adrian Tchaikovsky
-    thoughts: 
   - title: Children of Time
     author: Adrian Tchaikovsky
-    thoughts: 
   - title: The Terror
     author: Dan Simmons
-    thoughts: 
   - title: Skyward
     author: Brandon Sanderson
-    thoughts: 
   - title: Supernova Era
     author: Cixin Liu
-    thoughts: 
+  - title: The Quantum Magician
+    author: Derek Künsken
+  - title: Starsight
+    author: Brandon Sanderson
+  - title: The Testaments
+    author: Maraget Atwood
+  - title: The Da Vinci Code
+    author: Dan Brown
+  - title: Angels and Demons
+    author: Dan Brown
+  - title: The Institute
+    author: Stephen King
+  - title: The Silent Patient
+    author: Alex Michaelides
+  - title: The Memory Police
+    author: Yōko Ogawa
+  - title: First Cosmic Velocity
+    author: Zach Powers
+  - title: A Gentleman in Moscow
+    author: Amor Towles
+    thoughts: Really enjoyed this
