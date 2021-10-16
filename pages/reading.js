@@ -36,7 +36,7 @@ export default function Reading({ booksByYear }) {
                 </thead>
                 <tbody>
                   {year.books.map((book, i) => (
-                    <tr className="flex flex-col md:table-row border-t border-black border-opacity-10 align-top leading-tight">
+                    <tr className="flex flex-col md:table-row border-t border-black border-opacity-10 align-top leading-tight" key={book.title}>
                       <td className="pt-2 md:pb-2 pr-2">
                         {book.reading && (
                           <svg
