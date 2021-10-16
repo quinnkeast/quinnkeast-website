@@ -19,28 +19,28 @@ export default function Reading({ booksByYear }) {
       <div className="grid md:grid-cols-5 border-t border-black border-opacity-10 mt-8 md:mt-12 pt-4 md:pt-8">
         {years.map((year, i) => (
           <>
-            <div className="col-span-1 hidden md:flex">
+            <div className="col-span-5 md:col-span-1 md:flex">
               <span className="text-black-lighter inline-block leading-snug pr-8 mt-3.5 text-sm">
                 {year.year}
               </span>
             </div>
-            <div className="md:col-span-4 align-baseline">
+            <div className="col-span-5 md:col-span-4 align-baseline">
               <table className="table-fixed w-full text-sm mt-3 mb-6">
-                <thead>
+                <thead className="hidden md:table-header-group">
                   <tr>
-                    <th className="w-3/12 text-left pb-2">Title</th>
-                    <th className="w-3/12 text-left pb-2">Author</th>
-                    <th className="w-2/12 text-left pb-2">Read in</th>
-                    <th className="w-4/12 text-left pb-2">Thoughts</th>
+                    <th className="w-full md:w-3/12 text-left pb-2">Title</th>
+                    <th className="w-full md:w-3/12 text-left pb-2">Author</th>
+                    <th className="w-full md:w-2/12 text-left pb-2">Read in</th>
+                    <th className="w-full md:w-4/12 text-left pb-2">Thoughts</th>
                   </tr>
                 </thead>
                 <tbody>
                   {year.books.map((book, i) => (
-                    <tr className="border-t border-black border-opacity-10 align-top leading-tight">
-                      <td className="pt-2 pb-2 pr-2">{book.title}</td>
-                      <td className="pt-2 pb-2 pr2">{book.author}</td>
-                      <td className="pt-2 pb-2 pr-2">{book.date}</td>
-                      <td className="pt-2 pb-2">{book.thoughts}</td>
+                    <tr className="flex flex-col md:table-row border-t border-black border-opacity-10 align-top leading-tight">
+                      <td className="pt-2 md:pb-2 pr-2">{book.title}</td>
+                      <td className="md:pt-2 md:pb-2 pr2"><span className="md:hidden">by </span>{book.author}</td>
+                      <td className="md:pt-2 md:pb-2 pr-2">{book.date}</td>
+                      <td className="md:pt-2 pb-2">{book.thoughts}</td>
                     </tr>
                   ))}
                 </tbody>
