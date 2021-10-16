@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Layout from "../components/layout";
 import PageHeader from "../components/page-header";
+import Link from "next/link";
 
 function Speaking() {
   return (
@@ -27,9 +28,11 @@ function Speaking() {
             Speaker at{" "}
             <a href="https://ecosia.org/">Ecosia Accessibility Day</a>
             <br />
-            <strong>“Inclusion as a Catalyst for Design”</strong>
+            <strong><Link href="/speaking/inclusion-as-a-catalyst-for-design">“Inclusion as a Catalyst for Design”</Link></strong>
             <br />
             June 2021
+            <br />
+            <Link href="/speaking/inclusion-as-a-catalyst-for-design">Read the transcript</Link>
           </p>
           <p>
             Roundtable at{" "}
