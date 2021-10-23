@@ -1,6 +1,10 @@
 ---
 - year: 2021
   books:
+  - title: The Lost Pianos of Siberia
+    author: Sophy Roberts
+    date: October
+    reading: true
   - title: The Unfinished Land
     author: Greg Bear
     date: October
