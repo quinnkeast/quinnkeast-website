@@ -9,9 +9,9 @@ ogImage:
   url: "/assets/writing/mustard.jpg"
 published: true
 tags:
-  - accessibility
+  - tech industry
   - culture
-  - remote work
+  - comedy
 ---
 
 “Use the mustard.”
