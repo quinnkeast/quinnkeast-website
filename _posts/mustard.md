@@ -1,12 +1,12 @@
 ---
 title: "Mustard"
-subtitle: ""
+subtitle: "A metaphor"
 date: "2021-11-01"
 author:
-  name: Quinn Keast
-  picture: "/assets/quinn-portrait.jpg"
+  name: Quinn Keast & Charles Vestal
+  picture: "/assets/mustard-portrait.png"
 ogImage:
-  url: "/assets/writing/closeness-cover.jpeg"
+  url: "/assets/writing/mustard.jpg"
 published: true
 tags:
   - accessibility
@@ -46,7 +46,7 @@ tags:
 
 “Yes! And to do that, I have to go to the store, and get paint, and bring the paint back here, and then I can paint the walls. That’s what paint is for, that’s how painting a wall works. That’s literally what you hired me to do.”
 
-“Okay. Look. As I see it, there’s only two options here: either we wait for you to go to the store and buy paint, or, we can use the mustard. And we don’t have time to wait for you to go to the store. Look, if you won’t paint the walls like I hired you to do, I’ll bring in this hot dog vendor I found on the sidewalk and get him to do it.”
+“Okay. Look. As I see it, there’s only two options here: either we wait for you to go to the store and buy paint, or, we can use the mustard. And we don’t have time to wait for you to go to the store. Listen, if you won’t paint the walls like I hired you to do, I’ll bring in this hot dog vendor I found on the sidewalk and get him to do it.”
 
 “He’s smearing ketchup on the floor.”
 
