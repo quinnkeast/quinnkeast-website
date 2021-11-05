@@ -69,7 +69,7 @@
   }
 
   hr {
-    @apply mt-8 mb-8 opacity-10;
+    @apply mt-8 mb-8 opacity-10 border-black;
   }
 
   p + hr {
