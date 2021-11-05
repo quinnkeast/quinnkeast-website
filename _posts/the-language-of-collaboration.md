@@ -76,7 +76,7 @@ The latter creates a **starting point for collaboration**.  It sets out a factua
 
 Boom. Collaboration everyone can feel good about.
 
-A tricky thing is that every discipline—design, engineering, finance—has its own best practices and rules of thumb. As a group, a discipline may share a factual understanding of these things. But outside the group, these things may not be known or understood to be best practices or rules of thumb at all, which means that when stated factually, someone outside of the group may interpret it as “a subjective opinion, stated factually.”
+A tricky thing is that every discipline—design, engineering, finance—has its own best practices and rules of thumb. As a group, a discipline may share a factual understanding of these things. But outside the group, these things may not be known or understood to be best practices or rules of thumb at all, which means that something stated factually, may be interpreted by someone outside of the group as “a subjective opinion, stated factually.”
 
 This sets up the collaborative environment for tension as each collaborator misunderstands and questions the next. If someone states one opinion as a fact, how are others to know that these other things stated as facts are actually facts, and not opinions framed as facts to influence the collaborative context in their favour?
 
