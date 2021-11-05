@@ -59,7 +59,7 @@ The first quote states a set of facts:
 -  10% of customers used this feature in Q1
 - 23 customers found it hard to get started
 - The onboarding is confusing
- Competitor does more to create learning moments in their parallel feature
+- Competitor does more to create learning moments in their parallel feature
 - We need to create more learning moments in the onboarding
 
 The second quote separates fact from opinion:
