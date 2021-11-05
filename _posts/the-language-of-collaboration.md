@@ -59,7 +59,7 @@ The first quote states a set of facts:
 -  10% of customers used this feature in Q1
 - 23 customers found it hard to get started
 - The onboarding is confusing
-- Competitor does more to create learning moments in their parallel feature
+ Competitor does more to create learning moments in their parallel feature
 - We need to create more learning moments in the onboarding
 
 The second quote separates fact from opinion:
@@ -72,7 +72,7 @@ The second quote separates fact from opinion:
 
 The first quote creates a **constrained collaborative space**. It’s prescriptive, and implicitly shuts down contrary viewpoints. If any of the collaborators disagree with the proposed action (“create learning moments in the onboarding like Competitor does”), then they have to push back and argue their case from a factual basis.
 
-The latter creates a **starting point for collaboration**.  It sets out a factual basis from which opinion follows, and frames opinions as a personal interpretation that to be explored, built on, or challenged altogether. Someone might suggest, “Perhaps it’s not the onboarding at fault, but instead the information architecture underlying the feature?” Or they might respond that, “What Competitor is doing feels to me like a solution for a different problem than what we’re trying to solve.”
+The latter creates a **starting point for collaboration**.  It sets out a factual basis from which opinion follows, and frames opinions as a personal interpretation to be explored, built on, or challenged altogether. Someone might suggest, “Perhaps it’s not the onboarding at fault, but instead the information architecture underlying the feature?” Or they might respond that, “What Competitor is doing feels to me like a solution for a different problem than what we’re trying to solve.”
 
 Boom. Collaboration everyone can feel good about.
 
