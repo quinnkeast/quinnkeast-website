@@ -6,7 +6,6 @@ import PostBody from "../../components/post-body";
 import Tags from "../../components/tags";
 import { getTalkBySlug, getAllTalks } from "../../lib/api";
 import Head from "next/head";
-import { SITE_URL } from "../../lib/constants";
 
 import markdownToHtml from "../../lib/markdownToHtml";
 
@@ -38,7 +37,7 @@ export default function Talk({ talk, moreTalks, preview }) {
               />
               <meta
                 property="og:image"
-                content={`${SITE_URL}${talk.ogImage.url}`}
+                content={talk.ogImage.url}
                 key="image"
               />
               <meta
@@ -53,7 +52,7 @@ export default function Talk({ talk, moreTalks, preview }) {
               />
               <meta
                 property="twitter:image"
-                content={`${SITE_URL}${talk.ogImage.url}`}
+                content={talk.ogImage.url}
                 key="twitter-image"
               />
             </Head>

@@ -7,7 +7,7 @@ import PostBody from "../../components/post-body";
 import Tags from "../../components/tags";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
 import Head from "next/head";
-import { SITE_NAME, SITE_URL } from "../../lib/constants";
+import { SITE_NAME } from "../../lib/constants";
 
 import markdownToHtml from "../../lib/markdownToHtml";
 
@@ -39,7 +39,7 @@ export default function Post({ post, morePosts, preview }) {
               />
               <meta
                 property="og:image"
-                content={`${SITE_URL}${post.ogImage.url}`}
+                content={post.ogImage.url}
                 key="image"
               />
               <meta
@@ -54,7 +54,7 @@ export default function Post({ post, morePosts, preview }) {
               />
               <meta
                 property="twitter:image"
-                content={`${SITE_URL}${post.ogImage.url}`}
+                content={post.ogImage.url}
                 key="twitter-image"
               />
             </Head>
