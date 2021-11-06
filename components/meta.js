@@ -20,6 +20,7 @@ export default function Meta() {
       <meta property="og:url" content="https://quinnkeast.com/" key="url" />
       <meta property="og:type" content="website" key="type" />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} key="image" />
+      <meta property="twitter:card" content="summary_large_image" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
   );
