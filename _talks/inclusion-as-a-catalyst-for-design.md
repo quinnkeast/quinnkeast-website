@@ -1,5 +1,6 @@
 ---
 title: "Inclusion as a Catalyst for Design"
+description: "Talk transcript and slides"
 date: "2021-06-24"
 author:
   name: Quinn Keast

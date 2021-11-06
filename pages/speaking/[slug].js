@@ -23,8 +23,23 @@ export default function Talk({ talk, moreTalks, preview }) {
         <>
           <article>
             <Head>
-              <title>{talk.title} | Quinn Keast</title>
-              {/*<meta property="og:image" content={post.ogImage.url} />*/}
+              <title>{talk.title}</title>
+              <meta
+                property="og:description"
+                content={talk.description}
+                key="description"
+              />
+              <meta property="og:title" content={talk.title} key="title" />
+              <meta
+                property="og:url"
+                content={`https://quinnkeast.com/speaking/${talk.slug}`}
+                key="url"
+              />
+              <meta
+                property="og:image"
+                content={talk.ogImage.url}
+                key="image"
+              />
             </Head>
             <PostHeader
               title={talk.title}
@@ -47,6 +62,7 @@ export async function getStaticProps({ params }) {
   const talk = getTalkBySlug(params.slug, [
     "title",
     "subtitle",
+    "description",
     "published",
     "date",
     "slug",
