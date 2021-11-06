@@ -2,13 +2,29 @@ import Head from "next/head";
 import Layout from "../components/layout";
 import PageHeader from "../components/page-header";
 import { getAllFavourites } from "../lib/api";
+import { SITE_NAME } from "../lib/constants";
 
 export default function Index({ allFavourites }) {
   const books = allFavourites.books;
   return (
     <Layout>
       <Head>
-        <title>Favourites | Quinn Keast</title>
+        <title>Favourites | {SITE_NAME}</title>
+        <meta
+          property="og:description"
+          content={`Favourite books for stretching the mind with new ideas.`}
+          key="description"
+        />
+        <meta
+          property="og:title"
+          content={`Favourites | ${SITE_NAME}`}
+          key="title"
+        />
+        <meta
+          property="og:url"
+          content="https://quinnkeast.com/favourites"
+          key="url"
+        />
       </Head>
       <PageHeader>
         <h1 className="text-2xl md:text-4xl">Favourites</h1>
