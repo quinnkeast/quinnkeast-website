@@ -3,6 +3,7 @@ import Layout from "../components/layout";
 import PageHeader from "../components/page-header";
 import PostItem from "../components/post-item";
 import { getAllPosts } from "../lib/api";
+import { SITE_NAME } from "../lib/constants";
 
 export default function Index({ allPosts }) {
   const heroPost = allPosts[0];
@@ -11,7 +12,22 @@ export default function Index({ allPosts }) {
   return (
     <Layout>
       <Head>
-        <title>Writing | Quinn Keast</title>
+        <title>Writing | {SITE_NAME}</title>
+        <meta
+          property="og:description"
+          content={`A collection of thinking on user experience, design, and business.`}
+          key="description"
+        />
+        <meta
+          property="og:title"
+          content={`Writing | ${SITE_NAME}`}
+          key="title"
+        />
+        <meta
+          property="og:url"
+          content="https://quinnkeast.com/writing"
+          key="url"
+        />
       </Head>
       <PageHeader>
         <h1 className="text-2xl md:text-4xl">Writing</h1>

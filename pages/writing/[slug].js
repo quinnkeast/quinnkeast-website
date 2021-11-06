@@ -7,6 +7,7 @@ import PostBody from "../../components/post-body";
 import Tags from "../../components/tags";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
 import Head from "next/head";
+import { SITE_NAME } from "../../lib/constants";
 
 import markdownToHtml from "../../lib/markdownToHtml";
 
@@ -24,8 +25,23 @@ export default function Post({ post, morePosts, preview }) {
         <>
           <article>
             <Head>
-              <title>{post.title} | Quinn Keast</title>
-              {<meta property="og:image" content={post.ogImage.url} />}
+              <title>{post.title}</title>
+              <meta
+                property="og:description"
+                content={post.description ? post.description : post.subtitle}
+                key="description"
+              />
+              <meta property="og:title" content={post.title} key="title" />
+              <meta
+                property="og:url"
+                content={`https://quinnkeast.com/writing/${post.slug}`}
+                key="url"
+              />
+              <meta
+                property="og:image"
+                content={post.ogImage.url}
+                key="image"
+              />
             </Head>
             <PostHeader
               title={post.title}
@@ -34,10 +50,6 @@ export default function Post({ post, morePosts, preview }) {
               author={post.author}
               time={post.readingTime}
             />
-            {/*{post.ogImage && <PostHero
-              image={post.ogImage}
-              title={post.title}
-            />}*/}
             <PostBody content={post.content} />
             {post.tags && <Tags tags={post.tags} />}
           </article>

@@ -2,15 +2,31 @@ import Head from "next/head";
 import Link from "next/link";
 import Layout from "../components/layout";
 import PageHeader from "../components/page-header";
+import { SITE_NAME } from "../lib/constants";
 
 function About() {
   return (
     <Layout>
       <Head>
-        <title>About | Quinn Keast</title>
+        <title>Writing | {SITE_NAME}</title>
+        <meta
+          property="og:description"
+          content={`I’m Quinn Keast, a user experience & product designer.`}
+          key="description"
+        />
+        <meta
+          property="og:title"
+          content={`About | ${SITE_NAME}`}
+          key="title"
+        />
+        <meta
+          property="og:url"
+          content="https://quinnkeast.com/about"
+          key="url"
+        />
       </Head>
       <PageHeader>
-        <h1  className="text-2xl md:text-4xl">About</h1>
+        <h1 className="text-2xl md:text-4xl">About</h1>
         <p className="text-base md:text-2xl mt-0 subpixel-antialiased">
           I’m Quinn Keast, a user experience & product designer.
         </p>
