@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { HOME_OG_IMAGE_URL, SITE_URL, SITE_NAME } from "../lib/constants";
+import { HOME_OG_IMAGE_URL, SITE_NAME } from "../lib/constants";
 
 export default function Meta() {
   return (
@@ -19,11 +19,7 @@ export default function Meta() {
       <meta property="og:title" content={SITE_NAME} key="title" />
       <meta property="og:url" content="https://quinnkeast.com/" key="url" />
       <meta property="og:type" content="website" key="type" />
-      <meta
-        property="og:image"
-        content={`${SITE_URL}${HOME_OG_IMAGE_URL}`}
-        key="image"
-      />
+      <meta property="og:image" content={HOME_OG_IMAGE_URL} key="image" />
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:site" content="@quinnkeast" />
       <meta property="twitter:creator" content="@quinnkeast" />
@@ -35,7 +31,7 @@ export default function Meta() {
       />
       <meta
         property="twitter:image"
-        content={`${SITE_URL}${HOME_OG_IMAGE_URL}`}
+        content={HOME_OG_IMAGE_URL}
         key="twitter-image"
       />
       <link rel="icon" href="/favicon.ico" />
