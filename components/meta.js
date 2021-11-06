@@ -13,7 +13,7 @@ export default function Meta() {
       <title>{SITE_NAME}</title>
       <meta
         property="og:description"
-        content={`Quinn Keast is a user experience & product designer. He solves interesting problems by putting people first—from product vision to the last 5%.`}
+        content="Quinn Keast is a user experience & product designer. He solves interesting problems by putting people first—from product vision to the last 5%."
         key="description"
       />
       <meta property="og:title" content={SITE_NAME} key="title" />
@@ -21,6 +21,19 @@ export default function Meta() {
       <meta property="og:type" content="website" key="type" />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} key="image" />
       <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:site" content="@quinnkeast" />
+      <meta property="twitter:creator" content="@quinnkeast" />
+      <meta property="twitter:title" content={SITE_NAME} key="twitter-title" />
+      <meta
+        property="twitter:description"
+        content="Quinn Keast is a user experience & product designer. He solves interesting problems by putting people first—from product vision to the last 5%."
+        key="twitter-description"
+      />
+      <meta
+        property="twitter:image"
+        content={HOME_OG_IMAGE_URL}
+        key="twitter-image"
+      />
       <link rel="icon" href="/favicon.ico" />
     </Head>
   );

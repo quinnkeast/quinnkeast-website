@@ -42,6 +42,21 @@ export default function Post({ post, morePosts, preview }) {
                 content={post.ogImage.url}
                 key="image"
               />
+              <meta
+                property="twitter:title"
+                content={post.title}
+                key="twitter-title"
+              />
+              <meta
+                property="twitter:description"
+                content={post.description ? post.description : post.subtitle}
+                key="twitter-description"
+              />
+              <meta
+                property="twitter:image"
+                content={post.ogImage.url}
+                key="twitter-image"
+              />
             </Head>
             <PostHeader
               title={post.title}
