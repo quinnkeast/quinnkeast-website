@@ -40,6 +40,21 @@ export default function Talk({ talk, moreTalks, preview }) {
                 content={talk.ogImage.url}
                 key="image"
               />
+              <meta
+                property="twitter:title"
+                content={talk.title}
+                key="twitter-title"
+              />
+              <meta
+                property="twitter:description"
+                content={talk.description}
+                key="twitter-description"
+              />
+              <meta
+                property="twitter:image"
+                content={talk.ogImage.url}
+                key="twitter-image"
+              />
             </Head>
             <PostHeader
               title={talk.title}
