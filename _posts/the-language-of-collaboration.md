@@ -23,7 +23,7 @@ For the last two years, I’ve been working remotely and asynchronously. When yo
 
 But artifacts don’t drive collaboration. You do.
 
-----
+---
 
 All communication involves a sender and a receiver. Sometimes there’s more than one receiver. It’s the sender’s job to be understood—not the receiver’s job to understand. Whenever you’re driving collaborating with others, you’re the sender. As the sender, you create and shape the collaborative space. And the language of collaboration **builds trust and creates space** for others.
 
@@ -43,11 +43,11 @@ The _intended_ meaning might be “(I think) this is a good choice.” But leavi
 
 Instead, use phrases like:
 
- - “I think that…”
- - “I feel that…”
- - “To me, this feels…”
- - “I’m not sure…”
- - “I’m worried that…”
+- “I think that…”
+- “I feel that…”
+- “To me, this feels…”
+- “I’m not sure…”
+- “I’m worried that…”
 
 Consider these two quotes:
 
@@ -56,10 +56,10 @@ Consider these two quotes:
 
 The first quote states a set of facts:
 
--  10% of customers used this feature in Q1
+- 10% of customers used this feature in Q1
 - 23 customers found it hard to get started
 - The onboarding is confusing
- Competitor does more to create learning moments in their parallel feature
+- Competitor does more to create learning moments in their parallel feature
 - We need to create more learning moments in the onboarding
 
 The second quote separates fact from opinion:
@@ -72,7 +72,7 @@ The second quote separates fact from opinion:
 
 The first quote creates a **constrained collaborative space**. It’s prescriptive, and implicitly shuts down contrary viewpoints. If any of the collaborators disagree with the proposed action (“create learning moments in the onboarding like Competitor does”), then they have to push back and argue their case from a factual basis.
 
-The latter creates a **starting point for collaboration**.  It sets out a factual basis from which opinion follows, and frames opinions as a personal interpretation to be explored, built on, or challenged altogether. Someone might suggest, “Perhaps it’s not the onboarding at fault, but instead the information architecture underlying the feature?” Or they might respond that, “What Competitor is doing feels to me like a solution for a different problem than what we’re trying to solve.”
+The latter creates a **starting point for collaboration**. It sets out a factual basis from which opinion follows, and frames opinions as a personal interpretation to be explored, built on, or challenged altogether. Someone might suggest, “Perhaps it’s not the onboarding at fault, but instead the information architecture underlying the feature?” Or they might respond that, “What Competitor is doing feels to me like a solution for a different problem than what we’re trying to solve.”
 
 Boom. Collaboration everyone can feel good about.
 
@@ -80,19 +80,19 @@ A tricky thing is that every discipline—design, engineering, finance—has its
 
 This sets up the collaborative environment for tension as each collaborator misunderstands and questions the next. If someone states one opinion as a fact, how are others to know that these other things stated as facts are actually facts, and not opinions framed as facts to influence the collaborative context in their favour?
 
-Sometimes, this means looking back at your own work for those decisions that you know are based on a best practice, but might be seen as subjective to those who aren’t familiar with those same best practices. In product design, we make a lot of implicit decisions based on things like gestalt theory, attention, and much more. Surfacing these moments with concrete rationales helps to make these implicit decisions explicit. 
+Sometimes, this means looking back at your own work for those decisions that you know are based on a best practice, but might be seen as subjective to those who aren’t familiar with those same best practices. In product design, we make a lot of implicit decisions based on things like gestalt theory, attention, and much more. Surfacing these moments with concrete rationales helps to make these implicit decisions explicit.
 
 Over time, this builds trust.
 
 Note that with trust comes shortcuts. The more trust a group has established, the more shortcuts they will take in their language around collaboration. But whenever the group changes in some way, whether that’s a new team member, or a new project space, or whenever the group is collaborating with others outside the group, it’s critical to use the language of collaboration to keep a positive collaborative environment.
 
-----
+---
 
 Some of the biggest barriers to collaboration is the feeling that one’s contribution isn’t meaningful, that feedback isn’t sought, or that one isn’t empowered to contribute.
 
 You can create space for collaboration with just one phrase:
 
->“What do you think?”
+> “What do you think?”
 
 This phrase marks the moment as a starting point for collaboration. It’s an invitation. It’s an assurance that feedback is valued and wanted.
 
