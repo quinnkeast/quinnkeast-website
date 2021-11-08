@@ -43,6 +43,11 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a href="https://thebrandthing.quinnkeast.com" target="_blank">
+                  A Primer: What is this Brand Thing Anyway?
+                </a>
+              </li>
+              <li>
                 <a href="https://manipulativepatterns.com" target="_blank">
                   Manipulative Patterns
                 </a>
