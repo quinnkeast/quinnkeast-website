@@ -1,7 +1,7 @@
 ---
 title: "There, here, and back again: Expanding Sourcegraph from an on-premise product into a cloud offering"
 subtitle: "Bringing organizations to Sourcegraph Cloud meant taking an on-premise, enterprise-focused product, and evolving it into a cloud software-as-a-service product as well. Here’s how we took this big vision and turned it into incremental action."
-date: "2020-12-09"
+date: "2021-12-09"
 author:
   name: Quinn Keast
   picture: "/assets/quinn-portrait.jpg"
