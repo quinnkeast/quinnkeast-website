@@ -1,6 +1,26 @@
 ---
 - year: 2021
   books:
+  - title: Leviathan Falls
+    author: James S. A. Corey
+    reading: true
+  - title: "The Two of Swords: Part One"
+    author: K.J. Parker
+    date: December
+    thoughts: The setting is GoT-ish but the tone is more like subtly like Hitchhiker's Guide
+    reading: true
+  - title: Elder Race
+    author: Adrian Tchaikovsky
+    date: December
+    thoughts: Did not realize it was a short story, majorly bummed out to accidentally run into the end
+  - title: Cytonic
+    author: Brandon Sanderson
+    date: December
+    thoughts: I love the process of an AI learning emotions
+  - title: The Apollo Murders
+    author: Chris Hadfield
+    date: November
+    thoughts: Not fair to be both an astronaut AND an author
   - title: The Lost Pianos of Siberia
     author: Sophy Roberts
     date: October
@@ -12,7 +32,7 @@
   - title: Utopia Avenue
     author: David Mitchell
     date: October
-    reading: true
+    thoughts: Kinda fell off of it
   - title: Tears of the Truffle-Pig
     author: Fernando A. Flores
     date: October
@@ -191,6 +211,9 @@
     author: Kameron Hurley
   - title: The Migration
     author: Helen Marshall
+  - title: Shards of Earth
+    author: Adrian Tchaikovsky
+    thoughts: Meh, doesn't live up to the rest of the author's work
   - title: If It Bleeds
     author: Stephen King
     thoughts: Don't usually like novellas, but these struck a chord
