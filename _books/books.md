@@ -9,6 +9,10 @@
     date: January
 - year: 2021
   books:
+  - title: Stories of Your Life and Others
+    author: Ted Chiang
+    date: December
+    thoughts: Very tasty bits of short sci fi
   - title: "Because Internet: Understanding the New Rules of Language"
     author: Gretchen McCulloch
     date: December
