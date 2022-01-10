@@ -1,6 +1,19 @@
 ---
+- year: 2022
+  books:
+  - title: "The Two of Swords: Part Three"
+    author: K.J. Parker
+    date: January
+  - title: "The Two of Swords: Part Two"
+    author: K.J. Parker
+    date: January
 - year: 2021
   books:
+  - title: "Because Internet: Understanding the New Rules of Language"
+    author: Gretchen McCulloch
+    date: December
+    thoughts: This book is incredible and helps me level up how I communicate remotely
+    reading: true
   - title: Leviathan Falls
     author: James S. A. Corey
     reading: true
@@ -8,7 +21,6 @@
     author: K.J. Parker
     date: December
     thoughts: The setting is GoT-ish but the tone is more like subtly like Hitchhiker's Guide
-    reading: true
   - title: Elder Race
     author: Adrian Tchaikovsky
     date: December
