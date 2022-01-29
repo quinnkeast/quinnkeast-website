@@ -70,6 +70,14 @@
   hr {
     @apply mt-8 mb-8 opacity-10 border-black;
   }
+  
+  pre {
+    font-size: 0.65rem;
+    
+    @media (min-width: 768px) {
+      font-size: 0.8rem;
+    }
+  }
 
   p + hr {
     @apply mt-10;

@@ -51,10 +51,6 @@ function Speaking() {
             </strong>
             <br />
             June 2021
-            <br />
-            <Link href="/speaking/inclusion-as-a-catalyst-for-design">
-              Read the transcript
-            </Link>
           </p>
           <p>
             Roundtable at{" "}

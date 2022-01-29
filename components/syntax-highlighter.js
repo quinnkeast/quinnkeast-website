@@ -8,8 +8,8 @@ export default function SyntaxHighlighter({ children }) {
   return (
     <Highlight {...defaultProps} code={code} language={language}>
       {({ className, style, tokens, getLineProps, getTokenProps }) => (
-        <div>
-          <pre className={className} style={{ ...style }}>
+        <div className="-mx-2 md:-mx-8 my-4 md:my-6 whitespace-normal">
+          <pre className={`${className} p-4 md:p-8 rounded whitespace-pre-wrap leading-relaxed`} style={{ ...style }}>
             {tokens.slice(0, -1).map((line, i) => (
               <div {...getLineProps({ line, key: i })}>
                 {line.map((token, key) => (
