@@ -8,8 +8,7 @@ import Tags from "../../components/tags";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
 import Head from "next/head";
 import { SITE_NAME } from "../../lib/constants";
-
-import markdownToHtml from "../../lib/markdownToHtml";
+import mdxToHtml from "../../lib/mdxToHtml";
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter();
@@ -75,7 +74,7 @@ export default function Post({ post, morePosts, preview }) {
 }
 
 export async function getStaticProps({ params }) {
-  const post = getPostBySlug(params.slug, [
+  const post = await getPostBySlug(params.slug, [
     "title",
     "subtitle",
     "published",
@@ -88,8 +87,8 @@ export async function getStaticProps({ params }) {
     "external",
   ]);
 
-  const content = await markdownToHtml(post.content || "");
-
+  const content = await mdxToHtml(post.content);
+  
   return {
     props: {
       post: {

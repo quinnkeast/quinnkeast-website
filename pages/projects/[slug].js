@@ -37,7 +37,7 @@ export default function Project({ post, moreProjects, preview }) {
 }
 
 export async function getStaticProps({ params }) {
-  const post = getProjectBySlug(params.slug, [
+  const post = await getProjectBySlug(params.slug, [
     "title",
     "date",
     "slug",
