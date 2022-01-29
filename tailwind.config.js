@@ -19,6 +19,9 @@ module.exports = {
           DEFAULT: "#F4AE23",
         },
       },
+      maxHeight: {
+        "75vh": "75vh",
+      },
     },
   },
   variants: {
