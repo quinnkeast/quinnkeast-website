@@ -103,7 +103,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const talks = getAllTalks(["slug"]);
+  const talks = []; //TODO repair talk then --> getAllTalks(["slug"]);
 
   return {
     paths: talks.map((talk) => {
