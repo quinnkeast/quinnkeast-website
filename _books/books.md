@@ -136,6 +136,7 @@
     author: Joe Haldeman
   - title: The Starless Sea
     author: Erin Morgenster
+    thoughts: Beautiful writing
   - title: To Sleep in a Sea of Stars
     author: Christopher Paolini
   - title: The Long Way to a Small Angry Planet
