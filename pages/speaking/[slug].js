@@ -74,7 +74,7 @@ export default function Talk({ talk, moreTalks, preview }) {
 }
 
 export async function getStaticProps({ params }) {
-  const talk = getTalkBySlug(params.slug, [
+  const talk = await getTalkBySlug(params.slug, [
     "title",
     "subtitle",
     "description",
