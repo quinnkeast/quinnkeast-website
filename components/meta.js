@@ -5,7 +5,7 @@ export default function Meta() {
   return (
     <Head>
       <script
-        src="https://cdn.usefathom.com/script.js"
+        src="https://stirring-ziggy-stardust.quinnkeast.com/script.js"
         site={process.env.FATHOM}
         defer
       ></script>
