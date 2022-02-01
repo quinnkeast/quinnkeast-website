@@ -38,7 +38,7 @@ export default function Post({ post, morePosts, preview }) {
               />
               <meta
                 property="og:image"
-                content={post.ogImage.url}
+                content={`https://quinnkeast.com${post.ogImage.url}`}
                 key="image"
               />
               <meta
@@ -53,7 +53,7 @@ export default function Post({ post, morePosts, preview }) {
               />
               <meta
                 property="twitter:image"
-                content={post.ogImage.url}
+                content={`https://quinnkeast.com${post.ogImage.url}`}
                 key="twitter-image"
               />
             </Head>
