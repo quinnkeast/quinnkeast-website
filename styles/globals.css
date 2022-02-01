@@ -83,6 +83,11 @@
     @apply mt-10;
   }
 
+  figcaption {
+    font-family: "CalibreWeb";
+    @apply mb-8 mt-2 text-xs;  
+  }
+  
   .post-header p {
   }
 
