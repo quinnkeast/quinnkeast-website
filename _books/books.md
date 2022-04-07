@@ -1,6 +1,31 @@
 ---
+
 - year: 2022
   books:
+  - title: The Watchers
+    author: A. M. Shine
+    date: April
+  - title: The Atlas Six
+    author: Olivie Blake
+    date: March
+  - title: Cartographers
+    author: Peng Shepherd
+    date: March
+  - title: The Kaiju Preservation Society
+    author: John Scalzi
+    date: March
+  - title: The Silent Patient
+    author: Alex Michaelides
+    date: March
+  - title: Devil House
+    author: John Darnielle
+    date: March
+  - title: The Long Earth
+    author: Terry Pratchett & Stephen Baxter
+    date: February
+  - title: Termination Shock
+    author: Neal Stephenson
+    date: January
   - title: "The Two of Swords: Part Three"
     author: K.J. Parker
     date: January
@@ -17,7 +42,6 @@
     author: Gretchen McCulloch
     date: December
     thoughts: This book is incredible and helps me level up how I communicate remotely
-    reading: true
   - title: Leviathan Falls
     author: James S. A. Corey
     reading: true
@@ -44,7 +68,6 @@
   - title: The Unfinished Land
     author: Greg Bear
     date: October
-    reading: true
   - title: Utopia Avenue
     author: David Mitchell
     date: October
@@ -52,7 +75,6 @@
   - title: Tears of the Truffle-Pig
     author: Fernando A. Flores
     date: October
-    reading: true
   - title: The Last Graduate
     author: Naomi Novik
     date: October
@@ -189,7 +211,7 @@
   - title: The Doors of Eden
     author: Adrian Tchaikovsky
 - year: 2020
-  books: 
+  books:
   - title: Early Risers
     author: Jasper Fforde
   - title: The Hollow Ones
