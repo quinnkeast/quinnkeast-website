@@ -2,13 +2,42 @@
 
 - year: 2022
   books:
+  - title: The Bone Orchard
+    author: Sara A. Mueller
+    date: June
+    thoughts: I went into this with no idea what to expect and I was surprised by how unique it feels
+    reading: true
+  - title: Stringers
+    author: Chris Panatier
+    date: June
+    reading: Very popcorny, but would’t read again
+  - title: Eyes of the Void
+    author: Adrian Tchaikovsky
+    date: June
+  - title: Gallant
+    author: V. E. Schwab
+    date: May
+  - title: Last Exit
+    author: Max Gladstone
+    date: May
+  - title: Ogres
+    author: Adrian Tchaikovsky
+    date: May
+  - title: The Shadow People
+    author: Graham Masterton
+    date: May
+    thoughts: Went too far into gruesome for me, abandoned
+  - title: Sea of Tranquility
+    author: Emily St. John Mandel
+    date: April
   - title: The Watchers
     author: A. M. Shine
     date: April
+    thoughts: I enjoyed this a lot
   - title: The Atlas Six
     author: Olivie Blake
     date: March
-  - title: Cartographers
+  - title: The Cartographers
     author: Peng Shepherd
     date: March
   - title: The Kaiju Preservation Society
