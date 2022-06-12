@@ -10,7 +10,7 @@
   - title: Stringers
     author: Chris Panatier
     date: June
-    reading: Very popcorny, but would’t read again
+    thoughts: Very popcorny, but would’t read again
   - title: Eyes of the Void
     author: Adrian Tchaikovsky
     date: June
