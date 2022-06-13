@@ -73,7 +73,7 @@
     thoughts: This book is incredible and helps me level up how I communicate remotely
   - title: Leviathan Falls
     author: James S. A. Corey
-    reading: true
+    thoughts: I didn’t finish this and I’m not sure why
   - title: "The Two of Swords: Part One"
     author: K.J. Parker
     date: December
