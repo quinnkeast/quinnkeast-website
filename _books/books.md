@@ -6,7 +6,6 @@
     author: Sara A. Mueller
     date: June
     thoughts: I went into this with no idea what to expect and I was surprised by how unique it feels
-    reading: true
   - title: Stringers
     author: Chris Panatier
     date: June
