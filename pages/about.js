@@ -51,7 +51,7 @@ function About() {
           </p>
 
           <p>
-            I have more than a decade of expertise that covers the entire
+            I have more than 13 years of expertise that covers the entire
             human-centred design process: from research and strategy to finished
             interface design and front-end development. My background is in
             design, which is complemented by a lifetime of tinkering with
