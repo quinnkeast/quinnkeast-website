@@ -97,7 +97,7 @@ function About() {
             2011 – Present
           </p>
           <p>
-            <strong>Sourcegraph</strong> / Universal Code Search
+            <strong>Sourcegraph</strong> / Universal Code Search & Intelligence Platform
             <br />
             Product Designer
             <br />
