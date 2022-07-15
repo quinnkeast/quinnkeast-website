@@ -2,6 +2,22 @@
 
 - year: 2022
   books:
+  - title: The Night Circus
+    author: Erin Morgenstern
+    date: July
+    thoughts: Really enjoyed the prose
+  - title: Jack Four
+    author: Neal Asher
+    date: July
+    thoughts: I did’t actually like this, felt like reading a video game
+  - title: Mordew
+    author: Alex Pheby
+    date: July
+    reading: true
+  - title: Hummingbird Salamander
+    author: Jeff Vandermeer
+    date: July
+    reading: true
   - title: The Bone Orchard
     author: Sara A. Mueller
     date: June
