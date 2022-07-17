@@ -9,7 +9,7 @@
   - title: Jack Four
     author: Neal Asher
     date: July
-    thoughts: I did’t actually like this, felt like reading a video game
+    thoughts: I didn’t actually like this, felt like reading a video game
   - title: Mordew
     author: Alex Pheby
     date: July
