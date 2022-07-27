@@ -99,7 +99,7 @@ function About() {
           <p>
             <strong>Sourcegraph</strong> / Universal Code Search & Intelligence Platform
             <br />
-            Product Designer
+            Staff Product Designer
             <br />
             2020 – Present
           </p>

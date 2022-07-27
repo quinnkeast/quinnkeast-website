@@ -19,7 +19,7 @@ export default function Home() {
             <a href="https://caribou.co" target="_blank">
               Caribou
             </a>
-            . Also product designer at{" "}
+            . Also staff product designer at{" "}
             <a href="https://sourcegraph.com" target="_blank">
               Sourcegraph
             </a>
