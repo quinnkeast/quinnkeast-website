@@ -2,6 +2,14 @@
 
 - year: 2022
   books:
+  - title: A Discovery of Witches
+    author: Deborah Harkness
+    date: July
+    reading: true
+  - title: Under Fortunate Stars
+    author: Ren Hutchings
+    date: July
+    thoughts: Neat concept well executed
   - title: The Night Circus
     author: Erin Morgenstern
     date: July
@@ -13,7 +21,7 @@
   - title: Mordew
     author: Alex Pheby
     date: July
-    reading: true
+    thoughts: Feels wildly all over the place, wouldn’t read again
   - title: Hummingbird Salamander
     author: Jeff Vandermeer
     date: July
