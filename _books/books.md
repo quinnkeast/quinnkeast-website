@@ -2,10 +2,33 @@
 
 - year: 2022
   books:
+  - title: Babel
+    author: R. F. Kuang
+    date: September
+    reading: true
+  - title: A Psalm for the Wild-Built
+    author: Becky Chambers
+    date: September
+    reading: true
+  - title: A Prayer for the Crown-Shy
+    author: Becky Chambers
+    date: September
+    reading: true
+  - title: Eversion
+    author: Alastair Reynolds
+    date: September
+    thoughts: Fascinating read, well-knit together
+  - title: Klara and the Sun
+    author: Kazuo Ishiguro
+    date: September
+    thoughts: Fascinating read
+  - title: Under the Whispering Door
+    author: TJ Klune
+    date: August
   - title: A Discovery of Witches
     author: Deborah Harkness
     date: July
-    reading: true
+    thoughts: Abandoned; I feel this book comes dangerously close to glorifying abusive behaviours
   - title: Under Fortunate Stars
     author: Ren Hutchings
     date: July
@@ -18,6 +41,9 @@
     author: Neal Asher
     date: July
     thoughts: I didn’t actually like this, felt like reading a video game
+  - title: Ordinary Monsters
+    author: J. M. Miro
+    date: July
   - title: Mordew
     author: Alex Pheby
     date: July
@@ -26,6 +52,12 @@
     author: Jeff Vandermeer
     date: July
     reading: true
+  - title: Drunk on All Your Strange New Words
+    author: Eddie Robson
+    date: June
+  - title: Inhibitor Phase
+    author: Alastair Reynolds
+    date: June
   - title: The Bone Orchard
     author: Sara A. Mueller
     date: June
@@ -37,6 +69,10 @@
   - title: Eyes of the Void
     author: Adrian Tchaikovsky
     date: June
+  - title: Until the Last of Me
+    author: Sylvain Neuvel
+    date: June
+    reading: true
   - title: Gallant
     author: V. E. Schwab
     date: May
