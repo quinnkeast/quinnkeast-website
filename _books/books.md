@@ -2,18 +2,37 @@
 
 - year: 2022
   books:
+  - title: End of the World House
+    author: Adrienne Celt
+    date: September
+    reading: true
+  - title: Dead Silence
+    author: S. A. Barnes
+    date: September
+    reading: true
+  - title: How High We Go in the Dark
+    author: Sequoia Nagamatsu
+    date: September
+    reading: true
+  - title: A Half-Built Garden
+    author: Ruthanna Emrys
+    date: September
+    thoughts: Wasn’t really for me
+  - title: Fairy Tale
+    author: Stephen King
+    date: September
+    thoughts: Has an Ending
   - title: Babel
     author: R. F. Kuang
     date: September
-    reading: true
-  - title: A Psalm for the Wild-Built
-    author: Becky Chambers
-    date: September
-    reading: true
+    thoughts: Made promises and then didn’t hold to them
   - title: A Prayer for the Crown-Shy
     author: Becky Chambers
     date: September
-    reading: true
+  - title: A Psalm for the Wild-Built
+    author: Becky Chambers
+    date: September
+    thoughts: Loved it
   - title: Eversion
     author: Alastair Reynolds
     date: September
@@ -22,6 +41,9 @@
     author: Kazuo Ishiguro
     date: September
     thoughts: Fascinating read
+  - title: On Writing
+    author: Stephen King
+    date: August
   - title: Under the Whispering Door
     author: TJ Klune
     date: August
