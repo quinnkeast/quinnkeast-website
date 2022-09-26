@@ -13,7 +13,7 @@
   - title: How High We Go in the Dark
     author: Sequoia Nagamatsu
     date: September
-    reading: true
+    thoughts: Great book, horribly sad
   - title: A Half-Built Garden
     author: Ruthanna Emrys
     date: September
