@@ -9,8 +9,17 @@ import { getPostBySlug, getAllPosts } from "../../lib/api";
 import Head from "next/head";
 import { SITE_NAME } from "../../lib/constants";
 import mdxToHtml from "../../lib/mdxToHtml";
+import {useEffect} from "react";
 
 export default function Post({ post, morePosts, preview }) {
+  // Change bg to white
+  useEffect(() => {
+    document.body.classList.add('bg-writing');
+    return () => {
+      document.body.classList.remove('bg-writing');
+    }
+  }, []);
+  
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />;

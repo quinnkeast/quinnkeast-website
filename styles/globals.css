@@ -9,8 +9,27 @@
 
   body {
     @apply text-black bg-tan;
+    transition: background-color 100ms ease-in-out;
   }
-
+  
+  .bg-writing {
+    @apply bg-white;
+  }
+  
+  #nprogress .bar {
+    background: #F4AE23;
+  }
+  
+  /* Fancy blur effect */
+  #nprogress .peg {
+    box-shadow: 0 0 10px #F4AE23, 0 0 5px #F4AE23;
+  }
+    
+  #nprogress .spinner-icon {
+    border-top-color: #F4AE23;
+    border-left-color: #F4AE23;
+  }
+    
   p {
     @apply text-sm md:text-base;
   }
@@ -93,7 +112,8 @@
 
   .post-content p,
   .post-content li {
-    @apply font-serif text-xs md:text-sm leading-relaxed md:leading-relaxed;
+    @apply font-serif md:text-sm leading-relaxed md:leading-relaxed;
+    font-size: .825rem;
   }
 
   .post-content h2,
