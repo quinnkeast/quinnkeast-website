@@ -44,12 +44,10 @@ export default function Reading({ booksByYear }) {
               <table className="table-fixed w-full text-sm mt-3 mb-6">
                 <thead className="hidden md:table-header-group">
                   <tr>
-                    <th className="w-full md:w-3/12 text-left pb-2">Title</th>
-                    <th className="w-full md:w-3/12 text-left pb-2">Author</th>
-                    <th className="w-full md:w-2/12 text-left pb-2">Date</th>
-                    <th className="w-full md:w-4/12 text-left pb-2">
-                      Thoughts
-                    </th>
+                    <th className="w-full md:w-3/12 text-left pb-2 font-medium">Title</th>
+                    <th className="w-full md:w-3/12 text-left pb-2 font-medium">Author</th>
+                    <th className="w-full md:w-2/12 text-left pb-2 font-medium">Date</th>
+                    <th className="w-full md:w-4/12 text-left pb-2 font-medium">Thoughts</th>
                   </tr>
                 </thead>
                 <tbody>
