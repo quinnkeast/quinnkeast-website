@@ -9,7 +9,7 @@
 
   body {
     @apply text-black bg-tan;
-    transition: background-color 800ms ease-in-out;
+    transition: background-color 1500ms ease-in-out;
   }
   
   .bg-writing {
