@@ -9,14 +9,14 @@ module.exports = {
     extend: {
       colors: {
         tan: {
-          DEFAULT: "#f9f0e0",
+          DEFAULT: "#FAF3E6",
         },
         black: {
           DEFAULT: "#25231b",
-          lighter: "#8F897C",
+          lighter: "#8A8783",
         },
         yellow: {
-          DEFAULT: "#F4AE23",
+          DEFAULT: "#FAB855",
         },
       },
       maxHeight: {
