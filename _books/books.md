@@ -2,10 +2,13 @@
 
 - year: 2022
   books:
+  - title: Ballad for Sophie
+    author: Filipe Melo
+    date: September
+    reading: true
   - title: End of the World House
     author: Adrienne Celt
     date: September
-    reading: true
   - title: Dead Silence
     author: S. A. Barnes
     date: September
