@@ -5,14 +5,14 @@
   - title: Ballad for Sophie
     author: Filipe Melo
     date: September
-    reading: true
+    thoughts: Gorgeous graphic novel with exceptional story
   - title: End of the World House
     author: Adrienne Celt
     date: September
   - title: Dead Silence
     author: S. A. Barnes
     date: September
-    reading: true
+    thoughts: Actually dang spooky
   - title: How High We Go in the Dark
     author: Sequoia Nagamatsu
     date: September
