@@ -2,6 +2,18 @@
 
 - year: 2022
   books:
+  - title: Thistlefoot
+    author: GennaRose Nethercott
+    date: October
+    reading: true
+  - title: From the Wreck
+    author: Jane Rawson
+    date: October
+    reading: true
+  - title: The Golden Enclaves
+    author: Naomi Novik
+    date: October
+    thoughts: Nice job tying the trilogy together
   - title: Ballad for Sophie
     author: Filipe Melo
     date: September
