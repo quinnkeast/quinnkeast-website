@@ -2,6 +2,10 @@
 
 - year: 2022
   books:
+  - title: The Spare Man
+    author: Mary Robinette Kowal
+    date: October
+    reading: true
   - title: Thistlefoot
     author: GennaRose Nethercott
     date: October
@@ -9,7 +13,6 @@
   - title: From the Wreck
     author: Jane Rawson
     date: October
-    reading: true
   - title: The Golden Enclaves
     author: Naomi Novik
     date: October
