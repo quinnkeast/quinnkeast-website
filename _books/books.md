@@ -5,7 +5,7 @@
   - title: The Spare Man
     author: Mary Robinette Kowal
     date: October
-    reading: true
+    thoughts: My cocktail ingredients shopping list
   - title: Thistlefoot
     author: GennaRose Nethercott
     date: October
