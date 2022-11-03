@@ -2,6 +2,9 @@
 
 - year: 2022
   books:
+  - title: The Creeper
+    author: A. M. Shine
+    date: November
   - title: The Spare Man
     author: Mary Robinette Kowal
     date: October
