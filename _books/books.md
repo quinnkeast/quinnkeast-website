@@ -2,6 +2,14 @@
 
 - year: 2022
   books:
+  - title: The Fisherman
+    author: John Langan
+    date: November
+    reading: true
+  - title: The Atlas Paradox
+    author: Olivie Blake
+    date: November
+    reading: true
   - title: The Creeper
     author: A. M. Shine
     date: November
