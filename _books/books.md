@@ -2,10 +2,17 @@
 
 - year: 2022
   books:
+  - title: The Expert System's Brother
+    author: Adrian Tchaikovsky
+    date: November
+    reading: true
+  - title: Defending Elysium
+    author: Brandon Sanderson
+    date: November
   - title: The Fisherman
     author: John Langan
     date: November
-    reading: true
+    thoughts: I enjoyed the fractal nature of it
   - title: The Atlas Paradox
     author: Olivie Blake
     date: November
