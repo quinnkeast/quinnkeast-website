@@ -2,10 +2,13 @@
 
 - year: 2022
   books:
+  - title: Wayward
+    author: Chuck Wendig
+    date: November
+    reading: true
   - title: The Expert System's Brother
     author: Adrian Tchaikovsky
     date: November
-    reading: true
   - title: Defending Elysium
     author: Brandon Sanderson
     date: November
@@ -16,7 +19,6 @@
   - title: The Atlas Paradox
     author: Olivie Blake
     date: November
-    reading: true
   - title: The Creeper
     author: A. M. Shine
     date: November
