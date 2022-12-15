@@ -101,7 +101,11 @@ function About() {
             <br />
             Staff Product Designer
             <br />
-            2020 – Present
+            2022 – Present
+            <br />
+            Senior Product Designer
+            <br />
+            2020 – 2022
           </p>
           <p>
             <strong>Marley Spoon</strong> / Meal Kit Service
