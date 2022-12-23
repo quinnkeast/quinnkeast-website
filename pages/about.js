@@ -78,7 +78,7 @@ function About() {
             Want to know about my guiding values and how I work as a human? I’ve
             created a{" "}
             <Link href="/readme">
-              <a>Quinn.ReadMe</a>
+              Quinn.ReadMe
             </Link>{" "}
             that acts as a user guide for me.
           </p>

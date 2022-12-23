@@ -2,20 +2,20 @@ import Link from "next/link";
 
 export default function ProjectItem({ project, hero }) {
   return (
-    <div class="">
-      <Link href="/projects/marley-spoon-mobile-experience/">
-        <div class="">
+    <div className="mb-8 md:mb-0">
+		<Link href={`/projects/${project.slug}`}>
+        <div className="">
           {/*<div style="width: 100%; padding-bottom: 140%;"></div>*/}
           <img src={project.thumbnail.url} alt={project.title} />
         </div>
       </Link>
-      <h3>
+      <h3 className="leading-tight text-lg font-medium mb-0">
         <Link href={`/projects/${project.slug}`}>{project.title}</Link>
       </h3>
-      <p>{project.subtitle}</p>
+      <p className="mt-3 text-base leading-tight">{project.subtitle}</p>
       {project.restricted && (
-        <div class="private-tag">
-          <span class="lock">🔒</span> Limited access
+              <div className="text-xs text-black-lighter inline-block">
+          <span className="lock">🔒</span> Limited access
         </div>
       )}
     </div>

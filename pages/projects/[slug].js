@@ -1,14 +1,15 @@
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import PageHeader from "../../components/page-header";
+import ProjectBody from "../../components/project-body";
 import { getProjectBySlug, getAllProjects } from "../../lib/api";
 import Head from "next/head";
-import markdownToHtml from "../../lib/markdownToHtml";
+import mdxToHtml from "../../lib/mdxToHtml";
 import Layout from "../../components/layout";
 
-export default function Project({ post, moreProjects, preview }) {
+export default function Project({ project, moreProjects, preview }) {
   const router = useRouter();
-  if (!router.isFallback && !post?.slug) {
+  if (!router.isFallback && !project?.slug) {
     return <ErrorPage statusCode={404} />;
   }
   return (
@@ -19,16 +20,24 @@ export default function Project({ post, moreProjects, preview }) {
         <>
           <article className="mb-32">
             <Head>
-              <title>{post.title} | Quinn Keast</title>
-              <meta property="og:image" content={post.ogImage.url} />
+				<title>{project.title} | Quinn Keast</title>
+				<meta property="og:image" content={project.ogImage.url} />
             </Head>
-            <PageHeader>
-              <h1>{post.title}</h1>
-              <p className="text-2xl">
-                This section has been temporarily removed while I redo some of my
-                website’s foundations.
-              </p>
-            </PageHeader>
+			  <div className={`max-w-lg mx-auto`}>
+				<h1 className="text-xl md:text-4xl">{project.hero}</h1>
+				<div className="grid md:grid-cols-3">
+					<div>
+						<p className="text-sm">Client <br /><span className="font-bold">{project.client}</span></p>
+                    </div>
+					<div>
+						<p className="text-sm">Role <br /><span className="font-bold">{project.role}</span></p>
+                    </div>
+					<div>
+						<p className="text-sm">Period <br /><span className="font-bold">{project.period}</span></p>
+                    </div>
+                </div>
+            </div>
+			<ProjectBody content={project.content} />
           </article>
         </>
       )}
@@ -37,21 +46,28 @@ export default function Project({ post, moreProjects, preview }) {
 }
 
 export async function getStaticProps({ params }) {
-  const post = await getProjectBySlug(params.slug, [
+  const project = await getProjectBySlug(params.slug, [
     "title",
-    "date",
+	"subtitle",
+	"hero",
+	"role",
+    "period",
+	"published",
+	"restricted",
+	"client",
     "slug",
     "author",
     "content",
     "ogImage",
     "coverImage",
   ]);
-  const content = await markdownToHtml(post.content || "");
+
+  const content = await mdxToHtml(project.content) || "";
 
   return {
     props: {
-      post: {
-        ...post,
+      project: {
+        ...project,
         content,
       },
     },
@@ -59,13 +75,13 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const posts = getAllProjects(["slug"]);
+  const projects = getAllProjects(["slug"]);
 
   return {
-    paths: posts.map((post) => {
+    paths: projects.map((project) => {
       return {
         params: {
-          slug: post.slug,
+          slug: project.slug,
         },
       };
     }),

@@ -22,8 +22,8 @@ export default function PostItem({ post, hero }) {
             </svg>
           )}
           {!post.external && (
-            <Link href={`/writing/${post.slug}`}>
-              <a className="border-none">{post.title}</a>
+            <Link href={`/writing/${post.slug}`} className="border-none">
+              {post.title}
             </Link>
           )}
           {post.external && (

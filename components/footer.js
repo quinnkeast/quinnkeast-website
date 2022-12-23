@@ -71,12 +71,12 @@ export default function Footer() {
         <menu className="list-none m-0 p-0 grid grid-flow-col gap-2">
           <li>
             <Link href="/impressum">
-              <a>Impressum</a>
+              Impressum
             </Link>
           </li>
           <li>
             <Link href="/privacy">
-              <a>Privacy Policy</a>
+              Privacy Policy
             </Link>
           </li>
         </menu>

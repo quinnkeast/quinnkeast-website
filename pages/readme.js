@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import Layout from "../components/layout";
 import PageHeader from "../components/page-header";
 import { SITE_NAME } from "../lib/constants";

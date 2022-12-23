@@ -11,10 +11,14 @@ export default function Projects({ allProjects }) {
         <PageHeader>
           <h1>Projects</h1>
           <p className="text-2xl">
-            This section has been temporarily removed while I redo some of my
-            website’s foundations.
+              A few case studies to show how I go about bridging business and user needs to design better experiences, plus a select client list and kind words over the years.
           </p>
         </PageHeader>
+        <div className="grid md:grid-cols-4 md:gap-12 border-t border-black border-opacity-10 mt-6 md:mt-12 pt-12">
+			{allProjects.map((project, i) => (
+				<ProjectItem project={project} key={i} />
+			))}
+        </div>
       </Layout>
     </>
   );
