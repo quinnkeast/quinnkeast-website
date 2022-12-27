@@ -20,24 +20,24 @@ export default function Project({ project, moreProjects, preview }) {
         <>
           <article className="mb-32">
             <Head>
-				<title>{project.title} | Quinn Keast</title>
-				<meta property="og:image" content={project.ogImage.url} />
+              <title>{`${project.title} | Quinn Keast`}</title>
+              <meta property="og:image" content={project.ogImage.url} />
             </Head>
-			  <div className={`max-w-lg mx-auto`}>
-				<h1 className="text-xl md:text-4xl">{project.hero}</h1>
-				<div className="grid md:grid-cols-3">
-					<div>
-						<p className="text-sm">Client <br /><span className="font-bold">{project.client}</span></p>
-                    </div>
-					<div>
-						<p className="text-sm">Role <br /><span className="font-bold">{project.role}</span></p>
-                    </div>
-					<div>
-						<p className="text-sm">Period <br /><span className="font-bold">{project.period}</span></p>
-                    </div>
+            <div className={`max-w-lg mx-auto`}>
+              <h1 className="text-xl md:text-4xl">{project.hero}</h1>
+              <div className="grid md:grid-cols-3 md:gap-4">
+                <div>
+                  <p className="text-sm">Client <br /><span className="font-bold">{project.client}</span></p>
                 </div>
+                <div>
+                  <p className="text-sm">Role <br /><span className="font-bold">{project.role}</span></p>
+                </div>
+                <div>
+                  <p className="text-sm">Period <br /><span className="font-bold">{project.period}</span></p>
+                </div>
+              </div>
             </div>
-			<ProjectBody content={project.content} />
+            <ProjectBody content={project.content} />
           </article>
         </>
       )}
@@ -48,18 +48,18 @@ export default function Project({ project, moreProjects, preview }) {
 export async function getStaticProps({ params }) {
   const project = await getProjectBySlug(params.slug, [
     "title",
-	"subtitle",
-	"hero",
-	"role",
+    "subtitle",
+    "hero",
+    "role",
     "period",
-	"published",
-	"restricted",
-	"client",
+    "published",
+    "restricted",
+    "client",
     "slug",
     "author",
     "content",
     "ogImage",
-    "coverImage",
+    "coverImage"
   ]);
 
   const content = await mdxToHtml(project.content) || "";
@@ -68,9 +68,9 @@ export async function getStaticProps({ params }) {
     props: {
       project: {
         ...project,
-        content,
-      },
-    },
+        content
+      }
+    }
   };
 }
 
@@ -81,10 +81,10 @@ export async function getStaticPaths() {
     paths: projects.map((project) => {
       return {
         params: {
-          slug: project.slug,
-        },
+          slug: project.slug
+        }
       };
     }),
-    fallback: false,
+    fallback: false
   };
 }
