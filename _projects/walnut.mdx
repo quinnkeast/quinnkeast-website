@@ -18,3 +18,57 @@ thumbnail:
 Right now, notetakers deliver transcriptions through an improvised collection of software intended for other purposes, such as text editors, word processors, and chat applications.
 
 Walnut is a project under active development that provides real-time transcriptions to students through a web and mobile app that allows transcribers and students to send and receive—essentially—real-world captions for lectures and in-class discussions.
+
+----
+
+<figure>
+	<img src="/assets/projects/walnut-hero.png" />
+</figure>
+
+## Research & Discovery
+
+To better understand the needs of notetakers and students, I held a series of interviews with transcribers, notetakers, accessibility coordinators, and students with hearing loss.
+
+Using the insights and findings from these interviews and other human-centred discovery activities, I identified the key features and requirements that would shape Walnut’s user experience.
+
+## Strategy
+
+Based on the user needs and challenges identified during research and discovery, I created a user story map that walked through a series of key user flows. This map, along with the specific user needs identified during the research phase, helped prioritize the feature that would form the “Minimum Lovable Product (MLP),” and shaped a long-term roadmap for product development.
+
+<figure>
+	<img src="/assets/projects/walnut-map.png" />
+	<figcaption>User story mapping to visualize activities and prioritize features.</figcaption>
+</figure>
+
+## User Interface Design
+
+I wanted to move fast into design and development to create the MLP. Rapid wireframing, prototyping, and iteration helped drive the creation of a functional prototype that could be tested in a real classroom setting.
+
+<figure>
+	<img src="/assets/projects/walnut-rapid.jpeg" />
+	<figcaption>Rapid design iteration and prototyping in Adobe Xd.</figcaption>
+</figure>
+
+Transcribed speech is delivered to students in real-time. It’s easy for notetakers to begin a new notetaking session, and transcripts are easy to find and access throughout the semester.
+
+<figure>
+	<img src="/assets/projects/walnut-student.png" />
+	<figcaption>A transcript underway from the view of a student.</figcaption>
+</figure>
+
+## Designing seamless conversation
+
+One of the most interesting interactions I had to design involved unobtrusive, seamless student-to-notetaker communications. From our research, we realized that students and notetakers typically form a friendly connection as the year rolls along, and enjoy chatting during classes. As well, students or notetakers occasionally need to ask questions or communicate information outside of the transcript itself.
+
+However, notetakers are in a constant state of listening and transcribing what they hear. Based on the user contexts, I identified that:
+
+- Both notetakers and students need to be able to send and respond to messages without taking their hands away from the keyboard (e.g. to use a trackpad).
+- Both notetakers and students need to be able to see their communication in the context of the transcript; sometimes, it’s directly related to the content of the transcript.
+- Notetaker-student communication should be separate and hidden from the transcript content while reading, printing, and sharing transcripts.
+- Based on field observations of user behaviour, I designed and tested a series of prototypes for an interface that makes it easy for notetakers to “switch” in and out of a conversational mode, by simply pressing tab during transcription. Students view a variation on this interface that remains visible at all times while the transcript is underway.
+
+This design solution achieves all of the specific requirements while providing a clear point of differentiation between Walnut and the current alternatives that educational institutions are using to deliver notetaking services.
+
+## Hands-on dirty technical details
+
+Walnut is a web app built with React + Redux on the frontend, and NodeJS, Express, and Socket.io on the backend. Transcript editing and collaboration is powered by ProseMirror.
