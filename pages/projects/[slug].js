@@ -18,7 +18,7 @@ export default function Project({ project, moreProjects, preview }) {
         <ProjectTitle>Loading…</ProjectTitle>
       ) : (
         <>
-          <article className="mb-32">
+          <article className="mb-0">
             <Head>
               <title>{`${project.title} | Quinn Keast`}</title>
               <meta property="og:image" content={project.ogImage.url} />
