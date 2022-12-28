@@ -24,16 +24,18 @@ export default function Project({ project, moreProjects, preview }) {
               <meta property="og:image" content={project.ogImage.url} />
             </Head>
             <div className={`max-w-lg mx-auto`}>
-              <h1 className="text-xl md:text-4xl">{project.hero}</h1>
+              <h1 className="text-xl md:text-4xl md:mb-8">{project.hero}</h1>
               <div className="grid md:grid-cols-3 md:gap-4">
                 <div>
-                  <p className="text-sm">Client <br /><span className="font-bold">{project.client}</span></p>
+                  <p className="text-sm leading-tight"><span className="text-black-lighter">Client</span> <br /><span className="font-bold">{project.client}</span>
+                  </p>
                 </div>
                 <div>
-                  <p className="text-sm">Role <br /><span className="font-bold">{project.role}</span></p>
+									<p className="text-sm leading-tight"><span className="text-black-lighter">Role</span> <br /><span className="font-bold">{project.role}</span></p>
                 </div>
                 <div>
-                  <p className="text-sm">Period <br /><span className="font-bold">{project.period}</span></p>
+									<p className="text-sm leading-tight"><span className="text-black-lighter">Period</span> <br /><span className="font-bold">{project.period}</span>
+                  </p>
                 </div>
               </div>
             </div>
