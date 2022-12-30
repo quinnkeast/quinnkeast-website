@@ -1,27 +1,88 @@
-import Head from "next/head";
+import Link from "next/link";
 import Layout from "../components/layout";
 import PageHeader from "../components/page-header";
 import ProjectItem from "../components/project-item";
 import { getAllProjects } from "../lib/api";
 
-export default function Projects({ allProjects }) {
+export default function Projects({ groupedProjects }) {
   return (
     <>
       <Layout>
         <PageHeader>
           <h1>Projects</h1>
           <p className="text-2xl">
-              A few case studies to show how I go about bridging business and user needs to design better experiences, plus a select client list and kind words over the years.
+            A few case studies to show how I go about bridging business and user needs to design better products and experiences.
           </p>
         </PageHeader>
-        <div className="grid md:grid-cols-4 md:gap-12 border-t border-black border-opacity-10 mt-6 md:mt-12 pt-12">
-			{allProjects.map((project, i) => (
-				<ProjectItem project={project} key={i} />
-			))}
+        <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-8 md:mt-16 pt-4 md:pt-8">
+          <div className="col-span-1">
+            <h2 className="font-normal text-base text-black-lighter">
+              Current
+            </h2>
+          </div>
+          <div className="md:col-span-2 max-w-md">
+            {groupedProjects["sourcegraph"].map((project, i) => (
+              <div>
+                <h3 className="leading-tight text-lg font-medium mb-0">
+                  <Link href={`/projects/${project.slug}`}>{project.title}</Link>
+                </h3>
+                <p className="mt-3 text-base leading-tight">{project.subtitle}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-8 md:mt-12 pt-4 md:pt-8">
+          <div className="col-span-1">
+            <h2 className="font-normal text-base text-black-lighter">
+              Archive
+            </h2>
+          </div>
+          <div className="md:col-span-2 grid gap-8 md:grid-cols-3 md:pt-6">
+            {groupedProjects["undefined"].map((project, i) => (
+              <ProjectItem project={project} key={i} />
+            ))}
+          </div>
+        </div>
+        <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-8 md:mt-12 pt-4 md:pt-8">
+          <div className="col-span-1">
+            <h2 className="font-normal text-base text-black-lighter">
+              Select client list
+            </h2>
+          </div>
+          <div className="col-span-1 mt-4">
+            <ul className="client-list">
+              <li>24/7 InTouch</li>
+              <li>Andrea Shelley</li>
+              <li>Arlan Group</li>
+              <li>Canadian Ultimate Championships</li>
+              <li>Ducks Unlimited Canada</li>
+              <li>Emerge Knowledge Design</li>
+              <li>Forth</li>
+              <li>Funding Change</li>
+              <li>IBEX Payroll</li>
+              <li>Jackfruit</li>
+              <li>Johnston Group</li>
+            </ul>
+          </div>
+					<div className="col-span-1 mt-4">
+						<ul className="client-list">
+              <li>Lighthouse</li>
+              <li>Marley Spoon</li>
+              <li>MODS</li>
+              <li>Native Plant Solutions</li>
+              <li>Neovation</li>
+              <li>Oak Hammock Marsh Interpretive Centre</li>
+              <li>Ultimate Canada</li>
+              <li>UnionWare</li>
+              <li>Walnut</li>
+              <li>VC Ultimate</li>
+            </ul>
+          </div>
         </div>
       </Layout>
     </>
-  );
+  )
+    ;
 }
 
 export async function getStaticProps() {
@@ -29,12 +90,22 @@ export async function getStaticProps() {
     "title",
     "subtitle",
     "slug",
+    "group",
     "published",
     "restricted",
-    "thumbnail",
+    "thumbnail"
   ]);
 
+  const groupBy = (array, key) => {
+    return array.reduce((result, currentValue) => {
+      (result[currentValue[key]] = result[currentValue[key]] || []).push(currentValue);
+      return result;
+    }, {});
+  };
+
+  const groupedProjects = groupBy(allProjects, "group");
+
   return {
-    props: { allProjects },
+    props: { groupedProjects }
   };
 }

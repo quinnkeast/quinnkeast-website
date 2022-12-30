@@ -2,10 +2,6 @@ import Link from "next/link";
 
 const menuItems = [
   {
-    label: "Projects",
-    path: "projects",
-  },
-  {
     label: "Writing",
     path: "writing",
   },
@@ -13,6 +9,10 @@ const menuItems = [
     label: "Speaking",
     path: "speaking",
   },
+	{
+		label: "Projects",
+		path: "projects",
+	},
   {
     label: "Favourites",
     path: "favourites",

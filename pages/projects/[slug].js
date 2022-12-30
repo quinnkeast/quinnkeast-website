@@ -56,6 +56,7 @@ export async function getStaticProps({ params }) {
     "period",
     "published",
     "restricted",
+		"group",
     "client",
     "slug",
     "author",
