@@ -291,6 +291,14 @@ figcaption {
     background-color: rgba(223, 104, 31, 0.3);
 }
 
+.client-list {
+	@apply m-0 p-0 list-none;
+}
+
+.client-list li {
+    @apply leading-none;
+}
+
 @font-face {
     font-family: "CalibreWeb";
     font-style: normal;
