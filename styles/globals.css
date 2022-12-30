@@ -73,7 +73,7 @@
     }
 
     ul {
-        @apply list-disc mt-8 ml-8;
+        @apply list-disc ml-8;
     }
 
     ul li,
@@ -116,8 +116,8 @@ figcaption {
         font-size: .825rem;
     }
 
-.project-content > p,
-.project-content > li {
+.project-content p,
+.project-content li {
         @apply leading-relaxed md:leading-relaxed;
     }
 
@@ -153,8 +153,13 @@ figcaption {
 .project-content > h2,
 .project-content > h3,
 .project-content > h4,
-.project-content > h5 {
+.project-content > h5,
+.project-content > blockquote {
         @apply max-w-lg mx-auto;
+    }
+
+.project-content > blockquote {
+		@apply border-l-4 border-yellow pl-4;
     }
 
 .project-content ul {
@@ -163,6 +168,10 @@ figcaption {
 
 .project-content ul li {
         @apply ml-4;
+    }
+
+.how-ms-team-works ul {
+        @apply ml-0;
     }
 
 .project-content ol {
@@ -222,6 +231,10 @@ figcaption {
 
 }
 
+.taste-wizard-iterations {
+    background: rgba(255, 255, 255, 0.5);
+}
+
 .taste-wizard-iterations > p,
 .taste-wizard-iterations > h2,
 .taste-wizard-iterations > h3,
@@ -231,6 +244,51 @@ figcaption {
 
 .taste-wizard-iterations video {
     @apply px-4 md:px-16 mt-8 mb-8;
+}
+
+.callout {
+    background-color: rgba(244, 174, 35, 0.15);
+    position: relative;
+}
+
+.callout::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    width: 0px;
+    height: 0px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid rgba(244, 174, 35, 0.15);
+}
+
+.user-segments {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 1.125rem;
+    letter-spacing: -0.5px;
+}
+
+.user-segments .user-segment {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.user-segment--visitor {
+    background-color: rgba(45, 127, 173, 0.3);
+}
+
+.user-segment--prospect {
+    background-color: rgba(86, 146, 98, 0.3);
+}
+
+.user-segment--supporter {
+    background-color: rgba(155, 109, 48, 0.3);
+}
+
+.user-segment--loyal-supporter {
+    background-color: rgba(223, 104, 31, 0.3);
 }
 
 @font-face {

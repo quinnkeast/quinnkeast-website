@@ -15,7 +15,7 @@ thumbnail:
 
 **[Ducks Unlimited Canada](https://ducks.ca/) (DUC), a nonprofit environmental conservation organization, conserves wetlands and other natural spaces for waterfowl, wildlife, and people.** For more than eighty years, the organization has been protecting and managing habitats across Canada that affect the lives of millions of Canadians every day.
 
-As part of the organization’s [ongoing renewal of its digital ecosystem](https://quinnkeast.com/projects/ducks-unlimited-canada-supporter-engagement-strategy/), I initiated a project to revitalize the user experience of making online donations to Ducks Unlimited Canada. Our goal: increase supporter engagement and donor activity while streamlining the donation process with a new, sustainable digital platform.
+As part of the organization’s [ongoing renewal of its digital ecosystem](/projects/ducks-unlimited-canada-supporter-engagement-strategy/), I initiated a project to revitalize the user experience of making online donations to Ducks Unlimited Canada. Our goal: increase supporter engagement and donor activity while streamlining the donation process with a new, sustainable digital platform.
 
 This project supported DUC's recently completed Rescue Our Wetlands fundraising campaign, which conserved more than 650,000 acres of wetlands and native habitats across Canada while influencing another 96 million acres of habitats from coast to coast.
 
@@ -76,7 +76,7 @@ One of the workshops resulted in a 2x2 matrix to help the project team prioritiz
 
 Based on our digital supporter engagement strategy, we knew our users fell into one of four user segments on the path from converting from a visitor to a supporter:
 
-Visitor → Prospect → Supporter → Loyal Supporter
+<p className="user-segments"><span className="user-segment user-segment--visitor">Visitor</span> <span className="user-segment__arrow">→</span> <span className="user-segment user-segment--prospect">Prospect</span> <span className="user-segment__arrow">→</span> <span className="user-segment user-segment--supporter">Supporter</span> <span className="user-segment__arrow">→</span> <span className="user-segment user-segment--loyal-supporter">Loyal Supporter</span></p>
 
 Guided by our findings, I defined clear measures of success for the project through generalized and channel-specific KPIs.
 
@@ -112,6 +112,10 @@ Rapid wireframing and prototyping with Adobe Xd, Invision, and React helped the 
 Before moving into high-fidelity design and development, I performed usability testing on the proposed direction for the donation experience to validate design and content and decisions, identify challenges, and iterate based on real user feedback.
 
 I recruited a range of study participants that closely matched our defined user personas, and designed a usability study that would examine several different donation flows.
+
+<figure>
+	<video controls><source src="/assets/projects/duc-usability-testing.mp4" />Your browser does not support the video tag.</video>
+</figure>
 
 The usability study was captured for viewing by the whole project team. The team identified specific challenges in early test sessions, and rapid iteration on the interface design allowed us to test solutions right away.
 
@@ -152,23 +156,23 @@ The final design is accessible and adapts seamlessly to several distinct user fl
 
 The newly-launched donation experience had an immediate impact on Ducks Unlimited Canada’s online donor activities.
 
-<div class="grid grid-cols-3 max-w-lg mx-auto">
+<div className="grid grid-cols-3 max-w-lg mx-auto">
 	<div>
-		<p>
-			<span class="text-4xl font-bold">118%</span><br />
-			<span class="text-black-lighter">more donations</span>
+		<p className="leading-none">
+			<span className="text-4xl font-bold">118%</span><br />
+			<span className="text-black-lighter">more donations</span>
 		</p>
 	</div>
 	<div>
-		<p>
-			<span class="text-4xl font-bold">153%</span><br />
-			<span class="text-black-lighter">increase in donation revenue</span>
+		<p className="leading-none">
+			<span className="text-4xl font-bold">153%</span><br />
+			<span className="text-black-lighter">increase in donation revenue</span>
 		</p>
 	</div>
 	<div>
-		<p>
-			<span class="text-4xl font-bold">14%</span><br />
-			<span class="text-black-lighter">increase in average donation amount</span>
+		<p className="leading-none">
+			<span className="text-4xl font-bold">14%</span><br />
+			<span className="text-black-lighter">increase in average donation amount</span>
 		</p>
 	</div>
 </div>

@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import classNames from 'classnames';
 
 const Container = styled.div`
-	background-color: rgba(255, 255, 255, 0.7);
 	padding: 0 2rem 2rem 2rem;
 	margin-bottom: 3rem;
 
@@ -81,7 +80,7 @@ const ProgressBar = styled.div`
 `;
 
 const WizardTitle = styled.h3`
-	font-family: -apple-system;
+	font-family: "CalibreWeb";
 	font-size: 24px;
 	color: #413B38;
 	line-height: 1.25;
@@ -100,7 +99,7 @@ const WizardTitle = styled.h3`
 
 const WizardSubtitle = styled.h3`
 	text-align: center;
-	font-family: -apple-system;
+	font-family: "CalibreWeb";
 	font-size: 16px;
 	color: #716D6A;
 	line-height: 1.25;
@@ -118,7 +117,7 @@ const WizardSubtitle = styled.h3`
 `;
 
 const Skip = styled.button`
-	font-family: -apple-system;
+	font-family: "CalibreWeb";
 	font-size: 16px;
 	color: #413B38;
 	line-height: 1.5;
@@ -149,7 +148,7 @@ const Photo = styled.img`
 `;
 
 const Title = styled.h2`
-	font-family: -apple-system;
+	font-family: "CalibreWeb";
 	font-size: 20px;
 	color: #413B38;
 	line-height: 1.25;
@@ -164,7 +163,7 @@ const Title = styled.h2`
 `;
 
 const Subtitle = styled.h3`
-	font-family: -apple-system;
+	font-family: "CalibreWeb";
 	font-size: 16px;
 	color: #716D6A;
 	line-height: 1.25;
@@ -231,7 +230,7 @@ const BubbleButton = styled.button`
 
 	.text {
 		z-index: 1;
-		font-family: -apple-system;
+		font-family: "CalibreWeb";
 		font-weight: 500;
 		font-size: 14px;
 	}
@@ -322,7 +321,7 @@ const BubbleButton = styled.button`
 `;
 
 const Restart = styled.button`
-	font-family: -apple-system;
+	font-family: "CalibreWeb";
 	font-size: 20px;
 	color: #413B38;
 	line-height: 1.5;
@@ -336,7 +335,7 @@ const Restart = styled.button`
 
 	&:hover {
 		background: rgba(0,0,0,.03);
-		border: 2px solid rgba(0,0,0,0);
+		border: 2px inset solid rgba(0,0,0,0);
 		cursor: pointer;
 	}
 `;

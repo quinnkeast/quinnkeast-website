@@ -105,17 +105,20 @@ The “taste wizard” became a three-step flow:
 
 The absolute minimum that we needed to provide accurate recommendations reflected the highest level of preference: “What they can eat,” which is primarily defined by the type of protein.
 
-<video controls class="jumbo"><source src="/assets/projects/wizard-step-1.mp4" />Your browser does not support the video tag.</video>
-
-<p><small>Illustrations by Luke McEwan.</small></p>
+<figure>
+	<video controls class="jumbo"><source src="/assets/projects/wizard-step-1.mp4" />Your browser does not support the video tag.</video>
+	<figcaption>Illustrations by Luke McEwan.</figcaption>
+</figure>
 
 Then, people have the opportunity to provide feedback around their preference between pairs of emotional adjectives. Most people don’t **always** like “hearty meals,” but they **usually** prefer “hearty meals” over “light meals.” By using valueless dimensional sliders, we give people a way to respond based on “gut instinct.”
 
-<video controls class="jumbo"><source src="/assets/projects/wizard-step-2.mp4" />Your browser does not support the video tag.</video>
+<figure>
+	<video controls class="jumbo"><source src="/assets/projects/wizard-step-2.mp4" />Your browser does not support the video tag.</video>
+</figure>
 
 Finally, we learned that the machine learning model would benefit from having feedback based on actual recipes we have in our catalogue. This ended up being one of the most challenging parts of the design process, and resulted in a highly intuitive, effective, and sustainable outcome.
 
-<div className="bg-white pt-8 pb-16 mt-12 taste-wizard-iterations">
+<div className="pt-8 mt-12 taste-wizard-iterations">
 	## A peek inside the iterative design process
 	One of the most challenging UI design elements in this project involved the meal affinity step.
 
@@ -169,19 +172,17 @@ The final UI design uses subtle UI animation as a microinteraction opportunity t
 
 One tradeoff along the way: I ended up switching to a simpler, more traditionally-cropped recipe photo. This wasn't ideal, as the staging of a photo can influence how the recipe is perceived. However, creating isolated dish photos proved to be a logistical challenge.
 
-<div className="bg-yellow-200 rounded px-2 py-1 my-4 text-sm mx-8">This is an interactive component! Give it a try.</div>
+<div className="rounded px-2 py-1 my-8 text-sm mx-4 md:mx-32 callout">**This is an interactive component!** Give it a try.</div>
 
 import TasteWizardAffinityComponent from '../components/taste-wizard-component.jsx';
 
 <TasteWizardAffinityComponent />
 
-<p><small>Meal affinity wizard created in React by Quinn Keast for the purpose of this case study.</small></p>
-
 </div>
 
 Finally, I introduced a “generating” step between the end of the wizard and the first use of the dashboard. Much like airline ticket searches, it reinforces that something is happening behind the scenes based on their actions, and connects the recipes that appear in their boxes by default to their own taste preferences.
 
-Along the way, I planned and conducted more than a dozen user testing sessions with new and current customers to validate the design direction. Insights from these sessions—both immediately applicable and those more broadly applicable outside of the scope of the project—were socialized throughout the organization.
+Along the way, I planned and conducted more than 30 user testing sessions with new and current customers to validate the design direction. Insights from these sessions—both immediately applicable and those more broadly applicable outside of the scope of the project—were socialized throughout the organization.
 
 ## Results
 
