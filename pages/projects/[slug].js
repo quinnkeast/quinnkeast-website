@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import ErrorPage from "next/error";
 import PageHeader from "../../components/page-header";
 import ProjectBody from "../../components/project-body";
+import useUser from "../../lib/useUser";
 import { getProjectBySlug, getAllProjects } from "../../lib/api";
 import Head from "next/head";
 import mdxToHtml from "../../lib/mdxToHtml";
@@ -9,9 +10,24 @@ import Layout from "../../components/layout";
 
 export default function Project({ project, moreProjects, preview }) {
   const router = useRouter();
+
   if (!router.isFallback && !project?.slug) {
     return <ErrorPage statusCode={404} />;
   }
+
+  // Fetch the user client-side
+  const { user } = useUser({ redirectTo: "/login" });
+
+  // Server-render loading state
+  if (!user || user.isLoggedIn === false) {
+    return (
+      <Layout>
+        <p>loading</p>
+      </Layout>
+    );
+  }
+
+  // Once the user request finishes, show the content
   return (
     <Layout preview={preview}>
       {router.isFallback ? (
@@ -27,14 +43,21 @@ export default function Project({ project, moreProjects, preview }) {
               <h1 className="text-xl md:text-4xl md:mb-8">{project.hero}</h1>
               <div className="grid md:grid-cols-3 md:gap-4">
                 <div>
-                  <p className="text-sm leading-tight"><span className="text-black-lighter">Client</span> <br /><span className="font-bold">{project.client}</span>
+                  <p className="text-sm leading-tight">
+                    <span className="text-black-lighter">Client</span> <br />
+                    <span className="font-bold">{project.client}</span>
                   </p>
                 </div>
                 <div>
-									<p className="text-sm leading-tight"><span className="text-black-lighter">Role</span> <br /><span className="font-bold">{project.role}</span></p>
+                  <p className="text-sm leading-tight">
+                    <span className="text-black-lighter">Role</span> <br />
+                    <span className="font-bold">{project.role}</span>
+                  </p>
                 </div>
                 <div>
-									<p className="text-sm leading-tight"><span className="text-black-lighter">Period</span> <br /><span className="font-bold">{project.period}</span>
+                  <p className="text-sm leading-tight">
+                    <span className="text-black-lighter">Period</span> <br />
+                    <span className="font-bold">{project.period}</span>
                   </p>
                 </div>
               </div>
@@ -56,24 +79,24 @@ export async function getStaticProps({ params }) {
     "period",
     "published",
     "restricted",
-		"group",
+    "group",
     "client",
     "slug",
     "author",
     "content",
     "ogImage",
-    "coverImage"
+    "coverImage",
   ]);
 
-  const content = await mdxToHtml(project.content) || "";
+  const content = (await mdxToHtml(project.content)) || "";
 
   return {
     props: {
       project: {
         ...project,
-        content
-      }
-    }
+        content,
+      },
+    },
   };
 }
 
@@ -84,10 +107,10 @@ export async function getStaticPaths() {
     paths: projects.map((project) => {
       return {
         params: {
-          slug: project.slug
-        }
+          slug: project.slug,
+        },
       };
     }),
-    fallback: false
+    fallback: false,
   };
 }

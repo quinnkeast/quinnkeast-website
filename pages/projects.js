@@ -2,16 +2,29 @@ import Link from "next/link";
 import Layout from "../components/layout";
 import PageHeader from "../components/page-header";
 import ProjectItem from "../components/project-item";
+import useUser from "../lib/useUser";
 import { getAllProjects } from "../lib/api";
 
 export default function Projects({ groupedProjects }) {
+  // Fetch the user client-side
+  const { user } = useUser({
+    redirectTo: "/login",
+  });
+
+  // Server-render loading state
+  if (!user || user.isLoggedIn === false) {
+    return <Layout></Layout>;
+  }
+
+  // Once the user request finishes, show the content
   return (
     <>
       <Layout>
         <PageHeader>
           <h1>Projects</h1>
           <p className="text-2xl">
-            A few case studies to show how I go about bridging business and user needs to design better products and experiences.
+            A few case studies to show how I go about bridging business and user
+            needs to design better products and experiences.
           </p>
         </PageHeader>
         <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-8 md:mt-16 pt-4 md:pt-8">
@@ -22,22 +35,26 @@ export default function Projects({ groupedProjects }) {
           </div>
           <div className="md:col-span-2 max-w-md">
             {groupedProjects["sourcegraph"].map((project, i) => (
-              <div>
+              <div className="mb-4 last-of-type:mb-0">
                 <h3 className="leading-tight text-lg font-medium mb-0">
-                  <Link href={`/projects/${project.slug}`}>{project.title}</Link>
+                  <Link href={`/projects/${project.slug}`}>
+                    {project.title}
+                  </Link>
                 </h3>
-                <p className="mt-3 text-base leading-tight">{project.subtitle}</p>
+                <p className="mt-2 text-base leading-tight">
+                  {project.subtitle}
+                </p>
               </div>
             ))}
           </div>
         </div>
-        <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-8 md:mt-12 pt-4 md:pt-8">
+        <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-6 md:mt-8 pt-4 md:pt-8">
           <div className="col-span-1">
             <h2 className="font-normal text-base text-black-lighter">
               Archive
             </h2>
           </div>
-          <div className="md:col-span-2 grid gap-8 md:grid-cols-3 md:pt-6">
+          <div className="md:col-span-2 grid gap-10 md:grid-cols-3 md:pt-6">
             {groupedProjects["undefined"].map((project, i) => (
               <ProjectItem project={project} key={i} />
             ))}
@@ -64,8 +81,8 @@ export default function Projects({ groupedProjects }) {
               <li>Johnston Group</li>
             </ul>
           </div>
-					<div className="col-span-1 mt-4">
-						<ul className="client-list">
+          <div className="col-span-1 mt-4">
+            <ul className="client-list">
               <li>Lighthouse</li>
               <li>Marley Spoon</li>
               <li>MODS</li>
@@ -81,8 +98,7 @@ export default function Projects({ groupedProjects }) {
         </div>
       </Layout>
     </>
-  )
-    ;
+  );
 }
 
 export async function getStaticProps() {
@@ -93,12 +109,14 @@ export async function getStaticProps() {
     "group",
     "published",
     "restricted",
-    "thumbnail"
+    "thumbnail",
   ]);
 
   const groupBy = (array, key) => {
     return array.reduce((result, currentValue) => {
-      (result[currentValue[key]] = result[currentValue[key]] || []).push(currentValue);
+      (result[currentValue[key]] = result[currentValue[key]] || []).push(
+        currentValue
+      );
       return result;
     }, {});
   };
@@ -106,6 +124,6 @@ export async function getStaticProps() {
   const groupedProjects = groupBy(allProjects, "group");
 
   return {
-    props: { groupedProjects }
+    props: { groupedProjects },
   };
 }
