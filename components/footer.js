@@ -69,15 +69,11 @@ export default function Footer() {
       <div className="my-8 text-xs flex">
         <span className="mr-4">© Quinn Keast</span>
         <menu className="list-none m-0 p-0 grid grid-flow-col gap-2">
-          <li>
-            <Link href="/impressum">
-              Impressum
-            </Link>
+          <li className="text-xs">
+            <Link href="/impressum">Impressum</Link>
           </li>
-          <li>
-            <Link href="/privacy">
-              Privacy Policy
-            </Link>
+          <li className="text-xs">
+            <Link href="/privacy">Privacy Policy</Link>
           </li>
         </menu>
       </div>
