@@ -1,4 +1,3 @@
-import { withSessionRoute } from "../../lib/session";
 import { withIronSessionApiRoute } from "iron-session/next";
 import { sessionOptions } from "../../lib/session";
 
@@ -12,7 +11,7 @@ async function loginRoute(req, res) {
       await req.session.save();
       res.json(user);
     } else {
-      //const user = { isLoggedIn: false };
+      const user = { isLoggedIn: false };
       res.status(403).json();
     }
   } catch (error) {
