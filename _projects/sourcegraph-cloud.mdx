@@ -8,226 +8,112 @@ period: "2022"
 published: true
 restricted: true
 group: "sourcegraph"
+size: "extra large"
 ogImage:
   url: "/assets/blog/hello-world/cover.jpg"
 thumbnail:
   url: "/assets/projects/ux-team.jpg"
 ---
 
-**[Marley Spoon’s](https://marleyspoon.de) dedicated UX team is responsible for creating a delightful experience for a global community of home cooks.** Each week, people from three continents and eight countries use Marley Spoon’s digital platforms to choose meals from a changing weekly menu, receive all of the ingredients and recipes they need directly to their door, and cook delicious, home-cooked meals.
+Sourcegraph found its initial product-market fit by focusing on self-hosted deployments for Enterprise customers. This was a critical strategic decision, because we were asking companies to trust us with their most crucial asset: their private code.
 
-As the design and product teams grew, the UX team’s process and culture needed to grow beyond a somewhat ad hoc collaboration and working process to give us structure, stronger interdisciplinary communication, and clear measures of success.
+But we also knew that this was limiting to our ongoing growth: many customers had no interest in self-hosting their own Sourcegraph instance, and wanted to use Sourcegraph as a cloud-based SaaS product.
 
-In 2019, I worked to establish clear guidelines for how the UX design team works, so that we would be able to support our own growth and performance while strengthening collaboration with the broader organization towards our shared goals.
+This was one of the largest, longest-running efforts I worked on at Sourcegraph, wearing all kinds of hats, ultimately generating new projects that delivered value to all of Sourcegraph's customers.
 
-----
+Big assumption to validate: that customers will trust us with their private code in a Cloud environment.
 
-<figure>
-	<img src="/assets/projects/ms-team-hero-image.jpeg" alt="A stuffed, smiling avocado toy" />
-	<figcaption>With thanks to Joshua Coleman on Unsplash for the photo.</figcaption>
-</figure>
+Constraint set out from the beginning: we would validate this using Sourcegraph.com, which was the largest deployment of Sourcegraph in the world, with almost a million open source repositories indexed for search. The easiest way to iteratively validate this assumption was to build on top of Sourcegraph.com. We would also avoid creating a separate, standalone "Cloud" codebase. We knew we had some customers (including some of the top FAANG customers) that wanted their self-hosted instances to be multitenant. Building this out using Sourcegraph.com would effectively be bringing the same multitenant functionality to all self-hosted instances.
 
-## The Challenge
+This presented a big challenge: everything about Sourcegraph's product was built on the assumption that Sourcegraph is a self-hosted, single-tenant product.
 
-I joined Marley Spoon in 2018 to tackle a particularly compelling challenge: the opportunity to shape the company’s culture around UX. The company had an appetite to learn more about UX mindsets and methodologies and become a more mature organization in its approach to product research and design.
+- All code on the instance belongs to the same organization.
+- There is a person or team who can set up, orchestrate, and administrate Sourcegraph on the organization’s own stack and network.
+- The instance admin will connect Sourcegraph with code hosts, and choose which repositories to add to Sourcegraph and make sure they sync properly.
+- Running a global search on Sourcegraph will search across only your company’s repositories.
+- All users on the Sourcegraph instance belong to the same company.
+- A URL to a search result copied and pasted to someone else will “just work,” because everyone has access to the same code.
+- There’s a high-touch, multi-stage sales process tailored for each customer.
 
-I moved into the role of UX Lead for the UX design team in 2019. Knowing that we’d have another member join our UX team in the near future, I retrospected on what was working well and what could be better about the current process. I had a series of conversations with the product and development team to better understand how they worked and the challenges they were facing.
+The extent of this list of assumptions gave us an idea of just how big this challenge was, especially when we knew we wanted to keep one Sourcegraph—we didn’t want to split out into separate “Cloud” and “Self-hosted” products.
 
-I also did a deep dive into how other companies and product teams approached their work. Some notable inspiration came from thoughts and ideas from Basecamp, Hanno, Autodesk, and the Lean UX book.
+## Big vision, incremental action
 
-Some of the key things that needed to be in place:
+We needed to strike the balance between the long-term of what Sourcegraph Cloud would become and the concrete steps that would get us there. Our approach was to orient around the problems, identify the foundations, and to be really thoughtful about what we needed when.
 
-- We needed a **clear mechanism for continuous discovery** and capture of ideas, needs, and opportunities.
-- We needed a **clear process flow** from conception to shipping—but one with the flexibility to support many different kinds of projects.
-- We needed a way to **work effectively alongside agile product teams**, without falling into the trap of “ticket-based design.”
-- We needed a **sense of rhythm to our work**, so that we’d feel a regular sense of progress and completion.
+## Orienting around problems
 
-As well, I recognized that the working process that we establish can work towards creating a more inclusive working environment for the whole team—as well as the broader company. This was about more than just “how work is done”—it’s about “how we think about and approach the work we do.”
+Instead of orienting around action items or tactical steps, we oriented our efforts around problems that, when solved, would represent the “minimum lovable product” at each iteration.
 
-I created a draft of “How the UX Team Works at Marley Spoon” and shared it the rest of the design, product, and development teams, iterating based on their feedback.
+At the highest level, these problems looked something like:
 
-The overall structure covers:
+Sourcegraph Cloud is the easiest way for organizations to get started with Sourcegraph.
+└── Small-to-medium organizations can search across their code together on Sourcegraph Cloud.
+└── Individual users can search across their private code on Sourcegraph Cloud.
+└── Sourcegraph team members can search across their private code on Sourcegraph Cloud.
+└── Individual users can search across their public code on Sourcegraph Cloud.
 
-1. Foundations
-2. Principles
-3. Dual Track Agile
-4. Continuous Discovery
-5. Projects
-6. Cycles
-7. Pitches
-8. Design Workflow
-9. Teams
+Each problem was inherently cross-disciplinary and revealed a set of sub-problems we’d have to solve.
 
-As our team expanded, we worked together to finalize how we would work and our documentation. Then, we shared our established process with the broader organization, and got to work.
+And each problem we solved would support each incremental step forward, all in a low-risk, high-confidence way that would help us to build momentum rather than rehashing the same problems again and again.
 
-## The Results
+## Identify foundations
 
-We’ve been working effectively and positively since mid-2019 on a number of projects, including a [complete reimagination of Marley Spoon’s mobile app](/projects/marley-spoon-mobile-experience) in late 2019 - early 2020.
+Once we had a roadmap of problems to solve, we took time to identify what we considered the “foundations”—those decisions that would influence all other decisions and ultimately accelerate future efforts, even if we didn’t act on them right away. Without identifying these foundations, we risked working ourselves into a corner by solving each problem in isolation, rather than as an incremental step within a bigger context.
 
-**Please note that this is not a wholly original work. It draws from ideas, writing, and presentations by [Basecamp](https://3.basecamp-help.com/article/34-how-we-work), [Hanno](https://hanno.co/playbooks), [Autodesk](https://www.youtube.com/watch?v=q2dRk3hokEw), and the [Lean UX book](http://leanuxbook.com/).**
+For us, these foundations turned out to be mostly conceptual: what does it mean to “add code?” What about “connecting with code hosts?” How might that be the same, but different, for an individual user versus an organization? How does code visibility work? What’s the difference between what we’re doing here, and multitenancy? What decisions do we make now that will open up a future path to multitenancy?
 
-<div className="bg-white px-4 md:px-32 pt-8 pb-16 mt-12 shadow-md how-ms-team-works">
-# How the UX Team Works at Marley Spoon
-## Foundations
-Foundations for **consistent vision**, **direction**, and **decision-making**:
+We captured these decisions in async artifacts like an exploration of how multitenancy affects existing assumptions around roles and permissions (https://docs.google.com/document/d/1Xh2_UYQ-kcHcNAXwCSdj9SXOgat8POd3/edit#), and an information architecture summary (https://docs.google.com/document/d/1qHigYYB440SfqCfj-Gze38_IJLDY791J/edit#heading=h.gjdgxs). Async artifacts like these are a core part of how we work asynchronously at Sourcegraph. They make it easy to share and provide thoughtful, considered feedback, and to revisit and build on our shared understanding of these foundations.
 
-- UX team principles
-- Product principles
-- Design system(s)
-- Content framework
+## You ain’t gonna need it (yet)
 
-Foundations for **working effectively**:
+Having both a clear roadmap of problems and a good idea of the foundations helped us to keep moving forward without feeling like we needed to solve every problem all at once. A big part of this meant constantly revisiting what we needed to do now, and what could be done later.
 
-- Continuous discovery activities and sources
-- Dual track agile for defined process of collaboration with product & development
-- Key Experience Indicators for meaningful feedback and understanding of the impact of our work
-- Sourcing pipelines for user research activities
-- Templates for recurring processes like research
-- Tools to provide visibility into activities and capacity
+We know we’ll need a strong invitation flow for organizations (https://docs.google.com/document/d/1DqJWHmVHA6EpyKNAh0h-WNdsOprN8t-xTQbQ4CH8Z3I/edit). The way we connect with code hosts can keep improving. And we know we’ll eventually need things like self-service payments and subscription management. But we ain’t gonna need it yet.
 
-Foundations for **internal team culture**:
+After launching private code for individual users on Cloud, we did a collaborative story-mapping workshop to break out what we knew we’d need to do into a series of iterations that represented a fully functional, lovable product outcome. (https://miro.com/app/board/o9J_l2ceJwU=/?invite_link_id=556797444102)
 
-- Team meetings and rituals
-- A safe space for experimentation, sharing, and open feedback
-- Inclusive processes and tools
+- Generated project: search contexts
+- Previous data showed that users who search code they care about (typically _their_ code) are more likely to have early success with onboarding and understanding the product value
+- Problem of searching _their code_ among the nearly 2.2m repos on Cloud
+  This led to proposing and building search contexts, an entirely new product feature, to solve this problem.
+- See how this unfolded in search contexts project.
 
-Foundations for **broader cultural impact**:
+First iteration
 
-- Workshops
-- Popcorn time / Regular exposure to user research
-- Sharing our stories through writing
-- Transparency into how we work
+- individual users can add their public code
+- "what does it mean to add _my_ code to sourcegraph.com"
+- separate team working on search contexts
 
-Foundations for **individual growth**:
+Second iteration
 
-- Individual career objectives
-- Annual learning days
-- Learning labs
+- individual users can add their private code
+- requires code host connections (and login connections)
+- requires permissions handling (in line with agreed system)
 
-## Principles
-**Outcomes, not output**. We’re focused on meeting business and user goals, not creating features.
+Third iteration
 
-**Problem-focused**. We focus on solving business problems, not implementing features. When we start a project, the path or artifacts we’ll create may not be clear—but the problem must be.
+- Handling system state
+- Generated project: system status notifications
 
-**Cross-functional teams**. Our best work is created when we’re collaborating across disciplines on a continuous basis, from problem framing to shipping.
+Fourth iteration
 
-**Continuous discovery**. In UX, we depend on a deep understanding of our users and their needs. We strive to continuously learn about our users, their needs, and their challenges through planned and ongoing research activities and ongoing metrics like KEIs.
+- Organizations can add private and public code and organization members can search across that code
+- Code host connection challenge
 
-**Externalize work**. We need to get our work out of our screens and into the shared environment. By doing this, we’ll be able to share our activities, engage our colleagues in our work, and create transparency within the larger company.
+Early access launch for organizations
 
-**Making > Analysis**. The sooner we get a prototype in front of our team and users, the sooner we can validate our ideas. Data helps us to spark ideas and to validate our work.
+- Generated project: helpful friction
 
-**Permission to fail**. The design process gives us room to experiment, and to fail—it’s the easiest way to learn, fast. We create a safe environment for experimentation—through both our culture and our working process.
+Launch for commercial organizations
 
-**Small batch size**. “Lean manufacturing” calls for low inventory and high quality. Along these same lines, we focus our energy only those activities that meaningfully move the team—and company—forward.
+- achieved zero to one
+- subsequently more than 100% outperformed target customers for the quarter
 
-**Shared understanding**. We will build confidence and support from each other, our team members, and the broader organization by always creating a shared understanding of what we’re doing and why.
+The pivot
 
-## Dual Track Agile
-Since we work closely with the product and development teams, we need to structure our working processes so that we’re able to commit to the complete design process as an independent UX design team. Design is usually explorative and can lead to unexpected outcomes, which can jeopardize tightly-planned agile sprints. Dual-track agile is a strategy for working effectively alongside agile product teams without falling into the trap of “ticket-based design.”
-
-Dual track agile establishes **Discovery** and **Delivery** tracks. The UX design team works across both of these tracks.
-
-The **Discovery** track encompasses the broader design process, involving research, ideation, prototyping, and iteration. When projects reach the end of a cycle on the Discovery track, the outcomes and artifacts allow implementation to begin.
-
-The **Delivery** track encompasses ongoing two-week agile sprints. Since design requires continuous improvement, we’ll never be “done” at the end of a cycle in Discovery. We have to collaborate closely throughout development to refine and course-correct.
-
-The UX design team maintains its own workflow on the Discovery track, and is involved in other team’s workflows on the Delivery track.
-
-## Continuous Discovery
-
-We need to be continuously learning about our users, their problems, and their needs. Research activities should be ongoing and help us build a better understanding of the user experience on a daily basis. To do this, we have several sources:
-
-**KEIs**. Key Experience Indicators act as a scorecard for the user experience in relation to user goals and outcomes. We’re building out a baseline for KEIs across our digital platforms, and we also identify new KEIs on a project-by-project basis.
-
-**UX insights repository**. We have a database for UX insights, which captures qualitative feedback from users in Customer Care interactions, user interviews, and other sources of qualitative data. The qualitative feedback we collect in this database is reviewed on a regular basis by the UX design team, PMs, and other members of the broader organization to identify insights, themes, and opportunities. Our repository also helps us transform qualitative feedback into quantifiable data.
-
-**Project-based research insights**. Whenever we conduct user research through usability studies or interviews, we have an opportunity to learn more about our users and their experience. We always invite the broader organization to join us in our research activities as observers in our sessions.
-
-**Insights from other research activities**. We have a fantastic CX research team that’s constantly working to uncover new insights into the customer experience. From time to time, the CI team may identify and share issues in the customer experience.
-
-The ideas we generate from continuous discovery are used as a source when creating new pitches, and for choosing which pitches will be tackled in upcoming cycles.
-
-## Projects
-
-Our work is organized into projects, which are either small or large projects.
-
-Small projects are smaller things, tweaks, or easy outcomes that can be done in anywhere from a day to a couple of weeks. These can include projects based on iterative testing to internally-driven initiatives, such as writing for the Marley Spoon Design blog. We typically have a good idea of what we will end up creating or what we will need to do along the way.
-
-Large projects are big features or initiatives that will probably take 4-6 weeks (or longer) to get done. Large projects typically call for the complete human-centred design process, including user research and testing. We often start large projects without a complete understanding of the problem space, process, or outcomes.
-
-All projects are initiated with a **Pitch**.
-
-## Cycles
-
-Everyone needs a rhythm to their work. Sometimes, this rhythm is project-based (such as working as an agency, where large-scale projects kick off and end in the course of months or years). Other times, it’s sprint-based (such as in agile development teams).
-
-Our UX design team works in cycles with a defined length. This introduces a sense of rhythm to our work, prevents scope creep, and improves our ability to decide what we’re working on in a regular interval.
-
-A cycle contains a mix of small and large projects, each with a defined cross-functional project team.
-
-These cycles have specific, unchanging start and end dates, which creates more predictable timelines and milestones. When projects begin to seem unachievable within a cycle, it’s a sign the team needs to refine scope until it feels comfortable achieving it within the cycle.
-
-Cycles can align with 2-week development team sprints, particularly as they relate to large projects, but it’s not necessary.
-
-Each cycle is named (e.g. “Cilantro”) to create a more distinct and tangible period of time. All cross-functional team members work on the same cycle at the same time, but not necessarily on the same projects.
-
-We have 1-2 weeks between cycles to “cool down,” which could include “bug fixes,” writing and sharing what we worked on, and figuring out what to do in the next cycle.
-
-## Pitches
-
-Ideas for UX projects come from everywhere. Some come from people on the design team. Some come from other departments when they identify a new business problem. Others come from insights and opportunities that arise from continuous discovery.
-
-Choosing what we work on is a challenge in its own, but crucial for maintaining momentum, managing our time and resources, and delivering a real business impact.
-
-We use pitches to capture ideas and help us decide what projects we’ll tackle in each cycle.
-
-A pitch is similar to a creative brief, but not quite. The idea is the same: to capture context, problems, and generally propose what we should do about it. Pitches can be for any size of project, whether large or small.
-
-Pitches help us create a collaborative working relationship between the UX / design team and the broader organization.
-
-Anyone can write a pitch, and people can work together to create a pitch. We have a backlog on Clubhouse where anyone can write up an idea and share it, and where anyone else can take a look and has a chance to consider and respond to the idea.
-
-This approach gives us a couple of benefits:
-
-**Consideration rather than reaction**. When ideas arise in meetings or in Slack, we’re obligated to react to the idea, rather than mulling it over and providing a thoughtful response. When we share a pitch for feedback, it gives everyone the chance to consider it and make their voice heard.
-
-**The project story**. Pitches capture the essence of a project in a single location in a way that anyone can refer to at any time if they need to catch up on a project, understand why the project was carried out, or even how to pitch a new idea in the future.
-
-Pitches form our backlog. Not all of them will be acted on right away, or even ever, but some of them will be chosen to make it into the next cycle.
-
-## Choosing Pitches and Preparing for Cycles
-
-After pitches have been considered and discussed by the design team in collaboration with other stakeholders, we choose pitches that will be tackled in the upcoming cycle. This is an art, not a science: we’ll make decisions based on existing data and analytics around pressing business and user needs, potential impact, clarity of purpose, and internal resources and capacity.
-
-When a pitch is chosen for a cycle, it’ll need a team. The project team will be responsible for figuring out how they’ll approach the project. Not all members of the team may actually work on the project on a regular basis or across the entire project (for example, developers may not spend much time in the initial problem definition and design exploration phases).
-
-Before each cycle begins, the UX design team will write a simple update to share the plan publicly with the broader company. After each cycle is over, the UX design team will write a simple account of the outcomes of the cycle, and share it publicly with the broader company. This gives our work transparency and visualizes the impact of our activities.
-
-Between each cycle, we have project-team-based retros, and we reflect and adjust both our working processes and plans for upcoming cycles as a result.
-
-## Design Workflow
-
-We use the design thinking process in our work in UX. Most large projects follow a general process of:
-
-Discovery & Problem Definition → Prototype → Test & Iterate → Delivery Backlog
-
-**Discovery & Problem Definition**. During this phase, the team needs to clearly frame the design challenge, KPIs & KEIs, and establish a tentative project plan and milestones. Research may be needed before this can be done.
-
-**Prototyping**. The faster we can get to a prototype, the faster we can understand if our ideas work in reality like they work in our heads, and validate whether they solve the problems they’re intended to solve in a way that provides meaningful value to the business.
-
-**Testing & iteration**. To test our ideas, we need to put them in front of users as soon as possible and see what happens.
-
-**Delivery Backlog**. A UX project may largely conclude within a sprint with handoff for development, but no project is complete until it ships. While the project team must collaborate throughout the project, the balance of activity may shift between designers and developers from beginning to end. As a project shifts into delivery, designers need to be available and actively participating in review, QA, and refinement. We avoid waterfall-style handoffs.
-
-## Teams
-
-Team members are those who are actively working on a project.
-
-Each UX project has 2-5 people on the team (3 people is ideal), made up of 1 UX designer, 1-2 developers, and 1-2 other members (which could include folks from Culinary, CC / CI, or PMs). These individuals may not be working together on the project on a regular basis, but they’ll be actively part of it.
-
-Each project needs to identify “RACI” individuals as it starts: those who are Responsible, Accountable, Consulted, and Informed during the course of the project. The Responsible individuals need to be on the project team, for they’re responsible for carrying it out. The Accountable individuals can be on the team, but not always. Of course, sometimes the Responsible and Accountable individual is the same person, which is fine. Most stakeholders are either consulted or informed, but aren’t on the project team.
-
-For teams to be both responsible and accountable for delivering on a project, they must be empowered to make decisions. To be able to make decisions quickly and keep projects moving, we must embrace our core cultural values—in particular, “We give autonomy. Know your responsibilities, and take ownership,” and “Disagree and commit.” Within the team, we need consensus. From our external stakeholders, we need commitment.
-
-</div>
+- While we were working on multitenant cloud, we were also exploring "managed instances" – a way of deploying Sourcegraph where we set up and managed the instance ourselves. Essentially, a type of cloud product. This didn't scale effectively, because it was hands-on, but there was customer appetite for it.
+- We had demonstrated through the combination of the commercial launch of multitenant cloud and the managed instances that our assumption was correct: we'd reached the point of being trusted with customer's private code in the cloud.
+- The triad/quartet myself, the PM, the EM, and a staff engineer frequently revisited our goals and objectives with Cloud. In early 2022, we decided to challenge continuing with multitenant cloud. while we had paying customers and were growing, we felt that the numbers and priorities didn't make sense. the cost and complexity of continuing to build out multitenant cloud massively outstripped the potential revenue and reduced complexity of instead pivoting to single-tenant cloud.
+- This was a decision we felt needed to be owned by the VP and director level, because it had significant impact on roadmap planning and organizational structure. I created the initial RFC together with the PM: https://docs.google.com/document/d/1X1IwuLm-jgB8XU81irnrahUPQlEQjWQY/edit
+- ultimately, this proposal was accepted and the company executed the pivot. single-tenant sourcegraph cloud is now the default deployment option for new customers, and many of our existing self-hosted customers are migrating to cloud.

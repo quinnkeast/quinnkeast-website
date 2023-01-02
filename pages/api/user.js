@@ -2,15 +2,16 @@ import { withIronSessionApiRoute } from "iron-session/next";
 import { sessionOptions } from "../../lib/session";
 
 async function userRoute(req, res) {
-  if (req.session.user) {
+  console.log("test");
+  const user = req.session.get("user");
+  if (user) {
     res.json({
-      ...req.session.user,
+      ...user,
       isLoggedIn: true,
     });
   } else {
     res.json({
       isLoggedIn: false,
-      login: "",
     });
   }
 }

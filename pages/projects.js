@@ -11,11 +11,6 @@ export default function Projects({ groupedProjects }) {
     redirectTo: "/login",
   });
 
-  // Server-render loading state
-  if (!user || user.isLoggedIn === false) {
-    return <Layout></Layout>;
-  }
-
   // Once the user request finishes, show the content
   return (
     <>
@@ -28,14 +23,21 @@ export default function Projects({ groupedProjects }) {
           </p>
         </PageHeader>
         <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-8 md:mt-16 pt-4 md:pt-8">
-          <div className="col-span-1">
-            <h2 className="font-normal text-base text-black-lighter">
-              Current
-            </h2>
-          </div>
-          <div className="md:col-span-2 max-w-md">
-            {groupedProjects["sourcegraph"].map((project, i) => (
-              <div className="mb-4 last-of-type:mb-0">
+          {groupedProjects["sourcegraph"].map((project, i) => (
+            <>
+              <div className="col-span-1 md:pr-4 md:text-right flex flex-row justify-end items-start pt-4">
+                {i === 0 && (
+                  <h2 className="font-normal text-base text-black-lighter mt-0 flex-grow text-left">
+                    Current
+                  </h2>
+                )}
+                {project.size && (
+                  <span className="mt-1 px-1.5 leading-base rounded-full border border-black border-opacity-10 text-black-lighter text-xs inline-block flex-none capitalize">
+                    {project.size}
+                  </span>
+                )}
+              </div>
+              <div className="md:col-span-2 max-w-md">
                 <h3 className="leading-tight text-lg font-medium mb-0">
                   <Link href={`/projects/${project.slug}`}>
                     {project.title}
@@ -45,8 +47,8 @@ export default function Projects({ groupedProjects }) {
                   {project.subtitle}
                 </p>
               </div>
-            ))}
-          </div>
+            </>
+          ))}
         </div>
         <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-6 md:mt-8 pt-4 md:pt-8">
           <div className="col-span-1">
@@ -107,6 +109,7 @@ export async function getStaticProps() {
     "subtitle",
     "slug",
     "group",
+    "size",
     "published",
     "restricted",
     "thumbnail",
