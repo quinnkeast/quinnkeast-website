@@ -14,3 +14,67 @@ ogImage:
 thumbnail:
   url: "/assets/projects/ux-team.jpg"
 ---
+
+- For a two month period in 2022, I joined a small group of engineers and PMs at Sourcegraph called the "Code Security Tiger Team."
+- Triggered by an ongoing theme we were hearing from customers around code security as a primary use case for Sourcegraph. But, Sourcegraph doesn't explicitly have a "code security" feature built around code security needs. Instead, the product itself is valuable to security team members in their existing workflows.
+- Mandate was to learn about and explore the problems faced by security leaders desperately feel, identify opportunities, and make a recommendation whether or not to pursue one of these opportunities.
+- Ultimately, the team identified a very compelling opportunity space, and at the same time, recommended that we don't pursue it **right now** – because it represented too many moon shots.
+- This was ultimately a fascinating effort that gave me the chance to explore a highly technical problem space, and had the unusual—but correct—outcome of \*_not_ taking action.
+
+- I led the team in defining a research plan for the effort.
+- Along with competitor and industry analysis, we held sessions with security engineers and internal experts. Remarkably, developer experience leaders at several customers shared compelling artifacts around problems they are looking to solve around the software supply chain and dependency graph, which they’re actively looking for or building solutions for—but would prefer not to.
+- Those problems are not solely security-related: they support both the security and the developer experience workflow, which is a natural evolution of Sourcegraph’s positioning. Security team leaders are stakeholders of the problem.
+- We soon identified what seemed to be a promising problem space around the supply chain and the dependency graph.
+
+Top problems included:
+
+- When a new security vulnerability arises, leaders want to be able to answer a specific question in relation to time: "Were we exposed to this? When?" in addition to "Are we exposed to this?"
+- When a new security vulnerability arises, there is a high cost of "stop the world and fix everything."
+- Knowing a vulnerability exists isn’t the same as knowing that you’re actually exposed to it.
+- For leaders, it feels like knowing / seeing the risk profile and implications and using that to inform decisions is more important than quickly fixing things.
+- In companies with lots of code, repositories, and services depending on each other creates complexity at scale. A quick fix is rarely encapsulated within clean code/team/etc. boundaries.
+- In relation to the software supply chain, SBOM is a “hot term” right now and gets the attention of security leaders. In addition to its connection to an Executive Order, to some extent, SBOM may also be “hot” because it’s a non-technical concept for a technical problem (“bill of materials”). The tangible artifact that is a SBOM is much less important than the role that an SBOM plays in confidence, traceability, and compliance.
+- Leaders care about a different “fidelity” of risk than ICs / teams. While ICs are focused on individual vulnerabilities, leaders view risk as a “portfolio” across their technology, and need to understand where to invest time and resources to reduce that risk is the most effective way.
+- Companies with lots of code can’t really "ensure" their software supply chain is secure.
+- And even if they had the perfect tool that could, they wouldn’t trust that it does, and would likely use more tools anyway.
+  “Secure” is only a reflection of a point in time. It's not about being secure in absolute terms, but rather about guaranteeing that you were never exposed to a specific vulnerability, or guaranteeing that you are no longer vulnerable.
+- There’s a broad trend towards “shifting left” in security, moving it earlier in the software lifecycle to when code is being written. Companies are already using a number of tools that address the “left” side of the workflow, focused around helping developers and security teams to prevent vulnerabilities from entering their codebase in the first place. However, these proactive tools and workflows serve a different purpose in the security workflow than are required in reactive scenarios like log4j.
+
+Hypothesis we landed on was:
+
+> Security teams and leaders want to understand how, when, and if they are exposed to a security vulnerability in a dependency. When remediation is required, they want to find the most optimal patch sequence to resolve it while minimising effort, build time, and disruptions to production.
+
+- Knowing if and when they are or were vulnerable.
+- Knowing the best way to upgrade with minimum side effects.
+- Rolling out those upgrades at scale.
+
+This is a challenging problem to solve because knowing a vulnerability exists isn’t the same as knowing that you’re actually exposed to it. The dependency graph problem space will help companies and leaders to answer these questions and understand their risk profile as well as how to best proceed with updating dependencies at scale.
+
+We felt this was a valuable problem to solve right now because:
+
+- Sourcegraph is uniquely positioned to build a solution in this space, because of dependency search building blocks we've been putting together for a while and work in compute / dependency search / precise code intel. Additionally, “search” and “querying” itself are valuable when it comes to dependencies.
+- Sourcegraph is the only tool that our customers use that has all of their code in a single pane of glass.
+  (customer 1) and (customer 2) are actively assessing and building a solution in this space, with sponsorship from their DevX teams. The investment sounds large in terms of engineering resources, further validating the opportunity.
+- It fits into a hot market trend (supply chain security) that will help us with marketing / the sales motion.
+- It fits into a workflow within the broader security workflow that is under-addressed: once you find a vulnerability, what do you do? How do you resolve without too much disruption to the business?
+- We heard many smaller challenges (e.g. that a security engineer needs to be able to say three months later why they made the call that they were not at risk of a vulnerability) that fit within the general problem space.
+- It suggests a larger product opportunity that can be positioned in-product specifically around code security. This will make it easier for folks to quickly understand how Sourcegraph can support the security use case, without having to connect the dots in otherwise separate product features.
+- In addition, it suggests a product feature that in itself can grow over time to support further use cases based on ongoing learning and discovery.
+
+## Design and exploration
+
+- I worked together with the lead engineer to explore how we might expose the dependency graph in Sourcegraph. Some ways that we considered:
+  - Creating a separate feature area for code security
+  - Adding dependencies to the search query language and surfacing dependencies as a search result type that can be explored
+  - Visual dependency graphs
+
+## Stacked moonshots
+
+- The further we explored the space, the more we realized that the timing may not be right for the company to invest in this problem space.
+- A concept that I've used a few times to frame these discussions is roof shots and moon shots. A project should have probably just one moon shot – one big, hard, audacious thing that will be hard to achieve, but can be achieved through our own actions through a series of roof shots – lower and meaningful iterations that we'll eventually discover got us to the moon.
+- The dependency graph problem space relied on, rather than one moon shot and several roof shots, several moon shots in a row—and we didn't have control over each of these.
+- Dependency graph for code security is mostly reactive – when something's wrong, go in and find out if you're exposed.
+- To be trustworthy in a security event, we must be complete in our coverage. We can only do this if customers have precise code intelligence configured. But, adoption of precise code intelligence is historically low, and there's a separate team at Sourcegraph that hasn't yet solved this. Security engineers themselves are not the ones who would be responsible for deciding to, and then implementing, precise code intelligence on their Sourcegraph instances.
+- To be useful in a security incident, security engineers must know that they can use Sourcegraph in their workflow to respond to a security incident. They will not be open to learning new things in the moment of a security incident. Sourcegraph's search was previously useful to security engineers in log4j and other events, because these engineers had previously used Sourcegraph for non-urgent activities, and were familiar with what the tool could do and how to use it.
+- On the technical side, we would have to invest significant effort (6+ months) into building something that isn't itself validated, in order to validate something else.
+- None of these are, in isolation, blockers to a successful product solution: but in combination and in relation to the overall business strategy and context, they represent a level of investment and risk that did not make sense for the company in that moment of time.

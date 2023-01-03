@@ -14,3 +14,27 @@ ogImage:
 thumbnail:
   url: "/assets/projects/ux-team.jpg"
 ---
+
+- While working on (sourcegraph cloud), we had a very clear problem statement we needed to solve:
+- After adding repositories, users need to be able to search the code they care about amongst the 2.2 million repositories on sourcegraph cloud
+- We knew it was important for users to be able to search that code in their very first searches, as a predictor of future search success
+- Learning curve is incredibly steep, searching across all 2.2 million repositories doesn't help with this
+- Looking down the Cloud roadmap, we were starting with individual users adding their code to Cloud, and then moving to solve organizations adding their code
+- We needed a way to solve this that would be immediately useful and scale up
+
+- At the same time, we had an existing, very minimal feature called version contexts, which let admins on self-hosted instances manually define a set of repos and revisions that made up a given version of a release (e.g. AwesomeProduct 4.1.0, AwesomeProduct 4.1.1). The customers depending on this were very unhappy with the state of this product experience, and were at risk of churn.
+
+Design exploration and proposal
+
+- Sourcegraph is async-first
+- Used an RFC as a living document to explore concepts and decisions
+- Low fidelity design and prototypes
+- Hallway testing to evaluate the concepts in action
+- Turned RFC into formal approval
+
+Implementation
+
+- Implemented first version for Cloud
+- Implemented a minimal UI and migration action for self-hosted instances using version contexts. We retained the customer at risk of churn as a result.
+- Continued to build it out for organizations
+- Eventually, one of our largest customers with hundreds of thousands of repos expressed how they would not be able to use Sourcegraph at all without contexts, and we collaborated with them to further extend the feature's capabilities.
