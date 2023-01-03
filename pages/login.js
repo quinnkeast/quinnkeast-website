@@ -15,7 +15,7 @@ function Login() {
   return (
     <Layout>
       <Head>
-        <title>Protected content | Quinn Keast</title>
+        <title>{`Protected content | Quinn Keast`}</title>
       </Head>
       <div className="grid md:grid-cols-3">
         <div className="col-span-2 col-start-2">
