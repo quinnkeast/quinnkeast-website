@@ -1,10 +1,10 @@
 ---
 title: "Here, there, and back again: Sourcegraph Cloud"
 subtitle: "The story of building, launching, and pivoting Sourcegraph’s Cloud product."
-hero: "Sourcegraph example case study"
+hero: "Here, there, and back again: Sourcegraph Cloud"
 client: "Sourcegraph"
 role: "Staff Product Designer"
-period: "2022"
+period: "2021 – 2022"
 published: true
 restricted: true
 group: "sourcegraph"
@@ -15,17 +15,19 @@ thumbnail:
   url: "/assets/projects/ux-team.jpg"
 ---
 
-Sourcegraph found its initial product-market fit by focusing on self-hosted deployments for Enterprise customers. This was a critical strategic decision, because we were asking companies to trust us with their most crucial asset: their private code.
+**Sourcegraph is a universal code search and intelligence platform.** Tens of thousands of developers in some of the largest companies around the world rely on [Sourcegraph](https://sourcegraph.com) to search across and navigate all of their company’s code on all of their code hosts.
 
-But we also knew that this was limiting to our ongoing growth: many customers had no interest in self-hosting their own Sourcegraph instance, and wanted to use Sourcegraph as a cloud-based SaaS product.
+As an early-stage startup, Sourcegraph started as a cloud SaaS product before realizing that the company needed to do more to earn trust with companies’ private code. This led to a pivot towards making Sourcegraph open source and self-hosted. Companies could look at Sourcegraph source code for themselves and run their Sourcegraph instance in their own trusted environment.
 
-This was one of the largest, longest-running efforts I worked on at Sourcegraph, wearing all kinds of hats, ultimately generating new projects that delivered value to all of Sourcegraph's customers.
+This early decision, as well as a focus on Enterprise-scale customers, was crucial to gaining traction. Today, many of the world’s largest and most technologically advanced companies like Dropbox, General Electric, PayPal, and many more trust Sourcegraph with their private code.
 
-Big assumption to validate: that customers will trust us with their private code in a Cloud environment.
+I joined Sourcegraph shortly after the company closed a Series B funding round, and helped the company grow to a $125M Series D funding round to bring universal code search to every dev at every company of every size and scale. We heard again and again that for smaller companies with lean engineering teams that already use SaaS products across their stack, the ease of deploying through SaaS outweighs the benefits of self-hosting. And for us to bring universal code search to every dev at every company of every size and scale, Sourcegraph needs to be effortless for these smaller companies to deploy.
 
-Constraint set out from the beginning: we would validate this using Sourcegraph.com, which was the largest deployment of Sourcegraph in the world, with almost a million open source repositories indexed for search. The easiest way to iteratively validate this assumption was to build on top of Sourcegraph.com. We would also avoid creating a separate, standalone "Cloud" codebase. We knew we had some customers (including some of the top FAANG customers) that wanted their self-hosted instances to be multitenant. Building this out using Sourcegraph.com would effectively be bringing the same multitenant functionality to all self-hosted instances.
+In response, we decided to make a big bet and build out Sourcegraph Cloud on top of Sourcegraph.com. This presented a big challenge: everything about Sourcegraph's product was built on the assumption that Sourcegraph is a self-hosted, single-tenant product.
 
-This presented a big challenge: everything about Sourcegraph's product was built on the assumption that Sourcegraph is a self-hosted, single-tenant product.
+## Breaking assumptions
+
+Building a self-hosted product involves a lot of assumptions that break when turning it into a cloud SaaS:
 
 - All code on the instance belongs to the same organization.
 - There is a person or team who can set up, orchestrate, and administrate Sourcegraph on the organization’s own stack and network.
@@ -35,7 +37,7 @@ This presented a big challenge: everything about Sourcegraph's product was built
 - A URL to a search result copied and pasted to someone else will “just work,” because everyone has access to the same code.
 - There’s a high-touch, multi-stage sales process tailored for each customer.
 
-The extent of this list of assumptions gave us an idea of just how big this challenge was, especially when we knew we wanted to keep one Sourcegraph—we didn’t want to split out into separate “Cloud” and “Self-hosted” products.
+The extent of this list of assumptions gave us an idea of just how big this challenge was, especially when we knew we wanted to keep “one Sourcegraph”—we didn’t want to split out into separate “Cloud” and “Self-hosted” products.
 
 ## Big vision, incremental action
 
@@ -43,15 +45,18 @@ We needed to strike the balance between the long-term of what Sourcegraph Cloud 
 
 ## Orienting around problems
 
-Instead of orienting around action items or tactical steps, we oriented our efforts around problems that, when solved, would represent the “minimum lovable product” at each iteration.
+Instead of orienting around action items or tactical steps, we oriented our efforts around problems that, when solved, would represent the “minimum lovable product” at each iteration, ultimately helping us to validate the overriding assumption that companies would trust us with their private code on a Cloud environment.
 
 At the highest level, these problems looked something like:
 
-Sourcegraph Cloud is the easiest way for organizations to get started with Sourcegraph.
-└── Small-to-medium organizations can search across their code together on Sourcegraph Cloud.
-└── Individual users can search across their private code on Sourcegraph Cloud.
-└── Sourcegraph team members can search across their private code on Sourcegraph Cloud.
-└── Individual users can search across their public code on Sourcegraph Cloud.
+<div className="bg-white rounded max-w-xl mx-auto my-8 pl-0 pr-8 pt-4">
+  - Sourcegraph Cloud is the easiest way for organizations to get started with
+  Sourcegraph. - Small-to-medium organizations can search across their code
+  together on Sourcegraph Cloud. - Individual users can search across their
+  private code on Sourcegraph Cloud. - Sourcegraph team members can search
+  across their private code on Sourcegraph Cloud. - Individual users can search
+  across their public code on Sourcegraph Cloud.
+</div>
 
 Each problem was inherently cross-disciplinary and revealed a set of sub-problems we’d have to solve.
 
@@ -63,7 +68,22 @@ Once we had a roadmap of problems to solve, we took time to identify what we con
 
 For us, these foundations turned out to be mostly conceptual: what does it mean to “add code?” What about “connecting with code hosts?” How might that be the same, but different, for an individual user versus an organization? How does code visibility work? What’s the difference between what we’re doing here, and multitenancy? What decisions do we make now that will open up a future path to multitenancy?
 
-We captured these decisions in async artifacts like an exploration of how multitenancy affects existing assumptions around roles and permissions (https://docs.google.com/document/d/1Xh2_UYQ-kcHcNAXwCSdj9SXOgat8POd3/edit#), and an information architecture summary (https://docs.google.com/document/d/1qHigYYB440SfqCfj-Gze38_IJLDY791J/edit#heading=h.gjdgxs). Async artifacts like these are a core part of how we work asynchronously at Sourcegraph. They make it easy to share and provide thoughtful, considered feedback, and to revisit and build on our shared understanding of these foundations.
+We captured these decisions in async artifacts like an exploration of how multitenancy affects existing assumptions around roles and permissions, and an information architecture summary.
+
+import GDoc from "../components/gdoc.jsx";
+
+<div className="max-w-lg mx-auto">
+  <GDoc
+    link="https://docs.google.com/document/d/1Xh2_UYQ-kcHcNAXwCSdj9SXOgat8POd3/edit"
+    title="Sourcegraph Multi-tenancy: Initial thoughts on how multi-tenancy affects existing assumptions around roles and permissions"
+  />
+  <GDoc
+    link="https://docs.google.com/document/d/1qHigYYB440SfqCfj-Gze38_IJLDY791J/edit"
+    title="Sourcegraph Cloud Information Architecture Summary"
+  />
+</div>
+
+Async artifacts like these are a core part of how we work asynchronously at Sourcegraph. They make it easy to share and provide thoughtful, considered feedback, and to revisit and build on our shared understanding of these foundations.
 
 ## You ain’t gonna need it (yet)
 
