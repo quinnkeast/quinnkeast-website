@@ -16,16 +16,16 @@ export default function Project({ project, moreProjects, preview }) {
   }
 
   // Fetch the user client-side
-  // const { user } = useUser({ redirectTo: "/login" });
+  const { user } = useUser({ redirectTo: "/login" });
 
   // Server-render loading state
-  /*if (!user || user.isLoggedIn === false) {
+  if (!user || user.isLoggedIn === false) {
     return (
       <Layout>
         <p>loading</p>
       </Layout>
     );
-  }*/
+  }
 
   // Once the user request finishes, show the content
   return (
