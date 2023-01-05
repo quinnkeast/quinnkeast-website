@@ -17,6 +17,10 @@ thumbnail:
 
 **Sourcegraph is a universal code search and intelligence platform.** Tens of thousands of developers in some of the largest companies around the world rely on [Sourcegraph](https://sourcegraph.com) to search across and navigate all of their company’s code on all of their code hosts.
 
+<figure>
+	<img src="/assets/projects/sourcegraph-logo-light.svg" width="300" height="50" />
+</figure>
+
 As an early-stage startup, Sourcegraph started as a cloud SaaS product before realizing that the company needed to do more to earn trust with companies’ private code. This led to a pivot towards making Sourcegraph open source and self-hosted. Companies could look at Sourcegraph source code for themselves and run their Sourcegraph instance in their own trusted environment.
 
 This early decision, as well as a focus on Enterprise-scale customers, was crucial to gaining traction. Today, many of the world’s largest and most technologically advanced companies like Dropbox, General Electric, PayPal, and many more trust Sourcegraph with their private code.
@@ -47,93 +51,122 @@ We needed to strike the balance between the long-term of what Sourcegraph Cloud 
 
 Instead of orienting around action items or tactical steps, we oriented our efforts around problems that, when solved, would represent the “minimum lovable product” at each iteration, ultimately helping us to validate the overriding assumption that companies would trust us with their private code on a Cloud environment.
 
-At the highest level, these problems looked something like:
+At the highest level, these problems and their dependencies looked something like:
 
-<div className="bg-white rounded max-w-xl mx-auto my-8 pl-0 pr-8 pt-4">
-  - Sourcegraph Cloud is the easiest way for organizations to get started with
-  Sourcegraph. - Small-to-medium organizations can search across their code
-  together on Sourcegraph Cloud. - Individual users can search across their
-  private code on Sourcegraph Cloud. - Sourcegraph team members can search
-  across their private code on Sourcegraph Cloud. - Individual users can search
-  across their public code on Sourcegraph Cloud.
+<div className="bg-white rounded max-w-xl mx-auto my-8 pl-0 pr-8 py-4">
+  <ul className="mt-0">
+    <li>Sourcegraph Cloud is the easiest way for organizations to get started with Sourcegraph.</li>
+    <ul className="mt-0">
+		<li>Small-to-medium organizations can search across their code together on Sourcegraph Cloud.</li>
+    	<ul className="mt-0">
+			<li>Individual users can search across their private code on Sourcegraph Cloud.</li>
+    		<ul className="mt-0">
+				<li>Sourcegraph team members can search across their private code on Sourcegraph Cloud.</li>
+    			<ul className="mt-0">
+					<li>Individual users can search across their public code on Sourcegraph Cloud.</li>
+				</ul>
+			</ul>
+		</ul>
+	</ul>
+  </ul>
 </div>
 
 Each problem was inherently cross-disciplinary and revealed a set of sub-problems we’d have to solve.
 
 And each problem we solved would support each incremental step forward, all in a low-risk, high-confidence way that would help us to build momentum rather than rehashing the same problems again and again.
 
-## Identify foundations
+## Identifying foundations
 
 Once we had a roadmap of problems to solve, we took time to identify what we considered the “foundations”—those decisions that would influence all other decisions and ultimately accelerate future efforts, even if we didn’t act on them right away. Without identifying these foundations, we risked working ourselves into a corner by solving each problem in isolation, rather than as an incremental step within a bigger context.
 
 For us, these foundations turned out to be mostly conceptual: what does it mean to “add code?” What about “connecting with code hosts?” How might that be the same, but different, for an individual user versus an organization? How does code visibility work? What’s the difference between what we’re doing here, and multitenancy? What decisions do we make now that will open up a future path to multitenancy?
 
-We captured these decisions in async artifacts like an exploration of how multitenancy affects existing assumptions around roles and permissions, and an information architecture summary.
+We captured these decisions in async artifacts, such as an exploration of how multitenancy affects existing assumptions around roles and permissions, and an information architecture summary.
 
 import GDoc from "../components/gdoc.jsx";
 
-<div className="max-w-lg mx-auto">
+<div className="max-w-lg mx-auto my-6">
   <GDoc
-    link="https://docs.google.com/document/d/1Xh2_UYQ-kcHcNAXwCSdj9SXOgat8POd3/edit"
+    link="https://docs.google.com/document/d/1L77Y32naj8lQX7vjeLVi8_6tfn-cZWZ0dMYsl7P81wk/"
     title="Sourcegraph Multi-tenancy: Initial thoughts on how multi-tenancy affects existing assumptions around roles and permissions"
   />
   <GDoc
-    link="https://docs.google.com/document/d/1qHigYYB440SfqCfj-Gze38_IJLDY791J/edit"
+    link="https://docs.google.com/document/d/19ItHsVc0yVhYaf13pyO-p5ZvTeUD0LjbY_zMEgjhg1g/"
     title="Sourcegraph Cloud Information Architecture Summary"
   />
 </div>
 
-Async artifacts like these are a core part of how we work asynchronously at Sourcegraph. They make it easy to share and provide thoughtful, considered feedback, and to revisit and build on our shared understanding of these foundations.
+Async artifacts like these are a core part of effective asynchronous, remote collaboration. They make it easy to share and provide thoughtful, considered feedback, and to consistently revisit and build on our shared understanding of these foundations.
 
 ## You ain’t gonna need it (yet)
 
 Having both a clear roadmap of problems and a good idea of the foundations helped us to keep moving forward without feeling like we needed to solve every problem all at once. A big part of this meant constantly revisiting what we needed to do now, and what could be done later.
 
-We know we’ll need a strong invitation flow for organizations (https://docs.google.com/document/d/1DqJWHmVHA6EpyKNAh0h-WNdsOprN8t-xTQbQ4CH8Z3I/edit). The way we connect with code hosts can keep improving. And we know we’ll eventually need things like self-service payments and subscription management. But we ain’t gonna need it yet.
+We knew we’ll need a strong invitation flow for organizations. The way we connect with code hosts can keep improving. And we know we’ll eventually need things like self-service payments and subscription management. But we weren’t going need it yet.
 
-After launching private code for individual users on Cloud, we did a collaborative story-mapping workshop to break out what we knew we’d need to do into a series of iterations that represented a fully functional, lovable product outcome. (https://miro.com/app/board/o9J_l2ceJwU=/?invite_link_id=556797444102)
+<div className="py-8 my-12 sourcegraph-cloud-iterations">
+## A peek inside the iterative process of solving problems
 
-- Generated project: search contexts
-- Previous data showed that users who search code they care about (typically _their_ code) are more likely to have early success with onboarding and understanding the product value
-- Problem of searching _their code_ among the nearly 2.2m repos on Cloud
-  This led to proposing and building search contexts, an entirely new product feature, to solve this problem.
-- See how this unfolded in search contexts project.
+Our approach to each major milestone involved breaking it down into sub-problems, and carrying out an overall end-to-end design process, from discovery, definition, design, and implementation. The general process was similar and predictable for each problem: as a team, we’d create clear problem statements and definitions of success, then move into low-fidelity design with heavy cross-disciplinary collaboration. We'd often test these low-fidelity design prototypes through hallway testing, and once aligned on the solution, we'd use high-fidelity design artifacts as the async source of truth to move into implementation.
 
-First iteration
+Of course, this was an evolving and adaptable process. The goal is to use process to help create predictability in how the team collaborates—rather than to use process to define a linear step by step approach. I consistently take the pragmatic approach in efforts like these: do what makes sense.
 
-- individual users can add their public code
-- "what does it mean to add _my_ code to sourcegraph.com"
-- separate team working on search contexts
+### First milestone: Individual users can search across their public code on Sourcegraph Cloud
 
-Second iteration
+This milestone was all about defining the foundations and aligning the team around a common understanding of how we would get from here there there.
 
-- individual users can add their private code
-- requires code host connections (and login connections)
-- requires permissions handling (in line with agreed system)
+Success for this milestone was defined as: individual users can add and search across their public code from GitHub.com and GitLab.com.
 
-Third iteration
+This opened a bunch of questions like, “What does it mean to **add my code** to Sourcegraph.com?” Much of the initial collaboration here was with engineering to understand and define the information architecture, and figuring out how to evolve the current Sourcegraph product to support this in a sustainable way.
 
-- Handling system state
-- Generated project: system status notifications
+At the same time, we identified a likely future project that would need to be carried out by a different engineering team. Existing data showed us that users who search code they care about (typically **their** code) are more likely to have early success with onboarding and understanding the product value. But when we get to the point of users adding their own code to Sourcegraph Cloud, they'd be searching for their code across nearly 2.2m repos indexed on Cloud. We needed a way to make it effortless for a new user to add their code and have success searching across it right away. This led to proposing and building search contexts (case study coming soon).
 
-Fourth iteration
+### Second milestone: Individual users can search across their private code on Sourcegraph Cloud
 
-- Organizations can add private and public code and organization members can search across that code
-- Code host connection challenge
+This milestone was all about building on the foundation to enable users adding their private code to Sourcegraph Cloud. 
 
-Early access launch for organizations
+Success for this milestone was defined as: individual users on Sourcegraph Cloud can add their private and public code from GitLab.com and GitHub.com, and effortlessly search across it in their first search.
 
-- Generated project: helpful friction
+This required more extensive backend work: we needed to build out code host connections, the permissions handling system, and reach a pretty solid level of confidence that the permissions system would never leak private code to someone who shouldn’t see it.
 
-Launch for commercial organizations
+We also implemented the rest of the interfaces needed to manage repositories, and a simple onboarding flow to make it easy for users to connect with code hosts and add repos they care about before conducting their first search.
 
-- achieved zero to one
-- subsequently more than 100% outperformed target customers for the quarter
+### Third milestone: Small-to-medium organizations can search across their code together on Sourcegraph Cloud
 
-The pivot
+After launching private code for individual users on Cloud, we did a collaborative story-mapping workshop to break out what we knew we’d need to do to support organizations into a series of iterations that represented a fully functional, lovable product outcome.
 
-- While we were working on multitenant cloud, we were also exploring "managed instances" – a way of deploying Sourcegraph where we set up and managed the instance ourselves. Essentially, a type of cloud product. This didn't scale effectively, because it was hands-on, but there was customer appetite for it.
-- We had demonstrated through the combination of the commercial launch of multitenant cloud and the managed instances that our assumption was correct: we'd reached the point of being trusted with customer's private code in the cloud.
-- The triad/quartet myself, the PM, the EM, and a staff engineer frequently revisited our goals and objectives with Cloud. In early 2022, we decided to challenge continuing with multitenant cloud. while we had paying customers and were growing, we felt that the numbers and priorities didn't make sense. the cost and complexity of continuing to build out multitenant cloud massively outstripped the potential revenue and reduced complexity of instead pivoting to single-tenant cloud.
-- This was a decision we felt needed to be owned by the VP and director level, because it had significant impact on roadmap planning and organizational structure. I created the initial RFC together with the PM: https://docs.google.com/document/d/1X1IwuLm-jgB8XU81irnrahUPQlEQjWQY/edit
-- ultimately, this proposal was accepted and the company executed the pivot. single-tenant sourcegraph cloud is now the default deployment option for new customers, and many of our existing self-hosted customers are migrating to cloud.
+Some things we’d have to solve included:
+
+- Organizations can add private and public code and organization members can search across that code.
+- System state is visible to users so that they have confidence they are searching across the most up-to-date code.
+- Enabling users to join and invite others to organizations.
+- A workflow for enabling early access for organizations so that we could test and improve the product before GA.
+
+An interesting small effort that came out of this was the need to introduce helpful friction into the process of connecting organizations with code hosts ([read the case study](/projects/sourcegraph-helpful-friction)).
+
+</div>
+
+## Initial results
+
+We launched Sourcegraph Cloud for small-to-medium businesses in early 2022. Within a day, we achieved zero to one with our first contracted customer. Over the course of the quarter, we more than 100% outperformed our customer targets.
+
+## The pivot
+
+While my team was working on Sourcegraph Cloud as a multitenant product, the company was also exploring “managed instances”—a way of deploying Sourcegraph where Sourcegraph set up and managed the instance ourselves, effectively delivering a different approach to a “cloud-based SaaS deployment.” This didn’t scale, because it was hands-on and heavily involved engineering to manage the instances, but there was growing customer appetite for managed instances.
+
+Between the initial success of multitenant Cloud after launch and the growing demand for managed instances, we felt that our overall assumption was correct: **customers would trust us with their private code in the Cloud**.
+
+The cross-disciplinary triad working on Sourcegraph Cloud—including myself, the product manager, the engineering manage, and a staff engineer—frequently revisited our goals and objectives with our work around multitenant Cloud. 
+
+In early 2022, we decided to challenge that it was the right decision to continue with Cloud as a multitenant product. While we had paying customers and were growing our commercial customer base, we felt that relative to the business priorities, capabilities, and revenue potential, it didn’t make sense as a strategic direct. The cost and complexity of continuing to build out the multitenant Cloud product to deliver a parallel experience as self-hosted massively outstripped the potential revenue and reduced complexity of instead pivoting to single-tenant cloud based on managed instances.
+
+This was a decision we felt needed to be owned by the VP and Director level, because it had significant impact on roadmap planning and organizational structure. I created the initial RFC together with the product manager on the team, and we made the case to senior leadership.
+
+<div className="max-w-lg mx-auto my-6">
+  <GDoc
+    link="https://docs.google.com/document/d/1Lr_saIhmndIMyJVSS2eect3CTN9fslqYoPcMghtbFVk/#"
+    title="RFC XXX: Pivoting Sourcegraph’s SaaS product from shared multitenancy to single tenancy"
+  />
+</div>
+
+Ultimately, this recommendation was accepted, and the company executed on the pivot. Today, single-tenant Sourcegraph Cloud is now the default deployment option for new customers, and many of our existing self-hosted customers are migrating to Cloud.
