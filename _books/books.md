@@ -1,11 +1,30 @@
 ---
 
+- year: 2023
+  books:
+  - title: Locklands
+    author: Robert Jackson Bennett
+    date: January
+    reading: true
+  - title: Shorefall
+    author: Robert Jackson Bennett
+    date: January
 - year: 2022
   books:
+  - title: Foundryside
+    author: Robert Jackson Bennett
+    date: December
+    thoughts: Hit all the notes I wanted in the moment
+  - title: The Mountain in the Sea
+    author: Ray Nayler
+    date: December
+  - title: Leech
+    author: Hiron Ennes
+    date: December
+    thoughts: This clicked in all kinds of ways
   - title: Wayward
     author: Chuck Wendig
     date: November
-    reading: true
   - title: The Expert System's Brother
     author: Adrian Tchaikovsky
     date: November
