@@ -8,8 +8,17 @@ import { getAllProjects } from "../lib/api";
 export default function Projects({ groupedProjects }) {
   // Fetch the user client-side
   const { user } = useUser({
-    redirectTo: "/login",
+    redirectTo: "/login", // Update to redirect to same project
   });
+
+  // Server-render loading state
+  if (!user || user.isLoggedIn === false) {
+    return (
+      <Layout>
+        <p>Loading</p>
+      </Layout>
+    );
+  }
 
   // Once the user request finishes, show the content
   return (
