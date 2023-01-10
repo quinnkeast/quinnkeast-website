@@ -129,6 +129,7 @@ export async function getStaticProps() {
     "title",
     "subtitle",
     "slug",
+    "date",
     "group",
     "size",
     "published",
