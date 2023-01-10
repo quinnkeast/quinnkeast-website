@@ -8,7 +8,8 @@ import { getAllProjects } from "../lib/api";
 export default function Projects({ groupedProjects }) {
   // Fetch the user client-side
   const { user } = useUser({
-    redirectTo: "/login", // Update to redirect to same project
+    redirectTo: "/login",
+    redirectIfFound: "/projects",
   });
 
   // Server-render loading state
