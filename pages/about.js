@@ -76,11 +76,8 @@ function About() {
 
           <p>
             Want to know about my guiding values and how I work as a human? I’ve
-            created a{" "}
-            <Link href="/readme">
-              Quinn.ReadMe
-            </Link>{" "}
-            that acts as a user guide for me.
+            created a <Link href="/readme">Quinn.ReadMe</Link> that acts as a
+            user guide for me.
           </p>
         </div>
       </div>
@@ -97,11 +94,12 @@ function About() {
             2011 – Present
           </p>
           <p>
-            <strong>Sourcegraph</strong> / Universal Code Search & Intelligence Platform
+            <strong>Sourcegraph</strong> / Universal Code Search & Intelligence
+            Platform
             <br />
             Staff Product Designer
             <br />
-            2022 – Present
+            2022 – 2023
             <br />
             Senior Product Designer
             <br />
