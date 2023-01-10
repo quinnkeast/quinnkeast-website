@@ -6,8 +6,8 @@ import useUser from "../lib/useUser";
 function Login() {
   // check if already logged in and redirect if so
   const { mutateUser } = useUser({
-    redirectTo: "/projects",
-    redirectIfFound: true,
+    redirectTo: "/login",
+    redirectIfFound: "/projects",
   });
 
   const [errorMsg, setErrorMsg] = useState("");

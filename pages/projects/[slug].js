@@ -16,7 +16,10 @@ export default function Project({ project, moreProjects, preview }) {
   }
 
   // Fetch the user client-side
-  const { user } = useUser({ redirectTo: "/login" });
+  const { user } = useUser({
+    redirectTo: "/login",
+    redirectIfFound: `/projects/${project.slug}`,
+  });
 
   // Server-render loading state
   if (!user || user.isLoggedIn === false) {

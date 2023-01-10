@@ -5,7 +5,7 @@ hero: "Exploring a product solution for code security in Sourcegraph"
 client: "Sourcegraph"
 role: "Product Design Lead, Researcher"
 period: "2022"
-published: false
+published: true
 restricted: true
 group: "sourcegraph"
 size: "medium"
@@ -68,7 +68,7 @@ This means:
 - Knowing the best way to upgrade with minimum side effects.
 - Rolling out those upgrades at scale.
 
-This was a challenging problem to solve because knowing a vulnerability exists isn’t the same as knowing that you’re actually exposed to it. Focusing on the dependency graph problem space will help companies and leaders to answer these questions and understand their risk profile, as well as how to best proceed with updating dependencies at scale.
+This was a challenging problem to solve because knowing a vulnerability exists isn’t the same as knowing that you’re actually exposed to it. Focusing on the dependency graph problem space would help companies and leaders to answer these questions and understand their risk profile, as well as how to best proceed with updating dependencies at scale.
 
 Relative to the other potential problems the company could focus on, we felt this was a valuable problem to solve right now because:
 
@@ -83,10 +83,26 @@ Relative to the other potential problems the company could focus on, we felt thi
 
 ## Design and exploration
 
-- I worked together with the lead engineer to explore how we might expose the dependency graph in Sourcegraph. Some ways that we considered:
-  - Creating a separate feature area for code security
-  - Adding dependencies to the search query language and surfacing dependencies as a search result type that can be explored
-  - Visual dependency graphs
+With a clear hypothesis and set of problems, I led the team in going wide to explore the solution space. There were many possible approaches we could take, each with a different set of constraints around implementation, complexity, and how the solution was presented and accessed in the product.
+
+Exploring these approaches involved a lot of collaborative thinking made tangible: story and problem mapping, sketchy interface flows, rapid prototypes, and more.
+
+<figure className="bg-white p-4">
+  <img src="/assets/projects/code-security-low-fidelity.png" />
+</figure>
+
+As we further converged the dependency graph, some approaches that we considered included:
+
+- Creating a separate feature area for code security.
+- Adding dependencies to the search query language and surfacing dependencies as a search result type that can be explored.
+- Visual dependency graphs that can be shown alongside search results.
+  
+<figure>
+  <div className="bg-white p-4">
+  <img src="/assets/projects/code-security-search-results.png" />
+  </div>
+  <figcaption>Our most promising direction that we began building into the product involved surfacing dependencies as a type of search result.</figcaption>
+</figure>
 
 ## Stacked moonshots
 
