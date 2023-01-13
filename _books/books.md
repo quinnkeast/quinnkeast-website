@@ -2,10 +2,14 @@
 
 - year: 2023
   books:
+  - title: Beyond the Burn Line
+    author: Paul McAuley
+    date: January
+    reading: true
   - title: Locklands
     author: Robert Jackson Bennett
     date: January
-    reading: true
+    thoughts: This is a different book than others in the series, but I enjoyed it
   - title: Shorefall
     author: Robert Jackson Bennett
     date: January
