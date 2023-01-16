@@ -3,9 +3,9 @@ title: "Code Monitoring in Sourcegraph"
 subtitle: "Conceptualizing and launching a new flagship product feature in Sourcegraph."
 hero: "Conceptualizing and launching a new flagship product feature in Sourcegraph"
 client: "Sourcegraph"
-role: "Product Design Lead"
-period: "2022"
-published: false
+role: "Product Design Lead, Pseudo-Product Manager"
+period: "2020 – 2021"
+published: true
 restricted: true
 date: "2023-01-06"
 group: "sourcegraph"
@@ -16,45 +16,95 @@ thumbnail:
   url: "/assets/projects/ux-team.jpg"
 ---
 
-- One of the first things I worked on at Sourcegraph
-- "Saved searches / saved search notifications"
-- Open-ended problem space: known to be used and useful, but consistent feedback that it's hard to use and confusing
-- As designer, asked to explore the problem space and propose what to do
+**Sourcegraph is a universal code search and intelligence platform.** Tens of thousands of developers in some of the largest companies around the world rely on [Sourcegraph](https://sourcegraph.com) to search across and navigate all of their company’s code on all of their code hosts.
+
+<figure>
+  <img src="/assets/projects/sourcegraph-logo-light.svg" width="300" height="50" />
+</figure>
+
+During the period of 2020-2021, I worked together with Sourcegraph’s “Search Product” team to explore opportunities to increase the value of Sourcegraph to developers based on the existing Search product’s capabilities. We had a powerful product, but at a high level, there weren’t many “push” moments related to the product that would trigger a moment of engagement within their workflows; instead, we relied on developers remembering and reaching for Sourcegraph.
+
+We had identified one feature area that already existed that delivered some level of a “push” moment: “saved searches & saved search notifications.” We knew that a couple of our Enterprise customers were using this feature, but adoption was low across the board and we didn’t know much about why these customers were using it—in fact, we weren’t certain how this feature had come about in the first place.
+
+We recognized this as an open-ended problem space. As a designer, I kicked off and carried out a project which ultimately led to proposing, designing, and launching a new flagship product feature in Sourcegraph: Code Monitoring.
+
+----
 
 ## Discovery
 
-- Research to understand the features, how they're used, how they came about
-- Review user feedback
-- Interviews with customers that used the saved search notifications
-- Together with engineers, a picture became clear: these two features are two separate things that got tangled together
+To better understand the problem space we were working in, I planned a lean research effort to learn about the existing saved searches & saved search notifications feature, how it was being used, and the problems and opportunities surrounding it.
 
-## Strategy
+For context: with saved searches, developers were able to save a given search query for future use, rather than having to remember a complex search query involving many filters and complex pattern matching. Saved search notifications were tacked on top of these saved searches: at some point in the past, a customer had requested a way to receive a notification email when a given search query returned a different set of search results from when the search query was originally saved, and at each point those search results changed in the future.
 
-- From the research, identified clear problems
-- Captured these in a design challenge and collaborated with engineers on the team to propose a new feature: Code monitoring.
+Together with members of the engineering team and one of our product managers, I led the team in reviewing existing user and customer feedback, examining existing usage analytics data, and identifying folks to reach out to for user interviews within a few of our existing Enterprise customers.
+
+I guided the team in capturing and synthesizing insights from these discovery activities. It wasn’t long before a picture became clear: these two concepts of “saved searches” and “saved search notifications” were two separate things that got tangled together, creating a series of conceptual and usability problems—and yet, we could see a big opportunity around how “saved search notifications” could provide value to our customers while creating a strong “push” moment into the product.
+
+## Definition
+
+Sourcegraph’s globally-distributed remote team calls for thoughtful async-first communication and collaboration. Throughout the discovery and definition phases of this effort, I used artifacts like Google Docs, Excalidraw, and Figma as the basis for collaboration. 
+
+I created a living RFC for this effort, where we defined a set of problem statements and top problems, which would be used as the basis for design exploration.
 
 import GDoc from "../components/gdoc.jsx";
 
 <div className="max-w-lg mx-auto">
   <GDoc
-	link="https://docs.google.com/document/d/1_R5DgpUkxyZilsJ9vBQm5cvRPT2udc3tZIPg2q3cnZU/edit#"
-	title="RFC 227: Code Monitoring"
+  link="https://docs.google.com/document/d/13GfnRQLy8A273SQ-MDtxEfivzO5jStpa9JusMToO2EU"
+  title="RFC 227: Code Monitoring"
   />
 </div>
 
+A couple examples of the **problem statements** we defined include:
+
+- We’ve observed that the “saved search” notification emails Sourcegraph sends today create an extra alerting system for users to consume that doesn’t provide the benefits already present in their existing alerting systems, which creates more “noise” without contributing to existing UI metrics or creating positive social pressures. If we expand the types of notification channels available to users to align with the channels they’re already using, it will make “saved search” notifications more valuable and usable for our users.
+
+- We’ve observed that the functionality, purpose, and value of “saved searches” in relation to notifications isn’t clear or intuitive in the product, which makes it less likely our users will explore and adopt the feature. If we improve this, we’ll make it easier for users to understand the purpose and benefits of code monitoring and actions/notifications.
+
+Some of the **top problems** include:
+
+- The way “saved searches” are implemented today is not intuitive and blurs the purpose of the feature by combining the separate concepts of “saved search for easy re-use” and “code monitoring and notifications,” which makes it less obviously useful for users.
+- Notifications can’t be consumed on Sourcegraph itself, which makes notifications hard to monitor and rely upon.
+- The search types available for “saved search” queries that can result in notifications are limited to diffs and commits, but this isn’t clearly communicated, which makes the workflow for defining “saved search notifications” confusing.
+
+Once we felt we had a good understanding of these problems and opportunities, we moved into low-fidelity design exploration.
+
 ## Design
 
-- Based on the design challenge, did low-fidelity exploration of how we might approach designing this feature
+I focused design exploration on did low-fidelity exploration of how we might approach designing this feature
+
 - Low fidelity to focus on problems being solved and the interaction model and workflow
 - Collaboration with engineering and PM during
 - Converged on a promising approach
+
+<figure className="bg-white p-4">
+  <img src="/assets/projects/code-monitoring-low-fidelity.png" />
+</figure>
+
 - Identified a good iterative approach that would get us to a shipped, testable feature as quickly as possible
 - Landed on clear definition of first iteration
 - Core UI, single trigger, single action with limited recipients
 - In low fidelity, explored possible future state to make sure approach was systematically sustainable and presented a vision of the future
+
+import Figma from "../components/figma.jsx";
+
+<div className="max-w-lg mx-auto my-6">
+  <Figma
+  link="https://www.figma.com/file/KRFcZFjTnJqfon5vs2o0ap/Code-Monitoring-Low-Fidelity-Artifact?node-id=1%3A357&t=3H1mFpqE5jAcIdwS-1"
+  title="Design artifact: Low fidelity design documentation"
+  thumbnail="/assets/projects/code-monitoring-design-artifact.png" />
+</div>
+
 - Conducted user testing with customers using low-fidelity prototypes, iterated based on this
 - High fidelity of first iteration
 - Design artifact as source of truth
+
+<div className="max-w-lg mx-auto my-6">
+  <Figma
+  link="https://www.figma.com/file/5IYZq4CKpZTUYfNEPV0P12/Code-Monitoring-Initial-Implementation?node-id=0%3A1&t=BiZn1YutruLkUGsx-1"
+  title="Design artifact: High-fidelity design documentation"
+  thumbnail="/assets/projects/code-monitoring-high-fidelity-design-artifact.png" />
+</div>
 
 ## Delivery
 
