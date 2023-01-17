@@ -4,7 +4,7 @@ export default function Figma({ link, title, thumbnail }) {
       <div className="flex flex-col bg-white rounded-md p-4 my-4 shadow">
         {thumbnail && (
           <div className="flex flex-row mb-3">
-            <img src={thumbnail} className="rounded-md" />
+            <img src={thumbnail} className="rounded-lg" />
           </div>
         )}
         <div className="flex flex-row items-center">
