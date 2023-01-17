@@ -36,7 +36,7 @@ export default function Home() {
               <p>
                 <strong>Say hello</strong>
                 <br />
-                <a href="mailto:hello@quinnkeast.com">hello@quinnkeast.com</a>
+                <a href="mailto:hey@quinnkeast.com">hey@quinnkeast.com</a>
               </p>
             </div>
           </div>

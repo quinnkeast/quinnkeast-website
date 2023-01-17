@@ -177,7 +177,7 @@ function Speaking() {
             I’m always interested in new speaking engagements on existing topics
             or new ideas. If you’re interested in having me speak at your event
             or run a workshop with your team, please get in touch at{" "}
-            <a href="mailto:hello@quinnkeast.com">hello@quinnkeast.com</a>!
+            <a href="mailto:hey@quinnkeast.com">hey@quinnkeast.com</a>!
           </p>
         </div>
       </div>
