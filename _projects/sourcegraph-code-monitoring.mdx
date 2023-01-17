@@ -71,20 +71,18 @@ Once we felt we had a good understanding of these problems and opportunities, we
 
 ## Design
 
-I focused design exploration on did low-fidelity exploration of how we might approach designing this feature
+I oriented design exploration and collaboration around lower-fidelity artifacts like Excalidraw whiteboarding and wireframing in Figma. My priority at this moment was to engage the engineering team around the problem space and user workflows, rather than the specific visual details of the user interface. In Sourcegraph’s remote, async-first environment, it became all the more important to use these artifacts to capture our thinking, assumptions, and guide discussion.
 
-- Low fidelity to focus on problems being solved and the interaction model and workflow
-- Collaboration with engineering and PM during
-- Converged on a promising approach
+One of the things I love about working in the lowest possible fidelity when in an open-ended problem space is how easily we can explore and blend together many different things—user flows, information architecture, concepts and mental models, and loose experimental interfaces.
 
-<figure className="bg-white p-4">
-  <img src="/assets/projects/code-monitoring-low-fidelity.png" />
+<figure>
+  <img src="/assets/projects/code-monitoring-low-fidelity.png" className="bg-white p-4" />
+  <figcaption>A snippet of the low-fidelity “breadboarding” around how the interface might work.</figcaption>
 </figure>
 
-- Identified a good iterative approach that would get us to a shipped, testable feature as quickly as possible
-- Landed on clear definition of first iteration
-- Core UI, single trigger, single action with limited recipients
-- In low fidelity, explored possible future state to make sure approach was systematically sustainable and presented a vision of the future
+Before too long, we found ourselves converging on an approach that felt like an effective and sustainable solution to the problem spaces: code monitoring would be a separate product feature area, helping developers to keep track of and get notified about changes in their code. Some specific existing use cases that we could solve in the earliest iteration would include getting notifications for potential secrets, anti-patterns, or common typos committed to a user’s codebase.
+
+Conceptually, code monitors would be an entity, which would contain a single **trigger**, defined by a search query, and any number of **actions** that would be carried out in response.
 
 import Figma from "../components/figma.jsx";
 
@@ -95,9 +93,9 @@ import Figma from "../components/figma.jsx";
   thumbnail="/assets/projects/code-monitoring-design-artifact.png" />
 </div>
 
-- Conducted user testing with customers using low-fidelity prototypes, iterated based on this
-- High fidelity of first iteration
-- Design artifact as source of truth
+With this underlying concept in place, I explored and prototyped the initial user interface—both to explore how the first iteration might be implemented, and to make sure the approach was systematically sustainable and presented a vision of the future. We took this prototype into testing with the folks we’d contacted during the discovery phase. Here, our goal was to validate that this solution effectively solved the problem they were using saved search notifications to solve today, check the conceptual model, and look for gaps or opportunities for further iterations.
+
+Based on the outcomes of the testing and the team’s feedback and contributions, I then created a high-fidelity design artifact for the first iteration that captured all behaviours, logic, and assumptions.
 
 <div className="max-w-lg mx-auto my-6">
   <Figma
@@ -108,12 +106,23 @@ import Figma from "../components/figma.jsx";
 
 ## Delivery
 
-- First iteration built and shipped
-- HEART framework used to track adoption and engagement
-- Based on feedback from customers, confident in approach
+One of the challenges of working on a self-hosted product is the iteration cycle: a new version would be released each month, and any new features or experiments would only become available when a customer upgraded their instance to the latest version of Sourcegraph. This often means that we can’t get feedback on our ideas and efforts for several months after something ships.
+
+Thankfully, we had a couple of customers who were hankering for code monitoring, especially after getting a sneak preview in our user testing. The engineering team built out the first version of Code Monitoring behind a feature flag, which let us ship it in the next release, and immediately start getting feedback.
+
+We learned quickly from these customers that we had a usability issue around crafting valid search queries to be used in triggers. Unlike everyday code searches, the search queries used in code monitors had a specific set of constraints, and it was easy to make mistakes. This led to a quick follow-up project where I ended up mirroring the “password criteria” pattern as a means of validating against several independent constraints.
+
+<div className="max-w-lg mx-auto my-6">
+  <Figma
+  link="https://www.figma.com/file/O6dMwRoVwfv05UoXuykLsY/Code-Monitoring-Validation-Checklist?node-id=0%3A1&t=RYC3lqwqxBawfXSb-1"
+  title="Design artifact: Validation Checklist"
+  thumbnail="/assets/projects/code-monitoring-validation-checklist.png" />
+</div>
 
 ## Results
 
-- Heavily used by many of our largest customers
-- A key part of early sales conversations and frequently mentioned as a contributor in landing new customers
-- Design approach formed basis of year-long feature roadmap, building on top of the MLP, unlocking additional value for new customers
+As a first iteration, code monitoring was quite successful. All of our customers who had been using saved search notifications migrated to code monitoring, and we quickly began to hear feedback about other notification channels and actions that they’d like to use. Through product analytics, we learned that code monitoring is used heavily when adopted by a given user: if they have one thing to monitor, they likely have many.
+
+Our initial design approach formed the basis of a year-long feature roadmap, which built on top of the minimum lovable product to add things like webhooks, Slack notifications, expanded trigger query capabilities, and more, all ultimately unlocking additional value for existing and new customers.
+
+Code monitoring as a product feature also became a key part of early sales conversations, particularly those oriented around security or code quality use cases, and is frequently mentioned as a contributor when landing new customers. 
