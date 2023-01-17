@@ -17,7 +17,7 @@ export default function Project({ project, moreProjects, preview }) {
 
   // Fetch the user client-side
   const { user } = useUser({
-    redirectTo: "/login",
+    redirectTo: `/login?ref=${project.slug}`,
     redirectIfFound: `/projects/${project.slug}`,
   });
 
@@ -25,7 +25,7 @@ export default function Project({ project, moreProjects, preview }) {
   if (!user || user.isLoggedIn === false) {
     return (
       <Layout>
-        <p>loading</p>
+        <div className="min-h-screen block"></div>
       </Layout>
     );
   }
@@ -34,7 +34,7 @@ export default function Project({ project, moreProjects, preview }) {
   return (
     <Layout preview={preview}>
       {router.isFallback ? (
-        <ProjectTitle>Loading…</ProjectTitle>
+        <h1>Loading…</h1>
       ) : (
         <>
           <article className="mb-0">
