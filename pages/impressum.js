@@ -11,7 +11,7 @@ function Impressum() {
         <div className="col-span-3 col-start-2 content">
         <h3>Quinn Keast-Wiatrowski</h3>
         <p>
-          <a href="mailto:hello@quinnkeast.com">hello@quinnkeast.com</a>
+          <a href="mailto:hey@quinnkeast.com">hey@quinnkeast.com</a>
           <br />
           Dieffenbachstrasse 58, 10967 Berlin
           <br />
