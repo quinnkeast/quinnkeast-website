@@ -1,16 +1,16 @@
 import Head from "next/head";
-import Script from "next/script";
+//import Script from "next/script";
 
 import { HOME_OG_IMAGE_URL, SITE_NAME } from "../lib/constants";
 
 export default function Meta() {
   return (
     <Head>
-      <Script
+      <script
         src="https://stirring-ziggy-stardust.quinnkeast.com/script.js"
         site={process.env.FATHOM}
         defer
-      ></Script>
+      ></script>
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <title>{SITE_NAME}</title>
       <meta
