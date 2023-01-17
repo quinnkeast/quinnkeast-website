@@ -1,13 +1,16 @@
 import Head from "next/head";
 import Layout from "../components/layout";
 import { useState } from "react";
+import { useRouter } from "next/router";
 import useUser from "../lib/useUser";
 
 function Login() {
+  const { query } = useRouter();
   // check if already logged in and redirect if so
+  console.log(query);
+
   const { mutateUser } = useUser({
-    redirectTo: "/login",
-    redirectIfFound: "/projects",
+    redirectIfFound: query.ref ? `/projects/${query.ref}` : "/projects",
   });
 
   const [errorMsg, setErrorMsg] = useState("");
