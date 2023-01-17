@@ -2,10 +2,14 @@
 
 - year: 2023
   books:
+  - title: City of Stairs
+    author: Robert Jackson Bennett
+    date: January
+    reading: true
+    thoughts: Occasionally I discover an author I didn’t know and oh look so many books to read!
   - title: Beyond the Burn Line
     author: Paul McAuley
     date: January
-    reading: true
   - title: Locklands
     author: Robert Jackson Bennett
     date: January
