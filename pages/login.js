@@ -6,9 +6,8 @@ import useUser from "../lib/useUser";
 
 function Login() {
   const { query } = useRouter();
-  // check if already logged in and redirect if so
-  console.log(query);
 
+  // check if already logged in and redirect if so
   const { mutateUser } = useUser({
     redirectIfFound: query.ref ? `/projects/${query.ref}` : "/projects",
   });
