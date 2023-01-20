@@ -15,6 +15,11 @@ export default function Footer() {
             <h5 className="text-sm md:text-base">Semi-Social</h5>
             <ul className="list-none ml-0 mt-2">
               <li>
+                <a href="https://www.github.com/quinnkeast/" target="_blank">
+                  GitHub
+                </a>
+              </li>
+              <li>
                 <a
                   href="https://www.linkedin.com/in/quinn-keast/"
                   target="_blank"
@@ -25,12 +30,18 @@ export default function Footer() {
               <li>
                 <a href="http://twitter.com/quinnkeast" target="_blank">
                   Twitter
-                </a>
+                </a>{" "}
+                <span className="rounded-lg inline-block bg-yellow bg-opacity-20 text-yellow-700 text-xs px-2 ml-1">
+                  Abandoned
+                </span>
               </li>
               <li>
                 <a href="https://medium.com/@quinnkeast" target="_blank">
                   Medium
-                </a>
+                </a>{" "}
+                <span className="rounded-lg inline-block bg-yellow bg-opacity-20 text-yellow-700 text-xs px-2 ml-1">
+                  Inactive
+                </span>
               </li>
             </ul>
           </div>
