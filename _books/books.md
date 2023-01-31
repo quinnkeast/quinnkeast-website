@@ -2,10 +2,32 @@
 
 - year: 2023
   books:
+  - title: Chaos Vector
+    author: Megan E. O’Keefe
+    date: January
+    reading: true
+  - title: The Man in the High Castle
+    author: Philip K. Dick
+    date: January
+    reading: true
+  - title: The Illustrated Man
+    author: Ray Bradbury
+    date: January
+  - title: City of Blades
+    author: Rober Jackson Bennett
+    date: January
+    reading: true
+  - title: Echopraxia
+    author: Peter Watts
+    date: January
+    thoughts: Didn’t finish
+  - title: Blindsight
+    author: Peter Watts
+    date: January
+    thoughts: Not for me—I found it very “down”
   - title: City of Stairs
     author: Robert Jackson Bennett
     date: January
-    reading: true
     thoughts: Occasionally I discover an author I didn’t know and oh look so many books to read!
   - title: Beyond the Burn Line
     author: Paul McAuley
@@ -33,7 +55,7 @@
   - title: Wayward
     author: Chuck Wendig
     date: November
-  - title: The Expert System's Brother
+  - title: The Expert System’s Brother
     author: Adrian Tchaikovsky
     date: November
   - title: Defending Elysium
@@ -56,7 +78,6 @@
   - title: Thistlefoot
     author: GennaRose Nethercott
     date: October
-    reading: true
   - title: From the Wreck
     author: Jane Rawson
     date: October
@@ -138,7 +159,7 @@
   - title: Hummingbird Salamander
     author: Jeff Vandermeer
     date: July
-    reading: true
+    thoughts: Didn’t finish for some reason
   - title: Drunk on All Your Strange New Words
     author: Eddie Robson
     date: June
@@ -159,7 +180,6 @@
   - title: Until the Last of Me
     author: Sylvain Neuvel
     date: June
-    reading: true
   - title: Gallant
     author: V. E. Schwab
     date: May
