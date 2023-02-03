@@ -6,8 +6,7 @@ import PostBody from "../../components/post-body";
 import Tags from "../../components/tags";
 import { getTalkBySlug, getAllTalks } from "../../lib/api";
 import Head from "next/head";
-
-import markdownToHtml from "../../lib/markdownToHtml";
+import mdxToHtml from "../../lib/mdxToHtml";
 
 export default function Talk({ talk, moreTalks, preview }) {
   const router = useRouter();
@@ -90,7 +89,7 @@ export async function getStaticProps({ params }) {
     "wide",
   ]);
 
-  const content = await markdownToHtml(talk.content || "");
+  const content = (await mdxToHtml(talk.content)) || "";
 
   return {
     props: {
@@ -103,7 +102,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const talks = []; //TODO repair talk then --> getAllTalks(["slug"]);
+  const talks = getAllTalks(["slug"]); //TODO repair talk then --> getAllTalks(["slug"]);
 
   return {
     paths: talks.map((talk) => {
