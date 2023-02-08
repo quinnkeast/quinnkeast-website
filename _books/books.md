@@ -9,7 +9,7 @@
   - title: The Man in the High Castle
     author: Philip K. Dick
     date: January
-    reading: true
+    thoughts: Good story, older-style prose
   - title: The Illustrated Man
     author: Ray Bradbury
     date: January
