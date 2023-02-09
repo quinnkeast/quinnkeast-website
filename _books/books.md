@@ -16,7 +16,7 @@
   - title: City of Blades
     author: Rober Jackson Bennett
     date: January
-    reading: true
+    thoughts: Really enjoyed having a different PoV character from the first book
   - title: Echopraxia
     author: Peter Watts
     date: January
