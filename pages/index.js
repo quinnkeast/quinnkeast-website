@@ -14,13 +14,13 @@ export default function Home() {
             interesting problems by putting people first—from product vision to
             the last 5%.
           </h1>
-          <h2 className="text-base md:text-2xl font-normal tracking-snug leading-tight md:leading-tight">
+          {/*<h2 className="text-base md:text-2xl font-normal tracking-snug leading-tight md:leading-tight">
             Staff product designer. Also partner at{" "}
             <a href="https://caribou.co" target="_blank">
               Caribou
             </a>
             .
-          </h2>
+          </h2>*/}
           <div className="grid md:grid-cols-3 mt-2 md:mt-8">
             <div className="col-1">
               <p>
