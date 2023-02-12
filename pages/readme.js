@@ -136,10 +136,7 @@ function ReadMe() {
             picture.
           </p>
           <p>
-            <strong>I bias towards action.</strong> I love discussing ideas and
-            possibilities, but I believe the best way to get things done is to
-            get started. Trying things and making mistakes along the way is the
-            best way to learn and get better.
+            <strong>I bias towards <s>action</s> <u>impact</u>.</strong> I believe in being pragmatic about doing things that have the most meaningful impact in the immediate context. While that often looks like a bias for action, it’s more about being thoughtful about impact and doing what will help us learn and get better.
           </p>
           <p>
             <strong>I assume positive intent.</strong> I assume people have
