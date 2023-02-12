@@ -22,7 +22,7 @@
     author: Ray Bradbury
     date: January
   - title: City of Blades
-    author: Rober Jackson Bennett
+    author: Robert Jackson Bennett
     date: January
     thoughts: Really enjoyed having a different PoV character from the first book
   - title: Echopraxia
