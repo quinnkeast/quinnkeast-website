@@ -2,10 +2,14 @@
 
 - year: 2023
   books:
+  - title: The Measure
+    author: Nikki Erlick
+    date: February
+    reading: true
   - title: Tress of the Emerald Sea
     author: Brandon Sanderson
     date: February
-    reading: true
+    thoughts: Adored this book, adored the deaf character and their parallel-to-me adaptations
   - title: Chaos Vector
     author: Megan E. O’Keefe
     date: February
