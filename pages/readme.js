@@ -236,9 +236,9 @@ function ReadMe() {
             </strong>{" "}
             It’s fun to talk about and makes it easier to work together.
           </p>
-          <h3>How My Hearing Affects My Work as a UX Designer</h3>
+          <h3>How My Hearing Affects My Work as a designer</h3>
           <p>
-            <strong>It doesn’t affect my work as a UX designer.</strong> We live
+            <strong>It doesn’t affect my work as a designer.</strong> We live
             in an amazing world full of amazing people and amazing technology.
             Slack and emails replace phone calls. Video conferencing has text
             messaging and there are real-time speech-to-text options available
@@ -247,12 +247,12 @@ function ReadMe() {
           </p>
           <h3>How My Hearing Affects Work and Life in General</h3>
           <p>
-            <strong>Lip reading in larger groups is exhausting.</strong> I’ll be
+            <strong>Lip reading in person in larger groups is exhausting.</strong> I’ll be
             very tuckered out at the end of the day.
           </p>
           <p>
             <strong>
-              I will be quieter in larger meetings where I’m an attendee, not
+              I will be quieter in larger, in-person meetings where I’m an attendee, not
               the facilitator.
             </strong>{" "}
             This doesn’t mean I’m not engaged: it just means I’m focusing on
