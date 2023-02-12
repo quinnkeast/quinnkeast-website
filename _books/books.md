@@ -2,14 +2,18 @@
 
 - year: 2023
   books:
+  - title: Tress of the Emerald Sea
+    author: Brandon Sanderson
+    date: February
+    reading: true
   - title: Chaos Vector
     author: Megan E. O’Keefe
-    date: January
+    date: February
     reading: true
   - title: The Man in the High Castle
     author: Philip K. Dick
-    date: January
-    thoughts: Good story, older-style prose
+    date: February
+    thoughts: Good plot, great alt history, horrible characterization and ending
   - title: The Illustrated Man
     author: Ray Bradbury
     date: January
