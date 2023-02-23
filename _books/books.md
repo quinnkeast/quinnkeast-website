@@ -2,10 +2,42 @@
 
 - year: 2023
   books:
+  - title: Hell Bent
+    author: Leigh Bardugo
+    date: February
+    reading: true
+  - title: Fugitive Telemetry
+    author: Martha Wells
+    date: February
+    thoughts: Really enjoyed the indication that Murderbot’s way of being is just them, not a SecUnit thing
+  - title: Network Effect
+    author: Martha Wells
+    date: February
+    thoughts: Comfortable popcorn reading at this point
+  - title: The Sound on the Page
+    author: Ben Yagoda
+    date: February
+    reading: true
+    thoughts: Starting to include the nonfiction reads in this list too
+  - title: Exit Strategy
+    author: Martha Wells
+    date: February
+  - title: Rogue Protocol
+    author: Martha Wells
+    date: February
+  - title: City of Miracles
+    author: Robert Jackson Bennett
+    date: February
+  - title: Artificial Condition
+    author: Martha Wells
+    date: February
+  - title: All Systems Red
+    author: Martha Wells
+    date: February
+    thought: Really appreciated the narrative approach to filling in the details
   - title: The Measure
     author: Nikki Erlick
     date: February
-    reading: true
   - title: Tress of the Emerald Sea
     author: Brandon Sanderson
     date: February
