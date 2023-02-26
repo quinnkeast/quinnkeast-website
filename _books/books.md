@@ -2,6 +2,10 @@
 
 - year: 2023
   books:
+  - title: The Trial
+    author: Franz Kafka
+    date: February
+    reading: true
   - title: Hell Bent
     author: Leigh Bardugo
     date: February
@@ -17,7 +21,6 @@
   - title: The Sound on the Page
     author: Ben Yagoda
     date: February
-    reading: true
     thoughts: Starting to include the nonfiction reads in this list too
   - title: Exit Strategy
     author: Martha Wells
