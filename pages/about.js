@@ -87,6 +87,13 @@ function About() {
         </div>
         <div className="md:col-span-2">
           <p>
+            <strong>Airplane</strong> / Dev Infrastructure for Internal Tools
+            <br />
+            Product Design
+            <br />
+            Present
+          </p>
+          <p>
             <strong>Caribou</strong> / Strategy &amp; Design Consultancy
             <br />
             UX &amp; Product Designer, Partner
