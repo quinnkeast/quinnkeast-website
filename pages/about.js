@@ -91,7 +91,7 @@ function About() {
             <br />
             Product Design
             <br />
-            Present
+            2023 – Present
           </p>
           <p>
             <strong>Caribou</strong> / Strategy &amp; Design Consultancy
