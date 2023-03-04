@@ -2,10 +2,21 @@
 
 - year: 2023
   books:
+  - title: Record of a Spaceborn Few
+    author: Becky Chambers
+    date: March
+    reading: true
+  - title: Family Lexicon
+    author: Natalia Ginzburg
+    date: March
+    reading: true
+  - title: A Closed and Common Orbit
+    author: Becky Chambers
+    date: February
   - title: The Trial
     author: Franz Kafka
     date: February
-    reading: true
+    thoughts: I’ve decided I can’t stand Kafka
   - title: Hell Bent
     author: Leigh Bardugo
     date: February
