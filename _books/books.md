@@ -2,10 +2,13 @@
 
 - year: 2023
   books:
+  - title: A Big Ship at the Edge of the Universe
+    author: Alex White
+    date: March
+    reading: true
   - title: Record of a Spaceborn Few
     author: Becky Chambers
     date: March
-    reading: true
   - title: Family Lexicon
     author: Natalia Ginzburg
     date: March
