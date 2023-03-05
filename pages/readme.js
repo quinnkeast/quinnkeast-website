@@ -136,7 +136,13 @@ function ReadMe() {
             picture.
           </p>
           <p>
-            <strong>I bias towards <s>action</s> <u>impact</u>.</strong> I believe in being pragmatic about doing things that have the most meaningful impact in the immediate context. While that often looks like a bias for action, it’s more about being thoughtful about impact and doing what will help us learn and get better.
+            <strong>
+              I bias towards <s>action</s> <u>impact</u>.
+            </strong>{" "}
+            I believe in being pragmatic about doing things that have the most
+            meaningful impact in the immediate context. While that often looks
+            like a bias for action, it’s more about being thoughtful about
+            impact and doing what will help us learn and get better.
           </p>
           <p>
             <strong>I assume positive intent.</strong> I assume people have
@@ -150,7 +156,7 @@ function ReadMe() {
             about my hearing. I find that it’s easiest to work together when you
             know exactly what to expect.
           </p>
-          <h3>How My Hearing Works</h3>
+          <h3>How my hearing works</h3>
           <p>
             <strong>I have sensorineural hearing loss.</strong> This means that
             the small hair cells in my cochlea are broken down, and don’t
@@ -186,7 +192,7 @@ function ReadMe() {
             <strong>I don’t know sign language.</strong> I never had any need
             for it. I’m also not part of the Deaf community.
           </p>
-          <h3>How to Make Things Easy for Both of Us</h3>
+          <h3>How to make things easy for both of us</h3>
           <p>
             <strong>I can’t hear you on phone or video calls.</strong> There’s
             something about a 2D screen and inconsistent video quality that
@@ -236,24 +242,26 @@ function ReadMe() {
             </strong>{" "}
             It’s fun to talk about and makes it easier to work together.
           </p>
-          <h3>How My Hearing Affects My Work as a designer</h3>
+          <h3>How my hearing affects my work as a designer</h3>
           <p>
-            <strong>It doesn’t affect my work as a designer.</strong> We live
-            in an amazing world full of amazing people and amazing technology.
+            <strong>It doesn’t affect my work as a designer.</strong> We live in
+            an amazing world full of amazing people and amazing technology.
             Slack and emails replace phone calls. Video conferencing has text
             messaging and there are real-time speech-to-text options available
             to me. And if I just can’t lip read something you said, there’s
             probably a device around that would let you type it out.
           </p>
-          <h3>How My Hearing Affects Work and Life in General</h3>
+          <h3>How my hearing affects work and life in general</h3>
           <p>
-            <strong>Lip reading in person in larger groups is exhausting.</strong> I’ll be
-            very tuckered out at the end of the day.
+            <strong>
+              Lip reading in person in larger groups is exhausting.
+            </strong>{" "}
+            I’ll be very tuckered out at the end of the day.
           </p>
           <p>
             <strong>
-              I will be quieter in larger, in-person meetings where I’m an attendee, not
-              the facilitator.
+              I will be quieter in larger, in-person meetings where I’m an
+              attendee, not the facilitator.
             </strong>{" "}
             This doesn’t mean I’m not engaged: it just means I’m focusing on
             understanding what’s being said and avoiding the embarrassment of
