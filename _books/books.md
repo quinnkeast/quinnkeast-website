@@ -2,17 +2,20 @@
 
 - year: 2023
   books:
+  - title: A Slip of the Keyboard
+    author: Terry Pratchett
+    date: March
+    reading: true
   - title: A Big Ship at the Edge of the Universe
     author: Alex White
     date: March
-    reading: true
   - title: Record of a Spaceborn Few
     author: Becky Chambers
     date: March
   - title: Family Lexicon
     author: Natalia Ginzburg
     date: March
-    reading: true
+    thoughts: Very powerful writing
   - title: A Closed and Common Orbit
     author: Becky Chambers
     date: February
