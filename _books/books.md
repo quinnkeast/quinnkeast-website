@@ -2,6 +2,10 @@
 
 - year: 2023
   books:
+  - title: Sourcery
+    author: Terry Pratchett
+    date: March
+    reading: true
   - title: Wonderbook
     author: Jeff VanderMeer
     date: March
