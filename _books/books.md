@@ -2,17 +2,29 @@
 
 - year: 2023
   books:
+  - title: Guards! Guards!
+    author: Terry Pratchett
+    date: April
+    reading: true
+  - title: The Art of Description
+    author: Mark Doty
+    date: March
+    reading: true
+  - title: Mort
+    author: Terry Pratchett
+    date: March
   - title: Sourcery
     author: Terry Pratchett
     date: March
-    reading: true
+  - title: Nation
+    author: Terry Pratchett
+    date: March
   - title: Wonderbook
     author: Jeff VanderMeer
     date: March
   - title: The View from the Cheap Seats
     author: Neil Gaiman
     date: March
-    reading: true
   - title: A Slip of the Keyboard
     author: Terry Pratchett
     date: March
