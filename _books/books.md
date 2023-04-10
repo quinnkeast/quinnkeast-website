@@ -19,6 +19,7 @@
   - title: Mort
     author: Terry Pratchett
     date: March
+    thoughts: I love how Pratchett plays with typography as part of the novel, like poetry
   - title: Sourcery
     author: Terry Pratchett
     date: March
@@ -28,9 +29,11 @@
   - title: Wonderbook
     author: Jeff VanderMeer
     date: March
+    thoughts: Super interesting format, great content on writing
   - title: The View from the Cheap Seats
     author: Neil Gaiman
     date: March
+    thoughts: Such a range, widely felt
   - title: A Slip of the Keyboard
     author: Terry Pratchett
     date: March
