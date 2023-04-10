@@ -2,10 +2,16 @@
 
 - year: 2023
   books:
+  - title: The Coral Bones
+    author:	E. J. Swift
+    date: April
+    reading: true
+  - title: Men at Arms
+    author: Terry Pratchett
+    date: April
   - title: Guards! Guards!
     author: Terry Pratchett
     date: April
-    reading: true
   - title: The Art of Description
     author: Mark Doty
     date: March
