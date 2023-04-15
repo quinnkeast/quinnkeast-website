@@ -2,6 +2,10 @@
 
 - year: 2023
   books:
+  - title: The Adventures of Amina Al-Sirafi
+    author: Shannon Chakraborty
+    date: April
+    reading: true
   - title: The Coral Bones
     author:	E. J. Swift
     date: April
