@@ -2,14 +2,17 @@
 
 - year: 2023
   books:
+  - title: City of Last Chances
+    author: Adrian Tchaikovsky
+    date: April
+    reading: true
   - title: The Adventures of Amina Al-Sirafi
     author: Shannon Chakraborty
     date: April
-    reading: true
+    thoughts: One of my favourites of the last couple years—and real clever storytelling techniques
   - title: The Coral Bones
     author:	E. J. Swift
     date: April
-    reading: true
   - title: Men at Arms
     author: Terry Pratchett
     date: April
