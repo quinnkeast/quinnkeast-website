@@ -6,6 +6,13 @@
     author: Adrian Tchaikovsky
     date: April
     reading: true
+  - title: Save the Cat! Writes a Novel
+    author: Jessica Brody
+    date: April
+  - title: Reaper Man
+    author: Terry Pratchett
+    date: April
+    reading: true
   - title: The Adventures of Amina Al-Sirafi
     author: Shannon Chakraborty
     date: April
