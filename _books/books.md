@@ -12,7 +12,6 @@
   - title: Reaper Man
     author: Terry Pratchett
     date: April
-    reading: true
   - title: The Adventures of Amina Al-Sirafi
     author: Shannon Chakraborty
     date: April
