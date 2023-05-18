@@ -6,6 +6,7 @@
     author: Adrian Tchaikovsky
     date: April
     reading: true
+    thoughts: Finding this oddly hard to read
   - title: Save the Cat! Writes a Novel
     author: Jessica Brody
     date: April
