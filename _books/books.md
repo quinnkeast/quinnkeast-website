@@ -2,9 +2,17 @@
 
 - year: 2023
   books:
+  - title: Winter in Sokcho
+    author: Elisa Shua Dusapin
+    date: May
+    thoughts: Great voice, but not quite for me
+- title: Putting the Fact in Fantasy
+    author: Dan Koboldt
+    date: May
+    reading: true
   - title: City of Last Chances
     author: Adrian Tchaikovsky
-    date: April
+    date: May
     reading: true
   - title: Save the Cat! Writes a Novel
     author: Jessica Brody
