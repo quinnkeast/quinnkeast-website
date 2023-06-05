@@ -10,7 +10,7 @@
     author: Elisa Shua Dusapin
     date: May
     thoughts: Great voice, but not quite for me
-- title: Putting the Fact in Fantasy
+  - title: Putting the Fact in Fantasy
     author: Dan Koboldt
     date: May
     reading: true
