@@ -2,6 +2,10 @@
 
 - year: 2023
   books:
+  - title: The Book that Wouldn’t Burn
+    author: Mark Lawrence
+    date: June
+    reading: true
   - title: Winter in Sokcho
     author: Elisa Shua Dusapin
     date: May
