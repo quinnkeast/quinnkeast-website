@@ -2,10 +2,15 @@
 
 - year: 2023
   books:
+  - title: Steering the Craft
+    author: Ursula K. Le Guin
+    date: June
+    reading: true
   - title: The Book that Wouldn’t Burn
     author: Mark Lawrence
     date: June
     reading: true
+    thoughts: Enjoying this so much
   - title: Winter in Sokcho
     author: Elisa Shua Dusapin
     date: May
