@@ -50,10 +50,6 @@ export default function Projects({ groupedProjects }) {
             );
           })}
 
-          <div className="bg-yellow-100 px-2 py-1 rounded md:col-span-2 md:col-start-2 mt-6 mb-4 text-sm">
-            <strong>Note</strong>: Several more case studies are in progress for
-            the period from 2020-2023 and will be added soon.
-          </div>
         </div>
         <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-6 md:mt-8 pt-4 md:pt-8">
           <div className="col-span-1">
