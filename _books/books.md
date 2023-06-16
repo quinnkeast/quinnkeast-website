@@ -2,6 +2,10 @@
 
 - year: 2023
   books:
+  - title: The Lives of Puppets
+    author: TJ Clune
+    date: June
+    reading: true
   - title: Steering the Craft
     author: Ursula K. Le Guin
     date: June
@@ -9,8 +13,7 @@
   - title: The Book that Wouldn’t Burn
     author: Mark Lawrence
     date: June
-    reading: true
-    thoughts: Enjoying this so much
+    thoughts: Enjoyed the first bit so much, but then it turned into an overflowing soufflé
   - title: Winter in Sokcho
     author: Elisa Shua Dusapin
     date: May
