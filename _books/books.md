@@ -2,10 +2,17 @@
 
 - year: 2023
   books:
+  - title: The Fated Sky
+    author: Mary Robinette Kowal
+    date: June
+    reading: true
+  - title: The Calculating Stars
+    author: Mary Robinette Kowal
+    date: June
   - title: The Lives of Puppets
     author: TJ Clune
     date: June
-    reading: true
+    thoughts: I think the author was going for something that got cut short—the acknowledgement section is rather startling
   - title: Steering the Craft
     author: Ursula K. Le Guin
     date: June
