@@ -32,7 +32,7 @@ export default function Footer() {
                   Twitter
                 </a>{" "}
                 <span className="rounded-lg inline-block bg-yellow bg-opacity-20 text-yellow-700 text-xs px-2 ml-1">
-                  Abandoned
+                  Abandoned: Musk
                 </span>
               </li>
               <li>
@@ -45,13 +45,16 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-span-1">
+          <div className="col-span-2">
             <h5 className="text-sm md:text-base">Other fun stuff</h5>
             <ul className="list-none ml-0 mt-2">
               <li>
-                <a href="https://uxcopy.quinnkeast.com" target="_blank">
-                  Product Language Framework
-                </a>
+                <a href="https://uxlanguage.com" target="_blank">
+                  uxlanguage.com
+                </a>&nbsp; 
+                (<a href="https://github.com/quinnkeast/product-language-framework" target="_blank">
+                  GitHub
+                </a>)
               </li>
               <li>
                 <a href="https://thebrandthing.quinnkeast.com" target="_blank">
