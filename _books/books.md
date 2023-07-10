@@ -2,10 +2,17 @@
 
 - year: 2023
   books:
+  - title: The Relentless Moon
+    author: Mary Robinette Kowal
+    date: July
+    reading: true
+  - title: Old Man’s War
+    author: John Scalzi
+    date: July
+    thoughts: Re-read, such fun
   - title: The Fated Sky
     author: Mary Robinette Kowal
-    date: June
-    reading: true
+    date: July
   - title: The Calculating Stars
     author: Mary Robinette Kowal
     date: June
