@@ -5,7 +5,7 @@
   - title: The Relentless Moon
     author: Mary Robinette Kowal
     date: July
-    reading: true
+    thoughts: I love how much this series challenges a range of topics
   - title: Old Man’s War
     author: John Scalzi
     date: July
@@ -35,7 +35,6 @@
   - title: Putting the Fact in Fantasy
     author: Dan Koboldt
     date: May
-    reading: true
   - title: City of Last Chances
     author: Adrian Tchaikovsky
     date: May
