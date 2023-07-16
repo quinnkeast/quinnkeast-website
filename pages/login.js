@@ -9,7 +9,7 @@ function Login() {
 
   // check if already logged in and redirect if so
   const { mutateUser } = useUser({
-    redirectIfFound: query.ref ? `/projects/${query.ref}` : "/projects",
+    redirectIfUserFound: query.ref ? `/projects/${query.ref}` : '/projects',
   });
 
   const [errorMsg, setErrorMsg] = useState("");
