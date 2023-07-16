@@ -2,6 +2,10 @@
 
 - year: 2023
   books:
+  - title: The God of Endings
+    author: Jacqueline Holland
+    date: July
+    thoughts: Beyond the story, I loved this book’s style and pacing
   - title: The Relentless Moon
     author: Mary Robinette Kowal
     date: July
