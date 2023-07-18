@@ -51,10 +51,15 @@ export default function Footer() {
               <li>
                 <a href="https://uxlanguage.com" target="_blank">
                   uxlanguage.com
-                </a>&nbsp; 
-                (<a href="https://github.com/quinnkeast/product-language-framework" target="_blank">
+                </a>
+                &nbsp; (
+                <a
+                  href="https://github.com/quinnkeast/product-language-framework"
+                  target="_blank"
+                >
                   GitHub
-                </a>)
+                </a>
+                )
               </li>
               <li>
                 <a href="https://thebrandthing.quinnkeast.com" target="_blank">

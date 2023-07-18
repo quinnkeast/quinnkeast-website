@@ -47,7 +47,8 @@ export default function Project({ project, moreProjects, preview }) {
               <div className="grid md:grid-cols-3 md:gap-4">
                 <div>
                   <p className="text-sm leading-tight">
-                    <span className="text-black-lighter">Organization</span> <br />
+                    <span className="text-black-lighter">Organization</span>{" "}
+                    <br />
                     <span className="font-bold">{project.client}</span>
                   </p>
                 </div>

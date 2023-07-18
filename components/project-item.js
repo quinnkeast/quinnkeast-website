@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function ProjectItem({ project, hero }) {
   return (
     <div className="mb-8 md:mb-0">
-		<Link href={`/projects/${project.slug}`}>
+      <Link href={`/projects/${project.slug}`}>
         <div className="">
           {/*<div style="width: 100%; padding-bottom: 140%;"></div>*/}
           <img src={project.thumbnail.url} alt={project.title} />

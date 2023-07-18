@@ -7,9 +7,9 @@ export default function PostHeader({
   date,
   author,
   time,
-  wide
+  wide,
 }) {
-  const maxWidth = wide ? 'max-w-3xl' : 'max-w-lg';
+  const maxWidth = wide ? "max-w-3xl" : "max-w-lg";
   return (
     <div className={`${maxWidth} mx-auto post-header`}>
       <h1 className="text-xl md:text-4xl mb-2 md:mb-4 leading-none">{title}</h1>
