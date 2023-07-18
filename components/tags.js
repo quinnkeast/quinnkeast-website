@@ -1,5 +1,5 @@
 export default function Tags({ tags, wide }) {
-  const maxWidth = wide ? 'max-w-3xl' : 'max-w-lg';
+  const maxWidth = wide ? "max-w-3xl" : "max-w-lg";
   return (
     <div className={`${maxWidth} mx-auto`}>
       {tags.map((tag) => (

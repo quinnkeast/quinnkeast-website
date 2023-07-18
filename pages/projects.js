@@ -49,7 +49,6 @@ export default function Projects({ groupedProjects }) {
               </>
             );
           })}
-
         </div>
         <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-6 md:mt-8 pt-4 md:pt-8">
           <div className="col-span-1">
