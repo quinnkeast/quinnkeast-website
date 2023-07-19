@@ -37,7 +37,7 @@ function Login() {
               event.preventDefault();
 
               const body = {
-                password: event.currentTarget.password.value,
+                password: passwordFieldValue,
               };
 
               const response = await fetch("/api/login", {
