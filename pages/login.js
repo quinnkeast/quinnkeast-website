@@ -13,6 +13,11 @@ function Login() {
   });
 
   const [errorMsg, setErrorMsg] = useState("");
+  const [passwordFieldValue, setpasswordFieldValue] = useState("");
+
+  const handleChange = (e) => {
+    setpasswordFieldValue(e.target.value);
+  };
 
   return (
     <Layout>
@@ -62,6 +67,8 @@ function Login() {
                 name="password"
                 required
                 className="w-1/2 block text-base rounded-md px-2 py-1 border-2 border-black mt-2 bg-transparent focus:bg-white"
+                value={passwordFieldValue}
+                onChange={handleChange}
               />
             </label>
             <button
