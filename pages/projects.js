@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import Link from "next/link";
 import Layout from "../components/layout";
 import PageHeader from "../components/page-header";
@@ -19,7 +20,7 @@ export default function Projects({ groupedProjects }) {
         <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-8 md:mt-16 pt-4 md:pt-8">
           {groupedProjects["sourcegraph"].map((project, i) => {
             return (
-              <>
+              <Fragment key={i}>
                 {project.published && (
                   <>
                     <div className="col-span-1 md:pr-4 md:text-right flex flex-row justify-end items-start pt-4">
@@ -46,7 +47,7 @@ export default function Projects({ groupedProjects }) {
                     </div>
                   </>
                 )}
-              </>
+              </Fragment>
             );
           })}
         </div>
