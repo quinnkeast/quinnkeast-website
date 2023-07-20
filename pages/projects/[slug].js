@@ -6,10 +6,12 @@ import useUser from "../../lib/useUser";
 import { getProjectBySlug, getAllProjects } from "../../lib/api";
 import Head from "next/head";
 import mdxToHtml from "../../lib/mdxToHtml";
+import { SITE_NAME } from "../../lib/constants";
 import Layout from "../../components/layout";
 
 export default function Project({ project, moreProjects, preview }) {
   const router = useRouter();
+  const pageTitle = `${project.title} | ${SITE_NAME}`;
 
   if (!router.isFallback && !project?.slug) {
     return <ErrorPage statusCode={404} />;
@@ -39,7 +41,7 @@ export default function Project({ project, moreProjects, preview }) {
         <>
           <article className="mb-0">
             <Head>
-              <title>{`${project.title} | Quinn Keast`}</title>
+              <title>{pageTitle}</title>
               <meta property="og:image" content={project.ogImage.url} />
             </Head>
             <div className={`max-w-lg mx-auto`}>

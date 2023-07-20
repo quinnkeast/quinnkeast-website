@@ -7,10 +7,11 @@ import { SITE_NAME } from "../lib/constants";
 
 export default function Reading({ booksByYear }) {
   const years = booksByYear;
+  const pageTitle = `Reading List | ${SITE_NAME}`;
   return (
     <Layout>
       <Head>
-        <title>{`Reading List | ${SITE_NAME}`}</title>
+        <title>{pageTitle}</title>
         <meta
           property="og:description"
           content={`What I’m reading and my opinions and all that.`}

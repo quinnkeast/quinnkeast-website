@@ -6,10 +6,11 @@ import { SITE_NAME } from "../lib/constants";
 
 export default function Index({ allFavourites }) {
   const books = allFavourites.books;
+  const pageTitle = `Favourites | ${SITE_NAME}`;
   return (
     <Layout>
       <Head>
-        <title>Favourites | {SITE_NAME}</title>
+        <title>{pageTitle}</title>
         <meta
           property="og:description"
           content={`Favourite books for stretching the mind with new ideas.`}

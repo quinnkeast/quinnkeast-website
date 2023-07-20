@@ -5,10 +5,12 @@ import { SITE_NAME } from "../lib/constants";
 import Link from "next/link";
 
 function Speaking() {
+  const pageTitle = `Speaking | ${SITE_NAME}`;
   return (
     <Layout>
       <Head>
-        <title>Speaking | {SITE_NAME}</title>
+        <title>{pageTitle}</title>
+
         <meta
           property="og:description"
           content={`Speaking at events around the world on exciting and inspiring topics.`}

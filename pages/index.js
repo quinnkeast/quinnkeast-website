@@ -1,11 +1,13 @@
 import Head from "next/head";
 import Layout from "../components/layout";
+import { SITE_NAME } from "../lib/constants";
 
 export default function Home() {
+  const pageTitle = `Home | ${SITE_NAME}`;
   return (
     <Layout>
       <Head>
-        <title>Home | Quinn Keast</title>
+        <title>{pageTitle}</title>
       </Head>
       <div className="grid md:grid-cols-3">
         <div className="md:col-span-2 md:col-start-2">

@@ -8,11 +8,12 @@ import { SITE_NAME } from "../lib/constants";
 export default function Index({ allPosts }) {
   const heroPost = allPosts[0];
   const morePosts = allPosts.slice(1);
+  const pageTitle = `Writing | ${SITE_NAME}`;
 
   return (
     <Layout>
       <Head>
-        <title>Writing | {SITE_NAME}</title>
+        <title>{pageTitle}</title>
         <meta
           property="og:description"
           content={`A collection of thinking on user experience, design, and business.`}

@@ -1,11 +1,13 @@
 import Head from "next/head";
 import Layout from "../components/layout";
+import { SITE_NAME } from "../lib/constants";
 
 function Privacy() {
+  const pageTitle = `Privacy Policy | ${SITE_NAME}`;
   return (
     <Layout>
       <Head>
-        <title>Privacy Policy | Quinn Keast</title>
+        <title>{pageTitle}</title>
       </Head>
       <div className="grid md:grid-cols-5">
         <div className="col-span-3 col-start-2 post-content">

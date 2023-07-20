@@ -5,10 +5,12 @@ import PageHeader from "../components/page-header";
 import { SITE_NAME } from "../lib/constants";
 
 function About() {
+  const pageTitle = `About | ${SITE_NAME}`;
+
   return (
     <Layout>
       <Head>
-        <title>Writing | {SITE_NAME}</title>
+        <title>{pageTitle}</title>
         <meta
           property="og:description"
           content={`I’m Quinn Keast, a user experience & product designer.`}
