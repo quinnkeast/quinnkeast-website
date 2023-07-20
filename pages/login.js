@@ -14,11 +14,11 @@ function Login() {
   });
 
   const [errorMsg, setErrorMsg] = useState("");
-  const [passwordFieldValue, setpasswordFieldValue] = useState("");
+  const [passwordFieldValue, setPasswordFieldValue] = useState("");
   const pageTitle = `Protected Content | ${SITE_NAME}`;
 
   const handleChange = (e) => {
-    setpasswordFieldValue(e.target.value);
+    setPasswordFieldValue(e.target.value);
   };
 
   return (
