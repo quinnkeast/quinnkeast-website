@@ -9,7 +9,7 @@ import { getAllProjects } from "../lib/api";
 export default function Projects({ groupedProjects }) {
   return (
     <>
-      <Layout>
+      <Layout pageName="Projects">
         <PageHeader>
           <h1>Projects</h1>
           <p className="text-2xl">

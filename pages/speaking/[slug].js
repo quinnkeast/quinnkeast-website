@@ -15,20 +15,18 @@ export default function Talk({ talk, moreTalks, preview }) {
   }
 
   return (
-    <Layout>
+    <Layout pageName={talk.title}>
       {router.isFallback ? (
         <PostTitle>Loading…</PostTitle>
       ) : (
         <>
           <article>
             <Head>
-              <title>{talk.title}</title>
               <meta
                 property="og:description"
                 content={talk.description}
                 key="description"
               />
-              <meta property="og:title" content={talk.title} key="title" />
               <meta
                 property="og:url"
                 content={`https://quinnkeast.com/speaking/${talk.slug}`}

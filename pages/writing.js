@@ -3,26 +3,18 @@ import Layout from "../components/layout";
 import PageHeader from "../components/page-header";
 import PostItem from "../components/post-item";
 import { getAllPosts } from "../lib/api";
-import { SITE_NAME } from "../lib/constants";
 
 export default function Index({ allPosts }) {
   const heroPost = allPosts[0];
   const morePosts = allPosts.slice(1);
-  const pageTitle = `Writing | ${SITE_NAME}`;
 
   return (
-    <Layout>
+    <Layout pageName="Writing">
       <Head>
-        <title>{pageTitle}</title>
         <meta
           property="og:description"
           content={`A collection of thinking on user experience, design, and business.`}
           key="description"
-        />
-        <meta
-          property="og:title"
-          content={`Writing | ${SITE_NAME}`}
-          key="title"
         />
         <meta
           property="og:url"

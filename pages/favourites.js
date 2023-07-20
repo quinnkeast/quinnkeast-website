@@ -2,24 +2,17 @@ import Head from "next/head";
 import Layout from "../components/layout";
 import PageHeader from "../components/page-header";
 import { getAllFavourites } from "../lib/api";
-import { SITE_NAME } from "../lib/constants";
 
 export default function Index({ allFavourites }) {
   const books = allFavourites.books;
-  const pageTitle = `Favourites | ${SITE_NAME}`;
+
   return (
-    <Layout>
+    <Layout pageName="Favourites">
       <Head>
-        <title>{pageTitle}</title>
         <meta
           property="og:description"
           content={`Favourite books for stretching the mind with new ideas.`}
           key="description"
-        />
-        <meta
-          property="og:title"
-          content={`Favourites | ${SITE_NAME}`}
-          key="title"
         />
         <meta
           property="og:url"

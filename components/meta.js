@@ -3,7 +3,9 @@ import Head from "next/head";
 
 import { HOME_OG_IMAGE_URL, SITE_NAME } from "../lib/constants";
 
-export default function Meta() {
+export default function Meta({ pageName }) {
+  const pageTitle = `${pageName} | ${SITE_NAME}`;
+
   return (
     <Head>
       <script
@@ -12,7 +14,8 @@ export default function Meta() {
         defer
       ></script>
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
-      <title>{SITE_NAME}</title>
+      <title>{pageTitle}</title>
+      <meta property="og:title" content={pageTitle} key="title" />
       <meta
         property="og:description"
         content="Quinn Keast is a user experience & product designer. He solves interesting problems by putting people first—from product vision to the last 5%."

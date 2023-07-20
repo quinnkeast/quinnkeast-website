@@ -1,23 +1,15 @@
 import Head from "next/head";
 import Layout from "../components/layout";
 import PageHeader from "../components/page-header";
-import { SITE_NAME } from "../lib/constants";
 
 function ReadMe() {
-  const pageTitle = `ReadMe | ${SITE_NAME}`;
   return (
-    <Layout>
+    <Layout pageName="ReadMe">
       <Head>
-        <title>{pageTitle}</title>
         <meta
           property="og:description"
           content={`A user guide on me and how I work. It captures my guiding values, how I work as a human.`}
           key="description"
-        />
-        <meta
-          property="og:title"
-          content={`Quinn.ReadMe | ${SITE_NAME}`}
-          key="title"
         />
         <meta
           property="og:url"

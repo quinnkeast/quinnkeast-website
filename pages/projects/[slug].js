@@ -6,12 +6,10 @@ import useUser from "../../lib/useUser";
 import { getProjectBySlug, getAllProjects } from "../../lib/api";
 import Head from "next/head";
 import mdxToHtml from "../../lib/mdxToHtml";
-import { SITE_NAME } from "../../lib/constants";
 import Layout from "../../components/layout";
 
 export default function Project({ project, moreProjects, preview }) {
   const router = useRouter();
-  const pageTitle = `${project.title} | ${SITE_NAME}`;
 
   if (!router.isFallback && !project?.slug) {
     return <ErrorPage statusCode={404} />;
@@ -34,14 +32,13 @@ export default function Project({ project, moreProjects, preview }) {
 
   // Once the user request finishes, show the content
   return (
-    <Layout preview={preview}>
+    <Layout preview={preview} pageName={project.title}>
       {router.isFallback ? (
         <h1>Loading…</h1>
       ) : (
         <>
           <article className="mb-0">
             <Head>
-              <title>{pageTitle}</title>
               <meta property="og:image" content={project.ogImage.url} />
             </Head>
             <div className={`max-w-lg mx-auto`}>

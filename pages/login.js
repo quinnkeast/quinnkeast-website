@@ -3,7 +3,6 @@ import Layout from "../components/layout";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import useUser from "../lib/useUser";
-import { SITE_NAME } from "../lib/constants";
 
 function Login() {
   const { query } = useRouter();
@@ -15,17 +14,13 @@ function Login() {
 
   const [errorMsg, setErrorMsg] = useState("");
   const [passwordFieldValue, setPasswordFieldValue] = useState("");
-  const pageTitle = `Protected Content | ${SITE_NAME}`;
 
   const handleChange = (e) => {
     setPasswordFieldValue(e.target.value);
   };
 
   return (
-    <Layout>
-      <Head>
-        <title>{pageTitle}</title>
-      </Head>
+    <Layout pageName="Protected Content">
       <div className="grid md:grid-cols-3">
         <div className="col-span-2 col-start-2">
           <h1 className="text-2xl md:text-4xl">Protected content</h1>
