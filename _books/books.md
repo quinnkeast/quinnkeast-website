@@ -17,14 +17,13 @@
   - title: Zoe’s Tale
     author: John Scalzi
     date: July
-    reading: true
   - title: The Last Colony
     author: John Scalzi
     date: July
   - title: The Ghost Brigades
     author: John Scalzi
     date: July
-    thoughts: Apparently ”Old Man’s War” is my summer re-read series
+    thoughts: Apparently “Old Man’s War” is my summer re-read series
   - title: The God of Endings
     author: Jacqueline Holland
     date: July
