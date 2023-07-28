@@ -5,7 +5,6 @@
   - title: The End of All Things
     author: John Scalzi
     date: July
-    reading: true
   - title: The Human Division
     author: John Scalzi
     date: July
