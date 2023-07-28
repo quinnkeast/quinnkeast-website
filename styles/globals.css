@@ -317,6 +317,18 @@
   @apply leading-none;
 }
 
+article blockquote {
+  @apply border-l-4 border-yellow pl-4;
+}
+
+article blockquote > p {
+  @apply font-sans;
+}
+
+article ol li {
+  @apply mb-2;
+}
+
 @font-face {
   font-family: "CalibreWeb";
   font-style: normal;
