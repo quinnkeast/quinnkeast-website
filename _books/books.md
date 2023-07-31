@@ -21,7 +21,7 @@
   - title: Yellowface
     author: R. F. Kuang
     date: July
-    reading: true
+    thoughts: Brutal compelling—unlike “Babel,” made and kept its promises
   - title: Zoe’s Tale
     author: John Scalzi
     date: July
