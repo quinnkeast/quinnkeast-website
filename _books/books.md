@@ -5,7 +5,7 @@
   - title: The Road
     author: Cormac McCarthy
     date: July
-    thought: Bit of a tough read on a few axes
+    thoughts: Bit of a tough read on a few axes
   - title: Dogsbody
     author: Diana Wynne Jones
     date: July
