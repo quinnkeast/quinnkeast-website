@@ -2,6 +2,15 @@
 
 - year: 2023
   books:
+  - title: The Road
+    author: Cormac McCarthy
+    date: July
+    thought: Bit of a tough read on a few axes
+  - title: Dogsbody
+    author: Diana Wynne Jones
+    date: July
+    reading: true
+    thoughts: Children’s book recommended by Gaiman I believe
   - title: The End of All Things
     author: John Scalzi
     date: July
