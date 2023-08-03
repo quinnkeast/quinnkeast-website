@@ -2,6 +2,14 @@
 
 - year: 2023
   books:
+  - title: Wool
+    author: Hugh Howey
+    date: August
+    reading: true
+  - title: Time Shelter
+    author: Georgi Gospodinov
+    date: August
+    reading: true
   - title: The Road
     author: Cormac McCarthy
     date: July
@@ -9,7 +17,6 @@
   - title: Dogsbody
     author: Diana Wynne Jones
     date: July
-    reading: true
     thoughts: Children’s book recommended by Gaiman I believe
   - title: The End of All Things
     author: John Scalzi
