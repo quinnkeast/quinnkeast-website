@@ -2,10 +2,17 @@
 
 - year: 2023
   books:
-  - title: Wool
+  - title: Dust
     author: Hugh Howey
     date: August
     reading: true
+  - title: Shift
+    author: Hugh Howey
+    date: August
+  - title: Wool
+    author: Hugh Howey
+    date: August
+    thoughts: I loved this
   - title: Time Shelter
     author: Georgi Gospodinov
     date: August
