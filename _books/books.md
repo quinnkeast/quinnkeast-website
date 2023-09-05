@@ -2,10 +2,21 @@
 
 - year: 2023
   books:
+  - title: Looking Glass Sound
+    author: Catriona Ward
+    date: September
+    reading: true
+  - title: Ascension
+    author: Nicholas Binge
+    date: September
+    thoughts: One-day romp of a read—enjoyed the techniques
+  - title: The Invention of Sound
+    author: Chuck Palahniuk
+    date: August
+    thoughts: Thought this was Wendig not Palahniuk until halfway through
   - title: Dust
     author: Hugh Howey
     date: August
-    reading: true
   - title: Shift
     author: Hugh Howey
     date: August
