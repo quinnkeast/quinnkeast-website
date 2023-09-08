@@ -2,10 +2,14 @@
 
 - year: 2023
   books:
+  - title: Children of Memory
+    author: Adrian Tchaikovsky
+    date: September
+    reading: true
   - title: Looking Glass Sound
     author: Catriona Ward
     date: September
-    reading: true
+    thoughts: They went for it with the exploratory storytelling mechanisms
   - title: Ascension
     author: Nicholas Binge
     date: September
