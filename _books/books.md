@@ -2,6 +2,10 @@
 
 - year: 2023
   books:
+  - title: Holly
+    author: Stephen King
+    date: September
+    thoughts: Less “crunchy,” whatever that means
   - title: Children of Memory
     author: Adrian Tchaikovsky
     date: September
