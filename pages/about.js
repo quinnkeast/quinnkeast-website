@@ -2,22 +2,15 @@ import Head from "next/head";
 import Link from "next/link";
 import Layout from "../components/layout";
 import PageHeader from "../components/page-header";
-import { SITE_NAME } from "../lib/constants";
 
 function About() {
   return (
-    <Layout>
+    <Layout pageName="About">
       <Head>
-        <title>Writing | {SITE_NAME}</title>
         <meta
           property="og:description"
           content={`I’m Quinn Keast, a user experience & product designer.`}
           key="description"
-        />
-        <meta
-          property="og:title"
-          content={`About | ${SITE_NAME}`}
-          key="title"
         />
         <meta
           property="og:url"

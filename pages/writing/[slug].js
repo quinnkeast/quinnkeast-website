@@ -7,7 +7,6 @@ import PostBody from "../../components/post-body";
 import Tags from "../../components/tags";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
 import Head from "next/head";
-import { SITE_NAME } from "../../lib/constants";
 import mdxToHtml from "../../lib/mdxToHtml";
 import { useEffect } from "react";
 
@@ -26,7 +25,7 @@ export default function Post({ post, morePosts, preview }) {
   }
 
   return (
-    <Layout>
+    <Layout pageName={post.title}>
       {router.isFallback ? (
         <PostTitle>Loading…</PostTitle>
       ) : (
@@ -39,7 +38,6 @@ export default function Post({ post, morePosts, preview }) {
                 content={post.description ? post.description : post.subtitle}
                 key="description"
               />
-              <meta property="og:title" content={post.title} key="title" />
               <meta
                 property="og:url"
                 content={`https://quinnkeast.com/writing/${post.slug}`}

@@ -3,10 +3,7 @@ import Layout from "../components/layout";
 
 function Impressum() {
   return (
-    <Layout>
-      <Head>
-        <title>Impessum | Quinn Keast</title>
-      </Head>
+    <Layout pageName="Impressum">
       <div className="grid md:grid-cols-5">
         <div className="col-span-3 col-start-2 content">
           <h3>Quinn Keast-Wiatrowski</h3>

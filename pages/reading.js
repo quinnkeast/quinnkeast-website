@@ -3,23 +3,17 @@ import Head from "next/head";
 import Layout from "../components/layout";
 import PageHeader from "../components/page-header";
 import { getAllBooks } from "../lib/api";
-import { SITE_NAME } from "../lib/constants";
 
 export default function Reading({ booksByYear }) {
   const years = booksByYear;
+
   return (
-    <Layout>
+    <Layout pageName="Reading List">
       <Head>
-        <title>{`Reading List | ${SITE_NAME}`}</title>
         <meta
           property="og:description"
           content={`What I’m reading and my opinions and all that.`}
           key="description"
-        />
-        <meta
-          property="og:title"
-          content={`Reading List | ${SITE_NAME}`}
-          key="title"
         />
         <meta
           property="og:url"

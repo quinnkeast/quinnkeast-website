@@ -3,10 +3,7 @@ import Layout from "../components/layout";
 
 function Privacy() {
   return (
-    <Layout>
-      <Head>
-        <title>Privacy Policy | Quinn Keast</title>
-      </Head>
+    <Layout pageName="Privacy Policy">
       <div className="grid md:grid-cols-5">
         <div className="col-span-3 col-start-2 post-content">
           <h1>Privacy policy</h1>

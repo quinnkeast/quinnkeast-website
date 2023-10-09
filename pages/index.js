@@ -3,10 +3,7 @@ import Layout from "../components/layout";
 
 export default function Home() {
   return (
-    <Layout>
-      <Head>
-        <title>Home | Quinn Keast</title>
-      </Head>
+    <Layout pageName="Home">
       <div className="grid md:grid-cols-3">
         <div className="md:col-span-2 md:col-start-2">
           <h1 className="mb-4 md:mb-8 text-2xl md:text-5xl leading-none md:leading-none">

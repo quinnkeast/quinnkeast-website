@@ -32,14 +32,13 @@ export default function Project({ project, moreProjects, preview }) {
 
   // Once the user request finishes, show the content
   return (
-    <Layout preview={preview}>
+    <Layout preview={preview} pageName={project.title}>
       {router.isFallback ? (
         <h1>Loading…</h1>
       ) : (
         <>
           <article className="mb-0">
             <Head>
-              <title>{`${project.title} | Quinn Keast`}</title>
               <meta property="og:image" content={project.ogImage.url} />
             </Head>
             <div className={`max-w-lg mx-auto`}>

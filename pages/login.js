@@ -13,12 +13,14 @@ function Login() {
   });
 
   const [errorMsg, setErrorMsg] = useState("");
+  const [passwordFieldValue, setPasswordFieldValue] = useState("");
+
+  const handleChange = (e) => {
+    setPasswordFieldValue(e.target.value);
+  };
 
   return (
-    <Layout>
-      <Head>
-        <title>{`Protected content | Quinn Keast`}</title>
-      </Head>
+    <Layout pageName="Protected Content">
       <div className="grid md:grid-cols-3">
         <div className="col-span-2 col-start-2">
           <h1 className="text-2xl md:text-4xl">Protected content</h1>
@@ -32,7 +34,7 @@ function Login() {
               event.preventDefault();
 
               const body = {
-                password: event.currentTarget.password.value,
+                password: passwordFieldValue,
               };
 
               const response = await fetch("/api/login", {
@@ -62,6 +64,8 @@ function Login() {
                 name="password"
                 required
                 className="w-1/2 block text-base rounded-md px-2 py-1 border-2 border-black mt-2 bg-transparent focus:bg-white"
+                value={passwordFieldValue}
+                onChange={handleChange}
               />
             </label>
             <button
