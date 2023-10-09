@@ -2,6 +2,23 @@
 
 - year: 2023
   books:
+  - title: Prophet
+    author: Sin Blaché & Helen MacDonald
+    date: October
+    reading: true
+  - title: The Vanished Birds
+    author: Simon Jimenez
+    date: October
+    reading: true
+  - title: Starter Villain
+    author: John Scalzi
+    date: September
+    thoughts: I can just picture Scalzi chuckling to himself while writing this
+  - title: Never
+    author: Ken Follett
+    date: September
+    reading: true
+    thoughts: Probably going to abandon this
   - title: Holly
     author: Stephen King
     date: September
@@ -9,7 +26,7 @@
   - title: Children of Memory
     author: Adrian Tchaikovsky
     date: September
-    reading: true
+    thoughts: Took a while to get into, but compelling
   - title: Looking Glass Sound
     author: Catriona Ward
     date: September
