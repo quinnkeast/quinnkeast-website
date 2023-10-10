@@ -5,7 +5,7 @@
   - title: Prophet
     author: Sin Blaché & Helen MacDonald
     date: October
-    reading: true
+    thoughts: Almost feels like this was written to be a movie
   - title: The Vanished Birds
     author: Simon Jimenez
     date: October
