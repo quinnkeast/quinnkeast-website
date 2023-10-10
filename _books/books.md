@@ -2,6 +2,10 @@
 
 - year: 2023
   books:
+  - title: The Frugal Wizard’s Handbook for Surviving Medieval England
+    author: Brandon Sanderson
+    date: October
+    reading: true
   - title: Prophet
     author: Sin Blaché & Helen MacDonald
     date: October
