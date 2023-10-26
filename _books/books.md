@@ -2,10 +2,17 @@
 
 - year: 2023
   books:
+  - title: The Fractured Dark
+    author: Megan O’Keefe
+    date: October
+    reading: true
+  - title: The Blighted Stars
+    author: Megan O’Keefe
+    date: October
+    thoughts: Really enjoyed this blend of epic sci-fi and characterization
   - title: The Frugal Wizard’s Handbook for Surviving Medieval England
     author: Brandon Sanderson
     date: October
-    reading: true
   - title: Prophet
     author: Sin Blaché & Helen MacDonald
     date: October
@@ -17,7 +24,7 @@
   - title: Starter Villain
     author: John Scalzi
     date: September
-    thoughts: I can just picture Scalzi chuckling to himself while writing this
+    thoughts: I can just picture Scalzi chortling to himself while writing this
   - title: Never
     author: Ken Follett
     date: September
