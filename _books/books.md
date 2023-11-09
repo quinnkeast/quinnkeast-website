@@ -2,10 +2,13 @@
 
 - year: 2023
   books:
+  - title: Yumi and the Nightmare Painter
+    author: Brandon Sanderson
+    date: November
+    thoughts: Sanderson’s really had some fun with this collection
   - title: The Fractured Dark
     author: Megan O’Keefe
     date: October
-    reading: true
   - title: The Blighted Stars
     author: Megan O’Keefe
     date: October
