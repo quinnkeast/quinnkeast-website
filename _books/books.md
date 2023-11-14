@@ -2,6 +2,13 @@
 
 - year: 2023
   books:
+  - title: The Dead Take the A Train
+    author: Cassandra Khaw & Richard Kadrey
+    date: November
+    reading: true
+  - title: The Sunlit Man
+    author: Brandon Sanderson
+    date: November
   - title: Yumi and the Nightmare Painter
     author: Brandon Sanderson
     date: November
