@@ -62,7 +62,11 @@ export default function Reading({ booksByYear }) {
                       className="flex flex-col md:table-row border-t border-black border-opacity-10 align-top leading-tight"
                       key={book.title}
                     >
-                      <td className="pt-2 md:pb-2 pr-2">
+                      <td
+                        className={`pt-2 md:pb-2 pr-2 ${
+                          book.abandoned ? "line-through" : ""
+                        }`}
+                      >
                         {book.reading && (
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -87,10 +91,12 @@ export default function Reading({ booksByYear }) {
             </div>
           </React.Fragment>
         ))}
-        <div className="col-span-5 mt-4 flex">
+        <div className="col-span-3 col-start-2 mt-4 flex">
           <small className="text-black-lighter">
-            Missing thoughts are just me not remembering exactly what I thought
-            at the time.
+            <span className="line-through">Struck through</span> books are those
+            I abandoned—which I’m trying to let myself do when a book isn’t
+            right for me at that moment. Missing thoughts are just me not
+            remembering exactly what I thought at the time.
           </small>
         </div>
       </div>
