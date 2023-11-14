@@ -38,7 +38,7 @@
   - title: Never
     author: Ken Follett
     date: September
-    reading: true
+    abandoned: true
     thoughts: Probably going to abandon this
   - title: Holly
     author: Stephen King
@@ -73,7 +73,7 @@
   - title: Time Shelter
     author: Georgi Gospodinov
     date: August
-    reading: true
+    abandoned: true
   - title: The Road
     author: Cormac McCarthy
     date: July
@@ -128,7 +128,7 @@
   - title: Steering the Craft
     author: Ursula K. Le Guin
     date: June
-    reading: true
+    thoughts: Just lovely
   - title: The Book that Wouldn’t Burn
     author: Mark Lawrence
     date: June
@@ -143,7 +143,7 @@
   - title: City of Last Chances
     author: Adrian Tchaikovsky
     date: May
-    reading: true
+    abandoned: true
   - title: Save the Cat! Writes a Novel
     author: Jessica Brody
     date: April
@@ -166,7 +166,6 @@
   - title: The Art of Description
     author: Mark Doty
     date: March
-    reading: true
   - title: Mort
     author: Terry Pratchett
     date: March
@@ -194,7 +193,6 @@
   - title: A Big Ship at the Edge of the Universe
     author: Alex White
     date: March
-    reading: true
   - title: Record of a Spaceborn Few
     author: Becky Chambers
     date: March
@@ -212,7 +210,7 @@
   - title: Hell Bent
     author: Leigh Bardugo
     date: February
-    reading: true
+    abandoned: true
   - title: Fugitive Telemetry
     author: Martha Wells
     date: February
@@ -505,7 +503,6 @@
   - title: The Lost Pianos of Siberia
     author: Sophy Roberts
     date: October
-    reading: true
   - title: The Unfinished Land
     author: Greg Bear
     date: October
@@ -784,3 +781,4 @@
   - title: A Gentleman in Moscow
     author: Amor Towles
     thoughts: Really enjoyed this
+  - title: …
