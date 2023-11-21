@@ -2,6 +2,11 @@
 
 - year: 2023
   books:
+  - title: This is How You Lose the Time War
+    author: Amal el-Mohtar & Max Gladstone
+    date: November
+    reading: true
+    thoughts: I love the depth of universe behind the very solid first-person characterization
   - title: System Collapse
     author: Martha Wells
     date: November
