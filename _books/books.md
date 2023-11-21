@@ -2,6 +2,14 @@
 
 - year: 2023
   books:
+  - title: System Collapse
+    author: Martha Wells
+    date: November
+    thoughts: I love the depth of universe behind the very solid first-person characterization
+  - title: The Storyteller’s Death
+    author: Ann Dávila Cardinal
+    date: November
+    reading: true
   - title: The Dead Take the A Train
     author: Cassandra Khaw & Richard Kadrey
     date: November
