@@ -6,7 +6,6 @@
     author: Amal el-Mohtar & Max Gladstone
     date: November
     reading: true
-    thoughts: I love the depth of universe behind the very solid first-person characterization
   - title: System Collapse
     author: Martha Wells
     date: November
@@ -14,7 +13,7 @@
   - title: The Storyteller’s Death
     author: Ann Dávila Cardinal
     date: November
-    reading: true
+    thoughts: Explores Puerto Rico in a way I haven’t experienced before
   - title: The Dead Take the A Train
     author: Cassandra Khaw & Richard Kadrey
     date: November
