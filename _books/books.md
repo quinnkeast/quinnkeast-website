@@ -2,6 +2,10 @@
 
 - year: 2023
   books:
+  - title: Sign Here
+    author: Claudia Lux
+    date: November
+    thoughts: Takes a great premise and sees it through with a great character-driven plot
   - title: This is How You Lose the Time War
     author: Amal el-Mohtar & Max Gladstone
     date: November
