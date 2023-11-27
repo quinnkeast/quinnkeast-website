@@ -2,6 +2,10 @@
 
 - year: 2023
   books:
+  - title: Saevus Corax Deals with the Dead
+    author: K. J. Parker
+    date: November
+    reading: true
   - title: Sign Here
     author: Claudia Lux
     date: November
