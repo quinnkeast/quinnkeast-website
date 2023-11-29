@@ -33,7 +33,7 @@ export default function Post({ post, morePosts, preview }) {
         <>
           <article>
             <Head>
-              <title>{post.title}</title>
+              <title>{`${post.title} | Quinn Keast`}</title>
               <meta
                 property="og:description"
                 content={post.description ? post.description : post.subtitle}
