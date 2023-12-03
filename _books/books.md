@@ -2,10 +2,14 @@
 
 - year: 2023
   books:
+  - title: Nettle & Bone
+    author: T. Kingfisher
+    date: December
+    reading: true
   - title: Saevus Corax Deals with the Dead
     author: K. J. Parker
     date: November
-    reading: true
+    thoughts: Hilarious, but ending fell flat
   - title: Sign Here
     author: Claudia Lux
     date: November
