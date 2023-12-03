@@ -109,7 +109,7 @@ export default function Projects({ groupedProjects }) {
 }
 
 export async function getStaticProps() {
-  const allProjects = getAllProjects([
+  const allProjects = await getAllProjects([
     "title",
     "subtitle",
     "slug",
