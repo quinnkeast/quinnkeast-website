@@ -1,6 +1,5 @@
 import { useRouter } from "next/router";
 import ErrorPage from "next/error";
-import PageHeader from "../../components/page-header";
 import ProjectBody from "../../components/project-body";
 import useUser from "../../lib/useUser";
 import { getProjectBySlug, getAllProjects } from "../../lib/api";
@@ -104,8 +103,7 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const projects = getAllProjects(["slug"]);
-
+  const projects = await getAllProjects(["slug"]);
   return {
     paths: projects.map((project) => {
       return {
