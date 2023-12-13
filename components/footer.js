@@ -81,6 +81,14 @@ export default function Footer() {
                   Awyisser
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://github.com/quinnkeast/quinnkeast-website/"
+                  target="_blank"
+                >
+                  This website (GitHub)
+                </a>
+              </li>
             </ul>
           </div>
         </div>
