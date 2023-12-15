@@ -2,10 +2,13 @@
 
 - year: 2023
   books:
+  - title: Age of Ash
+    author: Daniel Abraham
+    reading: true
   - title: Nettle & Bone
     author: T. Kingfisher
     date: December
-    reading: true
+    thoughts: Really enjoyed, perfectly fairy-tale-esque 
   - title: Saevus Corax Deals with the Dead
     author: K. J. Parker
     date: November
