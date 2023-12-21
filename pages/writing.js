@@ -36,7 +36,7 @@ export default function Index({ allPosts }) {
         </p>
       </PageHeader>
       <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-6 md:mt-12 pt-0 post-list">
-        <PostItem post={heroPost} hero={true} />
+        <PostItem post={heroPost} />
         {morePosts.map((post, i) => (
           <PostItem post={post} key={i} />
         ))}
@@ -55,6 +55,7 @@ export async function getStaticProps() {
     "coverImage",
     "tags",
     "external",
+    "starred",
   ]);
 
   return {
