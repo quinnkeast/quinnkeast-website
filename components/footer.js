@@ -50,9 +50,9 @@ export default function Footer() {
             <ul className="list-none ml-0 mt-2">
               <li>
                 <a href="https://uxlanguage.com" target="_blank">
-                  uxlanguage.com
+                  UX Language Framework
                 </a>
-                &nbsp; (
+                &nbsp; (on{" "}
                 <a
                   href="https://github.com/quinnkeast/product-language-framework"
                   target="_blank"
@@ -67,16 +67,6 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://manipulativepatterns.com" target="_blank">
-                  Manipulative Patterns
-                </a>
-              </li>
-              <li>
-                <a href="https://caribou.co" target="_blank">
-                  Caribou
-                </a>
-              </li>
-              <li>
                 <a href="http://www.awyisser.com" target="_blank">
                   Awyisser
                 </a>
@@ -86,7 +76,12 @@ export default function Footer() {
                   href="https://github.com/quinnkeast/quinnkeast-website/"
                   target="_blank"
                 >
-                  This website (GitHub)
+                  This website’s source code
+                </a>
+              </li>
+              <li>
+                <a href="https://caribou.co" target="_blank">
+                  Caribou
                 </a>
               </li>
             </ul>

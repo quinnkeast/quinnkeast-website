@@ -45,7 +45,7 @@ function ReadMe() {
               <a href="#ethical-principles">Ethical Principles</a>
             </li>
             <li>
-              <a href="#nuance">Nuance</a>
+              <a href="#how-i-work">How I Work</a>
             </li>
             <li>
               <a href="#errata">Errata</a>
@@ -107,7 +107,7 @@ function ReadMe() {
             team members, and environments.
           </p>
           <hr />
-          <h2 id="nuance">Nuance</h2>
+          <h2 id="how-i-work">How I Work</h2>
           <p>
             <strong>I like to use people as a sounding board.</strong>{" "}
             Sometimes, I’m not actually looking for an answer or solution.
@@ -140,9 +140,9 @@ function ReadMe() {
               I bias towards <s>action</s> <u>impact</u>.
             </strong>{" "}
             I believe in being pragmatic about doing things that have the most
-            meaningful impact in the immediate context. While that often looks
-            like a bias for action, it’s more about being thoughtful about
-            impact and doing what will help us learn and get better.
+            meaningful impact in the immediate context. It’s similar to a bias
+            for action, but focused on being thoughtful about doing things with
+            real impact that will help us learn and get better.
           </p>
           <p>
             <strong>I assume positive intent.</strong> I assume people have

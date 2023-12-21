@@ -44,18 +44,18 @@ function About() {
         </div>
         <div className="md:col-span-2 max-w-md">
           <p>
-            I enjoy crafting new user experiences and working to make existing
-            ones perform better. The processes and thinking involved in creating
-            digital products through human-centred design are immensely
-            satisfying.
+            I enjoy crafting new products and experiences and working to make
+            existing ones better. The processes and thinking involved in
+            creating effective products through human-centred design are
+            immensely satisfying.
           </p>
 
           <p>
             I have more than 14 years of expertise that covers the entire
-            human-centred design process: from research and strategy to finished
-            interface design and front-end development. My background is in
-            design, which is complemented by a lifetime of tinkering with
-            digital tools, languages, and technologies.
+            product design process: from research and strategy to execution and
+            shipping. My background is in design, which is complemented by a
+            lifetime of tinkering with digital tools, languages, and
+            technologies that gives me a deep technical basis for my practice.
           </p>
 
           <p>
@@ -70,8 +70,8 @@ function About() {
 
           <p>
             Aside from all that, I’m a Canadian currently working out of Berlin,
-            and I enjoy playing Ultimate frisbee, bouldering, writing, and
-            baking macarons.
+            and I enjoy playing Ultimate frisbee, writing, and hanging out with
+            my mini Australian Shepherd.
           </p>
 
           <p>
@@ -87,9 +87,10 @@ function About() {
         </div>
         <div className="md:col-span-2">
           <p>
-            <strong>Airplane</strong> / Dev Infrastructure for Internal Tools
+            <strong>Airplane</strong> / Developer Infrastructure for Internal
+            Tools
             <br />
-            Product Design
+            Staff Product Designer
             <br />
             2023 – Present
           </p>
