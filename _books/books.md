@@ -2,9 +2,20 @@
 
 - year: 2023
   books:
+  - title: Sword Catcher
+    author: Cassandra Clare
+    reading: true
+  - title: Legion
+    author: Brandon Sanderson
+    reading: true
+  - title: Operation Angus
+    author: Terry Fallis
+    thoughts: Really like seeing Canadian politics here
+  - title: Saevus Corax Captures the Castle
+    author: K. J. Parker
+    thoughts: Rambly in all the right ways
   - title: Age of Ash
     author: Daniel Abraham
-    reading: true
   - title: Nettle & Bone
     author: T. Kingfisher
     date: December
