@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import Layout from "../components/layout";
 import PageHeader from "../components/page-header";
@@ -9,6 +10,24 @@ export default function Projects({ groupedProjects }) {
   return (
     <>
       <Layout>
+        <Head>
+          <title>{`Projects | ${SITE_NAME}`}</title>
+          <meta
+            property="og:description"
+            content={`I’m Quinn Keast, a user experience & product designer.`}
+            key="description"
+          />
+          <meta
+            property="og:title"
+            content={`Projects | ${SITE_NAME}`}
+            key="title"
+          />
+          <meta
+            property="og:url"
+            content="https://quinnkeast.com/projects"
+            key="url"
+          />
+        </Head>
         <PageHeader>
           <h1>Projects</h1>
           <p className="text-2xl">
