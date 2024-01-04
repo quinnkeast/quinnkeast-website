@@ -44,7 +44,7 @@ export default function Projects({ groupedProjects }) {
                     <div className="col-span-1 md:pr-4 md:text-right flex flex-row justify-end items-start pt-4">
                       {i === 0 && (
                         <h2 className="font-normal text-base text-black-lighter mt-0 flex-grow text-left">
-                          Current
+                          Relatively recent
                         </h2>
                       )}
                       {project.size && (
