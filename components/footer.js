@@ -31,7 +31,7 @@ export default function Footer() {
                 <a href="http://twitter.com/quinnkeast" target="_blank">
                   Twitter
                 </a>{" "}
-                <span className="rounded-lg inline-block bg-yellow bg-opacity-20 text-yellow-700 text-xs px-2 ml-1">
+                <span className="rounded-lg inline-block bg-yellow bg-opacity-20 text-yellow-700 text-xs px-2 ml-1 pb-2px">
                   Abandoned: Musk
                 </span>
               </li>
@@ -39,7 +39,7 @@ export default function Footer() {
                 <a href="https://medium.com/@quinnkeast" target="_blank">
                   Medium
                 </a>{" "}
-                <span className="rounded-lg inline-block bg-yellow bg-opacity-20 text-yellow-700 text-xs px-2 ml-1">
+                <span className="rounded-lg inline-block bg-yellow bg-opacity-20 text-yellow-700 text-xs px-2 ml-1 pb-2px">
                   Inactive
                 </span>
               </li>

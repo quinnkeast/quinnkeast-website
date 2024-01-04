@@ -22,6 +22,9 @@ module.exports = {
       maxHeight: {
         "75vh": "75vh",
       },
+      padding: {
+        "2px": "2px",
+      },
     },
   },
   variants: {
