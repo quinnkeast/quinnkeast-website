@@ -3,7 +3,7 @@ import Link from "next/link";
 import Layout from "../components/layout";
 import PageHeader from "../components/page-header";
 import ProjectItem from "../components/project-item";
-import useUser from "../lib/useUser";
+import { SITE_NAME } from "../lib/constants";
 import { getAllProjects } from "../lib/api";
 
 export default function Projects({ groupedProjects }) {
