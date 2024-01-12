@@ -92,7 +92,7 @@ function About() {
             <br />
             Staff Product Designer
             <br />
-            2023 – Present
+            2023 – 2024
             <br />
             <span className="rounded inline-block bg-yellow bg-opacity-20 text-yellow-700 text-sm leading-snug pb-2px px-2 mb-1.5">
               Acquired by Airtable
