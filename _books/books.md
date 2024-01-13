@@ -1,30 +1,40 @@
 ---
 
-- year: 2023
+- year: 2024
   books:
   - title: The Miracles of the Namiya General Store
     author: Keigo Higashino
     reading: true
+    date: January
   - title: Shubeik Lubeik
     author: Deena Mohamed
-    thoughts: Aboslutely adored this graphic novel
+    thoughts: Absolutely adored this graphic novel
+    date: January
   - title: The Haunting of Hill House
     author: Shirley Jackson
     reading: true
+    date: January
   - title: Sword Catcher
     author: Cassandra Clare
     thoughts: Enjoyed the characters in this one
+    date: January
   - title: Legion
     author: Brandon Sanderson
     thoughts: Meh
+    date: January
   - title: Operation Angus
     author: Terry Fallis
     thoughts: Really like seeing Canadian politics here
+    date: January
   - title: Saevus Corax Captures the Castle
     author: K. J. Parker
     thoughts: Rambly in all the right ways
+    date: January
+- year: 2023
+  books:
   - title: Age of Ash
     author: Daniel Abraham
+    date: December
   - title: Nettle & Bone
     author: T. Kingfisher
     date: December
