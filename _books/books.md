@@ -2,12 +2,21 @@
 
 - year: 2023
   books:
+  - title: The Miracles of the Namiya General Store
+    author: Keigo Higashino
+    reading: true
+  - title: Shubeik Lubeik
+    author: Deena Mohamed
+    thoughts: Aboslutely adored this graphic novel
+  - title: The Haunting of Hill House
+    author: Shirley Jackson
+    reading: true
   - title: Sword Catcher
     author: Cassandra Clare
-    reading: true
+    thoughts: Enjoyed the characters in this one
   - title: Legion
     author: Brandon Sanderson
-    reading: true
+    thoughts: Meh
   - title: Operation Angus
     author: Terry Fallis
     thoughts: Really like seeing Canadian politics here
