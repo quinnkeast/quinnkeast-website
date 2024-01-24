@@ -2,10 +2,14 @@
 
 - year: 2024
   books:
+  - title: Fevre Dream
+    author: George R. R. Martin
+    reading: true
+    thoughts: (Yes I was startled this exists too)
   - title: The Miracles of the Namiya General Store
     author: Keigo Higashino
-    reading: true
     date: January
+    thoughts: I’m super curious how the voice is in the original language
   - title: Shubeik Lubeik
     author: Deena Mohamed
     thoughts: Absolutely adored this graphic novel
