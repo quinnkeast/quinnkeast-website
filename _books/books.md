@@ -16,7 +16,6 @@
     date: January
   - title: The Haunting of Hill House
     author: Shirley Jackson
-    reading: true
     date: January
   - title: Sword Catcher
     author: Cassandra Clare
