@@ -2,10 +2,12 @@
 
 - year: 2024
   books:
+  - title: Exordia
+    author: Seth Dickinson
+    reading: true
   - title: Fevre Dream
     author: George R. R. Martin
-    reading: true
-    thoughts: (Yes I was startled this exists too)
+    thoughts: a) Yes I too was startled this exists and b) it’s great
   - title: The Miracles of the Namiya General Store
     author: Keigo Higashino
     date: January
