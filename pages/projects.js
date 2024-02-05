@@ -1,3 +1,4 @@
+import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import Layout from "../components/layout";
@@ -35,26 +36,30 @@ export default function Projects({ groupedProjects }) {
             needs to design better products and experiences.
           </p>
         </PageHeader>
-        <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-8 md:mt-16 pt-4 md:pt-8">
+        <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-8 md:mt-16 pt-4 md:pt-4">
+          <div className="bg-yellow bg-opacity-20 text-yellow-700 px-2 py-1 rounded md:col-span-2 md:col-start-2 mt-6 mb-4 text-sm">
+            <strong>Note</strong>: Several more case studies are in progress and
+            will be added soon.
+          </div>
           {groupedProjects["sourcegraph"].map((project, i) => {
             return (
-              <>
+              <React.Fragment key={project.slug}>
                 {project.published && (
                   <>
-                    <div className="col-span-1 md:pr-4 md:text-right flex flex-row justify-end items-start pt-4">
+                    <div className="col-span-1 md:pr-4 md:text-right flex flex-col md:flex-row md:justify-end items-start pt-4">
                       {i === 0 && (
                         <h2 className="font-normal text-base text-black-lighter mt-0 flex-grow text-left">
-                          Relatively recent
+                          2020–2023
                         </h2>
                       )}
                       {project.size && (
-                        <span className="mt-1 px-1.5 leading-base rounded-full border border-black border-opacity-10 text-black-lighter text-xs inline-block flex-none capitalize">
+                        <span className="mt-2 md:mt-1 px-1.5 leading-base rounded-full border border-black border-opacity-10 text-black-lighter text-xs inline-block flex-none capitalize">
                           {project.size}
                         </span>
                       )}
                     </div>
                     <div className="md:col-span-2 max-w-md">
-                      <h3 className="leading-tight text-lg font-medium mb-0">
+                      <h3 className="leading-tight text-lg font-medium mb-0 mt-2 md:mt-4">
                         <Link href={`/projects/${project.slug}`}>
                           {project.title}
                         </Link>
@@ -65,7 +70,7 @@ export default function Projects({ groupedProjects }) {
                     </div>
                   </>
                 )}
-              </>
+              </React.Fragment>
             );
           })}
         </div>
@@ -76,8 +81,8 @@ export default function Projects({ groupedProjects }) {
             </h2>
           </div>
           <div className="md:col-span-2 grid gap-10 md:grid-cols-3 md:pt-6">
-            {groupedProjects["undefined"].map((project, i) => (
-              <ProjectItem project={project} key={i} />
+            {groupedProjects["undefined"].map((project) => (
+              <ProjectItem project={project} key={project.slug} />
             ))}
           </div>
         </div>
