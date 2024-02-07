@@ -12,7 +12,7 @@ export default function Projects({ groupedProjects }) {
     <>
       <Layout>
         <Head>
-          <title>{`Projects | ${SITE_NAME}`}</title>
+          <title>{`Craft | ${SITE_NAME}`}</title>
           <meta
             property="og:description"
             content={`I’m Quinn Keast, a user experience & product designer.`}
