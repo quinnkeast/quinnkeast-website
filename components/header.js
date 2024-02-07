@@ -6,12 +6,12 @@ const menuItems = [
     path: "writing",
   },
   {
-    label: "Speaking",
-    path: "speaking",
+    label: "Craft",
+    path: "projects",
   },
   {
-    label: "Projects",
-    path: "projects",
+    label: "Speaking",
+    path: "speaking",
   },
   {
     label: "Favourites",

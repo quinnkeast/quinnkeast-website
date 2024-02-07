@@ -12,7 +12,7 @@ export default function Footer() {
         </p>
         <div className="grid md:grid-cols-3">
           <div className="col-span-1">
-            <h5 className="text-sm md:text-base">Semi-Social</h5>
+            <h5 className="text-sm md:text-base">Semi-social</h5>
             <ul className="list-none ml-0 mt-2">
               <li>
                 <a href="https://www.github.com/quinnkeast/" target="_blank">
@@ -46,7 +46,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="col-span-2">
-            <h5 className="text-sm md:text-base">Other fun stuff</h5>
+            <h5 className="text-sm md:text-base">Projects &amp; fun stuff</h5>
             <ul className="list-none ml-0 mt-2">
               <li>
                 <a href="https://uxlanguage.com" target="_blank">
@@ -76,7 +76,7 @@ export default function Footer() {
                   href="https://github.com/quinnkeast/quinnkeast-website/"
                   target="_blank"
                 >
-                  This website’s source code
+                  quinnkeast.com’s source code
                 </a>
               </li>
               <li>
