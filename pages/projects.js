@@ -7,6 +7,29 @@ import ProjectItem from "../components/project-item";
 import { SITE_NAME } from "../lib/constants";
 import { getAllProjects } from "../lib/api";
 
+const draftProjects = [
+  {
+    title: "Airplane Studio",
+    subtitle: "Example subtitle here",
+  },
+  {
+    title: "Sourcegraph search contexts",
+    subtitle: "Example subtitle here",
+  },
+  {
+    title: "Reimagining Sourcegraph’s search input",
+    subtitle: "Example subtitle here",
+  },
+  {
+    title: "Airplane task run UX",
+    subtitle: "Example subtitle here",
+  },
+  {
+    title: "Airplane Flight Deck",
+    subtitle: "Example subtitle here",
+  },
+];
+
 export default function Projects({ groupedProjects }) {
   return (
     <>
@@ -36,17 +59,41 @@ export default function Projects({ groupedProjects }) {
           </p>
         </PageHeader>
         <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-8 md:mt-16 pt-4 md:pt-8">
+          {draftProjects.map((project, i) => {
+            return (
+              <React.Fragment key={i}>
+                <div className="col-span-1 md:pr-4 md:text-right flex flex-col md:flex-row md:justify-end items-start pt-4">
+                  {i === 0 && (
+                    <h2 className="font-normal text-base text-black-lighter mt-0 flex-grow text-left">
+                      2020–2023
+                    </h2>
+                  )}
+                  <span className="mt-2 md:mt-1 px-1.5 leading-base rounded-full border border-black border-opacity-10 text-black-lighter text-xs inline-block flex-none capitalize">
+                    WIP
+                  </span>
+                </div>
+                <div className="md:col-span-2 max-w-md">
+                  <h3 className="leading-tight text-lg font-medium mb-0 mt-2 md:mt-4 text-black-lighter">
+                    {project.title}
+                  </h3>
+                  <p className="mt-0 text-base leading-tight text-black-lighter">
+                    {project.subtitle}
+                  </p>
+                </div>
+              </React.Fragment>
+            );
+          })}
           {groupedProjects["sourcegraph"].map((project, i) => {
             return (
               <React.Fragment key={project.slug}>
                 {project.published && (
                   <>
                     <div className="col-span-1 md:pr-4 md:text-right flex flex-col md:flex-row md:justify-end items-start pt-4">
-                      {i === 0 && (
+                      {/*{i === 0 && (
                         <h2 className="font-normal text-base text-black-lighter mt-0 flex-grow text-left">
                           2020–2023
                         </h2>
-                      )}
+                      )}*/}
                       {project.size && (
                         <span className="mt-2 md:mt-1 px-1.5 leading-base rounded-full border border-black border-opacity-10 text-black-lighter text-xs inline-block flex-none capitalize">
                           {project.size}
