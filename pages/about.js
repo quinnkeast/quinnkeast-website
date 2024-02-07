@@ -92,18 +92,11 @@ function About() {
             <br />
             Staff Product Designer
             <br />
-            2023 – 2024
+            <span className="text-black-lighter">2023 – 2024</span>
             <br />
             <span className="rounded inline-block bg-yellow bg-opacity-20 text-yellow-700 text-sm leading-snug pb-2px px-2 mb-1.5">
               Acquired by Airtable
             </span>
-          </p>
-          <p>
-            <strong>Caribou</strong> / Strategy &amp; Design Consultancy
-            <br />
-            UX &amp; Product Designer, Partner
-            <br />
-            2011 – Present
           </p>
           <p>
             <strong>Sourcegraph</strong> / Universal Code Search & Intelligence
@@ -111,22 +104,22 @@ function About() {
             <br />
             Staff Product Designer
             <br />
-            2022 – 2023
+            <span className="text-black-lighter">2022 – 2023</span>
             <br />
             Senior Product Designer
             <br />
-            2020 – 2022
+            <span className="text-black-lighter">2020 – 2022</span>
           </p>
           <p>
             <strong>Marley Spoon</strong> / Meal Kit Service
             <br />
             UX Lead
             <br />
-            2019 – 2020
+            <span className="text-black-lighter">2019 – 2020</span>
             <br />
             Senior UX/UI Designer
             <br />
-            2018 – 2019
+            <span className="text-black-lighter">2018 – 2019</span>
           </p>
           <p>
             <strong>Ducks Unlimited Canada</strong> / Wetland &amp; Wildlife
@@ -134,29 +127,73 @@ function About() {
             <br />
             UX Specialist
             <br />
-            2012 – 2018
+            <span className="text-black-lighter">2012 – 2018</span>
           </p>
           <p>
-            <strong>UX Lab</strong> / UX &amp; Usability Testing Space
+            <strong>UX Lab</strong> / Usability Testing Space
             <br />
             Co-Founder
             <br />
-            2017 – 2018
+            <span className="text-black-lighter">2017 – 2018</span>
           </p>
           <p>
-            <strong>UX Winnipeg</strong> / Events &amp; Community Organization
+            <strong>UX Winnipeg</strong> / Design Community Events &amp;
+            Organization
             <br />
             Co-Organizer
             <br />
-            2017 – 2018
+            <span className="text-black-lighter">2017 – 2018</span>
+          </p>
+          <p>
+            <strong>Caribou</strong> / Strategy &amp; Design Consultancy
+            <br />
+            Co-Founder & Designer
+            <br />
+            <span className="text-black-lighter">2011 – Present</span>
           </p>
           <p>
             <strong>Relish</strong> / Branding &amp; Design Studio
             <br />
             Graphic Designer
             <br />
-            2009 – 2012
+            <span className="text-black-lighter">2009 – 2012</span>
           </p>
+        </div>
+      </div>
+      <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-8 md:mt-12 pt-4 md:pt-8">
+        <div className="col-span-1">
+          <h2 className="font-normal text-base text-black-lighter">
+            Select client list
+          </h2>
+        </div>
+        <div className="col-span-1 mt-4">
+          <ul className="client-list">
+            <li>24/7 InTouch</li>
+            <li>Andrea Shelley</li>
+            <li>Arlan Group</li>
+            <li>Canadian Ultimate Championships</li>
+            <li>Ducks Unlimited Canada</li>
+            <li>Emerge Knowledge Design</li>
+            <li>Forth</li>
+            <li>Funding Change</li>
+            <li>IBEX Payroll</li>
+            <li>Jackfruit</li>
+            <li>Johnston Group</li>
+          </ul>
+        </div>
+        <div className="col-span-1 mt-4">
+          <ul className="client-list">
+            <li>Lighthouse</li>
+            <li>Marley Spoon</li>
+            <li>MODS</li>
+            <li>Native Plant Solutions</li>
+            <li>Neovation</li>
+            <li>Oak Hammock Marsh Interpretive Centre</li>
+            <li>Ultimate Canada</li>
+            <li>UnionWare</li>
+            <li>Walnut</li>
+            <li>VC Ultimate</li>
+          </ul>
         </div>
       </div>
     </Layout>
