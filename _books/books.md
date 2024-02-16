@@ -2,9 +2,15 @@
 
 - year: 2024
   books:
+  - title: Among the Living
+    author: Tim Lebbon
+    reading: true
+  - title: The Tainted Cup
+    author: Robert Jackson Bennett
+    thoughts: Love the narrow lens in a broader snippet of a fantastical world
   - title: Exordia
     author: Seth Dickinson
-    reading: true
+    thoughts: Kind of a wild ride that keeps going, but wouldn’t necessarily read again
   - title: Fevre Dream
     author: George R. R. Martin
     thoughts: a) Yes I too was startled this exists and b) it’s great
