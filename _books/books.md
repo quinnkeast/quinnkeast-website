@@ -2,9 +2,12 @@
 
 - year: 2024
   books:
+  - title: The Midnight Bargain
+    author: C.L. Polk
+    reading: true
   - title: Among the Living
     author: Tim Lebbon
-    reading: true
+    thoughts: Feels vaguely like it was written with the goal of being turned into a show
   - title: The Tainted Cup
     author: Robert Jackson Bennett
     thoughts: Love the narrow lens in a broader snippet of a fantastical world
