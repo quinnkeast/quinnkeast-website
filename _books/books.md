@@ -2,9 +2,12 @@
 
 - year: 2024
   books:
+  - title: The House in the Cerulean Sea
+    author: T.J. Klune
+    thoughts: Lovely
   - title: The Midnight Bargain
-    author: C.L. Polk
-    reading: true
+    author: C. L. Polk
+    thoughts: Enjoyable, not subtle
   - title: Among the Living
     author: Tim Lebbon
     thoughts: Feels vaguely like it was written with the goal of being turned into a show
