@@ -23,13 +23,13 @@ export default function Home() {
             .
           </h2>*/}
           <div className="grid md:grid-cols-3 mt-2 md:mt-4">
-            <div className="col-1">
+            {/*<div className="col-1">
               <p>
                 <span className="rounded inline-block bg-yellow bg-opacity-20 text-yellow-700 text-sm leading-snug pb-2px px-2 mb-1.5">
                   Open to opportunities
                 </span>
               </p>
-            </div>
+            </div>*/}
             <div className="col-1">
               <p>
                 <strong>Current location</strong>
