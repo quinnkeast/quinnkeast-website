@@ -49,6 +49,9 @@ export default function Footer() {
             <h5 className="text-sm md:text-base">Projects &amp; fun stuff</h5>
             <ul className="list-none ml-0 mt-2">
               <li>
+                <a href="/brand-book">A book on brand for product teams</a>
+              </li>
+              <li>
                 <a href="https://uxlanguage.com" target="_blank">
                   UX Language Framework
                 </a>
