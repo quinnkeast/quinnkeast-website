@@ -56,18 +56,18 @@ function BrandBook() {
           </p>
 
           <p>
-            A product team that deeply understands brand can make better,
+            Products teams that deeply understand brand can make better,
             higher-leverage decisions faster. They can reduce ambiguity and
             subjectivity and ship more effective, consistent, and coherent
             product outcomes. They can attract and retain a world-class team.
           </p>
 
           <p>
-            There’re other books and resources on brand and the practice of
+            There are other books and resources on brand and the practice of
             branding. But in my experience, these tend to be focused on an
             audience adjacent to startups and product teams: agencies, visual
             designers, marketing specialists, or a generalized business persona.
-            They tend to focus on one aspect of brand—particularly visual
+            Many tend to focus on one aspect of brand—particularly visual
             expression—and don’t provide the conceptual tools needed to
             understand and act upon brand in the context of a startup or product
             organization.
@@ -75,9 +75,9 @@ function BrandBook() {
 
           <p>
             <strong>I’m writing a book on brand for product teams</strong>,
-            founders, product designers, engineers, product managers, and
-            leaders. I hope this book will be valuable for anyone working in a
-            startup or product organization.
+            founders, product designers, engineers, and product managers. I hope
+            this book will be valuable for anyone working in a startup or
+            product organization.
           </p>
 
           <p>&mdash;</p>
