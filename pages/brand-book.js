@@ -98,7 +98,7 @@ function BrandBook() {
             action="https://buttondown.email/api/emails/embed-subscribe/brandprimer"
             method="post"
             target="popupwindow"
-            onsubmit="window.open('https://buttondown.email/brandprimer', 'popupwindow')"
+            onSubmit="window.open('https://buttondown.email/brandprimer', 'popupwindow')"
             className="flex flex-col gap-2 mt-4 items-start"
             autoComplete="off"
           >
@@ -119,7 +119,7 @@ function BrandBook() {
               <input
                 type="submit"
                 value="Sign up"
-                className="inline rounded-md pt-0.5 pb-1 px-3 bg-black text-white text-sm hover:bg-black-lighter cursor-pointer flex-auto"
+                className="inline rounded-md pt-0.5 pb-1 px-3 bg-black text-white text-sm font-normal hover:bg-black-lighter cursor-pointer flex-auto"
               />
               <span className="text-xs text-black-lighter flex-grow">
                 You’ll receive an email to confirm your subscription
