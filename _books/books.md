@@ -2,6 +2,12 @@
 
 - year: 2024
   books:
+  - title: Saevus Corax Gets Away With Murder
+    author: K. J. Parker
+    reading: true
+  - title: The Book of Lost Things
+    author: John Connolly
+    reading: true
   - title: The House in the Cerulean Sea
     author: T.J. Klune
     thoughts: Lovely
