@@ -30,13 +30,7 @@ export default function Project({ project, moreProjects, preview }) {
   });
 
   // Server-render loading state
-  if (!user || user.isLoggedIn === false) {
-    return (
-      <Layout>
-        <div className="min-h-screen block"></div>
-      </Layout>
-    );
-  }
+  if (!user || user.isLoggedIn === false) return null;
 
   // Once the user request finishes, show the content
   return (

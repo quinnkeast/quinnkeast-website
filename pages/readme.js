@@ -27,9 +27,9 @@ function ReadMe() {
       <PageHeader>
         <h1 className="text-2xl md:text-4xl">Quinn.ReadMe</h1>
         <p className="text-base md:text-2xl mt-0 subpixel-antialiased">
-          This is a user guide on me and how I work. It captures my guiding
-          values, how I work as a human, and will hopefully help you understand
-          me better and help us work together.
+          A user guide on me and how I work. It captures my guiding values, how
+          I work as a human, and will hopefully help you understand me better
+          and help us work together.
         </p>
       </PageHeader>
       <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-8 md:mt-12 pt-8 md:pt-12">

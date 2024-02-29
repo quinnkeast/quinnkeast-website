@@ -9,7 +9,7 @@ export default function Index({ allFavourites }) {
   return (
     <Layout>
       <Head>
-        <title>Favourites | {SITE_NAME}</title>
+        <title>{`Favourites | ${SITE_NAME}`}</title>
         <meta
           property="og:description"
           content={`Favourite books for stretching the mind with new ideas.`}

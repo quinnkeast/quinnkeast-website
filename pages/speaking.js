@@ -8,7 +8,7 @@ function Speaking() {
   return (
     <Layout>
       <Head>
-        <title>Speaking | {SITE_NAME}</title>
+        <title>{`Speaking | ${SITE_NAME}`}</title>
         <meta
           property="og:description"
           content={`Speaking at events around the world on exciting and inspiring topics.`}
@@ -28,9 +28,8 @@ function Speaking() {
       <PageHeader>
         <h1 className="text-2xl md:text-4xl">Speaking</h1>
         <p className="text-base md:text-2xl mt-0 subpixel-antialiased">
-          I’ve had the honour to speak at events around the world on topics and
-          ideas that I find personally exciting or inspiring—and that I think
-          that you will, too.
+          A collection of ideas I find exciting or inspiring that I’ve had the
+          honour to speak about at events around the world.
         </p>
       </PageHeader>
       <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-8 md:mt-12 pt-4 md:pt-8">
@@ -42,15 +41,27 @@ function Speaking() {
         <div className="md:col-span-2">
           <p>
             Speaker at{" "}
-            <a href="https://ecosia.org/">Ecosia Accessibility Day</a>
+            <a href="https://sourcegraph.com" target="_blank">
+              Sourcegraph
+            </a>
             <br />
-            <strong>
-              <Link href="/speaking/inclusion-as-a-catalyst-for-design">
-                “Inclusion as a Catalyst for Design”
-              </Link>
-            </strong>
+            <strong>“Leveling Up Storytelling in Design”</strong>
+            <br />
+            September 2022
+          </p>
+          <p>
+            Speaker at{" "}
+            <a href="https://ecosia.org/" target="_blank">
+              Ecosia Accessibility Day
+            </a>
+            <br />
+            <strong>“Inclusion as a Catalyst for Design”</strong>
             <br />
             June 2021
+            <br />
+            <a href="/writing/inclusion-as-a-catalyst-for-design">
+              Read the article
+            </a>
           </p>
           <p>
             Roundtable at{" "}
@@ -124,7 +135,11 @@ function Speaking() {
             December 2018
           </p>
           <p>
-            Speaker at IxDA Berlin: World Interaction Design Day
+            Speaker at{" "}
+            <a href="http://ixdaberlin.de/" target="_blank">
+              IxDA Berlin
+            </a>
+            : World Interaction Design Day
             <br />
             <strong>
               “Breaking Down Unintended Barriers in Your Workplace for More
@@ -169,7 +184,7 @@ function Speaking() {
       </div>
       <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-8 md:mt-12 pt-4 md:pt-8">
         <div className="col-span-1">
-          <h2 className="text-base text-black-lighter font-normal">Book Me</h2>
+          <h2 className="text-base text-black-lighter font-normal">Book me</h2>
         </div>
         <div className="md:col-span-2">
           <h2>Interested in having me speak?</h2>

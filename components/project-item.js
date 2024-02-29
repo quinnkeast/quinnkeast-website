@@ -13,11 +13,11 @@ export default function ProjectItem({ project, hero }) {
         <Link href={`/projects/${project.slug}`}>{project.title}</Link>
       </h3>
       <p className="mt-3 text-base leading-tight">{project.subtitle}</p>
-      {project.restricted && (
+      {/* project.restricted && (
         <div className="text-xs text-black-lighter inline-block">
           <span className="lock">🔒</span> Limited access
         </div>
-      )}
+      ) */}
     </div>
   );
 }

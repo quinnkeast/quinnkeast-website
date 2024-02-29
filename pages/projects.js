@@ -38,11 +38,11 @@ const ProjectGroup = ({ projects, index }) => {
               <Link href={`/projects/${project.slug}`}>{project.title}</Link>
             </h3>
             <p className="mt-2 text-base leading-tight">{project.subtitle}</p>
-            {project.restricted && (
+            {/* project.restricted && (
               <span className="text-xxs text-black-lighter inline-block">
                 <span className="lock">🔒</span> Restricted
               </span>
-            )}
+            ) */}
           </div>
         </>
       )}
@@ -75,8 +75,7 @@ export default function Projects({ groupedProjects }) {
         <PageHeader>
           <h1>Craft</h1>
           <p className="text-2xl">
-            A running journal of case studies, explorations, and ideas about
-            design and craft.
+            A running journal of case studies, explorations, and experiments.
           </p>
         </PageHeader>
         {Object.keys(groupedProjects).map((group, index) => {

@@ -12,7 +12,7 @@ export default function Index({ allPosts }) {
   return (
     <Layout>
       <Head>
-        <title>Writing | {SITE_NAME}</title>
+        <title>{`Writing | ${SITE_NAME}`}</title>
         <meta
           property="og:description"
           content={`A collection of thinking on user experience, design, and business.`}
@@ -32,7 +32,7 @@ export default function Index({ allPosts }) {
       <PageHeader>
         <h1 className="text-2xl md:text-4xl">Writing</h1>
         <p className="leading-snug text-base md:text-2xl subpixel-antialiased mt-0 md:mt-2">
-          A collection of thinking on user experience, design, and business.
+          A collection of thinking on design, tech, and the art of making sense.
         </p>
       </PageHeader>
       <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-6 md:mt-12 pt-0 post-list">

@@ -30,7 +30,7 @@ export default function Reading({ booksByYear }) {
       <PageHeader>
         <h1 className="text-2xl md:text-4xl">Reading list</h1>
         <p className="text-base md:text-2xl mt-0 subpixel-antialiased">
-          What I’m reading and my opinions and all that.
+          A list of what I’m reading and my opinions and all that.
         </p>
       </PageHeader>
       <div className="grid md:grid-cols-5 border-t border-black border-opacity-10 mt-8 md:mt-12 pt-4 md:pt-8">
@@ -64,7 +64,7 @@ export default function Reading({ booksByYear }) {
                     >
                       <td
                         className={`pt-2 md:pb-2 pr-2 ${
-                          book.abandoned ? "line-through" : ""
+                          book.abandoned ? `line-through decoration-3` : ""
                         }`}
                       >
                         {book.reading && (
