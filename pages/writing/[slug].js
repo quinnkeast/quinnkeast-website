@@ -94,6 +94,7 @@ export async function getStaticProps({ params }) {
     "ogImage",
     "tags",
     "external",
+    "readingTime",
   ]);
 
   const content = await mdxToHtml(post.content);

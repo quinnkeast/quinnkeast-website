@@ -55,7 +55,7 @@ function Login() {
               }
             }}
           >
-            <label className="block mb-3 font-bold">
+            <label className="block mb-3 font-medium">
               Enter password to access content
               <input
                 type="password"

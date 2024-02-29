@@ -48,19 +48,19 @@ export default function Project({ project, moreProjects, preview }) {
                   <p className="text-sm leading-tight">
                     <span className="text-black-lighter">Organization</span>{" "}
                     <br />
-                    <span className="font-bold">{project.client}</span>
+                    <span className="font-medium">{project.client}</span>
                   </p>
                 </div>
                 <div>
                   <p className="text-sm leading-tight">
                     <span className="text-black-lighter">Role</span> <br />
-                    <span className="font-bold">{project.role}</span>
+                    <span className="font-medium">{project.role}</span>
                   </p>
                 </div>
                 <div>
                   <p className="text-sm leading-tight">
                     <span className="text-black-lighter">Period</span> <br />
-                    <span className="font-bold">{project.period}</span>
+                    <span className="font-medium">{project.period}</span>
                   </p>
                 </div>
               </div>

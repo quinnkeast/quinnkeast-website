@@ -25,6 +25,15 @@ module.exports = {
       padding: {
         "2px": "2px",
       },
+      fontSize: {
+        xxs: [
+          ".625rem",
+          {
+            lineHeight: ".625rem",
+            letterSpacing: ".325px",
+          },
+        ],
+      },
     },
   },
   variants: {

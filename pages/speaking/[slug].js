@@ -87,6 +87,7 @@ export async function getStaticProps({ params }) {
     "tags",
     "external",
     "wide",
+    "readingTime",
   ]);
 
   const content = (await mdxToHtml(talk.content)) || "";
