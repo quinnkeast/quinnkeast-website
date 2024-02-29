@@ -12,7 +12,11 @@
   }
 
   .bg-writing {
-    background: #faf8f5;
+    background: #f9f8f6;
+  }
+
+  .bg-craft {
+    background: #f9f8f6;
   }
 
   #nprogress .bar {
@@ -68,7 +72,7 @@
   p,
   ul,
   ol {
-    @apply mt-4;
+    @apply mt-3;
   }
 
   ul {
@@ -106,42 +110,58 @@
     @apply mb-8 mt-2 text-xs;
   }
 
-  .post-header p {
-  }
-
+  /* .post-content Specific Styles */
   .post-content p,
   .post-content li {
     @apply font-serif md:text-sm leading-relaxed md:leading-relaxed;
     font-size: 0.825rem;
   }
 
-  .project-content p,
-  .project-content li {
-    @apply leading-relaxed md:leading-relaxed;
-  }
-
   .post-content h2,
-  .post-content h3,
-  .project-content h2,
-  .project-content h3 {
+  .post-content h3 {
     @apply leading-tight tracking-tight;
   }
 
   .post-content p + h2,
   .post-content ul + h2,
-  .post-content ol + h2,
-  .project-content p + h2,
-  .project-content ul + h2,
-  .project-content ol + h2 {
-    @apply mt-8;
-  }
-
-  .post-content p + ul,
-  .project-content p + ul {
+  .post-content ol + h2 {
     @apply mt-6;
   }
 
-  .post-content ol,
+  .post-content p + ul {
+    @apply mt-6;
+  }
+
+  .post-content ol {
+    @apply list-decimal pl-7;
+  }
+
+  /* .project-content Specific Styles */
+  .project-content p,
+  .project-content li {
+    @apply leading-snug md:leading-snug;
+    font-size: 0.925rem;
+  }
+
+  .project-content li:last-child {
+    @apply mb-0;
+  }
+
+  .project-content h2,
+  .project-content h3 {
+    @apply leading-tight tracking-tight;
+  }
+
+  .project-content p + h2,
+  .project-content ul + h2,
+  .project-content ol + h2 {
+    @apply mt-6;
+  }
+
+  .project-content p + ul {
+    @apply mt-4;
+  }
+
   .project-content ol {
     @apply list-decimal pl-7;
   }
@@ -157,8 +177,16 @@
     @apply max-w-lg mx-auto;
   }
 
+  .project-content h2 {
+    @apply text-xl;
+  }
+
+  .project-content h3 {
+    @apply text-lg;
+  }
+
   .project-content > blockquote {
-    @apply border-l-4 border-yellow pl-4;
+    @apply border-l-4 border-yellow pl-4 my-6;
   }
 
   .project-content ul {
@@ -169,16 +197,12 @@
     @apply ml-4;
   }
 
-  .how-ms-team-works ul {
-    @apply ml-0;
-  }
-
   .project-content ol {
     @apply pl-4;
   }
 
   .project-content figure {
-    @apply my-12;
+    @apply my-8;
   }
 
   .project-content figure img {

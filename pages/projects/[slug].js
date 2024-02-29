@@ -6,8 +6,17 @@ import { getProjectBySlug, getAllProjects } from "../../lib/api";
 import Head from "next/head";
 import mdxToHtml from "../../lib/mdxToHtml";
 import Layout from "../../components/layout";
+import { useEffect } from "react";
 
 export default function Project({ project, moreProjects, preview }) {
+  // Change bg to white
+  useEffect(() => {
+    document.body.classList.add("bg-craft");
+    return () => {
+      document.body.classList.remove("bg-craft");
+    };
+  }, []);
+
   const router = useRouter();
 
   if (!router.isFallback && !project?.slug) {
