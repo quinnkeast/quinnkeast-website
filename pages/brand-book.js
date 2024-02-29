@@ -36,7 +36,7 @@ function BrandBook() {
       </PageHeader>
       <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-8 md:mt-16 pt-4 md:pt-8">
         <div className="col-span-1">
-          <h2 className="font-medium text-base text-black-lighter">
+          <h2 className="font-normal text-base text-black-lighter">
             What is this
           </h2>
         </div>
@@ -80,19 +80,19 @@ function BrandBook() {
             product organization.
           </p>
 
-          <p>&mdash;</p>
+          <p className="text-black-lighter font-serif">&mdash;</p>
         </div>
       </div>
       <div className="grid md:grid-cols-3">
         <div className="col-span-1">
-          <h2 className="font-medium text-base text-black-lighter">
+          <h2 className="font-normal text-base text-black-lighter">
             Get updates
           </h2>
         </div>
         <div className="md:col-span-2 max-w-md">
           <p>
-            If you’d like to receive very-occasional progress notes and thoughts
-            along the way, sign up for updates!
+            If you’d like to receive very-occasional updates as I haul this into
+            reality, sign up for updates!
           </p>
           <form
             action="https://buttondown.email/api/emails/embed-subscribe/brandprimer"
@@ -102,10 +102,7 @@ function BrandBook() {
             className="flex flex-col gap-2 mt-4 items-start"
             autoComplete="off"
           >
-            <label
-              htmlFor="bd-email"
-              className="text-black-lighter text-sm font-medium"
-            >
+            <label htmlFor="bd-email" className="font-medium">
               Your email address
             </label>
             <input
@@ -113,16 +110,16 @@ function BrandBook() {
               name="email"
               id="bd-email"
               autoComplete="false"
-              className="pt-1 pb-1.5 px-2.5 mb-1 self-stretch rounded-md border-black-lighter border-2 focus:outline-none focus:ring outline-offset-4 focus:outline bg-tan focus:bg-white focus:border-black"
+              className="pt-1 pb-1.5 px-2.5 mb-1 self-stretch rounded border-black-lighter border-2 focus:outline-none focus:ring outline-offset-4 focus:outline bg-tan focus:bg-white focus:border-black"
             />
             <div className="flex flex-row gap-2.5 content-center items-center">
               <input
                 type="submit"
                 value="Sign up"
-                className="inline rounded-md pt-0.5 pb-1 px-3 bg-black text-white text-sm font-normal hover:bg-black-lighter cursor-pointer flex-auto"
+                className="inline rounded pt-0.5 pb-1 px-3 bg-black text-white text-sm font-normal hover:bg-black-lighter cursor-pointer flex-auto"
               />
               <span className="text-xs text-black-lighter flex-grow">
-                You’ll receive an email to confirm your subscription
+                You’ll receive a quick email to confirm your subscription
               </span>
             </div>
           </form>

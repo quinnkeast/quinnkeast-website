@@ -2,6 +2,9 @@
 *.mdx
 *.md
 
+# ignore the ascii
+/lib/ascii.js
+
 # dependencies
 /node_modules
 /.pnp

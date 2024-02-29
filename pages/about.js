@@ -3,6 +3,8 @@ import Link from "next/link";
 import Layout from "../components/layout";
 import PageHeader from "../components/page-header";
 import { SITE_NAME } from "../lib/constants";
+import { ascii } from "../lib/ascii";
+import Script from "next/script";
 
 function About() {
   return (
@@ -24,6 +26,7 @@ function About() {
           content="https://quinnkeast.com/about"
           key="url"
         />
+        <script>{ascii}</script>
       </Head>
       <PageHeader>
         <h1 className="text-2xl md:text-4xl">About</h1>
@@ -38,7 +41,7 @@ function About() {
       </PageHeader>
       <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-8 md:mt-16 pt-4 md:pt-8">
         <div className="col-span-1">
-          <h2 className="font-medium text-base text-black-lighter">
+          <h2 className="font-normal text-base text-black-lighter">
             The nitty gritty
           </h2>
         </div>
@@ -83,7 +86,7 @@ function About() {
       </div>
       <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-12 pt-8">
         <div className="col-span-1">
-          <h2 className="font-medium text-base text-black-lighter">Timeline</h2>
+          <h2 className="font-normal text-base text-black-lighter">Timeline</h2>
         </div>
         <div className="md:col-span-2">
           <p>
