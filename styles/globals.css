@@ -143,6 +143,11 @@
     font-size: 0.925rem;
   }
 
+  .project-content p code {
+    @apply leading-snug md:leading-snug text-pink-500 px-1 bg-black-lighter bg-opacity-10 border-black-lighter border-opacity-40 border rounded;
+    font-size: 0.725rem;
+  }
+
   .project-content li:last-child {
     @apply mb-0;
   }
