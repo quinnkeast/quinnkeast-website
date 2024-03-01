@@ -36,10 +36,10 @@ export default function Reading({ booksByYear }) {
       <div className="grid md:grid-cols-5 border-t border-black border-opacity-10 mt-8 md:mt-12 pt-4 md:pt-8">
         {years.map((year, i) => (
           <React.Fragment key={year}>
-            <div className="col-span-5 md:col-span-1 md:flex">
-              <span className="text-black-lighter inline-block leading-snug pr-8 mt-3.5 text-sm">
+            <div className="col-span-5 md:col-span-1 pt-0">
+              <div className="text-black-lighter inline-block leading-snug pr-8 mt-3.5 text-sm sticky top-8">
                 {year.year}
-              </span>
+              </div>
             </div>
             <div className="col-span-5 md:col-span-4 align-baseline">
               <table className="table-fixed w-full text-sm mt-3 mb-6">
