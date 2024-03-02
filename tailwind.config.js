@@ -26,6 +26,7 @@ module.exports = {
         "2px": "2px",
       },
       fontSize: {
+        projectBasis: [".925rem"],
         xxs: [
           ".625rem",
           {

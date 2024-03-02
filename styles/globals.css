@@ -139,8 +139,7 @@
   /* .project-content Specific Styles */
   .project-content p,
   .project-content li {
-    @apply leading-snug md:leading-snug;
-    font-size: 0.925rem;
+    @apply leading-snug md:leading-snug text-projectBasis;
   }
 
   .project-content p code {
@@ -216,6 +215,14 @@
 
   .project-content figcaption {
     @apply text-center text-black-lighter;
+  }
+
+  .project-content .column-image {
+    @apply max-w-lg mx-auto rounded border overflow-hidden border-black-lighter border-opacity-10;
+  }
+
+  .project-content .snippet {
+    @apply text-xs text-black-lighter mt-0 mb-3;
   }
 
   .icon-shift {
