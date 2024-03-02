@@ -13,6 +13,7 @@
     "date-fns": "^2.19.0",
     "esbuild": "^0.14.14",
     "eslint-config-next": "^13.0.7",
+    "fathom-client": "^3.6.0",
     "gray-matter": "^4.0.2",
     "iron-session": "^6.3.1",
     "mdx-bundler": "^8.0.1",

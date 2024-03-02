@@ -74,7 +74,7 @@ export default function Projects({ groupedProjects }) {
         </Head>
         <PageHeader>
           <h1>Craft</h1>
-          <p className="text-2xl">
+          <p className="text-base md:text-2xl">
             A running journal of case studies, explorations, and experiments.
           </p>
         </PageHeader>
