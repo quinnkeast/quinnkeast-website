@@ -1,6 +1,16 @@
+import * as Fathom from "fathom-client";
+
 export default function Figma({ link, title, thumbnail }) {
+  const handleClick = (e) => {
+    e.preventDefault();
+    Fathom.trackEvent("view figma", {
+      _value: title,
+    });
+    window.open(link, "_blank");
+  };
+
   return (
-    <a href={link} target="_blank">
+    <a href={link} target="_blank" onClick={handleClick}>
       <div className="flex flex-col bg-white rounded-md p-4 my-4 shadow">
         {thumbnail && (
           <div className="flex flex-row mb-3">
