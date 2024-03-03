@@ -35,7 +35,7 @@ const ProjectGroup = ({ projects, index }) => {
           </div>
           <div className="md:col-span-2 max-w-md">
             <h3 className="leading-tight text-lg font-medium mb-0 mt-2 md:mt-4">
-              <Link href={`/projects/${project.slug}`}>{project.title}</Link>
+              <Link href={`/craft/${project.slug}`}>{project.title}</Link>
             </h3>
             <p className="mt-2 text-base leading-tight">{project.subtitle}</p>
             {/* project.restricted && (
@@ -50,7 +50,7 @@ const ProjectGroup = ({ projects, index }) => {
   ));
 };
 
-export default function Projects({ groupedProjects }) {
+export default function Craft({ groupedProjects }) {
   return (
     <>
       <Layout>
@@ -63,12 +63,12 @@ export default function Projects({ groupedProjects }) {
           />
           <meta
             property="og:title"
-            content={`Projects | ${SITE_NAME}`}
+            content={`Craft | ${SITE_NAME}`}
             key="title"
           />
           <meta
             property="og:url"
-            content="https://quinnkeast.com/projects"
+            content="https://quinnkeast.com/craft"
             key="url"
           />
         </Head>

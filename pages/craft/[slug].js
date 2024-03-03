@@ -26,7 +26,7 @@ export default function Project({ project, moreProjects, preview }) {
   // Fetch the user client-side
   const { user } = useUser({
     redirectTo: `/login?ref=${project.slug}`,
-    redirectIfUserFound: `/projects/${project.slug}`,
+    redirectIfUserFound: `/craft/${project.slug}`,
   });
 
   // Server-render loading state

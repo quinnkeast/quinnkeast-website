@@ -7,7 +7,7 @@ const menuItems = [
   },
   {
     label: "Craft",
-    path: "projects",
+    path: "craft",
   },
   {
     label: "Speaking",
