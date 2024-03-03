@@ -6,9 +6,15 @@ import { getProjectBySlug, getAllProjects } from "../../lib/api";
 import Head from "next/head";
 import mdxToHtml from "../../lib/mdxToHtml";
 import Layout from "../../components/layout";
+import ProjectNavigation from "../../components/project-navigation";
 import { useEffect } from "react";
 
-export default function Project({ project, moreProjects, preview }) {
+export default function Project({
+  project,
+  preview,
+  nextProject,
+  prevProject,
+}) {
   // Change bg to white
   useEffect(() => {
     document.body.classList.add("bg-craft");
@@ -69,6 +75,10 @@ export default function Project({ project, moreProjects, preview }) {
               </div>
             </div>
             <ProjectBody content={project.content} />
+            <ProjectNavigation
+              nextProject={nextProject}
+              prevProject={prevProject}
+            />
           </article>
         </>
       )}
@@ -96,12 +106,22 @@ export async function getStaticProps({ params }) {
 
   const content = (await mdxToHtml(project.content)) || "";
 
+  const allProjects = await getAllProjects(["slug", "title", "date"]);
+
+  const currentProjectIndex = allProjects.findIndex(
+    (p) => p.slug === project.slug
+  );
+  const prevProject = allProjects[currentProjectIndex - 1] || null;
+  const nextProject = allProjects[currentProjectIndex + 1] || null;
+
   return {
     props: {
       project: {
         ...project,
         content,
       },
+      nextProject,
+      prevProject,
     },
   };
 }
