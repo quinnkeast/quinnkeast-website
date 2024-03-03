@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function ProjectNavigation({ nextProject, prevProject }) {
   return (
-    <nav className="grid grid-cols-2 gap-4 border-t border-black-lighter border-opacity-20 md:max-w-lg mx-auto pt-8 mt-2">
+    <nav className="grid grid-cols-2 gap-4 md:max-w-lg mx-auto mt-2">
       <div className="flex flex-col">
         {prevProject && (
           <Link
