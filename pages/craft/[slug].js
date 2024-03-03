@@ -32,15 +32,12 @@ export default function Project({
   // Fetch the user client-side
   const { user } = useUser({
     redirectTo: `/login?ref=${project.slug}`,
-    redirectIfUserFound: `/craft/${project.slug}`,
+    //redirectIfUserFound: `/craft/${project.slug}`,
   });
-
-  // Server-render loading state
-  if (!user || user.isLoggedIn === false) return null;
 
   // Once the user request finishes, show the content
   return (
-    <Layout preview={preview}>
+    <Layout>
       {router.isFallback ? (
         <h1>Loading…</h1>
       ) : (
@@ -51,27 +48,35 @@ export default function Project({
               <meta property="og:image" content={project.ogImage.url} />
             </Head>
             <div className={`max-w-lg mx-auto`}>
-              <h1 className="text-xl md:text-4xl md:mb-8">{project.hero}</h1>
+              <h1 className="text-xl md:text-4xl md:mb-8">
+                {project.hero || project.title}
+              </h1>
               <div className="grid md:grid-cols-3 md:gap-4">
-                <div>
-                  <p className="text-sm leading-tight">
-                    <span className="text-black-lighter">Organization</span>{" "}
-                    <br />
-                    <span className="font-medium">{project.client}</span>
-                  </p>
-                </div>
-                <div>
-                  <p className="text-sm leading-tight">
-                    <span className="text-black-lighter">Role</span> <br />
-                    <span className="font-medium">{project.role}</span>
-                  </p>
-                </div>
-                <div>
-                  <p className="text-sm leading-tight">
-                    <span className="text-black-lighter">Period</span> <br />
-                    <span className="font-medium">{project.period}</span>
-                  </p>
-                </div>
+                {project.client && (
+                  <div>
+                    <p className="text-sm leading-tight">
+                      <span className="text-black-lighter">Organization</span>{" "}
+                      <br />
+                      <span className="font-medium">{project.client}</span>
+                    </p>
+                  </div>
+                )}
+                {project.role && (
+                  <div>
+                    <p className="text-sm leading-tight">
+                      <span className="text-black-lighter">Role</span> <br />
+                      <span className="font-medium">{project.role}</span>
+                    </p>
+                  </div>
+                )}
+                {project.period && (
+                  <div>
+                    <p className="text-sm leading-tight">
+                      <span className="text-black-lighter">Date</span> <br />
+                      <span className="font-medium">{project.period}</span>
+                    </p>
+                  </div>
+                )}
               </div>
             </div>
             <ProjectBody content={project.content} />

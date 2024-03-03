@@ -10,8 +10,8 @@ export default function Figma({ link, title, thumbnail }) {
   };
 
   return (
-    <a href={link} target="_blank" onClick={handleClick}>
-      <div className="flex flex-col bg-white rounded-md p-4 my-4 shadow">
+    <a href={link} target="_blank" onClick={handleClick} className="group">
+      <div className="flex flex-col bg-white rounded-md p-4 my-4 shadow group-hover:shadow-md">
         {thumbnail && (
           <div className="flex flex-row mb-3">
             <img src={thumbnail} className="rounded-lg" />
@@ -26,7 +26,11 @@ export default function Figma({ link, title, thumbnail }) {
           />
 
           <div className="leading-tight">
-            {title && <span className="font-medium mb-1">{title}</span>}
+            {title && (
+              <span className="font-medium mb-1 group-hover:text-black">
+                {title}
+              </span>
+            )}
             <br />
             <span className="text-black-lighter text-sm">View Figma file</span>
           </div>
