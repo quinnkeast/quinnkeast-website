@@ -274,6 +274,13 @@
     @apply text-sm text-black-lighter leading-snug my-0;
   }
 
+  .project-content .code-host-connection-base {
+    width: 640px;
+  }
+  .project-content .code-host-connection-item {
+    width: 640px;
+  }
+
   .icon-shift {
     position: relative;
     margin-top: -4px;
