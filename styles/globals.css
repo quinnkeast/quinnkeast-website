@@ -142,7 +142,8 @@
     @apply leading-snug md:leading-snug text-projectBasis;
   }
 
-  .project-content p code {
+  .project-content p code,
+  .project-content li code {
     @apply leading-snug md:leading-snug text-pink-500 px-1 bg-black-lighter bg-opacity-10 border-black-lighter border-opacity-40 border rounded;
     font-size: 0.725rem;
   }
@@ -227,6 +228,42 @@
 
   .project-content pre {
     @apply max-w-lg mx-auto bg-black rounded p-4 my-6 text-xxs leading-normal whitespace-pre-wrap;
+  }
+
+  .project-content .sourcegraph-search-home {
+    max-width: 800px;
+  }
+
+  .project-content .sourcegraph-image {
+    width: 920px;
+  }
+
+  .project-content .sourcegraph-image .example-middle {
+    width: 920px;
+  }
+
+  .project-content .sourcegraph-image .diagram-left {
+    @apply hidden lg:block;
+    width: 160px;
+    position: absolute;
+    left: -160px;
+    top: 6px;
+  }
+
+  .project-content .sourcegraph-image .diagram-right {
+    @apply hidden lg:block;
+    width: 131px;
+    position: absolute;
+    right: -131px;
+    top: 8px;
+  }
+
+  .project-content .sourcegraph-callout-container {
+    @apply bg-black-lighter bg-opacity-5 rounded mx-auto max-w-lg py-3 px-6 my-6;
+  }
+
+  .project-content .sourcegraph-callout {
+    @apply text-sm text-black-lighter leading-snug my-0;
   }
 
   .icon-shift {

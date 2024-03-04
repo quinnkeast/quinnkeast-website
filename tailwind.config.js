@@ -1,5 +1,10 @@
 module.exports = {
   purge: [],
+  content: [
+    "./pages/**/*.{js}",
+    "./components/**/*.{js}",
+    "./_posts/**/*.{mdx}",
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
