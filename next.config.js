@@ -7,4 +7,13 @@ module.exports = {
 
     return config;
   },
+  async redirects() {
+    return [
+      {
+        source: "/projects/:path*",
+        destination: "/craft/:path*",
+        permanent: true,
+      },
+    ];
+  },
 };
