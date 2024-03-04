@@ -142,7 +142,7 @@ function About() {
             <strong>Marley Spoon</strong> / Meal Kit Service
             <br />
             <span className="text-black-lighter text-sm">
-              Berlin <span className="bullet">•</span> Remote
+              Berlin <span className="bullet">•</span> Hybrid
             </span>
             <div className="grid grid-cols-5">
               <div className="text-black-lighter col-span-2 md:col-span-1">
