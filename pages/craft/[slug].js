@@ -7,6 +7,7 @@ import Head from "next/head";
 import mdxToHtml from "../../lib/mdxToHtml";
 import Layout from "../../components/layout";
 import ProjectNavigation from "../../components/project-navigation";
+
 import { useEffect } from "react";
 
 export default function Project({

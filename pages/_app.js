@@ -1,5 +1,6 @@
 import "nprogress/nprogress.css";
 import "../styles/globals.css";
+import "../styles/github-dark.css";
 import { SWRConfig } from "swr";
 import fetchJson from "../lib/fetchJson";
 import * as Fathom from "fathom-client";

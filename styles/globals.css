@@ -225,6 +225,10 @@
     @apply text-xs text-black-lighter mt-0 mb-3;
   }
 
+  .project-content pre {
+    @apply max-w-lg mx-auto bg-black rounded p-4 my-6 text-xxs leading-normal whitespace-pre-wrap;
+  }
+
   .icon-shift {
     position: relative;
     margin-top: -4px;
