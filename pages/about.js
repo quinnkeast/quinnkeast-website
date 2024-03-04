@@ -89,77 +89,131 @@ function About() {
           <h2 className="font-normal text-base text-black-lighter">Timeline</h2>
         </div>
         <div className="md:col-span-2">
-          <p>
+          <p className="mb-5">
             <strong>Airplane</strong> / Developer Infrastructure for Internal
             Tools
             <br />
-            Staff Product Designer
-            <br />
-            <span className="text-black-lighter">2023 – 2024</span>
-            <br />
-            <span className="rounded inline-block bg-yellow bg-opacity-20 text-yellow-700 text-sm leading-snug pb-2px px-2 mb-1.5">
-              Acquired by Airtable
+            <span className="text-black-lighter text-sm">
+              San Francisco <span className="bullet">•</span> Remote
             </span>
+            <div className="grid grid-cols-5">
+              <div className="text-black-lighter col-span-2 md:col-span-1">
+                2023 – 2024
+              </div>
+              <div className="col-span-3 md:col-span-4">
+                Staff Product Designer
+              </div>
+            </div>
+            <div className="grid grid-cols-5">
+              <div className="text-black-lighter col-span-2 md:col-span-1">
+                2024
+              </div>
+              <div className="col-span-3 md:col-span-4">
+                (Acquired by Airtable)
+              </div>
+            </div>
           </p>
-          <p>
+          <p className="mb-5">
             <strong>Sourcegraph</strong> / Universal Code Search & Intelligence
             Platform
             <br />
-            Staff Product Designer
-            <br />
-            <span className="text-black-lighter">2022 – 2023</span>
-            <br />
-            Senior Product Designer
-            <br />
-            <span className="text-black-lighter">2020 – 2022</span>
+            <span className="text-black-lighter text-sm">
+              San Francisco <span className="bullet">•</span> Remote
+            </span>
+            <div className="grid grid-cols-5">
+              <div className="text-black-lighter col-span-2 md:col-span-1">
+                2022 – 2023
+              </div>
+              <div className="col-span-3 md:col-span-4">
+                Staff Product Designer
+              </div>
+            </div>
+            <div className="grid grid-cols-5">
+              <div className="text-black-lighter col-span-2 md:col-span-1">
+                2020 – 2022
+              </div>
+              <div className="col-span-3 md:col-span-4">
+                Senior Product Designer
+              </div>
+            </div>
           </p>
-          <p>
+          <p className="mb-5">
             <strong>Marley Spoon</strong> / Meal Kit Service
             <br />
-            UX Lead
-            <br />
-            <span className="text-black-lighter">2019 – 2020</span>
-            <br />
-            Senior UX/UI Designer
-            <br />
-            <span className="text-black-lighter">2018 – 2019</span>
+            <span className="text-black-lighter text-sm">
+              Berlin <span className="bullet">•</span> Remote
+            </span>
+            <div className="grid grid-cols-5">
+              <div className="text-black-lighter col-span-2 md:col-span-1">
+                2019 – 2020
+              </div>
+              <div className="col-span-3 md:col-span-4">UX Lead</div>
+            </div>
+            <div className="grid grid-cols-5">
+              <div className="text-black-lighter col-span-2 md:col-span-1">
+                2018 – 2019
+              </div>
+              <div className="col-span-3 md:col-span-4">
+                Senior UX/UI Designer
+              </div>
+            </div>
           </p>
-          <p>
-            <strong>Ducks Unlimited Canada</strong> / Wetland &amp; Wildlife
+          <p className="mb-5">
+            <strong>Ducks Unlimited Canada</strong> / Wetland & Wildlife
             Conservancy
             <br />
-            UX Specialist
-            <br />
-            <span className="text-black-lighter">2012 – 2018</span>
+            <span className="text-black-lighter text-sm">
+              Canada <span className="bullet">•</span> Hybrid
+            </span>
+            <div className="grid grid-cols-5">
+              <div className="text-black-lighter col-span-2 md:col-span-1">
+                2012 – 2018
+              </div>
+              <div className="col-span-3 md:col-span-4">UX Specialist</div>
+            </div>
           </p>
-          <p>
+          <p className="mb-5">
             <strong>UX Lab</strong> / Usability Testing Space
             <br />
-            Co-Founder
-            <br />
-            <span className="text-black-lighter">2017 – 2018</span>
+            <div className="grid grid-cols-5">
+              <div className="text-black-lighter col-span-2 md:col-span-1">
+                2017 – 2018
+              </div>
+              <div className="col-span-3 md:col-span-4">Co-Founder</div>
+            </div>
           </p>
-          <p>
-            <strong>UX Winnipeg</strong> / Design Community Events &amp;
+          <p className="mb-5">
+            <strong>UX Winnipeg</strong> / Design Community Events &
             Organization
             <br />
-            Co-Organizer
-            <br />
-            <span className="text-black-lighter">2017 – 2018</span>
+            <div className="grid grid-cols-5">
+              <div className="text-black-lighter col-span-2 md:col-span-1">
+                2017 – 2018
+              </div>
+              <div className="col-span-3 md:col-span-4">Co-Organizer</div>
+            </div>
           </p>
-          <p>
-            <strong>Caribou</strong> / Strategy &amp; Design Consultancy
+          <p className="mb-5">
+            <strong>Caribou</strong> / Strategy & Design Consultancy
             <br />
-            Co-Founder & Designer
-            <br />
-            <span className="text-black-lighter">2011 – Present</span>
+            <div className="grid grid-cols-5">
+              <div className="text-black-lighter col-span-2 md:col-span-1">
+                2011 – Present
+              </div>
+              <div className="col-span-3 md:col-span-4">
+                Co-Founder & Designer
+              </div>
+            </div>
           </p>
-          <p>
-            <strong>Relish</strong> / Branding &amp; Design Studio
+          <p className="mb-5">
+            <strong>Relish</strong> / Branding & Design Studio
             <br />
-            Graphic Designer
-            <br />
-            <span className="text-black-lighter">2009 – 2012</span>
+            <div className="grid grid-cols-5">
+              <div className="text-black-lighter col-span-2 md:col-span-1">
+                2009 – 2012
+              </div>
+              <div className="col-span-3 md:col-span-4">Graphic Designer</div>
+            </div>
           </p>
         </div>
       </div>

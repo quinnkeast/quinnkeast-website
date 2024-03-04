@@ -105,6 +105,14 @@
     @apply mt-10;
   }
 
+  .bullet {
+    font-size: 12px;
+    position: relative;
+    top: -2px;
+    margin-right: 1px;
+    margin-left: 1px;
+  }
+
   figcaption {
     font-family: "CalibreWeb";
     @apply mb-8 mt-2 text-xs;
