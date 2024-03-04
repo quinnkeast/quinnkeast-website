@@ -112,13 +112,23 @@ export async function getStaticProps({ params }) {
 
   const content = (await mdxToHtml(project.content)) || "";
 
-  const allProjects = await getAllProjects(["slug", "title", "date"]);
+  const allProjects = await getAllProjects([
+    "slug",
+    "title",
+    "date",
+    "published",
+  ]);
 
-  const currentProjectIndex = allProjects.findIndex(
+  const isDevelopment = process.env.NODE_ENV === "development";
+  const filteredProjects = allProjects.filter(
+    (project) => isDevelopment || project.published
+  );
+
+  const currentProjectIndex = filteredProjects.findIndex(
     (p) => p.slug === project.slug
   );
-  const prevProject = allProjects[currentProjectIndex - 1] || null;
-  const nextProject = allProjects[currentProjectIndex + 1] || null;
+  const prevProject = filteredProjects[currentProjectIndex - 1] || null;
+  const nextProject = filteredProjects[currentProjectIndex + 1] || null;
 
   return {
     props: {
