@@ -56,9 +56,10 @@ function About() {
           <p>
             I have more than 14 years of expertise that covers the entire
             product design process: from research and strategy to execution and
-            shipping. My background is in design, which is complemented by a
+            shipping. My background is in graphic design, complemented by a
             lifetime of tinkering with digital tools, languages, and
-            technologies that gives me a deep technical basis for my practice.
+            technologies that gives me a high-craft and deep technical basis for
+            my practice.
           </p>
 
           <p>
