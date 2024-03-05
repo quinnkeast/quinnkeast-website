@@ -14,7 +14,7 @@ const projectVisible = (project) => {
 };
 
 // This is hacky for the moment
-const sections = ["2023–2024", "2020–2023", "Older stuff"];
+const sections = ["2023–2024", "2020–2023", "2018–2020", "Older stuff"];
 
 const ProjectGroup = ({ projects, index }) => {
   return projects.map((project, i) => (
@@ -121,12 +121,13 @@ export async function getStaticProps() {
   // Add a dateRange property to each project based on its group for the display logic
   Object.keys(groupedProjects).forEach((group) => {
     groupedProjects[group].forEach((project) => {
-      project.dateRange =
-        group === "airplane"
-          ? "2023–2024"
-          : group === "sourcegraph"
-          ? "2020–2023"
-          : "";
+      const dateRanges = {
+        airplane: "2023–2024",
+        sourcegraph: "2020–2023",
+        ms: "2018–2020",
+      };
+
+      project.dateRange = dateRanges[group] || "";
     });
   });
 
