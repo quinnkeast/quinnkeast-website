@@ -1,14 +1,16 @@
 import Head from "next/head";
 import Layout from "../components/layout";
+import { SITE_NAME } from "../lib/constants";
 
 function Impressum() {
   return (
     <Layout>
       <Head>
-        <title>Impessum | Quinn Keast</title>
+        <title>{`Impressum | ${SITE_NAME}`}</title>
       </Head>
-      <div className="grid md:grid-cols-5">
-        <div className="col-span-3 col-start-2 content">
+      <div className="grid md:grid-cols-3 mt-8 md:mt-16 pt-4 md:pt-8">
+        <div className="md:col-span-2 md:col-start-2 max-w-md content">
+          <h1>Impressum</h1>
           <h3>Quinn Keast-Wiatrowski</h3>
           <p>
             <a href="mailto:hey@quinnkeast.com">hey@quinnkeast.com</a>

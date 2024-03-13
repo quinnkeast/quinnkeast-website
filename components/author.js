@@ -17,7 +17,7 @@ export default function Author({ author, date, time }) {
           <DateFormatter dateString={date} />{" "}
           {time.text && (
             <>
-              <span className="text-xs">•</span> {time.text}
+              <span className="bullet">•</span> {time.text}
             </>
           )}
         </span>

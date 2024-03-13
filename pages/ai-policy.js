@@ -10,8 +10,8 @@ function AIPolicy() {
       <Head>
         <title>{`AI Policy | ${SITE_NAME}`}</title>
       </Head>
-      <div className="grid md:grid-cols-5">
-        <div className="col-span-3 col-start-2">
+      <div className="grid md:grid-cols-3 mt-8 md:mt-16 pt-4 md:pt-8">
+        <div className="md:col-span-2 md:col-start-2 max-w-md">
           <h1>AI policy</h1>
           <p>
             All content on this website is written by myself. I do not use AI
