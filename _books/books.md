@@ -4,10 +4,10 @@
   books:
   - title: Saevus Corax Gets Away With Murder
     author: K. J. Parker
-    reading: true
+    thoughts: Satisfyingly bloviating
   - title: The Book of Lost Things
     author: John Connolly
-    reading: true
+    thoughts: Not whatsoever a lighthearted read
   - title: The House in the Cerulean Sea
     author: T.J. Klune
     thoughts: Lovely
