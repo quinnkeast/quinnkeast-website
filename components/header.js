@@ -26,7 +26,7 @@ const menuItems = [
     path: "about",
   },
   {
-    label: "Quinn.ReadMe",
+    label: "ReadMe",
     path: "readme",
   },
 ];
@@ -69,7 +69,7 @@ export default function Header() {
             </Link>
           </div>
           <div className="col-span-2">
-            <menu className="flex flex-row md:flex-wrap md:gap-x-4 xl:gap-x-8 list-none px-0 my-0 text-black-lighter">
+            <menu className="flex flex-row md:flex-wrap md:gap-x-4 xl:gap-x-10 list-none px-0 my-0 text-black-lighter">
               {menuItems.map((item) => menuLink(item.label, item.path))}
             </menu>
           </div>

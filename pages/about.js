@@ -89,7 +89,7 @@ function About() {
         <div className="col-span-1">
           <h2 className="font-normal text-base text-black-lighter">Timeline</h2>
         </div>
-        <div className="md:col-span-2">
+        <div className="md:col-span-2 mt-1">
           <p className="mb-5">
             <strong>Airplane</strong> / Developer Infrastructure for Internal
             Tools
@@ -221,12 +221,13 @@ function About() {
       <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-8 md:mt-12 pt-4 md:pt-8">
         <div className="col-span-1">
           <h2 className="font-normal text-base text-black-lighter">
-            Select client list
+            Some folks I’ve worked with
           </h2>
         </div>
-        <div className="col-span-1 mt-4">
+        <div className="col-span-1 mt-5">
           <ul className="client-list">
             <li>24/7 InTouch</li>
+            <li>Airplane</li>
             <li>Andrea Shelley</li>
             <li>Arlan Group</li>
             <li>Canadian Ultimate Championships</li>
@@ -239,7 +240,7 @@ function About() {
             <li>Johnston Group</li>
           </ul>
         </div>
-        <div className="col-span-1 mt-4">
+        <div className="col-span-1 mt-5">
           <ul className="client-list">
             <li>Lighthouse</li>
             <li>Marley Spoon</li>
@@ -247,6 +248,7 @@ function About() {
             <li>Native Plant Solutions</li>
             <li>Neovation</li>
             <li>Oak Hammock Marsh Interpretive Centre</li>
+            <li>Sourcegraph</li>
             <li>Ultimate Canada</li>
             <li>UnionWare</li>
             <li>Walnut</li>
