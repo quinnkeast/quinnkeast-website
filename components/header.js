@@ -56,7 +56,7 @@ export default function Header() {
           Quinn Keast
         </Link>
         <div className="col-span-2">
-          <menu className="flex flex-wrap gap-x-2 gap-y-0 list-none px-0 my-0 text-black-lighter text-sm text-tan leading-snug">
+          <menu className="flex flex-wrap gap-x-2 gap-y-0 list-none px-0 my-0 text-black-lighter text-sm leading-snug">
             {menuItems.map((item) => mobileMenuLink(item.label, item.path))}
           </menu>
         </div>
