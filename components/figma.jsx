@@ -3,9 +3,7 @@ import * as Fathom from "fathom-client";
 export default function Figma({ link, title, thumbnail }) {
   const handleClick = (e) => {
     e.preventDefault();
-    Fathom.trackEvent("view figma", {
-      _value: title,
-    });
+    Fathom.trackEvent(`view figma: ${title}`);
     window.open(link, "_blank");
   };
 

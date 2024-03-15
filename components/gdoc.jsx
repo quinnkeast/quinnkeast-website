@@ -3,9 +3,7 @@ import * as Fathom from "fathom-client";
 export default function GDoc({ link, title }) {
   const handleClick = (e) => {
     e.preventDefault();
-    Fathom.trackEvent("view gdoc", {
-      _value: title,
-    });
+    Fathom.trackEvent(`view gdoc: ${title}`);
     window.open(link, "_blank");
   };
 
