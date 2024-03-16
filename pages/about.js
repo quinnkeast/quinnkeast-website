@@ -7,6 +7,30 @@ import { ascii } from "../lib/ascii";
 import Script from "next/script";
 
 function About() {
+  const HoverImage = ({ label }) => {
+    return (
+      <span className="inline-block relative group">
+        <span className="inline md:cursor-pointer md:border-b-2 md:border-yellow md:border-dashed">
+          {label}
+        </span>
+        <img
+          src="/assets/pepper.gif"
+          alt={label}
+          width="240"
+          height="180"
+          className="absolute hidden md:group-hover:block transform rotate-6 top-6"
+        />
+        <img
+          src="/assets/pepper-label.png"
+          alt={label}
+          width="155"
+          height="64"
+          className="absolute hidden md:group-hover:block top-16 -right-12 transform rotate-6 "
+        />
+      </span>
+    );
+  };
+
   return (
     <Layout>
       <Head>
@@ -73,9 +97,9 @@ function About() {
           </p>
 
           <p>
-            Aside from all that, I’m a Canadian currently working out of Berlin,
-            and I enjoy playing Ultimate frisbee, writing, and hanging out with
-            my mini Australian Shepherd.
+            Aside from all that, I’m a Canadian presently based in Berlin, and I
+            enjoy cycling, writing, and hanging out with my{" "}
+            <HoverImage label="mini Australian Shepherd" />.
           </p>
 
           <p>
@@ -94,7 +118,7 @@ function About() {
             <strong>Airplane</strong> / Developer Infrastructure for Internal
             Tools
             <br />
-            <span className="text-black-lighter text-sm">
+            <span className="text-black-lighter text-sm inline-block mb-0.5">
               San Francisco <span className="bullet">•</span> Remote
             </span>
             <div className="grid grid-cols-5">
@@ -118,7 +142,7 @@ function About() {
             <strong>Sourcegraph</strong> / Universal Code Search & Intelligence
             Platform
             <br />
-            <span className="text-black-lighter text-sm">
+            <span className="text-black-lighter text-sm inline-block mb-0.5">
               San Francisco <span className="bullet">•</span> Remote
             </span>
             <div className="grid grid-cols-5">
@@ -141,7 +165,7 @@ function About() {
           <p className="mb-5">
             <strong>Marley Spoon</strong> / Meal Kit Service
             <br />
-            <span className="text-black-lighter text-sm">
+            <span className="text-black-lighter text-sm inline-block mb-0.5">
               Berlin <span className="bullet">•</span> Hybrid
             </span>
             <div className="grid grid-cols-5">
@@ -163,7 +187,7 @@ function About() {
             <strong>Ducks Unlimited Canada</strong> / Wetland & Wildlife
             Conservancy
             <br />
-            <span className="text-black-lighter text-sm">
+            <span className="text-black-lighter text-sm inline-block mb-0.5">
               Canada <span className="bullet">•</span> Hybrid
             </span>
             <div className="grid grid-cols-5">
