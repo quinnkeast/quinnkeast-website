@@ -2,6 +2,9 @@
 
 - year: 2024
   books:
+  - title: Abandon
+    author: Blake Crouch
+    reading: true
   - title: Saevus Corax Gets Away With Murder
     author: K. J. Parker
     thoughts: Satisfyingly bloviating
