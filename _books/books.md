@@ -5,6 +5,9 @@
   - title: Abandon
     author: Blake Crouch
     reading: true
+  - title: On Bullshit
+    author: Harry G. Frankfurt
+    reading: true
   - title: Saevus Corax Gets Away With Murder
     author: K. J. Parker
     thoughts: Satisfyingly bloviating
