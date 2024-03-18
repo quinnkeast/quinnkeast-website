@@ -28,19 +28,27 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a
+                  href="https://bsky.app/profile/quinnkeast.com"
+                  target="_blank"
+                >
+                  Bluesky
+                </a>
+              </li>
+              <li>
                 <a href="http://twitter.com/quinnkeast" target="_blank">
                   Twitter
                 </a>{" "}
-                <span className="rounded-lg inline-block bg-yellow bg-opacity-20 text-yellow-700 text-xs px-2 ml-1 pb-2px">
-                  Abandoned: Musk
+                <span className="rounded-lg inline-block bg-black-lighter bg-opacity-10 text-black-lighter text-opacity-75 text-xs px-2 ml-1 pb-2px">
+                  Abandoned
                 </span>
               </li>
               <li>
                 <a href="https://medium.com/@quinnkeast" target="_blank">
                   Medium
                 </a>{" "}
-                <span className="rounded-lg inline-block bg-yellow bg-opacity-20 text-yellow-700 text-xs px-2 ml-1 pb-2px">
-                  Inactive
+                <span className="rounded-lg inline-block bg-black-lighter bg-opacity-10 text-black-lighter text-opacity-75 text-xs px-2 ml-1 pb-2px">
+                  Archive only
                 </span>
               </li>
             </ul>
