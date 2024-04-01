@@ -2,6 +2,9 @@
 
 - year: 2024
   books:
+  - title: Defiant
+    author: Brandon Sanderson
+    reading: true
   - title: Red Side Story
     author: Jasper Fforde
     thoughts: Unexpectedly loved this – the voice works perfectly 
