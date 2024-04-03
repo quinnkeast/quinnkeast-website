@@ -10,7 +10,7 @@
     thoughts: Unexpectedly loved this – the voice works perfectly 
   - title: Abandon
     author: Blake Crouch
-    reading: true
+    thoughts: Basically good, liked the setting
   - title: On Bullshit
     author: Harry G. Frankfurt
   - title: Saevus Corax Gets Away With Murder
