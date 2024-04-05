@@ -2,12 +2,15 @@
 
 - year: 2024
   books:
+  - title: Black River Orchard
+    author: Chuck Wendig
+    reading: true
   - title: Defiant
     author: Brandon Sanderson
-    reading: true
+    thoughts: This world is turning into a popcorn read basically which isn’t a bad thing
   - title: Red Side Story
     author: Jasper Fforde
-    thoughts: Unexpectedly loved this – the voice works perfectly 
+    thoughts: Unexpectedly loved this—the voice works perfectly 
   - title: Abandon
     author: Blake Crouch
     thoughts: Basically good, liked the setting
