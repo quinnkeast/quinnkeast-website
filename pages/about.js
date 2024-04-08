@@ -4,7 +4,6 @@ import Layout from "../components/layout";
 import PageHeader from "../components/page-header";
 import { SITE_NAME } from "../lib/constants";
 import { ascii } from "../lib/ascii";
-import Script from "next/script";
 
 function About() {
   const HoverImage = ({ label }) => {

@@ -121,8 +121,10 @@
   /* .post-content Specific Styles */
   .post-content p,
   .post-content li {
-    @apply font-serif md:text-sm leading-relaxed md:leading-relaxed;
-    font-size: 0.825rem;
+    @apply font-serif md:text-sm;
+    font-size: 0.7825rem;
+    line-height: 1.425;
+    letter-spacing: -0.125px;
   }
 
   .post-content h2,
@@ -147,7 +149,9 @@
   /* .project-content Specific Styles */
   .project-content p,
   .project-content li {
-    @apply leading-snug md:leading-snug text-projectBasis;
+    @apply text-projectBasis;
+    line-height: 1.325;
+    letter-spacing: -0.125px;
   }
 
   .project-content p code,
