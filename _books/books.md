@@ -2,9 +2,13 @@
 
 - year: 2024
   books:
+  - title: Shades of Grey
+    author: Jasper Fforde
+    reading: true
+    thoughts: Literally read this and “Red Side Story” in the wrong order
   - title: Black River Orchard
     author: Chuck Wendig
-    reading: true
+    thoughts: So many ways to describe eating apples
   - title: Defiant
     author: Brandon Sanderson
     thoughts: This world is turning into a popcorn read basically which isn’t a bad thing
