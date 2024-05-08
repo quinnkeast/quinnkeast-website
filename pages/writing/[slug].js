@@ -83,7 +83,7 @@ export default function Post({ post, morePosts, preview }) {
 }
 
 export async function getStaticProps({ params }) {
-  const post = await getPostBySlug(params.slug, [
+  const post = getPostBySlug(params.slug, [
     "title",
     "subtitle",
     "published",
@@ -97,7 +97,7 @@ export async function getStaticProps({ params }) {
     "readingTime",
   ]);
 
-  const content = await mdxToHtml(post.content);
+  const content = (await mdxToHtml(post.content)) || "";
 
   return {
     props: {
