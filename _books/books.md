@@ -2,9 +2,20 @@
 
 - year: 2024
   books:
+  - title: A Wizard’s Guide to Defensive Baking
+    author: T. Kingfisher
+    reading: true
+  - title: Alchemy
+    author: Rory Sutherland
+    thoughts: This book brought back some of the energy and excitement I had around brand and design
+  - title: Lost In a Good Book
+    author: Jasper Fforde
+    thoughts: Love the use of footnotes as an actual meta storytelling aspect
+  - title: The Eyre Affair
+    author: Jasper Fforde
+    thoughts: Silly, in the right way right now
   - title: Shades of Grey
     author: Jasper Fforde
-    reading: true
     thoughts: Literally read this and “Red Side Story” in the wrong order
   - title: Black River Orchard
     author: Chuck Wendig
