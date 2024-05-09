@@ -4,7 +4,7 @@
   books:
   - title: A Wizard’s Guide to Defensive Baking
     author: T. Kingfisher
-    reading: true
+    thoughts: Easy fun read
   - title: Alchemy
     author: Rory Sutherland
     thoughts: This book brought back some of the energy and excitement I had around brand and design
