@@ -2,6 +2,12 @@
 
 - year: 2024
   books:
+  - title: The Well of Lost Plots
+    author: Jasper Fforde
+    reading: true
+  - title: Ghost Station
+    author: S. A. Barnes
+    thoughts: Enjoyed
   - title: A Wizard’s Guide to Defensive Baking
     author: T. Kingfisher
     thoughts: Easy fun read
