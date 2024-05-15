@@ -9,7 +9,7 @@ export default function PostItem({ post, hero }) {
           <DateFormatter dateString={post.date} />
         </span>
       </div>
-      <div className="md:col-span-2 md:col-start-2 border-b border-black border-opacity-10 md:mt-3 pb-3 md:flex md:flex-row justify-between">
+      <div className="md:col-span-2 md:col-start-2 border-b border-black/10 md:mt-3 pb-3 md:flex md:flex-row justify-between">
         <h2 className="m-0 text-sm leading-snug font-serif font-normal md:pr-8 subpixel-antialiased">
           {post.starred && (
             <svg

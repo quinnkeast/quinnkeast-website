@@ -1,11 +1,10 @@
 module.exports = {
-  purge: [],
   content: [
-    "./pages/**/*.{js}",
-    "./components/**/*.{js}",
-    "./_posts/**/*.{mdx}",
+    "./pages/**/*.{js,jsx,ts,md,mdx}",
+    "./components/**/*.{js,jsx,ts,md,mdx}",
+    "./_posts/**/*.{js,jsx,ts,md,mdx}",
+    "../quinnkeast-projects/projects/**/*.{js,jsx,ts,md,mdx}",
   ],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
       sans: "CalibreWeb",
@@ -40,11 +39,6 @@ module.exports = {
           },
         ],
       },
-    },
-  },
-  variants: {
-    extend: {
-      display: ["group-hover"],
     },
   },
   plugins: [],

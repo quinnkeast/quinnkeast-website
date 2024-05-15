@@ -35,7 +35,7 @@ export default function Index({ allPosts }) {
           A collection of thinking on design, tech, and the art of making sense.
         </p>
       </PageHeader>
-      <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-6 md:mt-12 pt-0 post-list">
+      <div className="grid md:grid-cols-3 border-t border-black/10 mt-6 md:mt-12 pt-0 post-list">
         <PostItem post={heroPost} />
         {morePosts.map((post, i) => (
           <PostItem post={post} key={i} />

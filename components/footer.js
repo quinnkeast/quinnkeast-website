@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="grid md:grid-cols-3 mb-4 md:mb-8 border-t border-black border-opacity-10 mt-8 md:mt-16 pt-4 md:pt-12">
+    <div className="grid md:grid-cols-3 mb-4 md:mb-8 border-t border-black/10 mt-8 md:mt-16 pt-4 md:pt-12">
       <div className="col-1">
         <h4>Contact</h4>
       </div>
@@ -39,7 +39,7 @@ export default function Footer() {
                 <a href="http://twitter.com/quinnkeast" target="_blank">
                   Twitter
                 </a>{" "}
-                <span className="rounded-lg inline-block bg-black-lighter bg-opacity-10 text-black-lighter text-opacity-75 text-xs px-2 ml-1 pb-2px">
+                <span className="rounded-lg inline-block bg-black-lighter/10 text-black-lighter text-opacity-75 text-xs px-2 ml-1 pb-2px">
                   Abandoned
                 </span>
               </li>
@@ -47,7 +47,7 @@ export default function Footer() {
                 <a href="https://medium.com/@quinnkeast" target="_blank">
                   Medium
                 </a>{" "}
-                <span className="rounded-lg inline-block bg-black-lighter bg-opacity-10 text-black-lighter text-opacity-75 text-xs px-2 ml-1 pb-2px">
+                <span className="rounded-lg inline-block bg-black-lighter/10 text-black-lighter text-opacity-75 text-xs px-2 ml-1 pb-2px">
                   Archive only
                 </span>
               </li>

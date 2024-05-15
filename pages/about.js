@@ -62,7 +62,7 @@ function About() {
           alt="Portrait of Quinn Keast, the handsome devil"
         />
       </PageHeader>
-      <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-8 md:mt-16 pt-4 md:pt-8">
+      <div className="grid md:grid-cols-3 border-t border-black/10 mt-8 md:mt-16 pt-4 md:pt-8">
         <div className="col-span-1">
           <h2 className="font-normal text-base text-black-lighter">
             The nitty gritty
@@ -108,7 +108,7 @@ function About() {
           </p>
         </div>
       </div>
-      <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-12 pt-8">
+      <div className="grid md:grid-cols-3 border-t border-black/10 mt-12 pt-8">
         <div className="col-span-1">
           <h2 className="font-normal text-base text-black-lighter">Timeline</h2>
         </div>
@@ -123,9 +123,7 @@ function About() {
               <div className="text-black-lighter col-span-2 md:col-span-1">
                 2024
               </div>
-              <div className="col-span-3 md:col-span-4">
-                Product Design
-              </div>
+              <div className="col-span-3 md:col-span-4">Product Design</div>
             </div>
           </p>
           <p className="mb-5">
@@ -256,7 +254,7 @@ function About() {
           </p>
         </div>
       </div>
-      <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-8 md:mt-12 pt-4 md:pt-8">
+      <div className="grid md:grid-cols-3 border-t border-black/10 mt-8 md:mt-12 pt-4 md:pt-8">
         <div className="col-span-1">
           <h2 className="font-normal text-base text-black-lighter">
             Some folks I’ve worked with
