@@ -114,6 +114,21 @@ function About() {
         </div>
         <div className="md:col-span-2 mt-1">
           <p className="mb-5">
+            <strong>Ditto</strong> / Source of Truth for Product Copy
+            <br />
+            <span className="text-black-lighter text-sm inline-block mb-0.5">
+              San Francisco <span className="bullet">•</span> Remote
+            </span>
+            <div className="grid grid-cols-5">
+              <div className="text-black-lighter col-span-2 md:col-span-1">
+                2024
+              </div>
+              <div className="col-span-3 md:col-span-4">
+                Product Design
+              </div>
+            </div>
+          </p>
+          <p className="mb-5">
             <strong>Airplane</strong> / Developer Infrastructure for Internal
             Tools
             <br />

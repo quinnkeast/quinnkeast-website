@@ -2,9 +2,18 @@
 
 - year: 2024
   books:
+  - title: The Book that Broke the World
+    author: Mark Lawrence
+    reading: true
+  - title: The Well of Lost Plots
+    author: Jasper Fforde
+    thoughts: Coming into itself
+  - title: Ghost Station
+    author: S. A. Barnes
+    thoughts: Enjoyed
   - title: A Wizard’s Guide to Defensive Baking
     author: T. Kingfisher
-    reading: true
+    thoughts: Easy fun read
   - title: Alchemy
     author: Rory Sutherland
     thoughts: This book brought back some of the energy and excitement I had around brand and design
