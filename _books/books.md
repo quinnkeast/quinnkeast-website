@@ -2,9 +2,12 @@
 
 - year: 2024
   books:
+  - title: The Book that Broke the World
+    author: Mark Lawrence
+    reading: true
   - title: The Well of Lost Plots
     author: Jasper Fforde
-    reading: true
+    thoughts: Coming into itself
   - title: Ghost Station
     author: S. A. Barnes
     thoughts: Enjoyed
