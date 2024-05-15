@@ -1,9 +1,16 @@
+// hack for including classes from projects repo in tailwind
+// if working with local projects, then requires projects repo
+const isLocalProjects = process.env.LOCAL_PROJECTS === "true";
+const mdxPath = isLocalProjects
+  ? "../quinnkeast-projects/**/*.mdx"
+  : "./temp-mdx-files/**/*.mdx";
+
 module.exports = {
   content: [
     "./pages/**/*.{js,jsx,ts,md,mdx}",
     "./components/**/*.{js,jsx,ts,md,mdx}",
     "./_posts/**/*.{js,jsx,ts,md,mdx}",
-    "../quinnkeast-projects/projects/**/*.{js,jsx,ts,md,mdx}",
+    mdxPath,
   ],
   theme: {
     fontFamily: {

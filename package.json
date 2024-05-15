@@ -3,15 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "fetch-mdx-files": "node fetch-mdx-files.mjs",
+    "dev": "npm run fetch-mdx-files && next dev",
     "dev:localProjects": "LOCAL_PROJECTS=true next dev",
-    "build": "next build",
+    "build": "npm run fetch-mdx-files && next build",
     "start": "next start"
   },
   "dependencies": {
     "@mapbox/rehype-prism": "^0.9.0",
     "classnames": "^2.2.6",
     "date-fns": "^2.19.0",
+    "dotenv": "^16.4.5",
     "esbuild": "^0.14.14",
     "eslint-config-next": "^13.0.7",
     "fathom-client": "^3.6.0",
@@ -19,6 +21,7 @@
     "iron-session": "^6.3.1",
     "mdx-bundler": "^10.0.1",
     "next": "^13.0.7",
+    "node-fetch": "^3.3.2",
     "nprogress": "^0.2.0",
     "prism-react-renderer": "^1.2.1",
     "react": "^18.2.0",
