@@ -35,7 +35,7 @@ export default function Index({ allFavourites }) {
           —Oliver Wendell Holmes
         </p>
       </PageHeader>
-      <div className="grid md:grid-cols-5 border-t border-black border-opacity-10 mt-8 md:mt-12 pt-4 md:pt-8">
+      <div className="grid md:grid-cols-5 border-t border-black/10 mt-8 md:mt-12 pt-4 md:pt-8">
         <div className="col-span-1 hidden md:flex">
           <span className="text-black-lighter inline-block leading-snug pr-8 mt-3.5">
             Favourites

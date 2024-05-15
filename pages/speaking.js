@@ -32,7 +32,7 @@ function Speaking() {
           honour to speak about at events around the world.
         </p>
       </PageHeader>
-      <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-8 md:mt-12 pt-4 md:pt-8">
+      <div className="grid md:grid-cols-3 border-t border-black/10 mt-8 md:mt-12 pt-4 md:pt-8">
         <div className="col-span-1">
           <h2 className="text-base text-black-lighter font-normal">
             Conferences & presentations
@@ -182,7 +182,7 @@ function Speaking() {
           </p>
         </div>
       </div>
-      <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-8 md:mt-12 pt-4 md:pt-8">
+      <div className="grid md:grid-cols-3 border-t border-black/10 mt-8 md:mt-12 pt-4 md:pt-8">
         <div className="col-span-1">
           <h2 className="text-base text-black-lighter font-normal">Book me</h2>
         </div>

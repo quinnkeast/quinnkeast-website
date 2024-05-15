@@ -33,7 +33,7 @@ export default function Reading({ booksByYear }) {
           A list of what I’m reading and my opinions and all that.
         </p>
       </PageHeader>
-      <div className="grid md:grid-cols-5 border-t border-black border-opacity-10 mt-8 md:mt-12 pt-4 md:pt-8">
+      <div className="grid md:grid-cols-5 border-t border-black/10 mt-8 md:mt-12 pt-4 md:pt-8">
         {years.map((year, i) => (
           <React.Fragment key={year}>
             <div className="col-span-5 md:col-span-1 pt-0">
@@ -59,7 +59,7 @@ export default function Reading({ booksByYear }) {
                 <tbody>
                   {year.books.map((book, i) => (
                     <tr
-                      className="flex flex-col md:table-row border-t border-black border-opacity-10 align-top leading-tight"
+                      className="flex flex-col md:table-row border-t border-black/10 align-top leading-tight"
                       key={book.title}
                     >
                       <td

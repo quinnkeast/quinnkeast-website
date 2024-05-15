@@ -34,7 +34,7 @@ function BrandBook() {
           helpful, and how to get updates!
         </p>
       </PageHeader>
-      <div className="grid md:grid-cols-3 border-t border-black border-opacity-10 mt-8 md:mt-16 pt-4 md:pt-8">
+      <div className="grid md:grid-cols-3 border-t border-black/10 mt-8 md:mt-16 pt-4 md:pt-8">
         <div className="col-span-1">
           <h2 className="font-normal text-base text-black-lighter">
             What is this

@@ -28,7 +28,7 @@ const ProjectGroup = ({ projects, index }) => {
               </h2>
             )}
             {project.size && (
-              <span className="mt-2 md:mt-1 px-1.5 pb-0.5 leading-base rounded-full border border-black border-opacity-10 text-black-lighter text-xs inline-block flex-none capitalize">
+              <span className="mt-2 md:mt-1 px-1.5 pb-0.5 leading-base rounded-full border border-black/10 text-black-lighter text-xs inline-block flex-none capitalize">
                 {project.size}
               </span>
             )}
@@ -81,7 +81,7 @@ export default function Craft({ groupedProjects }) {
         {Object.keys(groupedProjects).map((group, index) => {
           const gridClasses =
             index === 0
-              ? "grid md:grid-cols-3 border-t border-black border-opacity-10 mt-8 md:mt-16 pt-4 md:pt-8"
+              ? "grid md:grid-cols-3 border-t border-black/10 mt-8 md:mt-16 pt-4 md:pt-8"
               : "grid md:grid-cols-3 mt-0 md:mt-8 pt-4 md:pt-0";
           return (
             <div className={gridClasses} key={group}>
