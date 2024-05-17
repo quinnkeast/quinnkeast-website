@@ -13,7 +13,7 @@ export function StepCountChart() {
   };
 
   return (
-    <div className="border border-black/10 rounded-md py-5 px-6 my-4">
+    <div className="border border-black/10 rounded-md py-5 px-6 mt-6 mb-4">
       <h3 className="mt-0 text-lg font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong">
         Step Count
       </h3>

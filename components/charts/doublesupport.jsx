@@ -5,7 +5,7 @@ export function DoubleSupportChart() {
   const percentageFormatter = (number) => `${(number * 100).toFixed(1)}%`;
 
   return (
-    <div className="border border-black/10 rounded-md p-6 my-4">
+    <div className="border border-black/10 rounded-md p-6 mt-4 mb-6">
       <h3 className="mt-0 text-lg font-medium text-tremor-content-strong dark:text-dark-tremor-content-strong">
         Double Support Percentage
       </h3>
