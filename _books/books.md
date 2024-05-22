@@ -4,7 +4,7 @@
   books:
   - title: The Book that Broke the World
     author: Mark Lawrence
-    reading: true
+    thoughts: Was disappointed by this honestly, surprised
   - title: The Well of Lost Plots
     author: Jasper Fforde
     thoughts: Coming into itself
