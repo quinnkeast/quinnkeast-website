@@ -2,6 +2,12 @@
 
 - year: 2024
   books:
+  - title: Oryx and Crake
+    author: Margaret Atwood
+    reading: true
+  - title: The Magicians
+    author: Lev Grossman
+    thoughts: Unexpected self-aware adult Hogwartsy
   - title: The Book that Broke the World
     author: Mark Lawrence
     thoughts: Was disappointed by this honestly, surprised
