@@ -2,9 +2,18 @@
 
 - year: 2024
   books:
+  - title: Something Rotten
+    author: Jasper Fforde
+    reading: true
+  - title: You Like it Darker
+    author: Stephen King
+    thoughts: Adored it
+  - title: The Book of Joan
+    author: Lidia Yuknavitch
+    thoughts: Honestly found this really hard to read even if well written
   - title: Oryx and Crake
     author: Margaret Atwood
-    reading: true
+    thoughts: Fascinating, with some tough blunt subject matter
   - title: The Magicians
     author: Lev Grossman
     thoughts: Unexpected self-aware adult Hogwartsy
