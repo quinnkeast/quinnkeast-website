@@ -123,7 +123,9 @@ function About() {
               <div className="text-black-lighter col-span-2 md:col-span-1">
                 2024
               </div>
-              <div className="col-span-3 md:col-span-4">Product Design</div>
+              <div className="col-span-3 md:col-span-4">
+                Founding Product Designer
+              </div>
             </div>
           </p>
           <p className="mb-5">
@@ -267,17 +269,18 @@ function About() {
             <li>Andrea Shelley</li>
             <li>Arlan Group</li>
             <li>Canadian Ultimate Championships</li>
+            <li>Ditto</li>
             <li>Ducks Unlimited Canada</li>
             <li>Emerge Knowledge Design</li>
             <li>Forth</li>
             <li>Funding Change</li>
             <li>IBEX Payroll</li>
             <li>Jackfruit</li>
-            <li>Johnston Group</li>
           </ul>
         </div>
         <div className="col-span-1 mt-5">
           <ul className="client-list">
+            <li>Johnston Group</li>
             <li>Lighthouse</li>
             <li>Marley Spoon</li>
             <li>MODS</li>

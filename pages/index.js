@@ -15,13 +15,21 @@ export default function Home() {
             the last 5%.
           </h1>
           <h2 className="text-base md:text-lg font-normal tracking-snug leading-tight md:leading-tight">
-            Staff product designer. Also writing{" "}
+            Founding product designer at{" "}
+            <a href="https://dittowords.com" target="_blank">
+              Ditto
+            </a>
+            . Partner at{" "}
+            <a href="https://caribou.co" target="_blank">
+              Caribou
+            </a>
+            . Also writing{" "}
             <a href="/brand-book">a book on brand for product teams</a>.
           </h2>
           <div className="grid md:grid-cols-3 mt-2 md:mt-4">
             <div className="col-1">
               <p>
-                <strong>Current location</strong>
+                <strong>Currently based in</strong>
                 <br />
                 Berlin
               </p>
