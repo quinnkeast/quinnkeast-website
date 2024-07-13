@@ -2,9 +2,17 @@
 
 - year: 2024
   books:
+  - title: The Cautious Traveller’s Guide to the Wastelands
+    author: Sarah Brooks
+    reading: true
+  - title: How to Make a Horror Movie and Survive
+    author: Craig DiLouie
+    thoughts: I wanted to like this but it just didn’t fit for me
+  - title: The Bound Worlds
+    author: Megan O’Keefe
+    thoughts: Great conclusion to the series
   - title: Something Rotten
     author: Jasper Fforde
-    reading: true
   - title: You Like it Darker
     author: Stephen King
     thoughts: Adored it
