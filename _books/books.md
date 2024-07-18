@@ -2,12 +2,15 @@
 
 - year: 2024
   books:
+  - title: Service Model
+    author: Adrian Tchaikovsky
+    reading: true
   - title: The Cautious Traveller’s Guide to the Wastelands
     author: Sarah Brooks
-    reading: true
+    thoughts: Somehow brilliantly original and terrifically derivative and I enjoyed it a lot
   - title: How to Make a Horror Movie and Survive
     author: Craig DiLouie
-    thoughts: I wanted to like this but it just didn’t fit for me
+    thoughts: I wanted to like this but ehh—quite liked the feeling of immersion in filmmaking though
   - title: The Bound Worlds
     author: Megan O’Keefe
     thoughts: Great conclusion to the series
