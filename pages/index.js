@@ -31,7 +31,7 @@ export default function Home() {
               <p>
                 <strong>Currently based in</strong>
                 <br />
-                Berlin
+                Winnipeg
               </p>
             </div>
             <div className="col-1">
