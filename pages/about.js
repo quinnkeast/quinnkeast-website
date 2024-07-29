@@ -96,7 +96,7 @@ function About() {
           </p>
 
           <p>
-            Aside from all that, I’m a Canadian presently based in Berlin, and I
+            Aside from all that, I’m a Canadian presently based in Winnipeg after spending six years living in Berlin, and I
             enjoy cycling, writing, and hanging out with my{" "}
             <HoverImage label="mini Australian Shepherd" />.
           </p>
