@@ -2,9 +2,12 @@
 
 - year: 2024
   books:
+  - title: The Stardust Grail
+    author: Yume Kitasei
+    reading: true
   - title: Service Model
     author: Adrian Tchaikovsky
-    reading: true
+    thoughts: I loved this—the characters were brilliant
   - title: The Cautious Traveller’s Guide to the Wastelands
     author: Sarah Brooks
     thoughts: Somehow brilliantly original and terrifically derivative and I enjoyed it a lot
