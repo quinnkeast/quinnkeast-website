@@ -2,6 +2,9 @@
 
 - year: 2024
   books:
+  - title: Duma Key
+    author: Stephen King
+    reading: true
   - title: The Stardust Grail
     author: Yume Kitasei
     reading: true
