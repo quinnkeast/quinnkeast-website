@@ -4,7 +4,7 @@
   books:
   - title: Duma Key
     author: Stephen King
-    reading: true
+    thoughts: One of his legitimately creepy stories
   - title: The Stardust Grail
     author: Yume Kitasei
     reading: true
