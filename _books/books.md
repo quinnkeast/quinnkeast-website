@@ -2,12 +2,21 @@
 
 - year: 2024
   books:
+  - title: The Mercy of Gods
+    author: James S. A. Corey
+    reading: true
+  - title: Winter, or a Town Near Palgrave
+    author: André Alexis
+    thoughts: Great short, surreal kick
+  - title: Zero Stars, Do Not Recommend
+    author: MJ Wassmer
+    thoughts: Felt popcorny, good quick read
   - title: Duma Key
     author: Stephen King
     thoughts: One of his legitimately creepy stories
   - title: The Stardust Grail
     author: Yume Kitasei
-    reading: true
+    thoughts: Different!
   - title: Service Model
     author: Adrian Tchaikovsky
     thoughts: I loved this—the characters were brilliant
