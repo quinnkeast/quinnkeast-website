@@ -2,6 +2,9 @@
 
 - year: 2024
   books:
+  - title: Eruption
+    author:  Michael Crichton & James Patterson
+    reading: true
   - title: The Mercy of Gods
     author: James S. A. Corey
     reading: true
