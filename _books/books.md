@@ -2,12 +2,18 @@
 
 - year: 2024
   books:
+  - title: The Bright Sword
+    author: Lev Grossman
+    reading: true
+  - title: A Sorceress Comes to Call
+    author: T. Kingfisher
+    thoughts: Wonderful storytelling with a fairy-tale-esque slant
   - title: Eruption
     author:  Michael Crichton & James Patterson
-    reading: true
+    thoughts: Books I don’t like are usually just “not for me” but this book is trash
   - title: The Mercy of Gods
     author: James S. A. Corey
-    reading: true
+    thoughts: Absolutely loved this
   - title: Winter, or a Town Near Palgrave
     author: André Alexis
     thoughts: Great short, surreal kick
