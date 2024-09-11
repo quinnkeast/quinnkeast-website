@@ -2,9 +2,12 @@
 
 - year: 2024
   books:
+  - title: These Deathless Shores
+    author: P. H. Low
+    thoughts: Takes a warm friendly story and makes it very much not so—characters grated on me but the underlying was super compelling
   - title: The Bright Sword
     author: Lev Grossman
-    reading: true
+    thoughts: I really enjoyed this but it felt like it petered out somehow
   - title: A Sorceress Comes to Call
     author: T. Kingfisher
     thoughts: Wonderful storytelling with a fairy-tale-esque slant
