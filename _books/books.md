@@ -2,6 +2,9 @@
 
 - year: 2024
   books:
+  - title: The Magician King
+    author: Lev Grossman
+    reading: true
   - title: These Deathless Shores
     author: P. H. Low
     thoughts: Takes a warm friendly story and makes it very much not so—characters grated on me but the underlying was super compelling
