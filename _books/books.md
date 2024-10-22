@@ -2,12 +2,15 @@
 
 - year: 2024
   books:
+  - title: Lake of Souls
+    author: Ann Leckie
+    reading: true
   - title: Making Design Theory
     author: Johan Redström
     reading: true
   - title: Somewhere Beyond the Sea
     author: TJ Klune
-    reading: true
+    thoughts: A good conclusion, but as much as I appreciate the story and the ideas, I started to find the “positivity” tedious
   - title: An Academy for Liars
     author: Alexis Henderson
     thoughts: Found myself wanting
