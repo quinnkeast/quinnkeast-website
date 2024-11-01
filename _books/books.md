@@ -2,9 +2,12 @@
 
 - year: 2024
   books:
+  - title: Absolution
+    author: Jeff Vandermeer
+    reading: true
   - title: Lake of Souls
     author: Ann Leckie
-    reading: true
+    thoughts: Hits and misses for me (like any short story collection)
   - title: Making Design Theory
     author: Johan Redström
     reading: true
