@@ -96,7 +96,7 @@ function About() {
           </p>
 
           <p>
-            Aside from all that, I’m a Canadian presently based in Berlin, and I
+            Aside from all that, I’m a Canadian newly based in Montréal after six years living in Berlin, and I
             enjoy cycling, writing, and hanging out with my{" "}
             <HoverImage label="mini Australian Shepherd" />.
           </p>
@@ -114,7 +114,7 @@ function About() {
         </div>
         <div className="md:col-span-2 mt-1">
           <p className="mb-5">
-            <strong>Ditto</strong> / Source of Truth for Product Copy
+            <strong>Ditto</strong> / End-to-End Infrastructure For Product Copy
             <br />
             <span className="text-black-lighter text-sm inline-block mb-0.5">
               San Francisco <span className="bullet">•</span> Remote

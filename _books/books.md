@@ -2,9 +2,68 @@
 
 - year: 2024
   books:
+  - title: Absolution
+    author: Jeff Vandermeer
+    reading: true
+  - title: Lake of Souls
+    author: Ann Leckie
+    thoughts: Hits and misses for me (like any short story collection)
+  - title: Making Design Theory
+    author: Johan Redström
+    reading: true
+  - title: Somewhere Beyond the Sea
+    author: TJ Klune
+    thoughts: A good conclusion, but as much as I appreciate the story and the ideas, I started to find the “positivity” tedious
+  - title: An Academy for Liars
+    author: Alexis Henderson
+    thoughts: Found myself wanting
+  - title: The Magician’s Land
+    author: Lev Grossman
+    thoughts: Pleasantly concluded
+  - title: The Magician King
+    author: Lev Grossman
+    thoughts: Surprisingly different from book one, and just as enjoyable
+  - title: These Deathless Shores
+    author: P. H. Low
+    thoughts: Takes a warm friendly story and makes it very much not so—characters grated on me but the underlying was super compelling
+  - title: The Bright Sword
+    author: Lev Grossman
+    thoughts: I really enjoyed this but it felt like it petered out somehow
+  - title: A Sorceress Comes to Call
+    author: T. Kingfisher
+    thoughts: Wonderful storytelling with a fairy-tale-esque slant
+  - title: Eruption
+    author:  Michael Crichton & James Patterson
+    thoughts: Books I don’t like are usually just “not for me” but this book is trash
+  - title: The Mercy of Gods
+    author: James S. A. Corey
+    thoughts: Absolutely loved this
+  - title: Winter, or a Town Near Palgrave
+    author: André Alexis
+    thoughts: Great short, surreal kick
+  - title: Zero Stars, Do Not Recommend
+    author: MJ Wassmer
+    thoughts: Felt popcorny, good quick read
+  - title: Duma Key
+    author: Stephen King
+    thoughts: One of his legitimately creepy stories
+  - title: The Stardust Grail
+    author: Yume Kitasei
+    thoughts: Different!
+  - title: Service Model
+    author: Adrian Tchaikovsky
+    thoughts: I loved this—the characters were brilliant
+  - title: The Cautious Traveller’s Guide to the Wastelands
+    author: Sarah Brooks
+    thoughts: Somehow brilliantly original and terrifically derivative and I enjoyed it a lot
+  - title: How to Make a Horror Movie and Survive
+    author: Craig DiLouie
+    thoughts: I wanted to like this but ehh—quite liked the feeling of immersion in filmmaking though
+  - title: The Bound Worlds
+    author: Megan O’Keefe
+    thoughts: Great conclusion to the series
   - title: Something Rotten
     author: Jasper Fforde
-    reading: true
   - title: You Like it Darker
     author: Stephen King
     thoughts: Adored it
