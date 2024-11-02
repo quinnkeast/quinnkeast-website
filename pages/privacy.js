@@ -97,7 +97,7 @@ function Privacy() {
             policies, or practices of any third-party sites or services.
           </p>
 
-          <h3>Children's Privacy</h3>
+          <h3>Children’s Privacy</h3>
 
           <p>
             Our Services do not address anyone under the age of 13. We do not
