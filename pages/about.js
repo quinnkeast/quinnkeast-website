@@ -77,7 +77,7 @@ function About() {
           </p>
 
           <p>
-            I have more than 14 years of expertise that covers the entire
+            I have more than 15 years of expertise that covers the entire
             product design process: from research and strategy to execution and
             shipping. My background is in graphic design, complemented by a
             lifetime of tinkering with digital tools, languages, and
