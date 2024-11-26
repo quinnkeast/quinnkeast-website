@@ -2,9 +2,15 @@
 
 - year: 2024
   books:
+  - title: Paradise-1
+    author: David Wellington
+    reading: true
+  - title: The Teller of Small Fortunes
+    author: Julie Leong
+    thoughts: Lovely!
   - title: Absolution
     author: Jeff Vandermeer
-    reading: true
+    thoughts: First two parts kicked butt, third part dragged
   - title: Lake of Souls
     author: Ann Leckie
     thoughts: Hits and misses for me (like any short story collection)
