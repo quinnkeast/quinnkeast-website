@@ -1,0 +1,105 @@
+---
+title: "Apple’s Live Captions are often worse than nothing"
+subtitle: "Silent failures undermine user agency and accessibility in a feature for accessibility"
+date: "2024-11-26"
+author:
+  name: Quinn Keast
+  picture: "/assets/quinn-portrait.jpg"
+ogImage:
+  url: "/assets/writing/maxim-berg-kE8-rUKjtQU-unsplash.jpeg"
+published: true
+starred: true
+tags:
+  - accessibility
+  - apple
+  - design
+---
+
+I rely on captions or live speech to text to understand spoken audio. For the last several years, I’ve used some combination of hacks and workarounds to get captions anywhere I needed them—usually with an audio tool like Loopback to create a virtual audio source that I could pipe into Google Meet and take advantage of their real-time speech to text.
+
+I’ve long been convinced that this is a nonsensical workaround for an accessibility feature that really should just be part of the core OS, so I was delighted when Apple released their Live Captions beta for iOS and Mac OS.
+
+In theory, <a href="https://support.apple.com/en-ca/guide/mac-help/mchldd11f4fd/mac" target="_blank">Live Captions on Mac OS</a> should be the perfect, magical replacement for all these hacky workarounds. There’s a few design decisions that feel bang on with <a href="/writing/these-are-design-principles-for-real-time-captions-in-video-calls">how I’d expect captions to work</a>, like how they appear in a little modal that’s fixed above other windows and can be dragged anywhere on the screen.
+
+<figure class="mt-8">
+<img src="/assets/writing/mac911-live-captions-macos-bordered.png" alt="Photo of Apple’s Live Captions in action" />
+<figcaption>Photo of Apple’s Live Captions in action • via <a href="https://www.macworld.com/article/1444376/how-to-try-the-live-captions-beta.html" target="_blank">Macworld</a></figcaption>
+</figure>
+
+And in theory, since it’s integrated into the OS itself, any audio source could be captioned—video calls, Slack huddles, videos, even phone calls over wifi.
+
+I really, really want to use Live Captions for everything.
+
+But boy, there’s some staggering gaps in how it’s implemented. If great products are defined by the last 5%, then Live Captions stopped somewhere at 80%.
+
+I can work with imperfect captions. I lip read in everyday life, and lip reading is a game of filling in context. I rarely understand every word in a sentence, but I understand *enough* words in the sentence together with context to understand the sentence as a whole. “Craptions” are similar. They might be hilariously wrong, but as long as they provide something, I’ll make do.
+
+But when captions cross the threshold from “imperfect but useful” to “unusable,” the drop-off is immediate and complete. A whole lot of things that feel like they should be *something* end up being *nothing*—in fact, worse than nothing, because they give the illusion of accessibility while taking away agency.
+
+If I’m relying on captions for something and they don’t work, it’s not like I can squeak by with a bit of effort. It’s not like a blurry field of view that I can still navigate with care. I either have access, or I have _nothing_. If I’m on a phone call without any video cues and captions stop working, I *cannot* understand what, if anything, is being said.
+
+The problem with Live Captions is that they all too often don’t work, and there’s zero feedback or information provided to help me understand why they aren’t working.
+
+This is what it looks like when Live Captions on Mac OS isn’t working:
+
+<figure class="mt-8">
+<img src="/assets/writing/captions.png" alt="Photo of Apple’s Live Captions when they aren’t working" />
+<figcaption>Photo of Apple’s Live Captions when they aren’t working</figcaption>
+</figure>
+
+I can think of so many reasons that Live Captions might not work. Here’s a shortlist:
+
+1. There’s an underlying software issue preventing it from working.
+2. The audio source is not working.
+3. The audio source is not loud enough to be transcribed.
+4. The audio source is not clear enough to be transcribed.
+5. The audio source is in a different language that can’t be transcribed.
+
+For each of these possible reasons that Live Captions might not be working, this is what information is shared with me by Live Captions:
+
+<figure class="mt-8">
+<img src="/assets/writing/captions.png" alt="Photo of Apple’s Live Captions when they aren’t working" />
+<figcaption>Photo of Apple’s Live Captions when they aren’t working</figcaption>
+</figure>
+
+Let’s consider the implications of each of these potential issues:
+
+#### There’s an underlying software issue preventing it from working.
+
+Okay, great, if I know this then I know that the captions are nonfunctional at the software level, and can troubleshoot that, while switching to other hacks and workarounds in the meantime.
+
+#### The audio source is not working.
+
+Okay, great, if I know this then I know that the captions don’t have an audio feed , and can troubleshoot that, while switching to other hacks and workarounds in the meantime.
+
+#### The audio source is not loud enough to be transcribed.
+
+Okay, great, if I know this then I can adjust the audio source or tell the person I’m talking to that they’re too quiet and I can’t hear them.
+
+#### The audio source is not clear enough to be transcribed.
+
+Okay, great, if I know this then I can adjust the audio source or tell the person I’m talking to that there’s too much background noise for me to hear them.
+
+#### The audio source is in a different language that can’t be transcribed.
+
+Okay, great, if I know this then I can respond accordingly, whether that’s telling the person that I need a different language, waiting until an automated message presents the option to switch languages, or recognizing I’m not equipped for this call.
+
+But instead, for all of the above, what I get is this:
+
+<figure class="mt-8">
+<img src="/assets/writing/captions.png" alt="Photo of Apple’s Live Captions when they aren’t working" />
+<figcaption>Photo of Apple’s Live Captions when they aren’t working</figcaption>
+</figure>
+
+This is worse than nothing. If I ever try to rely on Live Captions and it stops working, I have *zero* information and there’s nothing I can do about it. It’s difficult to describe how viscerally frustrating and helpless this imposed lack of agency feels.
+
+And it gets worse: if I ever share my screen or even take a screenshot, Apple blocks out the Live Captions window altogether. I had no idea this was a thing until I was halfway through an hour long user research call, shared my screen, and discovered I suddenly no longer had access to Live Captions.
+
+<figure class="mt-8">
+<img src="/assets/writing/captions-blocked.png" alt="Screenshot of Apple’s Live Captions when they’re blocked" />
+<figcaption>Screenshot of Apple’s Live Captions when they’re blocked</figcaption>
+</figure>
+
+I can imagine some good privacy-related rationales for this. But there’s no warning that this will happen, and no naunce to the implementation. If I’m sharing one screen and have Live Captions on another screen, then surely the Live Captions that aren’t visible in the screen share should continue to be shown.
+
+I recognize that speech-to-text is a hard problem, and I’m wildly appreciative of the effort that Apple’s team has invested in making Live Captions a thing at all. But at the same time, the product decisions around how and when Live Captions work when it stops working makes Live Captions _worse_ than nothing.
