@@ -2,6 +2,9 @@
 
 - year: 2024
   books:
+  - title: Macarons
+    author: Pierre Hermé
+    thoughts: 72 macarons per batch, here we gooo
   - title: Paradise-1
     author: David Wellington
     reading: true
