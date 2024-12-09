@@ -200,7 +200,7 @@
   - title: This is How You Lose the Time War
     author: Amal el-Mohtar & Max Gladstone
     date: November
-    reading: true
+    abandoned: true
   - title: System Collapse
     author: Martha Wells
     date: November
@@ -212,7 +212,7 @@
   - title: The Dead Take the A Train
     author: Cassandra Khaw & Richard Kadrey
     date: November
-    reading: true
+    abandoned: true
   - title: The Sunlit Man
     author: Brandon Sanderson
     date: November
@@ -237,7 +237,7 @@
   - title: The Vanished Birds
     author: Simon Jimenez
     date: October
-    reading: true
+    abandoned: true
   - title: Starter Villain
     author: John Scalzi
     date: September
@@ -456,7 +456,7 @@
   - title: Chaos Vector
     author: Megan E. O’Keefe
     date: February
-    reading: true
+    abandoned: true
   - title: The Man in the High Castle
     author: Philip K. Dick
     date: February
