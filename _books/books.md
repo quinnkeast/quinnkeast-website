@@ -2,12 +2,18 @@
 
 - year: 2024
   books:
+  - title: The Ministry of Time
+    author: Kaliane Bradley
+    reading: true
+  - title: Revenant-X
+    author: David Wellington
+    reading: true
   - title: Macarons
     author: Pierre Hermé
     thoughts: 72 macarons per batch, here we gooo
   - title: Paradise-1
     author: David Wellington
-    reading: true
+    thoughts: Real fast popcorny
   - title: The Teller of Small Fortunes
     author: Julie Leong
     thoughts: Lovely!
