@@ -7,7 +7,7 @@
     reading: true
   - title: Revenant-X
     author: David Wellington
-    reading: true
+    thoughts: This series strikes me as a serialization
   - title: Macarons
     author: Pierre Hermé
     thoughts: 72 macarons per batch, here we gooo
