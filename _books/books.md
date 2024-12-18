@@ -2,9 +2,13 @@
 
 - year: 2024
   books:
+  - title: Treasure Island
+    author: Robert Louis Stevenson
+    reading: true
+    thoughts: Watching ”Black Sails” and need to keep the vibe going
   - title: The Ministry of Time
     author: Kaliane Bradley
-    reading: true
+    thoughts: Loved this
   - title: Revenant-X
     author: David Wellington
     thoughts: This series strikes me as a serialization
