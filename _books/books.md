@@ -5,7 +5,7 @@
   - title: Treasure Island
     author: Robert Louis Stevenson
     reading: true
-    thoughts: Watching ”Black Sails” and need to keep the vibe going
+    thoughts: Watching “Black Sails” and need to keep the vibe going
   - title: The Ministry of Time
     author: Kaliane Bradley
     thoughts: Loved this
