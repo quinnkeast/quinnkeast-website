@@ -2,6 +2,9 @@
 
 - year: 2024
   books:
+  - title: This Accident of Being Lost
+    author: Leanne Betasamosake Simpson
+    thoughts: Absorbing and different
   - title: Wind and Truth
     author: Brandon Sanderson
     reading: true
