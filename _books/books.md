@@ -1,5 +1,10 @@
 ---
 
+- year: 2025
+  books:
+  - title: "Woe: A Housecat’s Story of Despair"
+    author: Lucy Knisley
+    thoughts: SO GOOD
 - year: 2024
   books:
   - title: This Accident of Being Lost
