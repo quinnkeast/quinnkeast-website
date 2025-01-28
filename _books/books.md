@@ -2,6 +2,9 @@
 
 - year: 2025
   books:
+  - title: Heat
+    author: Bill Buford
+    reading: true
   - title: "Woe: A Housecat’s Story of Despair"
     author: Lucy Knisley
     thoughts: SO GOOD
