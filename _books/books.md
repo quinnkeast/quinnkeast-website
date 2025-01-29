@@ -2,7 +2,7 @@
 
 - year: 2025
   books:
-  - title: Beneath the Trees Where Nobody Seeds
+  - title: Beneath the Trees Where Nobody Sees
     author: Patrick Horvath
     thoughts: Super visceral oof
   - title: Heat
