@@ -2,6 +2,12 @@
 
 - year: 2025
   books:
+  - title: James
+    author: Percival Everett
+    reading: true
+  - title: Blood of the Virgin
+    author: Sammy Harkham
+    reading: true
   - title: Beneath the Trees Where Nobody Sees
     author: Patrick Horvath
     thoughts: Super visceral oof
@@ -18,7 +24,7 @@
     thoughts: Absorbing and different
   - title: Wind and Truth
     author: Brandon Sanderson
-    reading: true
+    thoughts: Almost too long, and I never say that
   - title: Treasure Island
     author: Robert Louis Stevenson
     thoughts: Watched “Black Sails” and needed to keep the vibe going
