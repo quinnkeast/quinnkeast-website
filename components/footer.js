@@ -35,22 +35,6 @@ export default function Footer() {
                   Bluesky
                 </a>
               </li>
-              <li>
-                <a href="http://twitter.com/quinnkeast" target="_blank">
-                  Twitter
-                </a>{" "}
-                <span className="rounded-lg inline-block bg-black-lighter/10 text-black-lighter text-opacity-75 text-xs px-2 ml-1 pb-2px">
-                  Abandoned
-                </span>
-              </li>
-              <li>
-                <a href="https://medium.com/@quinnkeast" target="_blank">
-                  Medium
-                </a>{" "}
-                <span className="rounded-lg inline-block bg-black-lighter/10 text-black-lighter text-opacity-75 text-xs px-2 ml-1 pb-2px">
-                  Archive only
-                </span>
-              </li>
             </ul>
           </div>
           <div className="col-span-2">
