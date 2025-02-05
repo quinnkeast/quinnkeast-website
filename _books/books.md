@@ -2,12 +2,15 @@
 
 - year: 2025
   books:
+  - title: Three Eight One
+    author: Aliya Whiteley
+    reading: true
   - title: James
     author: Percival Everett
-    reading: true
+    thoughts: Brilliant concept and telling
   - title: Blood of the Virgin
     author: Sammy Harkham
-    reading: true
+    thoughts: Beautiful, but meanders as it goes
   - title: Beneath the Trees Where Nobody Sees
     author: Patrick Horvath
     thoughts: Super visceral oof
