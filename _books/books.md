@@ -2,9 +2,12 @@
 
 - year: 2025
   books:
+  - title: Chain-Gang All-Stars
+    author: Nana Kwame Adjei-Brenyah
+    reading: true
   - title: Three Eight One
     author: Aliya Whiteley
-    reading: true
+    thoughts: Clever, weird
   - title: James
     author: Percival Everett
     thoughts: Brilliant concept and telling
