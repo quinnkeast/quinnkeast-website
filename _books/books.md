@@ -2,9 +2,12 @@
 
 - year: 2025
   books:
+  - title: The Saint of Bright Doors
+    author: Vajra Chandrasekera
+    reading: true
   - title: Chain-Gang All-Stars
     author: Nana Kwame Adjei-Brenyah
-    reading: true
+    thoughts: I really loved this—visceral and thought-provoking
   - title: Three Eight One
     author: Aliya Whiteley
     thoughts: Clever, weird
