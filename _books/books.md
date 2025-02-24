@@ -4,7 +4,7 @@
   books:
   - title: The Saint of Bright Doors
     author: Vajra Chandrasekera
-    reading: true
+    thoughts: Great prose and clever as hell
   - title: Chain-Gang All-Stars
     author: Nana Kwame Adjei-Brenyah
     thoughts: I really loved this—visceral and thought-provoking
