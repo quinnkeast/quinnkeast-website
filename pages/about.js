@@ -121,7 +121,7 @@ function About() {
             </span>
             <div className="grid grid-cols-5">
               <div className="text-black-lighter col-span-2 md:col-span-1">
-                2024
+                2024 –
               </div>
               <div className="col-span-3 md:col-span-4">
                 Founding Product Designer
