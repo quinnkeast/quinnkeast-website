@@ -2,6 +2,9 @@
 
 - year: 2025
   books:
+  - title: Toward Eternity
+    author: Anton Hur
+    reading: true
   - title: The Saint of Bright Doors
     author: Vajra Chandrasekera
     thoughts: Great prose and clever as hell
