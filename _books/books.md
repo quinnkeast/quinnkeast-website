@@ -2,6 +2,9 @@
 
 - year: 2025
   books:
+  - title: Shroud
+    author: Adrian Tchaikovsky
+    reading: true
   - title: Toward Eternity
     author: Anton Hur
     thoughts: Enjoyable, disconcerting, maybe not the best book to read on a fever
