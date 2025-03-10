@@ -2,9 +2,15 @@
 
 - year: 2025
   books:
+  - title: Persepolis
+    author: Marjane Satrapi
+    reading: true
+  - title: The Bones Beneath my Skin
+    author: T. J. Klune
+    reading: true
   - title: Shroud
     author: Adrian Tchaikovsky
-    reading: true
+    thoughts: I loved this—super sci fi
   - title: Toward Eternity
     author: Anton Hur
     thoughts: Enjoyable, disconcerting, maybe not the best book to read on a fever
