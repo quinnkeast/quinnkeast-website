@@ -7,7 +7,7 @@
     reading: true
   - title: The Bones Beneath my Skin
     author: T. J. Klune
-    reading: true
+    thoughts: Went in expecting vibe A and got vibe B and I’m down for it
   - title: Shroud
     author: Adrian Tchaikovsky
     thoughts: I loved this—super sci fi
