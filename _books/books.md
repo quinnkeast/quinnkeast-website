@@ -2,6 +2,9 @@
 
 - year: 2025
   books:
+  - title: Demon Copperhead
+    author: Barbara Kingsolver
+    reading: true
   - title: Persepolis
     author: Marjane Satrapi
     reading: true
