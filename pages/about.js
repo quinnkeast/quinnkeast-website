@@ -114,7 +114,7 @@ function About() {
         </div>
         <div className="md:col-span-2 mt-1">
           <p className="mb-5">
-            <strong>Ditto</strong> / End-to-End Infrastructure For Product Copy
+            <a href="https://dittowords.com" target="_blank"><strong>Ditto</strong></a> / End-to-End Infrastructure for Product Copy
             <br />
             <span className="text-black-lighter text-sm inline-block mb-0.5">
               San Francisco <span className="bullet">•</span> Remote
