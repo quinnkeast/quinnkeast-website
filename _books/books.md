@@ -2,6 +2,9 @@
 
 - year: 2025
   books:
+  - title: Gentle Writing Advice
+    author: Chuck Wendig
+    reading: true
   - title: Demon Copperhead
     author: Barbara Kingsolver
     reading: true
