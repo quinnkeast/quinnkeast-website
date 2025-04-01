@@ -6,7 +6,7 @@
     author: Chuck Wendig
   - title: Demon Copperhead
     author: Barbara Kingsolver
-    reading: true
+    thoughts: The most miserable, wonderful novel I’ve read in years
   - title: Persepolis
     author: Marjane Satrapi
     reading: true
