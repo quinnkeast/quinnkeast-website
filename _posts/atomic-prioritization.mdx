@@ -21,18 +21,22 @@ It’s really hard to prioritize product work during bigger product evolutions o
 
 Some of the challenges that I’ve faced and felt in every team:
 
-1. **It’s hard to prioritize work during ambiguous early phases.** A big product evolution redefines what the product is and how it’s used, while novel product work defines it in the first place. Early on, work is an ambiguous blob: the vision, the common thread, and the tangible solutions must be discovered through research, exploration, and validation. We typically ship iterative slices to validate risky assumptions and understand previously shipped parts are working.
-2. **Iterative shipping can easily become waterfall in disguise.** Traditional iterative shipping can paradoxically become waterfall in disguise—each iteration just leads the way to the predetermined Big Launch without space to learn and _change_ what’s already been built on the way.
-3. **Shared opportunities aren’t often owned by one team.** Large organizations struggle to prioritize _shared_ opportunities that benefit multiple product areas but don’t have clear ownership. Shared opportunities compete against team-specific priorities, and product teams are incentivized to be selfish. Cross-cutting concerns with huge cumulative value might never be prioritized if they don’t provide significant value to any _single_ team.
-4. **It’s tempting to chase quick wins.** It’s easy to justify “quick wins,” even if they quickly become obsolete without helping the team actually learn or improve anything meaningful.
+- **It’s hard to prioritize work during ambiguous early phases.** A big product evolution redefines what the product is and how it’s used, while novel product work defines it in the first place. Early on, work is an ambiguous blob: the vision, the common thread, and the tangible solutions must be discovered through research, exploration, and validation. We typically ship iterative slices to validate risky assumptions and understand previously shipped parts are working.
+- **Iterative shipping can easily become waterfall in disguise.** Traditional iterative shipping can paradoxically become waterfall in disguise—each iteration just leads the way to the predetermined Big Launch without space to learn and _change_ what’s already been built on the way.
+- **Shared opportunities aren’t often owned by one team.** Large organizations struggle to prioritize _shared_ opportunities that benefit multiple product areas but don’t have clear ownership. Shared opportunities compete against team-specific priorities, and product teams are incentivized to be selfish. Cross-cutting concerns with huge cumulative value might never be prioritized if they don’t provide significant value to any _single_ team.
+- **It’s tempting to chase quick wins.** It’s easy to justify “quick wins,” even if they quickly become obsolete without helping the team actually learn or improve anything meaningful.
 
-The atomicity model evolved out of trying to find a better way to communicate and plan relative priorities without adding a ton of process, especially when working in a small startup.
+The atomicity model evolved out of trying to find a better way to communicate and plan relative priorities without adding a ton of process, especially when working in a small startup where every decision carries outsized impact.
 
 I think it scales well from startups working as one team on the whole product to larger organizations with many separate product teams working on their own slices of the product.
 
-The atomicity model has two key dimensions: the spectrum of Atomicity, or how self-contained vs. context-dependent an opportunity is, weighed against the ROI based on relative timing.
+**Why this works particularly well for startups**
 
-## The spectrum of Atomicity
+In a startup context, the atomicity model works really well because it lets the team apply its intuitive understanding, quickly. The whole team has a shared understanding of the product and customers that lives partly in docs and artifacts, and partly in everyone’s heads. We can use this knowledge with this model to have a meaningful prioritization discussion in 10 minutes to choose the right work at the right time.
+
+The atomicity model has two key dimensions: the spectrum of atomicity, or how self-contained vs. context-dependent an opportunity is, weighed against the ROI based on relative timing.
+
+## The spectrum of atomicity
 
 Every opportunity exists on a spectrum of atomicity.
 
@@ -40,9 +44,11 @@ Every opportunity exists on a spectrum of atomicity.
 
 **High atomicity** opportunities are self-contained or adaptable. The solutions generalize well and remain valuable even as the product evolves, and either support or unlock further evolution.
 
+In a startup, high atomicity work is super valuable. You can’t afford to constantly rebuild the same things as your product evolves. Highly atomic opportunities that stick through iterations helps keep up momentum instead of unnecessarily redoing what you’ve already built.
+
 ## The dimension of ROI
 
-We can assume that every opportunity is valuable in some way (otherwise we wouldn’t consider it at all). But every  opportunity represents a different ROI depending on its relative timing.
+We can assume that every opportunity is valuable in some way (otherwise we wouldn’t consider it at all). But every opportunity represents a different return on investment depending on its relative timing.
 
 **Negative ROI** represents work that will be obsolete or need to be redone.
 
@@ -50,13 +56,15 @@ We can assume that every opportunity is valuable in some way (otherwise we would
 
 **Multiplying ROI** indicates an opportunity will have an amplifying effect by unlocking other opportunities, or are shared across multiple product team’s domains.
 
+With a startup, the timing of when value shows up matters a lot. You need work that delivers value now, and _also_ sets you up for the next thing.
+
 ## Applying the model
 
 Start with the “big rocks”—the projects or problems that take a chunk of effort and need to fit in first. Lay them out against a timeline or roadmap. At <a href="https://dittowords.com" target="_blank">Ditto</a>, we’re just using a coarse FigJam timeline with stickies for each bigger project we know about.
 
 Think about where each opportunity falls on the spectrum of atomicity.
 
-Zoom in on the short term—call it “right now”—and think about how each opportunity’s ROI changes when placed “right now” versus “later.”
+Zoom in on the short term—let’s call it “right now”—and think about how each opportunity’s ROI changes when placed “right now” versus “later.”
 
 Anything that has a negative ROI should not be done right now. Even if it’s a quick win. Even if it’s obviously valuable. We’re assuming everything’s obviously valuable—we just won’t get that value by doing it right now.
 
@@ -64,6 +72,10 @@ Anything that has a positive or multiplying ROI should be considered.
 
 Something that offers both a multiplying ROI **and** has high atomicity should be done right now.
 
+I think this approach is particularly valuable in startups because it helps the team align on things without extensive documentation or formal processes. A five-minute conversation about where something lands on these two dimensions can be all it takes. It becomes a shared vocabulary.
+
 Now we have a general timeline that makes sense for prioritizing the “big rocks” in the short term. Then we can apply the same mental framework to the “sand” that fits in around the “big rocks”—the day-by-day bugs, UI nits, and other things that pop up. We don’t need to apply much process other than deciding if something should be done right now, or later.
 
 What makes this model really helpful is that it recognizes time’s influence: both atomicity and ROI are dynamic as time goes on. Something that has low atomicity today may have high atomicity a month from now. Something that has a negative ROI today may have a multiplying ROI in three months. That makes the atomicity model best for revisiting prioritization on a running basis rather than for defining fixed, long-term priorities.
+
+For startups, this works really well with how much products evolve along with your understanding of your customers in the early stages. You can shift priorities fast, but with intent—avoiding both thrash and unnecessary overhead.
