@@ -1,13 +1,14 @@
 ---
-title: "An atomicity model for product prioritization"
-subtitle: "A lightweight approach for prioritizing while making big product shifts"
-date: "2025-02-01"
+title: "The atomicity model for product prioritization"
+subtitle: "A lightweight mental framework for the greatest product impact while avoiding wasted effort"
+date: "2025-04-06"
 author:
   name: Quinn Keast
   picture: "/assets/quinn-portrait.jpg"
 ogImage:
-  url: "/assets/writing/jeremy-bishop-G9i_plbfDgk-unsplash.jpg"
+  url: "/assets/writing/jaye-haych-HVIiYarA-Mw-unsplash.jpg"
 published: true
+starred: true
 tags:
   - product
   - strategy
@@ -16,44 +17,53 @@ tags:
   - design
 ---
 
-**This is a work in progress**
+It’s really hard to prioritize product work during bigger product evolutions or building new products. I’ve been developing the “atomicity model” as a lightweight mental framework that helps teams prioritize work with the greatest long-term impact while avoiding wasted effort.
 
-_I’ve been evolving some ideas that a colleague and I sketched out a couple of years ago. I’m trying to use my personal website as more of a living garden rather than just a place for final, polished content, so I’m sharing my outline as it is so far in the open._
+Some of the challenges that I’ve faced and felt in every team:
 
-- The atomicity model for prioritizing is a way to help decide what to build and when during big product evolutions: what to say yes and no to, when to do what, and how to decide which teams should focus on what.
-  - The challenge of prioritizing during big product evolutions
-      - Significant product evolutions redefine and expand on what the product is and how it’s used. That means the foundation is going to change, and the common thread has yet to be defined—it needs to be found through research, discovery, shaping, testing, and validation. And by the nature of these evolutions, we’ll ship iterative slices of the vision on a rolling basis, but also learn how the parts we’ve previously shipped are working.
-      - Traditional iterative shipping can paradoxically become waterfall in disguise, because each iteration just leads the way to the predetermined Big Launch, without learning and iterating on the way.
-      - Larger orgs with many separate product teams tend to find it hard to prioritize known, shared opportunities that would benefit their team’s area, but aren’t clearly owned by any one team. Shared opportunities are inherently prioritized against a product team’s _specific_ opportunities, and product teams are incentivized to be selfish (in a positive way)! This means many cross-cutting opportunities are never prioritized, or have to be tackled by improvised/tiger teams. That takes a lot of work and doesn’t scale.
-      - It’s often easy to justify “quick wins” that will quickly become obsolete without helping the team actually learn or improve on something.
-- Unlike straightforward redesigns or self-contained product features where the product’s core remains stable, big product evolutions shifts the foundation, and the common threads that define the product’s future emerges over time.
-- The atomicity model for product prioritization is a low-process approach to doing and sequencing based on the things that will have the greatest impact towards building _the next thing_ while also continuing to improve _what’s there already_.
-- Ideally it can be done as a quick sketch or notes on a whiteboard. But it’ll scale from small organizations working as one team (working on many product features), to a larger organization with many separate product teams (working on a slice of product features).
-- The atomicity model captures how self-contained or context-dependent an opportunity is in relation to the product’s evolution.
+1. **It’s hard to prioritize work during ambiguous early phases.** A big product evolution redefines what the product is and how it’s used, while novel product work defines it in the first place. Early on, work is an ambiguous blob: the vision, the common thread, and the tangible solutions must be discovered through research, exploration, and validation. We typically ship iterative slices to validate risky assumptions and understand previously shipped parts are working.
+2. **Iterative shipping can easily become waterfall in disguise.** Traditional iterative shipping can paradoxically become waterfall in disguise—each iteration just leads the way to the predetermined Big Launch without space to learn and _change_ what’s already been built on the way.
+3. **Shared opportunities aren’t often owned by one team.** Large organizations struggle to prioritize _shared_ opportunities that benefit multiple product areas but don’t have clear ownership. Shared opportunities compete against team-specific priorities, and product teams are incentivized to be selfish. Cross-cutting concerns with huge cumulative value might never be prioritized if they don’t provide significant value to any _single_ team.
+4. **It’s tempting to chase quick wins.** It’s easy to justify “quick wins,” even if they quickly become obsolete without helping the team actually learn or improve anything meaningful.
 
-## Spectrum of Atomicity
+The atomicity model evolved out of trying to find a better way to communicate and plan relative priorities without adding a ton of process, especially when working in a small startup.
 
-- Opportunities exist on a spectrum of atomicity:
-  - Low atomicity opportunities are deeply context-dependent. An in-product onboarding tour is intimately tied to the current UI and workflow, and will become out of date and obsolete almost immediately as the product evolves.
-  - High atomicity opportunities are self-contained or adaptable. The solutions generalize well and remain valuable through the product evolution, either supporting or unlocking further evolution.
+I think it scales well from startups working as one team on the whole product to larger organizations with many separate product teams working on their own slices of the product.
 
-## The ROI Dimension
+The atomicity model has two key dimensions: the spectrum of Atomicity, or how self-contained vs. context-dependent an opportunity is, weighed against the ROI based on relative timing.
 
-- Negative ROI represents work that will be obsolete or require redoing
-- Positive ROI delivers immediate improvements to the product experience or value prop
-- Multiplying ROI indicates opportunities that will ripple across several product areas
+## The spectrum of Atomicity
 
-## Using the model
+Every opportunity exists on a spectrum of atomicity.
 
-- Map current opportunities on the atomicity spectrum
-- Take a stab at ROI
-- Decide a boundary between negative and positive ROI
-- Make decisions based on this
-  - Anything that has negative ROI should not be done at all (in its current form, right now).
-  - Anything that has positive ROI should be considered.
-  - Anything that appears in multiple product areas or teams **and** has high atomicity has a multiplying ROI and should be prioritized.
-- What makes this model really helpful is that it recognizes time’s influence—both atomicity and ROI are dynamic as the product evolution unfolds. Something that has low atomicity today, may have high atomicity a month from now. Similarly, something that represents low ROI today, may represent multiplying ROI in three months. Instead of using it to define fixed, long-term priorities, use it to generally discuss prioritization on a running basis.
+**Low atomicity** opportunities are deeply context-dependent. An in-product onboarding tour is intimately tied to the current UI and user flows, and will immediately become obsolete as the product evolves.
 
-## Scaling in larger organizations
+**High atomicity** opportunities are self-contained or adaptable. The solutions generalize well and remain valuable even as the product evolves, and either support or unlock further evolution.
 
-- The model can be adapted to larger orgs by treating each product team’s domain as a separate spectrum line. Opportunities that will have a multiplying affect across multiple teams will be made obvious.
+## The dimension of ROI
+
+We can assume that every opportunity is valuable in some way (otherwise we wouldn’t consider it at all). But every  opportunity represents a different ROI depending on its relative timing.
+
+**Negative ROI** represents work that will be obsolete or need to be redone.
+
+**Positive ROI** delivers immediate and lasting improvements to the product experience or value prop.
+
+**Multiplying ROI** indicates an opportunity will have an amplifying effect by unlocking other opportunities, or are shared across multiple product team’s domains.
+
+## Applying the model
+
+Start with the “big rocks”—the projects or problems that take a chunk of effort and need to fit in first. Lay them out against a timeline or roadmap. At <a href="https://dittowords.com" target="_blank">Ditto</a>, we’re just using a coarse FigJam timeline with stickies for each bigger project we know about.
+
+Think about where each opportunity falls on the spectrum of atomicity.
+
+Zoom in on the short term—call it “right now”—and think about how each opportunity’s ROI changes when placed “right now” versus “later.”
+
+Anything that has a negative ROI should not be done right now. Even if it’s a quick win. Even if it’s obviously valuable. We’re assuming everything’s obviously valuable—we just won’t get that value by doing it right now.
+
+Anything that has a positive or multiplying ROI should be considered.
+
+Something that offers both a multiplying ROI **and** has high atomicity should be done right now.
+
+Now we have a general timeline that makes sense for prioritizing the “big rocks” in the short term. Then we can apply the same mental framework to the “sand” that fits in around the “big rocks”—the day-by-day bugs, UI nits, and other things that pop up. We don’t need to apply much process other than deciding if something should be done right now, or later.
+
+What makes this model really helpful is that it recognizes time’s influence: both atomicity and ROI are dynamic as time goes on. Something that has low atomicity today may have high atomicity a month from now. Something that has a negative ROI today may have a multiplying ROI in three months. That makes the atomicity model best for revisiting prioritization on a running basis rather than for defining fixed, long-term priorities.
