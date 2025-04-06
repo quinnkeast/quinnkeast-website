@@ -139,11 +139,32 @@
   }
 
   .post-content p + ul {
-    @apply mt-6;
+    @apply mt-5;
+  }
+
+  .post-content p + ol {
+    @apply mt-5;
+  }
+
+  .post-content ul + p,
+  .post-content ol + p {
+    @apply mt-4;
+  }
+
+  .post-content ul {
+    @apply ml-3;
+  }
+
+  .post-content ul li {
+    @apply pl-2;
   }
 
   .post-content ol {
-    @apply list-decimal pl-7;
+    @apply list-decimal ml-3;
+  }
+
+  .post-content ol li {
+    @apply pl-2;
   }
 
   /* .project-content Specific Styles */

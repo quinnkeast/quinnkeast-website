@@ -7,7 +7,9 @@ export default function PostBody({ content, wide }) {
   const Component = useMemo(() => getMDXComponent(content), [content]);
 
   return (
-    <div className={`${maxWidth} mx-auto py-2 md:py-8 post-content`}>
+    <div
+      className={`${maxWidth} mx-auto pr-16 md:pr-0 pb-6 md:py-8 post-content`}
+    >
       <Component
         components={{
           pre: SyntaxHighlighter,
