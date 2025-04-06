@@ -2,6 +2,9 @@
 
 - year: 2025
   books:
+  - title: A Drop of Corruption
+    author: Robert Jackson Bennett
+    reading: true
   - title: Gentle Writing Advice
     author: Chuck Wendig
   - title: Demon Copperhead
@@ -9,7 +12,6 @@
     thoughts: The most miserable, wonderful novel I’ve read in years
   - title: Persepolis
     author: Marjane Satrapi
-    reading: true
   - title: The Bones Beneath my Skin
     author: T. J. Klune
     thoughts: Went in expecting vibe A and got vibe B and I’m down for it
@@ -39,7 +41,7 @@
     thoughts: Super visceral oof
   - title: Heat
     author: Bill Buford
-    reading: true
+    thoughts: I’m all fired up to cook better now
   - title: "Woe: A Housecat’s Story of Despair"
     author: Lucy Knisley
     thoughts: SO GOOD
