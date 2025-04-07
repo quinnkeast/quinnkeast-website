@@ -40,9 +40,9 @@ The atomicity model has two key dimensions: the spectrum of atomicity, or how se
 
 Every opportunity exists on a spectrum of atomicity.
 
-**Low atomicity** opportunities are deeply context-dependent. The solutions are intimately tied to the current UI, user flows, architecture, or problem space created by the current product context. For example: an in-product onboarding tour is intimately tied to the current UI and user flows, and will immediately become obsolete as the product evolves.
+**Low atomicity** opportunities are highly dependent in one of several ways. They might have contextual UI dependencies, such as an in-product onboarding tour that depends on the current UI and user flows, and will become obsolete as the product evolves. Or they might have problem interdependencies, where other problems need to be solved before the opportunity is feasible, like a collaboration feature that requires user roles and permissions to be in place. Or it could be dependent on a technical challenge, like a pile of technical debt that makes it difficult to build something sustainable on top of.
 
-**High atomicity** opportunities are self-contained or adaptable. The solutions generalize well and remain valuable even as the product evolves, and either support or unlock further evolution. For example: a new, well-designed API creates a stable interface that will remain valuable as the product evolves.
+**High atomicity** opportunities are self-contained or adaptable. They can be approached as standalone problems that don’t rely on other interdependent problems to be solved at the same time. The solutions will persist value even as the product evolves, and either support or unlock further evolution.
 
 In a startup, high atomicity work is super valuable. You can’t afford to constantly rebuild the same things as your product evolves. Highly atomic opportunities that stick through iterations helps keep up momentum instead of unnecessarily redoing what you’ve already built.
 
