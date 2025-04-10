@@ -19,10 +19,6 @@ export default function Home() {
             <a href="https://dittowords.com" target="_blank">
               Ditto
             </a>
-            . Partner at{" "}
-            <a href="https://caribou.co" target="_blank">
-              Caribou
-            </a>
             . Also writing{" "}
             <a href="/brand-book">a book on brand for product teams</a>.
           </h2>
