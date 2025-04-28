@@ -2,9 +2,15 @@
 
 - year: 2025
   books:
+  - title: The Martian Contingency
+    author: Mary Robinette Kuwal
+    reading: true
+  - title: When the Moon Hits Your Eye
+    author: John Scalzi
+    thoughts: Love how straight this is written
   - title: A Drop of Corruption
     author: Robert Jackson Bennett
-    reading: true
+    thoughts: Mystery fantasy mashup aw yeah
   - title: Gentle Writing Advice
     author: Chuck Wendig
   - title: Demon Copperhead
