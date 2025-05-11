@@ -2,9 +2,15 @@
 
 - year: 2025
   books:
+  - title: The Fox Wife
+    author: Yangsze Choo
+    reading: true
+  - title: Impro
+    author: Keith Johnstone
+    reading: true
   - title: The Martian Contingency
     author: Mary Robinette Kuwal
-    reading: true
+    thoughts: Sneakily absorbing
   - title: When the Moon Hits Your Eye
     author: John Scalzi
     thoughts: Love how straight this is written
