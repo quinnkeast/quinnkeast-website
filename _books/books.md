@@ -2,6 +2,9 @@
 
 - year: 2025
   books:
+  - title: The Defector
+    author: Chris Hadfield
+    thoughts: Clancy-esque
   - title: The Fox Wife
     author: Yangsze Choo
     reading: true
