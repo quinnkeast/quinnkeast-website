@@ -2,12 +2,18 @@
 
 - year: 2025
   books:
-  - title: The Defector
-    author: Chris Hadfield
-    thoughts: Clancy-esque
   - title: The Fox Wife
     author: Yangsze Choo
     reading: true
+  - title: The Reckoning
+    author: John Grisham
+    thoughts: Trashy beach book II
+  - title: Past Tense
+    author: Lee Child
+    thoughts: Trashy beach book I
+  - title: The Defector
+    author: Chris Hadfield
+    thoughts: Clancy-esque
   - title: Impro
     author: Keith Johnstone
     reading: true
