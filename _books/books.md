@@ -2,9 +2,12 @@
 
 - year: 2025
   books:
+  - title: Kitchen Confidential
+    author: Anthony Bourdain
+    reading: true
   - title: The Fox Wife
     author: Yangsze Choo
-    reading: true
+    thoughts: Enjoyed this a lot, entirely new different mythology
   - title: The Reckoning
     author: John Grisham
     thoughts: Trashy beach book II
