@@ -4,7 +4,7 @@
   books:
   - title: Kitchen Confidential
     author: Anthony Bourdain
-    reading: true
+    thoughts: Great writing, would never ever want to work with anyone like him
   - title: The Fox Wife
     author: Yangsze Choo
     thoughts: Enjoyed this a lot, entirely new different mythology
