@@ -2,6 +2,9 @@
 
 - year: 2025
   books:
+  - title: Cold Eternity
+    author: S. A. Barnes
+    reading: true
   - title: Kitchen Confidential
     author: Anthony Bourdain
     thoughts: Great writing, would never ever want to work with anyone like him
