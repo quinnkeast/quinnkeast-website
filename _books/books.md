@@ -2,6 +2,9 @@
 
 - year: 2025
   books:
+  - title: The Dream Hotel
+    author: Laila Lamali
+    reading: true
   - title: Cold Eternity
     author: S. A. Barnes
     thoughts: The sci-fi equivalent of a trashy beach book
