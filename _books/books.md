@@ -4,7 +4,7 @@
   books:
   - title: The Dream Hotel
     author: Laila Lamali
-    reading: true
+    thoughts: Remarkable, and infuriating end to end
   - title: Cold Eternity
     author: S. A. Barnes
     thoughts: The sci-fi equivalent of a trashy beach book
