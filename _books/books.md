@@ -2,6 +2,9 @@
 
 - year: 2025
   books:
+  - title: Never Flinch
+    author: Stephen King
+    reading: true
   - title: The Dream Hotel
     author: Laila Lamali
     thoughts: Remarkable, and infuriating end to end
