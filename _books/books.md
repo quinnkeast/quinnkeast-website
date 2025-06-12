@@ -2,9 +2,12 @@
 
 - year: 2025
   books:
+  - title: The Devils
+    author: Joe Abercrombie
+    reading: true
   - title: Never Flinch
     author: Stephen King
-    reading: true
+    thoughts: Good, but as quoted in acknowledgements, “You can do better”
   - title: The Dream Hotel
     author: Laila Lamali
     thoughts: Remarkable, and infuriating end to end
