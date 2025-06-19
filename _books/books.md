@@ -2,9 +2,12 @@
 
 - year: 2025
   books:
+  - title: Ghostdrift
+    author: Suzanne Palmer
+    reading: true
   - title: The Devils
     author: Joe Abercrombie
-    reading: true
+    thoughts: Enjoyed the hell out of it
   - title: Never Flinch
     author: Stephen King
     thoughts: Good, but as quoted in acknowledgements, “You can do better”
