@@ -2,9 +2,12 @@
 
 - year: 2025
   books:
+  - title: Sociopath
+    author: Patric Gagne
+    reading: true
   - title: Ghostdrift
     author: Suzanne Palmer
-    reading: true
+    thoughts: Not quite as good as the rest of the series, but fun
   - title: The Devils
     author: Joe Abercrombie
     thoughts: Enjoyed the hell out of it
