@@ -2,9 +2,17 @@
 
 - year: 2025
   books:
+  - title: Exercises in Style
+    author: Raymond Queneau – Barbara Wright
+    reading: true
+  - title: The Democracy of Species
+    author: Robin Wall Kimmerer
+    reading: true
+  - title: "Sh*tscapes: 100 Mistakes in Landscape Architecture"
+    author: Vladimir Guculak & Paul Bourel
   - title: Sociopath
     author: Patric Gagne
-    reading: true
+    thoughts: I’m a bit apathetic about it honestly
   - title: Ghostdrift
     author: Suzanne Palmer
     thoughts: Not quite as good as the rest of the series, but fun
