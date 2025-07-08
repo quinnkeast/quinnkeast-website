@@ -2,6 +2,9 @@
 
 - year: 2025
   books:
+  - title: Grave Empire
+    author: Richard Swan
+    thoughts: Enjoyed the individual characters, but found it almost too much a grab bag of fantasy
   - title: Exercises in Style
     author: Raymond Queneau – Barbara Wright
     reading: true
