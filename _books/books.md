@@ -2,6 +2,9 @@
 
 - year: 2025
   books:
+  - title: The Long Walk
+    author: Stephen King
+    reading: true
   - title: Grave Empire
     author: Richard Swan
     thoughts: Enjoyed the individual characters, but found it almost too much a grab bag of fantasy
