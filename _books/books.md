@@ -2,9 +2,12 @@
 
 - year: 2025
   books:
+  - title: The Memory Collectors
+    author: Dete Meserve
+    thoughts: Good premise, but left wanting somehow
   - title: The Long Walk
     author: Stephen King
-    reading: true
+    thoughts: Looking forward to seeing how Winnipeg backgrounds the upcoming movie
   - title: Grave Empire
     author: Richard Swan
     thoughts: Enjoyed the individual characters, but found it almost too much a grab bag of fantasy
