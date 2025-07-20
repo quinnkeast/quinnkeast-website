@@ -2,6 +2,9 @@
 
 - year: 2025
   books:
+  - title: The Secret Market of the Dead
+    author: Giovanni De Feo
+    reading: true
   - title: The Memory Collectors
     author: Dete Meserve
     thoughts: Good premise, but left wanting somehow
