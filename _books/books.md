@@ -2,9 +2,18 @@
 
 - year: 2025
   books:
+  - title: Sunrise on the Reaping
+    author: Suzanne Collins
+    reading: true
+  - title: The Sirens of Titan
+    author: Kurt Vonnegut
+    reading: true
+  - title: The Book That Held Her Heart
+    author: Mark Lawrence
+    thoughts: I dunno, this one just unravelled for me
   - title: The Secret Market of the Dead
     author: Giovanni De Feo
-    reading: true
+    thoughts: Enjoyable; felt like it ended abruptly
   - title: The Memory Collectors
     author: Dete Meserve
     thoughts: Good premise, but left wanting somehow
