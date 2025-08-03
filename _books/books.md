@@ -3,7 +3,7 @@
 - year: 2025
   books:
   - title: "Tom Clancy’s Op-Center: Mirror Image"
-    author: ~Tom Clancy~ ~Steve Pieczenik~ Jeff Rovin
+    author: <s>Tom Clancy</s> <s>Steve Pieczenik</s> Jeff Rovin
     thoughts: Popcorn lake read and I’m crediting the real author about it
   - title: Sunrise on the Reaping
     author: Suzanne Collins
