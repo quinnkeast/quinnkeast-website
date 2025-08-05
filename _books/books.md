@@ -2,8 +2,11 @@
 
 - year: 2025
   books:
+  - title: Persuader
+    author: Lee Child
+    reading: true
   - title: "Tom Clancy’s Op-Center: Mirror Image"
-    author: <s>Tom Clancy</s> <s>Steve Pieczenik</s> Jeff Rovin
+    author: actually Jeff Rovin
     thoughts: Popcorn lake read and I’m crediting the real author about it
   - title: Sunrise on the Reaping
     author: Suzanne Collins
