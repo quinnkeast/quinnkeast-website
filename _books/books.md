@@ -2,18 +2,18 @@
 
 - year: 2025
   books:
+  - title: The Sirens of Titan
+    author: Kurt Vonnegut
+    reading: true
   - title: Persuader
     author: Lee Child
-    reading: true
+    thoughts: "It was a story; absolutely nothing to retain or change me as a person"
   - title: "Tom Clancy’s Op-Center: Mirror Image"
     author: actually Jeff Rovin
     thoughts: Popcorn lake read and I’m crediting the real author about it
   - title: Sunrise on the Reaping
     author: Suzanne Collins
     thoughts: Formulaic but works nicely
-  - title: The Sirens of Titan
-    author: Kurt Vonnegut
-    reading: true
   - title: The Book That Held Her Heart
     author: Mark Lawrence
     thoughts: I dunno, this one just unravelled for me
