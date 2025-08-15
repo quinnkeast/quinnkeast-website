@@ -43,6 +43,9 @@ export default function Footer() {
             </h5>
             <ul className="list-none ml-0 mt-2">
               <li>
+                <a href="https://letswalnut.com" target="_blank">Walnut: An uncomplicated collaborative calendar</a>
+              </li>
+              <li>
                 <a href="/brand-book">A book on brand for product teams</a>
               </li>
               <li>
