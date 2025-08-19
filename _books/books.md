@@ -4,7 +4,7 @@
   books:
   - title: The Sirens of Titan
     author: Kurt Vonnegut
-    reading: true
+    thoughts: He said, he said, he said—loved some of the prose
   - title: Persuader
     author: Lee Child
     thoughts: "It was a story; absolutely nothing to retain or change me as a person"
