@@ -50,6 +50,30 @@ const ProjectGroup = ({ projects, index }) => {
   ));
 };
 
+const BonusGroup = () => {
+  return (
+    <React.Fragment>
+      <div className="col-span-1 md:pr-4 md:text-right flex flex-col md:flex-row md:justify-end items-start mb-0">
+        <h2 className="font-normal text-base text-black-lighter mt-0 flex-grow text-left">
+          2024 – Present
+        </h2>
+      </div>
+      <div className="md:col-span-2 max-w-md">
+        <h3 className="leading-tight text-lg font-medium mb-0 mt-2 md:mt-4">
+          A Growing List of Things I’ve Been Working On At <a href="https://dittowords.com" target="_blank">Ditto</a>:
+        </h3>
+        <ul className="ml-3">
+          <li className="text-base leading-tight"><a href="https://www.dittowords.com/post/ditto-2-0-the-why-behind-the-launch" target="_blank">Defining and launching Ditto 2.0</a>
+          </li>
+          <li className="text-base leading-tight">Working with <a href="https://fuzzco.com/" target="_blank">Fuzzco</a> to launch a new brand identity</li>
+          <li className="text-base leading-tight">Product copy style guides and Magic Edit—AI-powered drafting, linting, and suggested edits for product copy</li>
+          <li className="text-base leading-tight">Creating a new design system to support both a foundational overhaul and eventual rebrand at the same time</li>
+        </ul>
+      </div>
+    </React.Fragment>
+  )
+}
+
 export default function Craft({ groupedProjects }) {
   return (
     <>
@@ -78,10 +102,13 @@ export default function Craft({ groupedProjects }) {
             A running journal of case studies, explorations, and experiments.
           </p>
         </PageHeader>
+        <div className="grid md:grid-cols-3 border-t border-black/10 mt-8 md:mt-16 pt-4 md:pt-8">
+          <BonusGroup />
+        </div>
         {Object.keys(groupedProjects).map((group, index) => {
           const gridClasses =
             index === 0
-              ? "grid md:grid-cols-3 border-t border-black/10 mt-8 md:mt-16 pt-4 md:pt-8"
+              ? "grid md:grid-cols-3 mt-0 pt-4 md:pt-8"
               : "grid md:grid-cols-3 mt-0 md:mt-8 pt-4 md:pt-0";
           return (
             <div className={gridClasses} key={group}>
