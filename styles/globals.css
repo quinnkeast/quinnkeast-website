@@ -159,6 +159,10 @@
     @apply pl-2;
   }
 
+  .post-content ul li:last-child {
+    @apply pb-0;
+  }
+
   .post-content ol {
     @apply list-decimal ml-3;
   }
