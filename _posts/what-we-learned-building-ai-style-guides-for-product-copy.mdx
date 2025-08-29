@@ -51,6 +51,27 @@ First, a bit of conceptual underpinning. Ditto’s AI content system is a mix of
 
 With those concepts in place…
 
+### Style guide rules are hard
+
+We researched dozens of style guides and found a huge range in the types of rules that they contained.
+
+For example, my own Product Language Framework has:
+
+- <a href="https://www.uxlanguage.com/style-and-mechanics#conversational-writing" target="_blank">General rules of thumb</a>, like “use conversational writing”
+- <a href="https://www.uxlanguage.com/style-and-mechanics#punctuation" target="_blank">Style and mechanics</a>, like “use this region’s date format” or “use en dashes between ranges”
+- <a href="https://www.uxlanguage.com/actionable-language#buttons" target="_blank">UI-element-specific guidelines</a>, like “button labels should follow the formula verb + noun”
+- <a href="https://www.uxlanguage.com/word-list" target="_blank">Word lists</a>
+
+Many of these rules contradict each other depending on context, and other rules have edge cases that that contradict themselves. Consider: one should use active voice rather than passive voice. Unless, of course, one aims to avoid assigning responsibility for an action.
+
+Our rule system and way of handling examples needed to support all of these rules and examples intuitively, and integrate well with our use of LLMs—remembering that every rule would be part of the same context.
+
+As a bonus problem, we needed to design a default style guide available to all workspaces, which would let everyone encounter the potential value of the AI content system—meaning it had to reliably catch occasional issues that most product content will have, but not *too many* issues.
+
+### Style guides for AI content systems are not style guides for human consumption
+
+Most style guides that act as standalone artifacts for reference are formatted and organized for human consumption. Someone goes about content design for them. My own Product Language Framework tries to be easy to consume with structure and categories and nested rules. The first version of our guidelines needed to be more minimalistic, because we needed folks to focus on creating good rules rather than designing content for human consumption.
+
 ### LLMs really, truly, want to do shit in their own way
 
 We knew going in that the non-deterministic nature of a LLM could be a challenge. Some of our earliest tests gave us confidence that it was feasible, but the more we experimented, the more trouble we ran into. It turns out that it’s very, very hard to align LLMs to the task of checking short product copy against style guides without injecting their own “opinions.”
@@ -83,14 +104,6 @@ But boy—it just found so many ways to ignore it, work around it, and in one me
 
 That leads me directly into…
 
-### Prompt engineering is hilarious
-
-Two separate people described our prompting solutions as:
-
->“You sound like you’re giving instructions to a small child.”
-
-We had to solve a lot of problems related to the LLMs wanting to do their own shit by exploring wildly creative prompts and multiple judgement systems. My colleague Reed Barnes <a href="https://reedtaylorbarnes.com/blog/building-with-llms/" target="_blank">shared some some things we learned about around building on top of an LLM</a> from the engineering perspective.
-
 ### False positives (a suggestion that isn’t useful or is wrong) are way worse in aggregate than false negatives (a missed suggestion)
 
 This at first felt counterintuitive, but the more we tested, the more we discovered that it was more important to avoid triggering unhelpful suggestions than it was to avoid missing a broken rule.
@@ -99,26 +112,13 @@ The thing about product copy is there’s a lot of it. Every string in your prod
 
 The risk of a missed suggestion is near nil.
 
-### Style guide rules are hard
+### Prompt engineering is hilarious
 
-We researched dozens of style guides and found a huge range in the types of rules that they contained.
+Two separate people described our prompting solutions as:
 
-For example, my own Product Language Framework has:
+>“You sound like you’re giving instructions to a small child.”
 
-- <a href="https://www.uxlanguage.com/style-and-mechanics#conversational-writing" target="_blank">General rules of thumb</a>, like “use conversational writing”
-- <a href="https://www.uxlanguage.com/style-and-mechanics#punctuation" target="_blank">Style and mechanics</a>, like “use this region’s date format” or “use en dashes between ranges”
-- <a href="https://www.uxlanguage.com/actionable-language#buttons" target="_blank">UI-element-specific guidelines</a>, like “button labels should follow the formula verb + noun”
-- <a href="https://www.uxlanguage.com/word-list" target="_blank">Word lists</a>
-
-Many of these rules contradict each other depending on context, and other rules have edge cases that that contradict themselves. Consider: one should use active voice rather than passive voice. Unless, of course, one aims to avoid assigning responsibility for an action.
-
-Our rule system and way of handling examples needed to support all of these rules and examples intuitively, and integrate well with our use of LLMs—remembering that every rule would be part of the same context.
-
-As a bonus problem, we needed to design a default style guide available to all workspaces, which would let everyone encounter the potential value of the AI content system—meaning it had to reliably catch occasional issues that most product content will have, but not *too many* issues.
-
-### Style guides for AI content systems are not style guides for human consumption
-
-Most style guides that act as standalone artifacts for reference are formatted and organized for human consumption. Someone goes about content design for them. My own Product Language Framework tries to be easy to consume with structure and categories and nested rules. The first version of our guidelines needed to be more minimalistic, because we needed folks to focus on creating good rules rather than designing content for human consumption.
+We had to solve a lot of problems related to the LLMs wanting to do their own shit by exploring wildly creative prompts and multiple judgement systems. My colleague Reed Barnes <a href="https://reedtaylorbarnes.com/blog/building-with-llms/" target="_blank">shared some some things we learned about around building on top of an LLM</a> from the engineering perspective.
 
 ### It’s hard to be both valuable <u>and</u> unintrusive
 
