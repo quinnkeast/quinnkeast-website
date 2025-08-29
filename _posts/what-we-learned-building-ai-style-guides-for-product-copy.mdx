@@ -28,11 +28,26 @@ The right moment came not long after Figma Config, where we soft launched Ditto 
 
 First, a bit of conceptual underpinning. Ditto’s AI content system is a mix of:
 
-- **Style guides**. These are made up of rules, with a name, description, and set of examples. A team can have multiple separate style guides, managed through the Ditto web app, and each style guide can be represented in JSON.
-- **Magic edit**. Any time a text layer is selected in Figma or in the Ditto web app, we “lint” the text against the style guides using a LLM. If there’s anything about the text that breaks a rule in the style guide, we generate a suggested edit that’s in itself aligned to the style guide, and explain why in a way that ties back to the source rule.
-- **Magic draft**. Any time a text layer is selected in Figma or in the Ditto web app, the user can trigger magic draft to help write what I’ve been calling “the draft and a half.” Ditto will take the context of the existing text, other text in the design, any additional metadata captured by Ditto’s platform, and generate a suggestion that combines the user’s input together with that context and the style guide.
+**Style guides**. These are made up of rules, with a name, description, and set of examples. A team can have multiple separate style guides, managed through the Ditto web app, and each style guide can be represented in JSON.
 
-_(Screenshots to come)_
+<figure class="mt-8">
+    <img src="/assets/writing/magic/rule.png" alt="A styleguide rule" class="border rounded-lg" />
+  <figcaption>Style guides contain rules</figcaption>
+</figure>
+
+**Magic edit**. Any time a text layer is selected in Figma or in the Ditto web app, we “lint” the text against the style guides using a LLM. If there’s anything about the text that breaks a rule in the style guide, we generate a suggested edit that’s in itself aligned to the style guide, and explain why in a way that ties back to the source rule.
+
+<figure class="mt-8">
+  <img src="/assets/writing/magic/surfaced.png" alt="Magic edit triggered" class="border rounded-lg" />
+  <figcaption>When a text layer is selected, magic edit checks it against the style guide</figcaption>
+</figure>
+
+<figure class="mt-8">
+  <img src="/assets/writing/magic/suggestion.png" alt="Suggested edit" class="border rounded-lg" />
+  <figcaption>Suggested edits proactive suggest edited copy based on the style guide</figcaption>
+</figure>
+
+**Magic draft**. Any time a text layer is selected in Figma or in the Ditto web app, the user can trigger magic draft to help write what I’ve been calling “the draft and a half.” Ditto will take the context of the existing text, other text in the design, any additional metadata captured by Ditto’s platform, and generate a suggestion that combines the user’s input together with that context and the style guide.
 
 With those concepts in place…
 
@@ -44,9 +59,37 @@ This makes sense because most content that LLMs are trained on is not written ag
 
 But we were really surprised by what things ended up being most challenging.
 
-It’s total hell to make an LLM correctly use dumb or typographic quotes. This is a totally valid use case for automated style guides that’s almost impossible to pull off manually, but would be a perfect detail for an AI content system to handle. But boy—it just found so many ways to ignore it, work around it, and in one memorable case, change a rule to the literal opposite of what the actual rule stated just to avoid the correct use of quotes.
+Here’s some examples of the kinds of suggestions we were getting all over the place:
 
-_(Screenshots to come)_
+import DiffComponent from "../components/diff-component";
+
+<DiffComponent original="Verify Phone Number" revised="Verify phone number" whys={["Use numerals for numbers"]} />
+
+<DiffComponent original="Learn how we’ll protect your privacy" revised="Learn how we'll protect your privacy" whys={["Use contractions for a conversational tone"]} />
+
+<DiffComponent original="Write, review, and collaborate on text directly in this project. Link it to Figma file any time, with the Ditto plugin." revised="Write, review, and collaborate on text directly in this project. Link it to Figma file anytime with the Ditto plugin." whys={["Avoid abbreviations and acronyms"]} />
+
+<DiffComponent original="Start your first project" revised="Start your 1st project" whys={["Use numerals for numbers"]} />
+
+Most of all, it’s total hell to make an LLM correctly use <a href="https://medium.com/p/adfe369a64a4" target="_blank">typographic quotes instead of dumb quotes</a>. This is a totally valid use case for automated style guides that’s almost impossible to pull off manually, but would be a perfect detail for an AI content system to handle.
+
+<DiffComponent original="Learn how we’ll protect your privacy" revised="Learn how we'll protect your privacy" whys={["Use contractions for a conversational tone"]} />
+
+<DiffComponent original="Let’s set up your Ditto workspace" revised="Let's set up your Ditto workspace" whys={["Use contractions for a conversational tone"]} />
+
+But boy—it just found so many ways to ignore it, work around it, and in one memorable case, changed a rule to the **literal opposite** of the actual rule and showed it as if it were a real rule.
+
+<DiffComponent original="What’s your phone number?" revised="What is your phone number?" whys={["Avoid contractions for conversational tone"]} />
+
+That leads me directly into…
+
+### Prompt engineering is hilarious
+
+Two separate people described our prompting solutions as:
+
+>“You sound like you’re giving instructions to a small child.”
+
+We had to solve a lot of problems related to the LLMs wanting to do their own shit by exploring wildly creative prompts and multiple judgement systems. My colleague Reed Barnes <a href="https://reedtaylorbarnes.com/blog/building-with-llms/" target="_blank">shared some some things we learned about around building on top of an LLM</a> from the engineering perspective.
 
 ### False positives (a suggestion that isn’t useful or is wrong) are way worse in aggregate than false negatives (a missed suggestion)
 
@@ -77,10 +120,6 @@ As a bonus problem, we needed to design a default style guide available to all w
 
 Most style guides that act as standalone artifacts for reference are formatted and organized for human consumption. Someone goes about content design for them. My own Product Language Framework tries to be easy to consume with structure and categories and nested rules. The first version of our guidelines needed to be more minimalistic, because we needed folks to focus on creating good rules rather than designing content for human consumption.
 
-### Prompt engineering is hilarious
-
-“You sound like you’re giving instructions to a small child.”
-
 ### It’s hard to be both valuable <u>and</u> unintrusive
 
 So, so many products have just crammed AI features in wherever they fit to ride the AI hype wave. Based on what I’ve seen of the sales process these days, this isn’t surprising.
@@ -93,10 +132,11 @@ The feedback loop needed for “drafting and iterating on product copy” is dra
 
 We ended up building a cool internal tool to test and iterate on our rules and the LLM integration at scale. We’d make a tweak, then run the linting against dozens of known strings, repeatedly, and then we could visually identify themes and decide what to do about it.
 
-_(Screenshot to come)_
+<figure class="mt-8">
+  <img src="/assets/writing/magic/screeenshot.png" alt="Internal tool" class="border rounded-lg" />
+  <figcaption>An internal tool we used to bulk-validate suggestion quality</figcaption>
+</figure>
 
 ---
 
-Magic draft is coming up soon, and it’s going to be a lot of fun to keep iterating on this system.
-
-My colleague Reed Barnes wrote another article <a href="https://reedtaylorbarnes.com/blog/building-with-llms/" target="_blank">sharing some advice around building on top of an LLM from the engineering perspective</a>.
+Making an LLM-powered tool for AI style guides is way harder than it seems, but now that it’s actually working, it feels like a totally normal extension of the designer/writer/developer toolkit. I’m looking forward to seeing what we learn as we ship the rest of it with magic draft.
