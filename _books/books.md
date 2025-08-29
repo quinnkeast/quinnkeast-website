@@ -2,6 +2,9 @@
 
 - year: 2025
   books:
+  - title: Automatic Noodle
+    author: Annalee Newitz
+    thoughts: Cute, also this book is really about biang biang noodles
   - title: The Sirens of Titan
     author: Kurt Vonnegut
     thoughts: He said, he said, he said—loved some of the prose
