@@ -2,6 +2,9 @@
 
 - year: 2025
   books:
+  - title: The Society of Unknowable Objects
+    author: Gareth Brown
+    thoughts: Honestly found this hard to get into because of the prose for some reason, but liked where the story itself went
   - title: Automatic Noodle
     author: Annalee Newitz
     thoughts: Cute, also this book is really about biang biang noodles
