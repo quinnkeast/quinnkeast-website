@@ -49,7 +49,9 @@ First, a bit of conceptual underpinning. Ditto’s AI content system is a mix of
 
 **Magic draft**. Any time a text layer is selected in Figma or in the Ditto web app, the user can trigger magic draft to help write what I’ve been calling “the draft and a half.” Ditto will take the context of the existing text, other text in the design, any additional metadata captured by Ditto’s platform, and generate a suggestion that combines the user’s input together with that context and the style guide.
 
-With those concepts in place…
+With those concepts in place, here’s some things we learned.
+
+---
 
 ### Style guide rules are hard
 
@@ -98,7 +100,7 @@ Most of all, it’s total hell to make an LLM correctly use <a href="https://med
 
 <DiffComponent original="Let’s set up your Ditto workspace" revised="Let's set up your Ditto workspace" whys={["Use contractions for a conversational tone"]} />
 
-But boy—it just found so many ways to ignore it, work around it, and in one memorable case, changed a rule to the **literal opposite** of the actual rule and showed it as if it were a real rule.
+It just found so many ways to ignore it, work around it, and in one memorable case when we turned ourselves inside-out trying to prevent this in the prompt, it wheedled around it by changing a rule to the **literal opposite** of the actual rule and pretended it was real.
 
 <DiffComponent original="What’s your phone number?" revised="What is your phone number?" whys={["Avoid contractions for conversational tone"]} />
 
