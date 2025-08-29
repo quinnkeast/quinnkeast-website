@@ -2,6 +2,9 @@
 
 - year: 2025
   books:
+  - title: The Power Broker
+    author: Robert A. Caro
+    reading: true
   - title: The Society of Unknowable Objects
     author: Gareth Brown
     thoughts: Honestly found this hard to get into because of the prose for some reason, but liked where the story itself went
