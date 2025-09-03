@@ -2,6 +2,9 @@
 
 - year: 2025
   books:
+  - title: One Yellow Eye
+    author: Leigh Radford
+    thoughts: I loved this—heavily metaphoric, a tiny bit goofy but not too much, and zombies in a new light
   - title: The Power Broker
     author: Robert A. Caro
     reading: true
