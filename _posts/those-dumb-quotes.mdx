@@ -8,8 +8,187 @@ author:
 ogImage:
   url: "/assets/writing/dumb-quotes-cover.jpg"
 published: true
-external:
-  url: https://medium.com/p/adfe369a64a4
 tags:
   - design
+  - content style
+  - typography
+  - usability
 ---
+
+What if there were a way to instantly improve your UI design with almost no effort on your part?
+
+Your users and coworkers won’t be able to tell what you changed: when it’s done right, it’s invisible. But when it’s done wrong, it makes everything feel a little bit unfinished.
+
+I’m speaking of typographic details in your user interface design: the use of quotation marks, apostrophes, and dashes.
+
+Using the right—or wrong—typographic marks in your UI has a real impact on how your product is perceived.
+
+These typographic details aren’t just the domain of UI designers. As a developer, product manager, copywriter, or any other member of the product team, you can learn when and how to use the right typographic symbols at the right time.
+
+Let’s focus on when and how to use the two “big small details” of typography: **quotation marks & apostrophes**, and **dashes**.
+
+## Using Quotation Marks & Apostrophes
+
+### Dumb quotes
+
+Dumb quotes are artifacts left over from typewriters.
+
+To save space and simplify the keyboard, typewriters mashed together a series of similar characters into simple vertical symbols that we now call **dumb quotes**: `"` and `'`.
+
+While this was economical—a single key could now be used to represent a range of characters—these dumb quotes carried over to our keyboards today, and they’re frequently used in place of the proper symbols.
+
+While software will usually automatically replace dumb quotes with the correct typographic symbols based on context, we’re at a disadvantage as developers: we use single and double dumb quotes as part of the programming or markup language, and as such, our development environments won’t replace these symbols.
+
+Because of this, we have to make a conscious effort to identify and use the right typographic details at the right time.
+
+**When to use dumb quotes:** Use dumb quotes within monospaced code.
+
+**Do not** do a find / replace for dumb quotes in your codebase. It’ll break everything.
+
+### Apostrophes
+
+Dumb quotes are most frequently found masquerading as apostrophes in user interfaces.
+
+**When to use apostrophes:** Use apostrophes to indicate possessives or abbreviations.
+
+<figure>
+  <img src="/assets/writing/dumb-quotes/1_WA3kqIaI0_uun-NVql59Sw.webp" class="example-image-correct" />
+  <figcaption>Correct: You’re a wizard, Harry.</figcaption>
+</figure>
+
+<figure>
+    <img src="/assets/writing/dumb-quotes/1_ou40m2I0yXy4Cmm9TtPMXg.webp" class="example-image-incorrect" />
+  <figcaption>Incorrect: You're a wizard, Harry.</figcaption>
+</figure>
+
+**HTML Entity**
+- Apostrophe – `’` `&#8217;`
+
+**To type with a Mac Keyboard**
+- `option` + `shift` + `]`
+
+### Single and Double Quotation Marks
+
+Single and double quotation marks are designed to stylistically open and close the quoted content.
+
+**When to use single and double quotation marks:** Use single and double quotation marks for indicating quotations and speech. Never use for emphasis. It just looks suspicious.
+
+<figure>
+  <img src="/assets/writing/dumb-quotes/1_tcquIr8Nr8fzxSXFysKkUA.webp" class="example-image-correct" />
+  <figcaption>Correct: “Good Morning!” said Bilbo, and he meant it.</figcaption>
+</figure>
+
+<figure>
+  <img src="/assets/writing/dumb-quotes/1_STCZN4-wYoroKbxpkjV_Ig.webp" class="example-image-incorrect" />
+  <figcaption>Incorrect: "Good Morning!" said Bilbo, and he meant it.</figcaption>
+</figure>
+
+#### HTML Entities
+- Opening quotation mark – `"` `&#8220;`
+- Closing quotation mark – `"` `&#8221;`
+- Single opening quotation mark – `’` `&#8216;`
+- Single closing quotation mark – `’` `&#8217;`
+
+**To type with a Mac Keyboard**
+- Opening quotation mark – `“` `option` + `[`
+- Closing quotation mark – `”` `option` + `shift` + `]`
+- Single opening quotation mark – `‘` `option` + `]`
+- Single closing quotation mark – `’` `option` + `shift` + `]`
+
+**Bonus:** is your UI available in French? Quotation marks are replaced not by double `<<` less than `>>`  or ` << `greater than ` >> ` signs, but « guillemets ».
+
+#### HTML Entities
+- Left-pointing guillemet – `«` `&#171;`
+- Right-pointing guillement – `»` `&#187;`
+- Left-pointing single guillement – `‹` `&#8249;`
+- Right-pointing single guillement – `›` `&#8250;`
+
+<figure>
+  <img src="/assets/writing/dumb-quotes/1_WiowrD0NRzm-ccGPFMJ_-A.webp" class="example-image-correct" />
+</figure>
+
+### Backtick, or Grave
+
+**When to use backticks or graves:** Only within monospaced code. Don`t use backticks or graves as a replacement for apostrophes, as in this sentence.
+
+```const example = `Backticks or graves are ${okay} here.`;```
+
+### Prime and Double Prime
+
+**When to use primes and double primes:** To indicate feet and inches, as we would while sharing that Patrik Laine, formerly of the Winnipeg Jets, is 6′5″.
+
+#### HTML entities
+- Prime – `′` `&#8242;`
+- Double prime – `″` `&#8243;`
+
+## Using Dashes
+
+Unlike quotation marks — where dumb quotes need to be replaced by a specific, correct typographic mark — using the correct dash is more about typographic style, legibility, and convention.
+
+Well-selected dashes make it easier to read and understand copy, while also providing a level of polish to an interface design.
+
+There are three primary kinds of dashes: the hyphen ( - ), the en dash ( – ), and the em dash ( — ).
+
+### Hyphens ( - )
+
+Hyphens are the default dash on your keyboard. However, they’re best used for only a limited set of purposes.
+
+**When to use hyphens:** Use for compound words, such as “so-called.” Also used to separate digits in phone numbers and addresses, like 295-5542 or 200-171 McDermot Ave.
+
+<figure>
+  <img src="/assets/writing/dumb-quotes/1_rR8T-2ztjbEjSWWcopnOzA.webp" class="example-image-correct" />
+  <figcaption>Correct: I‘m a real, slam-bang, honest-to-goodness, three-fisted humdinger. I‘m a bona fide supraman.</figcaption>
+</figure>
+
+<figure>
+  <img src="/assets/writing/dumb-quotes/1_Wv-cEntup7vHSH1lshVZRA.webp" class="example-image-incorrect" />
+  <figcaption>Incorrect: I‘m a real, slam—bang, honest—to–goodness, three—fisted humdinger.I‘m a bona fide supraman.</figcaption>
+</figure>
+
+### En Dashes ( – )
+
+So-called because they’re the width of an “n” in their typeface.
+
+**When to use en dashes:** Use between digits (with no surrounding spaces) to indicate a range, such as April 1–10, or $10–50.
+
+<figure>
+  <img src="/assets/writing/dumb-quotes/1_k5mI3tWL-qcBA5R5hbZEfg.webp" class="example-image-correct" />
+  <figcaption>Correct: Stephen William Hawking (1942–2018).</figcaption>
+</figure>
+
+<figure>
+  <img src="/assets/writing/dumb-quotes/1_BI64OSq9AFIDBhWGYmWnjQ.webp" class="example-image-incorrect" />
+  <figcaption>Incorrect: Stephen William Hawking (1942 - 2018).</figcaption>
+</figure>
+
+**HTML Entity**
+- En dash – `–` `&#8211;`
+
+**To type with a Mac Keyboard**
+- `option` + `-`
+
+### Em Dashes ( — )
+
+So-called because they’re the width of an “m” their typeface.
+
+**When to use em dashes:** Use to separate thoughts and ideas — such as these — in a sentence. Don’t use spaces around an em dash. As well, em dashes can be used to indicate a thought cut off, as if it were interrupted before —
+
+<figure>
+  <img src="/assets/writing/dumb-quotes/1_k5mI3tWL-qcBA5R5hbZEfg.webp" class="example-image-correct" />
+  <figcaption>Correct: To read widely—to flit form book to book, writer to writer—is to flaunt an open mind while never stopping long enough to fill it up.</figcaption>
+</figure>
+
+<figure>
+  <img src="/assets/writing/dumb-quotes/1_BI64OSq9AFIDBhWGYmWnjQ.webp" class="example-image-incorrect" />
+  <figcaption>Incorrect: To read widely - to flit form book to book, writer to writer - is to flaunt an open mind while never stopping long enough to fill it up.</figcaption>
+</figure>
+
+**HTML Entity**
+- Em dash – `—` `&#8212;`
+
+**To type with a Mac Keyboard**
+- `option` + `shift` + `-`
+
+---
+
+Go forth and typographize.

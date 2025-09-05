@@ -14,11 +14,11 @@ import { useEffect } from "react";
 export default function Post({ post, morePosts, preview }) {
   // Change bg to white
   useEffect(() => {
-    document.body.classList.add("bg-writing");
+    document.body.classList.add("bg-writing", `post-${post.slug}`);
     return () => {
-      document.body.classList.remove("bg-writing");
+      document.body.classList.remove("bg-writing", `post-${post.slug}`);
     };
-  }, []);
+  }, [post.slug]);
 
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
