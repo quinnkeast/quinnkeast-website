@@ -4,7 +4,7 @@
   books:
   - title: The Two Lies of Faven Sythe
     author: Megan E. O’Keefe
-    reading: true
+    thoughts: Harder to get into than her previous series
   - title: One Yellow Eye
     author: Leigh Radford
     thoughts: I loved this—heavily metaphoric, a tiny bit goofy but not too much, and zombies in a new light
