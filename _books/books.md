@@ -4,7 +4,7 @@
   books:
   - title: Katabasis
     author: R. F. Kuang
-    reading: true
+    thoughts: Quite enjoyed this
   - title: The Two Lies of Faven Sythe
     author: Megan E. O’Keefe
     thoughts: Harder to get into than her previous series
