@@ -2,6 +2,9 @@
 
 - year: 2025
   books:
+  - title: The Raven Scholar
+    author: Antonia Hodgson
+    reading: true
   - title: Katabasis
     author: R. F. Kuang
     thoughts: Quite enjoyed this
