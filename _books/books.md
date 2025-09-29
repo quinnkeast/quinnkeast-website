@@ -2,9 +2,12 @@
 
 - year: 2025
   books:
+  - title: The Poppy War
+    author: R. F. Kuang
+    reading: true
   - title: The Raven Scholar
     author: Antonia Hodgson
-    reading: true
+    thoughts: This sucked me in, some clever literary techniques
   - title: Katabasis
     author: R. F. Kuang
     thoughts: Quite enjoyed this
