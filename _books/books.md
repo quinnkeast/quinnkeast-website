@@ -5,6 +5,12 @@
   - title: The Drowning Faith
     author: R. F. Kuang
     reading: true
+  - title: Life after Life
+    author: False Knees
+    thoughts: Adorable
+  - title: Cannon
+    author: Lee Lai
+    thoughts: What are we going to do about the metaphorical lion?
   - title: A Frog In The Fall (And Later On)
     author: Linnea Sterte
     thoughts: Absolutely adored this
