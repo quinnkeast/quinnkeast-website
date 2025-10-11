@@ -2,9 +2,18 @@
 
 - year: 2025
   books:
-  - title: The Poppy War
+  - title: The Drowning Faith
     author: R. F. Kuang
     reading: true
+  - title: A Frog In The Fall (And Later On)
+    author: Linnea Sterte
+    thoughts: Absolutely adored this
+  - title: Witchcraft for Wayward Girls
+    author: Grady Hendrix
+    thoughts: Emotionally tough read actually
+  - title: The Poppy War
+    author: R. F. Kuang
+    thoughts: Went from Harry Potter to something else but I enjoyed it
   - title: The Raven Scholar
     author: Antonia Hodgson
     thoughts: This sucked me in, some clever literary techniques
