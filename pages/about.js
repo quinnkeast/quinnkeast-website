@@ -115,6 +115,9 @@ function About() {
         <div className="md:col-span-2 mt-1">
           <p className="mb-5">
             <a href="https://dittowords.com" target="_blank"><strong>Ditto</strong></a> / End-to-End Infrastructure for Product Copy
+            <a href="https://www.dittowords.com/careers/product-designer?utm_source=quinnkeast.com" target="_blank" className="border-0 ml-2 px-1.5 py-0 bg-black text-tan rounded-md hover:rounded-md inline-block text-sm">
+              We’re hiring!
+            </a>
             <br />
             <span className="text-black-lighter text-sm inline-block mb-0.5">
               San Francisco <span className="bullet">•</span> Remote

@@ -2,9 +2,11 @@
 
 - year: 2025
   books:
-  - title: The Drowning Faith
+  - title: The Burning God
     author: R. F. Kuang
     reading: true
+  - title: The Dragon Republic
+    author: R. F. Kuang
   - title: Life after Life
     author: False Knees
     thoughts: Adorable
@@ -293,7 +295,7 @@
     thoughts: This world is turning into a popcorn read basically which isn’t a bad thing
   - title: Red Side Story
     author: Jasper Fforde
-    thoughts: Unexpectedly loved this—the voice works perfectly 
+    thoughts: Unexpectedly loved this—the voice works perfectly
   - title: Abandon
     author: Blake Crouch
     thoughts: Basically good, liked the setting
@@ -358,7 +360,7 @@
   - title: Nettle & Bone
     author: T. Kingfisher
     date: December
-    thoughts: Really enjoyed, perfectly fairy-tale-esque 
+    thoughts: Really enjoyed, perfectly fairy-tale-esque
   - title: Saevus Corax Deals with the Dead
     author: K. J. Parker
     date: November
@@ -576,7 +578,7 @@
   - title: Family Lexicon
     author: Natalia Ginzburg
     date: March
-    thoughts: Very powerful writing, particularly one scene around creativity post-WW2 
+    thoughts: Very powerful writing, particularly one scene around creativity post-WW2
   - title: A Closed and Common Orbit
     author: Becky Chambers
     date: February
