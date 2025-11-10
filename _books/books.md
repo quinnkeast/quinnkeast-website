@@ -2,9 +2,15 @@
 
 - year: 2025
   books:
+  - title: What We Can Know
+    author: Ian McEwan
+    reading: true
+  - title: The Shattering Peace
+    author: John Scalzi
+    thoughts: Refreshing return, though shockingly distinct in hindsight from Old Man’s War
   - title: The Burning God
     author: R. F. Kuang
-    reading: true
+    thoughts: Overall enjoyed the series but didn’t enjoy the characters, nor the sense that there was no real growth
   - title: The Dragon Republic
     author: R. F. Kuang
   - title: Life after Life
