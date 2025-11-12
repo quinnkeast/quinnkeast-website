@@ -4,7 +4,7 @@
   books:
   - title: What We Can Know
     author: Ian McEwan
-    reading: true
+    thoughts: Quite dense but very interesting approach
   - title: The Shattering Peace
     author: John Scalzi
     thoughts: Refreshing return, though shockingly distinct in hindsight from Old Man’s War
