@@ -65,7 +65,7 @@ const BonusGroup = () => {
         <ul className="ml-3">
           <li className="text-base leading-tight"><a href="https://www.dittowords.com/post/ditto-2-0-the-why-behind-the-launch" target="_blank">Defining and launching Ditto 2.0</a>
           </li>
-          <li className="text-base leading-tight">Working with <a href="https://fuzzco.com/" target="_blank">Fuzzco</a> to launch a new brand identity</li>
+          <li className="text-base leading-tight">Working with <a href="https://fuzzco.com/" target="_blank">Fuzzco</a> to launch a <a href="https://www.dittowords.com/post/ditto-2-0-the-why-behind-the-rebrand" target="_blank">new brand identity</a></li>
           <li className="text-base leading-tight"><Link href="/writing/what-we-learned-building-ai-style-guides-for-product-copy">Product copy style guides and Magic Edit</Link>—AI-powered drafting, linting, and suggested edits for product copy</li>
           <li className="text-base leading-tight">Creating a new design system to support both a foundational overhaul and eventual rebrand at the same time</li>
         </ul>
