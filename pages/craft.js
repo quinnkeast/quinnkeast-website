@@ -59,7 +59,7 @@ const BonusGroup = () => {
         </h2>
       </div>
       <div className="md:col-span-2 max-w-md">
-        <h3 className="leading-tight text-lg font-medium mb-0 mt-2 md:mt-4">
+        <h3 className="leading-tight text-lg font-medium mb-0 mt-2 md:mt-1">
           A Growing List of Things I’ve Been Working On At <a href="https://dittowords.com" target="_blank">Ditto</a>:
         </h3>
         <ul className="ml-3">
