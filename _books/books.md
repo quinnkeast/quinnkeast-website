@@ -2,6 +2,9 @@
 
 - year: 2025
   books:
+  - title: All That We See or Seem
+    author: Ken Liu
+    reading: true
   - title: What We Can Know
     author: Ian McEwan
     thoughts: Quite dense but very interesting approach
