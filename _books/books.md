@@ -2,6 +2,9 @@
 
 - year: 2025
   books:
+  - title: "Home Cooking: A Writer in the Kitchen"
+    author: Laurie Colwin
+    reading: true
   - title: All That We See or Seem
     author: Ken Liu
     reading: true
