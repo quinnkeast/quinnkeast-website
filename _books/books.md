@@ -7,7 +7,7 @@
     reading: true
   - title: All That We See or Seem
     author: Ken Liu
-    reading: true
+    thoughts: Appreciated a new perspective on AI
   - title: What We Can Know
     author: Ian McEwan
     thoughts: Quite dense but very interesting approach
