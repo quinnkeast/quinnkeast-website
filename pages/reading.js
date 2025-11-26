@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import PageHeader from "../components/page-header";
 import { getAllBooks } from "../lib/api";
 import { SITE_NAME } from "../lib/constants";
+import { BookOpen } from 'lucide-react';
 
 export default function Reading({ booksByYear }) {
   const years = booksByYear;
@@ -37,18 +38,23 @@ export default function Reading({ booksByYear }) {
         {years.map((year, i) => (
           <React.Fragment key={year}>
             <div className="col-span-5 md:col-span-1 pt-0">
-              <div className="text-black-lighter inline-block leading-snug pr-8 mt-3.5 text-sm sticky top-8">
+              <div
+                className="text-black-lighter leading-snug pr-8 mt-3.5 text-sm sticky top-8 cursor-default group inline-flex gap-1 items-center"
+              >
                 {year.year}
+                <span className="opacity-0 group-hover:opacity-60 pointer-events-none">
+                  – {year.books.length}
+                </span>
               </div>
             </div>
             <div className="col-span-5 md:col-span-4 align-baseline">
               <table className="table-fixed w-full text-sm mt-3 mb-6">
                 <thead className="hidden md:table-header-group">
                   <tr>
-                    <th className="w-full md:w-3/9 text-left pb-2 font-medium">
+                    <th className="w-full md:w-4/9 text-left pb-2 font-medium">
                       Title
                     </th>
-                    <th className="w-full md:w-3/9 text-left pb-2 font-medium">
+                    <th className="w-full collapse md:visible md:w-2/9 text-left pb-2 font-medium">
                       Author
                     </th>
                     <th className="w-full md:w-3/9 text-left pb-2 font-medium">
@@ -59,31 +65,27 @@ export default function Reading({ booksByYear }) {
                 <tbody>
                   {year.books.map((book, i) => (
                     <tr
-                      className="flex flex-col md:table-row border-t border-black/10 align-top leading-tight"
+                      className="flex flex-col md:table-row border-t border-black/10 align-top"
                       key={book.title}
                     >
                       <td
-                        className={`pt-2 md:pb-2 pr-2 ${
+                        className={`pt-2 md:pb-2 pr-2 flex md:items-center gap-1.5 ${
                           book.abandoned ? `line-through decoration-3` : ""
                         }`}
                       >
                         {book.reading && (
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20"
-                            fill="#ff0000"
-                            className="w-5 inline-block mr-1"
-                          >
-                            <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A1.993 1.993 0 0 0 8 6c-.532 0-1.016.208-1.375.547zM14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
-                          </svg>
+                          <BookOpen size="16" color="#ff0000" className="mt-1 md:mt-0 shrink-0" />
                         )}
-                        {book.title}
+                        <span>{book.title} <span className="visible md:hidden">by {book.author}</span></span>
                       </td>
-                      <td className="md:pt-2 md:pb-2 pr2">
-                        <span className="md:hidden">by </span>
-                        {book.author}
+                      <td className="md:pt-2 md:pb-2 pr-2 collapse md:visible">
+                        <span className="inline-block">
+                          {book.author}
+                        </span>
                       </td>
-                      <td className="md:pt-2 pb-2">{book.thoughts}</td>
+                      <td className="md:pt-2 pb-2">
+                        {book.thoughts}
+                      </td>
                     </tr>
                   ))}
                 </tbody>

@@ -26,6 +26,7 @@
     "gray-matter": "^4.0.2",
     "install": "^0.13.0",
     "iron-session": "^6.3.1",
+    "lucide-react": "^0.555.0",
     "mdx-bundler": "^10.0.1",
     "next": "^13.0.7",
     "node-fetch": "^3.3.2",
