@@ -2,6 +2,9 @@
 
 - year: 2025
   books:
+  - title: Slow Gods
+    author: Claire North
+    reading: true
   - title: Halcyon Years
     author: Alastair Reynolds
     thoughts: "Satisfying if quick; also, time for more books that don’t involve AI"
@@ -22,6 +25,7 @@
     thoughts: Overall enjoyed the series but didn’t enjoy the characters, nor the sense that there was no real growth
   - title: The Dragon Republic
     author: R. F. Kuang
+    thoughts: Ehh
   - title: Life after Life
     author: False Knees
     thoughts: Adorable
