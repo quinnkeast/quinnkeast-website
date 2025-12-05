@@ -2,9 +2,12 @@
 
 - year: 2025
   books:
+  - title: Juice
+    author: Tim Winton
+    reading: true
   - title: Slow Gods
     author: Claire North
-    reading: true
+    thoughts: Loved this
   - title: Halcyon Years
     author: Alastair Reynolds
     thoughts: "Satisfying if quick; also, time for more books that don’t involve AI"
