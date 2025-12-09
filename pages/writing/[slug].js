@@ -25,6 +25,8 @@ export default function Post({ post, morePosts, preview }) {
     return <ErrorPage statusCode={404} />;
   }
 
+  console.log(post);
+
   return (
     <Layout>
       {router.isFallback ? (
@@ -72,8 +74,9 @@ export default function Post({ post, morePosts, preview }) {
               date={post.date}
               author={post.author}
               time={post.readingTime}
+              minimal={post.minimal}
             />
-            <PostBody content={post.content} />
+            <PostBody content={post.content} minimal={post.minimal} />
             {post.tags && <Tags tags={post.tags} />}
           </article>
         </>
@@ -95,6 +98,7 @@ export async function getStaticProps({ params }) {
     "tags",
     "external",
     "readingTime",
+    "minimal",
   ]);
 
   const content = (await mdxToHtml(post.content)) || "";

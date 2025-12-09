@@ -1,23 +1,25 @@
 import DateFormatter from "./date-formatter";
 
-export default function Author({ author, date, time }) {
+export default function Author({ author, date, time, minimal }) {
   return (
-    <div className="flex flex-row items-center mt-4">
-      <div className="flex items-center">
+    <div className="flex flex-row items-center">
+      {!minimal && <div className="flex items-center">
         <img
           src={author.picture}
           className="w-14 h-14 rounded-full mr-3"
           alt={author.name}
         />
-      </div>
+      </div>}
       <div className="text-sm leading-tight">
-        <span className="font-medium">{author.name}</span>
-        <br />
+        {!minimal && <>
+          <span className="font-medium">{author.name}</span>
+          <br />
+        </>}
         <span className="text-black-lighter">
           <DateFormatter dateString={date} />{" "}
           {time.text && (
             <>
-              <span className="bullet">•</span> {time.text}
+              <span>·</span> {time.text}
             </>
           )}
         </span>
