@@ -2,6 +2,9 @@
 
 - year: 2025
   books:
+  - title: Bearing Gifts
+    author: Sean Fenian
+    reading: true
   - title: Juice
     author: Tim Winton
     thoughts: "This book falls into the “Wes Anderson” problem for me—when a style is so distinctive that it’s removed from the corpus of styles that one can have; here, that’s Cormac McCarthy, though I believe it must be quite intentional" 
