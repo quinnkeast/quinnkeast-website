@@ -4,6 +4,7 @@ import Layout from "../../components/layout";
 import PostHeader from "../../components/post-header";
 import PostHero from "../../components/post-hero";
 import PostBody from "../../components/post-body";
+import PostSection from "../../components/post-section";
 import Tags from "../../components/tags";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
 import Head from "next/head";
@@ -68,16 +69,18 @@ export default function Post({ post, morePosts, preview }) {
                 key="twitter-image"
               />
             </Head>
-            <PostHeader
-              title={post.title}
-              subtitle={post.subtitle}
-              date={post.date}
-              author={post.author}
-              time={post.readingTime}
-              minimal={post.minimal}
-            />
-            <PostBody content={post.content} minimal={post.minimal} />
-            {post.tags && <Tags tags={post.tags} />}
+            <PostSection minimal={post.minimal}>
+              <PostHeader
+                title={post.title}
+                subtitle={post.subtitle}
+                date={post.date}
+                author={post.author}
+                time={post.readingTime}
+                minimal={post.minimal}
+              />
+              <PostBody content={post.content} minimal={post.minimal} />
+              {post.tags && <Tags tags={post.tags} />}
+            </PostSection>
           </article>
         </>
       )}
