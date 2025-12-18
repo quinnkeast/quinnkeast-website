@@ -2,9 +2,12 @@
 
 - year: 2025
   books:
+  - title: Saltcrop
+    author: Yume Kitasei
+    reading: true
   - title: Bearing Gifts
     author: Sean Fenian
-    reading: true
+    thoughts: "This was a compelling concept but not the writing I wanted"
   - title: Juice
     author: Tim Winton
     thoughts: "This book falls into the “Wes Anderson” problem for me—when a style is so distinctive that it’s removed from the corpus of styles that one can have; here, that’s Cormac McCarthy, though I believe it must be quite intentional" 
