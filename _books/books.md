@@ -2,9 +2,12 @@
 
 - year: 2025
   books:
+  - title: Lord of the Flies
+    author: William Golding
+    reading: true
   - title: Saltcrop
     author: Yume Kitasei
-    reading: true
+    thoughts: Covers a lot of ground, enjoyable
   - title: Bearing Gifts
     author: Sean Fenian
     thoughts: "This was a compelling concept but not the writing I wanted"
