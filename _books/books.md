@@ -2,6 +2,9 @@
 
 - year: 2025
   books:
+  - title: United Fleed
+    author: Sean Fenian
+    reading: true
   - title: Lord of the Flies
     author: William Golding
     reading: true
