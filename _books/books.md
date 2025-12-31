@@ -5,7 +5,7 @@
   - title: The Works of Vermin
     author: Hiron Ennes
     reading: true
-  - title: United Fleed
+  - title: United Fleet
     author: Sean Fenian
     thoughts: The dialogue is not for me
   - title: Lord of the Flies
