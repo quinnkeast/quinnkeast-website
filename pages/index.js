@@ -15,7 +15,7 @@ export default function Home() {
             the last 5%.
           </h1>
           <h2 className="text-base md:text-lg font-normal tracking-snug leading-tight md:leading-tight">
-            Founding product designer at{" "}
+            Leading design at{" "}
             <a href="https://dittowords.com" target="_blank">
               Ditto
             </a>{" "}

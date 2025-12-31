@@ -2,12 +2,15 @@
 
 - year: 2025
   books:
+  - title: The Works of Vermin
+    author: Hiron Ennes
+    reading: true
   - title: United Fleed
     author: Sean Fenian
-    reading: true
+    thoughts: The dialogue is not for me
   - title: Lord of the Flies
     author: William Golding
-    reading: true
+    thoughts: Somehow never actually read it before
   - title: Saltcrop
     author: Yume Kitasei
     thoughts: Covers a lot of ground, enjoyable
@@ -16,7 +19,7 @@
     thoughts: "This was a compelling concept but not the writing I wanted"
   - title: Juice
     author: Tim Winton
-    thoughts: "This book falls into the “Wes Anderson” problem for me—when a style is so distinctive that it’s removed from the corpus of styles that one can have; here, that’s Cormac McCarthy, though I believe it must be quite intentional" 
+    thoughts: "This book falls into the “Wes Anderson” problem for me—when a style is so distinctive that it’s removed from the corpus of styles that one can have; here, that’s Cormac McCarthy, though I believe it must be quite intentional"
   - title: Slow Gods
     author: Claire North
     thoughts: Loved this
