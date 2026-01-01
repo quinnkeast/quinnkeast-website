@@ -1,14 +1,11 @@
 ---
 - year: 2026
   books:
-  - title: "Home Cooking: A Writer in the Kitchen"
-    author: Laurie Colwin
-    reading: true
-- year: 2025
-  books:
   - title: The Works of Vermin
     author: Hiron Ennes
     reading: true
+- year: 2025
+  books:
   - title: United Fleet
     author: Sean Fenian
     thoughts: The dialogue is not for me
@@ -27,6 +24,9 @@
   - title: Slow Gods
     author: Claire North
     thoughts: Loved this
+  - title: "Home Cooking: A Writer in the Kitchen"
+    author: Laurie Colwin
+    reading: true
   - title: Halcyon Years
     author: Alastair Reynolds
     thoughts: "Satisfying if quick; also, time for more books that don’t involve AI"
