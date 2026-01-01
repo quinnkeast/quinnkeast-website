@@ -1,5 +1,9 @@
 ---
-
+- year: 2026
+  books:
+  - title: "Home Cooking: A Writer in the Kitchen"
+    author: Laurie Colwin
+    reading: true
 - year: 2025
   books:
   - title: The Works of Vermin
@@ -26,9 +30,6 @@
   - title: Halcyon Years
     author: Alastair Reynolds
     thoughts: "Satisfying if quick; also, time for more books that don’t involve AI"
-  - title: "Home Cooking: A Writer in the Kitchen"
-    author: Laurie Colwin
-    reading: true
   - title: All That We See or Seem
     author: Ken Liu
     thoughts: Appreciated a new perspective on AI
