@@ -26,7 +26,7 @@
     thoughts: Loved this
   - title: "Home Cooking: A Writer in the Kitchen"
     author: Laurie Colwin
-    reading: true
+    thoughts: Hilarious and inspiring
   - title: Halcyon Years
     author: Alastair Reynolds
     thoughts: "Satisfying if quick; also, time for more books that don’t involve AI"
