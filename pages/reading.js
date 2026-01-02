@@ -115,7 +115,7 @@ export default function Reading({ booksByYear, favourites }) {
                 <tbody>
                   {year.books.map((book, i) => (
                     <tr
-                      className="flex flex-col md:table-row border-t border-black/10 align-top items-baseline gap-3"
+                      className="flex flex-col md:table-row border-t border-black/10 align-top md:items-baseline md:gap-3"
                       key={book.title}
                     >
                       <td
@@ -124,16 +124,16 @@ export default function Reading({ booksByYear, favourites }) {
                         }`}
                       >
                         {book.reading && (
-                          <BookOpen size="16" color="#ff0000" className="md:absolute mt-1 md:mt-[7px] shrink-0 -ml-6" />
+                          <BookOpen size="16" color="#ff0000" className="inline md:absolute md:mt-1 md:mt-[7px] shrink-0 md:-ml-6" />
                         )}
                         <p className="m-0 p-0 text-sm">{book.title} <span className="visible md:hidden">by {book.author}</span></p>
                       </td>
-                      <td className="table-cell md:pt-2 md:pb-2 pr-2 collapse md:visible">
+                      <td className="md:table-cell md:pt-2 md:pb-2 pr-2 collapse md:visible">
                         <p className="block text-black-lighter m-0 p-0 text-sm">
                           {book.author}
                         </p>
                       </td>
-                      <td className="table-cell md:pt-2 pb-2">
+                      <td className="table-cell md:pt-2 pb-3 md:pb-2">
                         <p className="block text-xs leading-snug m-0 p-0">{book.thoughts}</p>
                       </td>
                     </tr>
