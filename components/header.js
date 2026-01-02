@@ -14,10 +14,6 @@ const menuItems = [
     path: "speaking",
   },
   {
-    label: "Favourites",
-    path: "favourites",
-  },
-  {
     label: "Reading",
     path: "reading",
   },

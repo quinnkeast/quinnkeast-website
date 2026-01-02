@@ -14,6 +14,11 @@ module.exports = {
         destination: "/craft/:path*",
         permanent: true,
       },
+      {
+        source: "/favourites",
+        destination: "/reading",
+        permanent: true,
+      },
     ];
   },
 };
