@@ -1,6 +1,9 @@
 ---
 - year: 2026
   books:
+  - title: Fox
+    author: Joyce Carol Oates
+    reading: true
   - title: The Works of Vermin
     author: Hiron Ennes
     reading: true
