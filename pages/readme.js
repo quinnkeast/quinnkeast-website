@@ -42,7 +42,7 @@ function ReadMe() {
               <a href="#north-star-ideals">North star ideals</a>
             </li>
             <li>
-              <a href="#ethical-principles">Ethical principles as a designer</a>
+              <a href="#ethical-principles">Ethical principles</a>
             </li>
             <li>
               <a href="#how-i-work">How I work</a>
