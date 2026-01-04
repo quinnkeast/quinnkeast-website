@@ -4,6 +4,9 @@
   - title: Fox
     author: Joyce Carol Oates
     reading: true
+  - title: A Line in the Stars
+    author: Sean Fenian
+    thoughts: Compelling story that I wanted to see out, but the writing just is not for me
   - title: The Works of Vermin
     author: Hiron Ennes
     reading: true
