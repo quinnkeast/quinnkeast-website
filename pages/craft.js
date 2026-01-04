@@ -55,12 +55,12 @@ const BonusGroup = () => {
     <React.Fragment>
       <div className="col-span-1 md:pr-4 md:text-right flex flex-col md:flex-row md:justify-end items-start mb-0">
         <h2 className="font-normal text-base text-black-lighter mt-0 flex-grow text-left">
-          2024 – Present
+          2024–Present
         </h2>
       </div>
       <div className="md:col-span-2 max-w-md">
         <h3 className="leading-tight text-lg font-medium mb-0 mt-2 md:mt-1">
-          A Growing List of Things I’ve Been Working On At <a href="https://dittowords.com" target="_blank">Ditto</a>:
+          A growing list of things I’ve been working on at <a href="https://dittowords.com" target="_blank">Ditto</a>, in a somewhat loose order
         </h3>
         <ul className="ml-3">
           <li className="text-base leading-tight"><a href="https://www.dittowords.com/post/ditto-2-0-the-why-behind-the-launch" target="_blank">Defining and launching Ditto 2.0</a>
