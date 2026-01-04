@@ -90,13 +90,14 @@ function About() {
             <a href="https://caribou.co" target="_blank">
               Caribou
             </a>
-            , a user experience strategy and design consultancy that works with
+            , a user experience strategy and design consultancy that worked with
             product teams and organizations to make better products and
-            experiences.
+            experiences. This experience led to a career designing for and leading
+            teams across all kinds of diverse product spaces.
           </p>
 
           <p>
-            Aside from all that, I’m a Canadian newly based in Montréal after six years living in Berlin, and I
+            Aside from all that, I’m a Canadian currently based in Montréal after six years living in Berlin, and I
             enjoy cycling, writing, and hanging out with my{" "}
             <HoverImage label="mini Australian Shepherd" />.
           </p>

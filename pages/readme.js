@@ -39,13 +39,13 @@ function ReadMe() {
               <span className="text-sm font-medium">Sections</span>
             </li>
             <li>
-              <a href="#north-star-ideals">North Star Ideals</a>
+              <a href="#north-star-ideals">North star ideals</a>
             </li>
             <li>
-              <a href="#ethical-principles">Ethical Principles</a>
+              <a href="#ethical-principles">Ethical principles as a designer</a>
             </li>
             <li>
-              <a href="#how-i-work">How I Work</a>
+              <a href="#how-i-work">How I work</a>
             </li>
             <li>
               <a href="#errata">Errata</a>
@@ -54,7 +54,7 @@ function ReadMe() {
         </div>
         <div className="md:col-span-2 max-w-md">
           <h2 className="mt-4 md:mt-0" id="north-star-ideals">
-            North Star Ideals
+            North star ideals
           </h2>
           <p>
             <strong>People matter.</strong> I believe that people are at the
@@ -76,7 +76,7 @@ function ReadMe() {
             learn from) mistakes.
           </p>
           <hr />
-          <h2 id="ethical-principles">Ethical Principles</h2>
+          <h2 id="ethical-principles">Ethical principles as a designer</h2>
           <p>
             <strong>Honesty.</strong> We ought be honest and transparent with
             our users and each other in our processes and products.
@@ -87,9 +87,8 @@ function ReadMe() {
             information.
           </p>
           <p>
-            <strong>Affirmative action.</strong> We ought seek deliberate,
-            affirmative action from our users whenever we must seek consent and
-            approval.
+            <strong>Informed intent.</strong> We ought seek deliberate, informent intent
+            from our users whenever we must seek consent and approval.
           </p>
           <p>
             <strong>Inclusion.</strong> We ought strive to make our processes,
@@ -107,7 +106,7 @@ function ReadMe() {
             team members, and environments.
           </p>
           <hr />
-          <h2 id="how-i-work">How I Work</h2>
+          <h2 id="how-i-work">How I work</h2>
           <p>
             <strong>I like to use people as a sounding board.</strong>{" "}
             Sometimes, I’m not actually looking for an answer or solution.
