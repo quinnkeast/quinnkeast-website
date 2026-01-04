@@ -87,7 +87,7 @@ function ReadMe() {
             information.
           </p>
           <p>
-            <strong>Informed intent.</strong> We ought seek deliberate, informent intent
+            <strong>Informed intent.</strong> We ought seek deliberate, informed intent
             from our users whenever we must seek consent and approval.
           </p>
           <p>
