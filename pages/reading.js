@@ -42,18 +42,18 @@ export default function Reading({ booksByYear, favourites }) {
               Favourites
             </h3>
             <p className="text-base mb-6 mt-0 subpixel-antialiased">
-              A rotating list of favourite reads.
+              A rotating list of favourite reads
             </p>
           </div>
           <div className="col-span-1 md:col-span-2 items-center">
-            <p className="text-sm mb-6 md:mb-0 mt-0 subpixel-antialiased">
-              “Man’s mind, once stretched by a new idea, never regains its original dimensions.”
+            <p className="text-sm mb-6 md:mb-0 mt-1 subpixel-antialiased">
+              <span className="font-serif italic tracking-tight">“Man’s mind, once stretched by a new idea, never regains its original dimensions.”</span>
               <br />
-              <span className="text-xs">—Oliver Wendell Holmes</span>
+              <span className="block text-sm mt-2">—Oliver Wendell Holmes</span>
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-6 gap-x-2 md:gap-x-3 gap-y-3 md:gap-y-5 items-start">
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-x-2 md:gap-x-4 gap-y-3 md:gap-y-4 items-start">
           {favouriteBooks.slice(0, 12).map((book, i) => (
             <div className="grid md:grid-rows-[320px_auto]" key={i}>
               <div className="flex items-end">
@@ -76,13 +76,20 @@ export default function Reading({ booksByYear, favourites }) {
           ))}
         </div>
       </div>
-      <div className="flex flex-col mt-8 mb-4 md:mt-16 md:mb-12">
-        <h3 className="leading-snug mb-0 mt-0">
-          Reading list
-        </h3>
-        <p className="text-base mb-0 mt-0 subpixel-antialiased">
-          What I’m reading and have read.
-        </p>
+      <div className="grid md:grid-cols-3 w-full mt-8 mb-4 md:mt-12 md:mb-8">
+        <div className="col-span-1">
+          <h3 className="leading-snug mb-0 mt-0">
+            Reading list
+          </h3>
+          <p className="text-base mb-0 mt-0 subpixel-antialiased">
+            What I’m reading and have read
+          </p>
+        </div>
+        <div className="col-span-2">
+          <p className="text-black-lighter leading-snug text-xs mt-1">
+            Current reads marked with <BookOpen size="16" className="relative inline top-[-3px] md:mt-[7px] shrink-0" />. Books I abandoned are <span className="inline-block relative"><div className="absolute w-full h-[2px] bg-black-lighter top-[54%]"></div>struck through</span>. Missing thoughts are just me not remembering exactly what I thought at the time.
+          </p>
+        </div>
       </div>
       <div className="grid md:grid-cols-5">
         {years.map((year, i) => (
@@ -118,23 +125,19 @@ export default function Reading({ booksByYear, favourites }) {
                       className="flex flex-col md:table-row border-t border-black/10 align-top md:items-baseline md:gap-3"
                       key={book.title}
                     >
-                      <td
-                        className={`table-cell pt-2 md:pb-2 ${
-                          book.abandoned ? `line-through decoration-3` : ""
-                        }`}
-                      >
+                      <td className="table-cell pt-2 md:pb-2">
                         {book.reading && (
                           <BookOpen size="16" color="#ff0000" className="inline md:absolute md:mt-1 md:mt-[7px] shrink-0 md:-ml-6" />
                         )}
-                        <p className="m-0 p-0 text-sm">{book.title} <span className="visible md:hidden">by {book.author}</span></p>
+                        <p className="m-0 pr-1 text-sm inline-block relative">{book.abandoned && <div className="absolute w-full h-[2px] bg-black top-[54%]"></div>}{book.title} <span className="visible md:hidden text-black-lighter">by {book.author}</span></p>
                       </td>
                       <td className="md:table-cell md:pt-2 md:pb-2 pr-2 collapse md:visible">
                         <p className="block text-black-lighter m-0 p-0 text-sm">
                           {book.author}
                         </p>
                       </td>
-                      <td className="table-cell md:pt-2 pb-3 md:pb-2">
-                        <p className="block text-xs leading-snug m-0 p-0">{book.thoughts}</p>
+                      <td className="table-cell md:pt-2 pb-3 md:pb-2 align-middle">
+                        <p className="block font-serif text-[15px] tracking-tight leading-snug m-0 p-0 mb-[2px]">{book.thoughts}</p>
                       </td>
                     </tr>
                   ))}
@@ -143,14 +146,6 @@ export default function Reading({ booksByYear, favourites }) {
             </div>
           </React.Fragment>
         ))}
-        <div className="col-span-3 col-start-2 mt-4 flex">
-          <small className="text-black-lighter">
-            <span className="line-through">Struck through</span> books are those
-            I abandoned—which I’m trying to let myself do when a book isn’t
-            right for me at that moment. Missing thoughts are just me not
-            remembering exactly what I thought at the time.
-          </small>
-        </div>
       </div>
     </Layout>
   );
