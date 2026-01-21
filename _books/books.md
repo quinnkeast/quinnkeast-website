@@ -1,9 +1,12 @@
 ---
 - year: 2026
   books:
+  - title: The Library of Fates
+    author: Margot Harrison
+    reading: true
   - title: Fox
     author: Joyce Carol Oates
-    reading: true
+    thoughts: Vivid, wonderful writing, extremely unsettling
   - title: A Line in the Stars
     author: Sean Fenian
     thoughts: Compelling story that I wanted to see out, but the writing just is not for me
