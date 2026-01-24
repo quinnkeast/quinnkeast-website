@@ -1,9 +1,12 @@
 ---
 - year: 2026
   books:
+  - title: Godfall 
+    author: Van Jensen
+    reading: true
   - title: The Library of Fates
     author: Margot Harrison
-    reading: true
+    thoughts: Not for me
   - title: Fox
     author: Joyce Carol Oates
     thoughts: Vivid, wonderful writing, extremely unsettling

@@ -459,15 +459,15 @@ article ol li {
 }
 
 .post-those-dumb-quotes code {
-    @apply bg-purple-100 text-purple-800 px-1 py-0.5;
+  @apply bg-purple-100 text-purple-800 px-1 py-0.5;
 }
 
 .post-those-dumb-quotes .example-image-correct {
-    @apply border border-2 border-green-200 mt-4;
+  @apply border border-2 border-green-200 mt-4;
 }
 
 .post-those-dumb-quotes .example-image-incorrect {
-    @apply border border-2 border-red-200 mt-4;
+  @apply border border-2 border-red-200 mt-4;
 }
 
 @font-face {
