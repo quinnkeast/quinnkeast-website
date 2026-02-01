@@ -3,7 +3,7 @@
   books:
   - title: Godfall 
     author: Van Jensen
-    reading: true
+    thoughts: Mashup of genres a la ”The Tainted Cup“ but not near as successful 
   - title: The Library of Fates
     author: Margot Harrison
     thoughts: Not for me
