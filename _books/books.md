@@ -3,16 +3,16 @@
   books:
   - title: Vigil
     author: George Saunders
-    reading: true
+    thoughts: Enjoyed a bunch
   - title: Tailored Realities
     author: Brandon Sanderson
     thoughts: Hits and misses
   - title: Sister Svangerd and the Not Quite Dead
     author: K.J. Parker
     thoughts: I so enjoy the rambly feel of the narration
-  - title: Godfall 
+  - title: Godfall
     author: Van Jensen
-    thoughts: Mashup of genres a la “The Tainted Cup” but not near as successful 
+    thoughts: Mashup of genres a la “The Tainted Cup” but not near as successful
   - title: The Library of Fates
     author: Margot Harrison
     thoughts: Not for me
