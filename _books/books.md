@@ -1,6 +1,12 @@
 ---
 - year: 2026
   books:
+  - title: Between Two Fires
+    author: Christopher Buehlman
+    reading: true
+  - title: Agnes Auberts Mystical Cat Shelter
+    author: Heather Fawcett
+    thoughts: Like a winter beach read
   - title: Vigil
     author: George Saunders
     thoughts: Enjoyed a bunch
