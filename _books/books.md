@@ -1,9 +1,12 @@
 ---
 - year: 2026
   books:
+  - title: The Problems of Philosphy
+    author: Bertrand Russell
+    reading: true
   - title: Children of Strife
     author: Adrian Tchaikovsky
-    reading: true
+    thoughts: Enjoyed a lot, but also feels like this series is on the cusp of super-friends
   - title: Between Two Fires
     author: Christopher Buehlman
     thoughts: Surreal and fun
