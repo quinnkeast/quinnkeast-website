@@ -1,6 +1,9 @@
 ---
 - year: 2026
   books:
+  - title: Wolf Worm
+    author: "T. Kingfisher"
+    reading: true
   - title: The Problems of Philosphy
     author: Bertrand Russell
     reading: true
