@@ -3,7 +3,7 @@
   books:
   - title: Wolf Worm
     author: "T. Kingfisher"
-    reading: true
+    thoughts: Enjoyed it yet almost wish I hadn’t read it due to the sheer ick
   - title: The Problems of Philosphy
     author: Bertrand Russell
     reading: true
