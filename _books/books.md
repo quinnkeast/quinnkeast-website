@@ -1,6 +1,9 @@
 ---
 - year: 2026
   books:
+  - title: Ruins
+    author: Lily Brooks-Dalton
+    reading: true
   - title: Wolf Worm
     author: "T. Kingfisher"
     thoughts: Enjoyed it yet almost wish I hadn’t read it due to the sheer ick
