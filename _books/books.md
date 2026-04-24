@@ -1,9 +1,12 @@
 ---
 - year: 2026
   books:
+  - title: The Faith of Beasts
+    author: James S. A. Corey
+    reading: true
   - title: Ruins
     author: Lily Brooks-Dalton
-    reading: true
+    thoughts: "Main character was just so unlikeable to me that I nearly abandoned it multiple times; would not read again"
   - title: Wolf Worm
     author: "T. Kingfisher"
     thoughts: Enjoyed it yet almost wish I hadn’t read it due to the sheer ick
