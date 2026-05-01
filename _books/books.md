@@ -1,9 +1,12 @@
 ---
 - year: 2026
   books:
+  - title: Daughter of Crows
+    author: Mark Lawrence
+    reading: true
   - title: The Faith of Beasts
     author: James S. A. Corey
-    reading: true
+    thoughts: That’s the stuff
   - title: Ruins
     author: Lily Brooks-Dalton
     thoughts: "Main character was just so unlikeable to me that I nearly abandoned it multiple times; would not read again"
