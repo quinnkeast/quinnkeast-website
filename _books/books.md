@@ -1,9 +1,12 @@
 ---
 - year: 2026
   books:
+  - title: Platform Decay
+    author: Martha Wells
+    reading: true
   - title: Daughter of Crows
     author: Mark Lawrence
-    reading: true
+    thoughts: I really loved this
   - title: The Faith of Beasts
     author: James S. A. Corey
     thoughts: That’s the stuff
