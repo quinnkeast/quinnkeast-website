@@ -3,7 +3,7 @@
   books:
   - title: Platform Decay
     author: Martha Wells
-    reading: true
+    thoughts: Steady on
   - title: Daughter of Crows
     author: Mark Lawrence
     thoughts: I really loved this
