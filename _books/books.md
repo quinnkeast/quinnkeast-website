@@ -1,6 +1,12 @@
 ---
 - year: 2026
   books:
+  - title: Disruptions
+    author: Steven Millhauser
+    reading: true
+  - title: The Many
+    author: Sylvain Neuvel
+    reading: true
   - title: Platform Decay
     author: Martha Wells
     thoughts: Steady on
