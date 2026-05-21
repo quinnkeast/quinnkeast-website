@@ -6,7 +6,7 @@
     reading: true
   - title: The Many
     author: Sylvain Neuvel
-    reading: true
+    thoughts: Surreal the parities with Pluribus
   - title: Platform Decay
     author: Martha Wells
     thoughts: Steady on
