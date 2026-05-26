@@ -1,9 +1,12 @@
 ---
 - year: 2026
   books:
+  - title: The Tapestry of Fate
+    author: Shannon Chakraborty
+    reading: true
   - title: Disruptions
     author: Steven Millhauser
-    reading: true
+    thoughts: Enjoyed this, though it felt a bit like he told the same story many times
   - title: The Many
     author: Sylvain Neuvel
     thoughts: Surreal the parities with Pluribus
