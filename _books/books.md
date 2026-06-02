@@ -3,7 +3,7 @@
   books:
   - title: The Tapestry of Fate
     author: Shannon Chakraborty
-    reading: true
+    thoughts: Loved it – wonderful ideas and structure
   - title: Disruptions
     author: Steven Millhauser
     thoughts: Enjoyed this, though it felt a bit like he told the same story many times
