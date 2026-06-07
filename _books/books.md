@@ -1,6 +1,9 @@
 ---
 - year: 2026
   books:
+  - title: Ode to the Half-Broken
+    author: Suzanne Palmer
+    reading: true
   - title: The Tapestry of Fate
     author: Shannon Chakraborty
     thoughts: Loved it – wonderful ideas and structure
