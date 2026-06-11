@@ -219,6 +219,10 @@
     @apply max-w-lg mx-auto;
   }
 
+  .post-content small {
+    @apply leading-snug;
+  }
+
   .project-content h2 {
     @apply text-xl;
   }
