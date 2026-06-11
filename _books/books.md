@@ -3,7 +3,7 @@
   books:
   - title: Ode to the Half-Broken
     author: Suzanne Palmer
-    reading: true
+    thoughts: Remarkable execution and uplifting despite all
   - title: The Tapestry of Fate
     author: Shannon Chakraborty
     thoughts: Loved it – wonderful ideas and structure
