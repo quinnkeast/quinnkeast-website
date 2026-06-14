@@ -1,6 +1,9 @@
 ---
 - year: 2026
   books:
+  - title: The Will of the Many
+    author: James Islington
+    reading: true
   - title: Ode to the Half-Broken
     author: Suzanne Palmer
     thoughts: Remarkable execution and uplifting despite all
