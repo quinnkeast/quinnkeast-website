@@ -1,6 +1,9 @@
 ---
 - year: 2026
   books:
+  - title: Make Believe
+    author: Mac Barnett
+    reading: true
   - title: The Will of the Many
     author: James Islington
     reading: true
