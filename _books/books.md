@@ -69,7 +69,8 @@
     thoughts: Compelling story that I wanted to see out, but the writing just is not for me
   - title: The Works of Vermin
     author: Hiron Ennes
-    reading: true
+    abandoned: true
+    thoughts: I don’t know what it is, but I just couldn’t get through it
 - year: 2025
   books:
   - title: United Fleet
