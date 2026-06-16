@@ -1,12 +1,15 @@
 ---
 - year: 2026
   books:
+  - title: The Strength of the Few
+    author: James Islington
+    reading: true
   - title: Make Believe
     author: Mac Barnett
     reading: true
   - title: The Will of the Many
     author: James Islington
-    reading: true
+    thoughts: This drew me in flashlight-under-the-covers level
   - title: Ode to the Half-Broken
     author: Suzanne Palmer
     thoughts: Remarkable execution and uplifting despite all
