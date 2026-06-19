@@ -87,7 +87,7 @@ export default function Reading({ booksByYear, favourites }) {
         </div>
         <div className="col-span-2">
           <p className="text-black-lighter leading-snug text-xs mt-1">
-            Current reads marked with <BookOpen size="16" className="relative inline top-[-3px] md:mt-[7px] shrink-0" />. Books I abandoned are <span className="inline-block relative"><span className="absolute w-full h-[2px] bg-black-lighter top-[54%]"></span>struck through</span>. Missing thoughts are just me not remembering exactly what I thought at the time.
+            Current reads marked with <BookOpen size="16" className="relative inline top-[-3px] md:mt-[7px] shrink-0" />. Books I abandoned are <span className="inline-block relative"><span className="absolute w-full h-[2px] bg-black-lighter top-[54%]"></span>struck out</span>. Missing thoughts are just me not remembering exactly what I thought at the time.
           </p>
         </div>
       </div>
