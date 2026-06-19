@@ -17,7 +17,7 @@ export default function Talk({ talk, moreTalks, preview }) {
   return (
     <Layout>
       {router.isFallback ? (
-        <PostTitle>Loading…</PostTitle>
+        <PostTitle>Loading...</PostTitle>
       ) : (
         <>
           <article>
