@@ -1,9 +1,18 @@
 ---
 - year: 2026
   books:
+  - title: Radiant Star
+    author: Ann Leckie
+    thoughts: "Cruised along; I liked how just enough world is explained that it stands on its own"
+  - title: We Burned So Bright
+    author: T.J. Klune
+    thoughts: Emotionally hard read
+  - title: Hyperion
+    author: Dan Simmons
+    thoughts: "Finally read it! Great voices, not sure if it’s really my vibe"
   - title: The Strength of the Few
     author: James Islington
-    reading: true
+    thoughts: Great stuff
   - title: Make Believe
     author: Mac Barnett
     reading: true
