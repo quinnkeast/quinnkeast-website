@@ -1,6 +1,9 @@
 ---
 - year: 2026
   books:
+  - title: Runaway Jury
+    author: John Grisham
+    reading: true
   - title: Radiant Star
     author: Ann Leckie
     thoughts: "Cruised along; I liked how just enough world is explained that it stands on its own"
@@ -15,7 +18,7 @@
     thoughts: Great stuff
   - title: Make Believe
     author: Mac Barnett
-    reading: true
+    thoughts: Inspiring
   - title: The Will of the Many
     author: James Islington
     thoughts: This drew me in flashlight-under-the-covers level
