@@ -1,9 +1,12 @@
 ---
 - year: 2026
   books:
+  - title: Rosewater
+    author: Tade Thompson
+    reading: true
   - title: Runaway Jury
     author: John Grisham
-    reading: true
+    thoughts: Fine
   - title: Radiant Star
     author: Ann Leckie
     thoughts: "Cruised along; I liked how just enough world is explained that it stands on its own"
