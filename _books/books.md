@@ -1,9 +1,15 @@
 ---
 - year: 2026
   books:
+  - title: Five Decembers
+    author: James Kestrel
+    reading: true
+  - title: The Book of Lost Hours
+    author: Hayley Gelfuso
+    reading: true
   - title: Rosewater
     author: Tade Thompson
-    reading: true
+    thoughts: A trip, still not certain what I read
   - title: Runaway Jury
     author: John Grisham
     thoughts: Fine
