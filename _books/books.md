@@ -3,7 +3,7 @@
   books:
   - title: Five Decembers
     author: James Kestrel
-    reading: true
+    thoughts: Did not at all go where I expected, very much enjoyed
   - title: The Book of Lost Hours
     author: Hayley Gelfuso
     reading: true
