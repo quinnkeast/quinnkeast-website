@@ -1,6 +1,18 @@
 ---
 - year: 2026
   books:
+  - title: Lolita
+    author: Vladimir Nabokov
+    reading: true
+  - title: Nightshade
+    author: Michael Connelly
+    thoughts: Very neutral beach read
+  - title: Numero Zero
+    author: Umberto Eco
+    thoughts: Delightfully rambly
+  - title: The Midnight Line
+    author: Lee Child
+    thoughts: Beach beach beach
   - title: Five Decembers
     author: James Kestrel
     thoughts: Did not at all go where I expected, very much enjoyed
