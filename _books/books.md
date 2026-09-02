@@ -1,6 +1,9 @@
 ---
 - year: 2026
   books:
+  - title: God Bless You, Mr. Rosewater
+    author: Kurt Vonnegut
+    reading: true
   - title: Lolita
     author: Vladimir Nabokov
     reading: true
