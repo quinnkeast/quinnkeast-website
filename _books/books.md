@@ -6,7 +6,7 @@
     reading: true
   - title: Lolita
     author: Vladimir Nabokov
-    reading: true
+    thoughts: Phenomenal writing, deeply uncomfortable
   - title: Nightshade
     author: Michael Connelly
     thoughts: Very neutral beach read
