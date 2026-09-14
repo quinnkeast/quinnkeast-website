@@ -1,6 +1,9 @@
 ---
 - year: 2026
   books:
+  - title: The Turn of the Screw and Other Ghost Stories
+    author: Henry James
+    reading: true
   - title: God Bless You, Mr. Rosewater
     author: Kurt Vonnegut
     thoughts: This could’ve been written today about the absurd state of our world
