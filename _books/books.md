@@ -3,7 +3,7 @@
   books:
   - title: God Bless You, Mr. Rosewater
     author: Kurt Vonnegut
-    reading: true
+    thoughts: This could’ve been written today about the absurd state of our world
   - title: Lolita
     author: Vladimir Nabokov
     thoughts: Phenomenal writing, deeply uncomfortable
