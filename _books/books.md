@@ -1,6 +1,9 @@
 ---
 - year: 2026
   books:
+  - title: Clear Thinking in a Blurry World
+    author: Tim Kenyon
+    reading: true
   - title: The Gates of Midnight
     author: Helene Wecker
     reading: true
