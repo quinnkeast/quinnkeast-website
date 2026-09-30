@@ -1,12 +1,15 @@
 ---
 - year: 2026
   books:
+  - title: Martyr!
+    author: Kaveh Akbar
+    reading: true
   - title: Clear Thinking in a Blurry World
     author: Tim Kenyon
     reading: true
   - title: The Gates of Midnight
     author: Helene Wecker
-    reading: true
+    thoughts: "Loved it; wonderful resolution to the series"
   - title: The Turn of the Screw and Other Ghost Stories
     author: Henry James
     thoughts: Fascinatingly modern yet dated
