@@ -1,9 +1,12 @@
 ---
 - year: 2026
   books:
+  - title: Engines of Reason
+    author: Adrian Tchaikovsky
+    thoughts: Quick, nifty
   - title: Martyr!
     author: Kaveh Akbar
-    reading: true
+    thoughts: Captivating – wonderful prose
   - title: Clear Thinking in a Blurry World
     author: Tim Kenyon
     reading: true
