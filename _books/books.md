@@ -1,6 +1,12 @@
 ---
 - year: 2026
   books:
+  - title: Exit Party
+    author: Emily St. John Mandel
+    reading: true
+  - title: The Infinite Sadness of Small Appliances
+    author: Glenn Dixon
+    reading: true
   - title: Engines of Reason
     author: Adrian Tchaikovsky
     thoughts: Quick, nifty
