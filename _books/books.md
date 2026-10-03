@@ -36,7 +36,7 @@
     thoughts: Did not at all go where I expected, very much enjoyed
   - title: The Book of Lost Hours
     author: Hayley Gelfuso
-    reading: true
+    thoughts: Interesting concept, didn’t quite work for me
   - title: Rosewater
     author: Tade Thompson
     thoughts: A trip, still not certain what I read
