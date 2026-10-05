@@ -1,6 +1,9 @@
 ---
 - year: 2026
   books:
+  - title: The Strangers
+    author: Naomi Alderman
+    reading: true
   - title: Exit Party
     author: Emily St. John Mandel
     reading: true
