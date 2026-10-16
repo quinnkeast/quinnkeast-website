@@ -3,7 +3,7 @@
   books:
   - title: Ply
     author: Hernan Diaz
-    reading: true
+    thoughts: Super interesting approach
   - title: The Strangers
     author: Naomi Alderman
     thoughts: One of the most unexpectedly powerful novels of the year for me – a stunning exploration of loss and grief
