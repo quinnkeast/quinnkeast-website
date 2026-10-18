@@ -72,6 +72,7 @@ const BonusGroup = () => {
           <li className="text-base leading-tight">Creating a <a href="https://www.dittowords.com/post/our-ephemeral-design-system-impermanence-as-intentional-strategy" target="_blank">new design system to support both a foundational overhaul and eventual rebrand at the same time</a></li>
           <li className="text-base leading-tight">Launching <a href="https://www.dittowords.com/blog/now-in-beta-magic-draft-your-built-in-writing-partner----right-inside-figma" target="_blank">Magic Draft</a>, Ditto’s generative AI tool, built to draft product copy inside designs</li>
           <li className="text-base leading-tight">Defining <a href="https://ai.dittowords.com/" target="_blank">Ditto’s agentic product roadmap</a></li>
+          <li className="text-base leading-tight">Reimaging Ditto’s platform and value proposition in an era where everyone and everything is shipping product copy</li>
         </ul>
       </div>
     </React.Fragment>

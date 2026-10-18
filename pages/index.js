@@ -18,9 +18,6 @@ export default function Home() {
             Leading design at{" "}
             <a href="https://dittowords.com" target="_blank">
               Ditto
-            </a>{" "}
-            <a href="https://www.dittowords.com/careers/product-designer?utm_source=quinnkeast.com" target="_blank" className="border-0 px-1.5 py-0 bg-black text-tan rounded-md hover:rounded-md inline-block text-sm">
-              We’re hiring!
             </a>. Also writing{" "}
             <a href="/brand-book">a book on brand for product teams</a>.
           </h2>
