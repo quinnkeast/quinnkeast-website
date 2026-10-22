@@ -12,7 +12,7 @@
     reading: true
   - title: The Infinite Sadness of Small Appliances
     author: Glenn Dixon
-    reading: true
+    thoughts: Lovely, surprisingly morbid look at the future
   - title: Engines of Reason
     author: Adrian Tchaikovsky
     thoughts: Quick, nifty
