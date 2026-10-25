@@ -1,6 +1,9 @@
 ---
 - year: 2026
   books:
+  - title: The Incandescent
+    author: Emily Tesh
+    reading: true
   - title: Ply
     author: Hernan Diaz
     thoughts: Super interesting approach
