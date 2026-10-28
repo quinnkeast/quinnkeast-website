@@ -1,18 +1,18 @@
 ---
 - year: 2026
   books:
+  - title: Exit Party
+    author: Emily St. John Mandel
+    reading: true
   - title: The Incandescent
     author: Emily Tesh
-    reading: true
+    thoughts: Very pleasant
   - title: Ply
     author: Hernan Diaz
     thoughts: Super interesting approach
   - title: The Strangers
     author: Naomi Alderman
     thoughts: One of the most unexpectedly powerful novels of the year for me – a stunning exploration of loss and grief
-  - title: Exit Party
-    author: Emily St. John Mandel
-    reading: true
   - title: The Infinite Sadness of Small Appliances
     author: Glenn Dixon
     thoughts: Lovely, surprisingly morbid look at the future
