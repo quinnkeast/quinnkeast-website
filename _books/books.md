@@ -27,7 +27,7 @@
     thoughts: Captivating – wonderful prose
   - title: Clear Thinking in a Blurry World
     author: Tim Kenyon
-    reading: true
+    thoughts: A textbook, new perspectives
   - title: The Gates of Midnight
     author: Helene Wecker
     thoughts: "Loved it; wonderful resolution to the series"
