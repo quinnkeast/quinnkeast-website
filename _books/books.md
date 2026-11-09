@@ -1,9 +1,12 @@
 ---
 - year: 2026
   books:
+  - title: The Name of the Rose
+    author: Umberto Eco
+    reading: true
   - title: Exit Party
     author: Emily St. John Mandel
-    reading: true
+    thoughts: Love a good sci-fi that isn’t quite genre
   - title: The Incandescent
     author: Emily Tesh
     thoughts: Very pleasant
