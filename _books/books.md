@@ -12,7 +12,7 @@
     thoughts: Very pleasant
   - title: Ply
     author: Hernan Diaz
-    thoughts: Super interesting approach
+    thoughts: Super interesting – the concept of a pincher is compelling
   - title: The Strangers
     author: Naomi Alderman
     thoughts: One of the most unexpectedly powerful novels of the year for me – a stunning exploration of loss and grief
