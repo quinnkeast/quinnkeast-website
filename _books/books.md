@@ -1,6 +1,9 @@
 ---
 - year: 2026
   books:
+  - title: Assassin’s Apprentice
+    author: Robin Hobb
+    reading: true
   - title: The Name of the Rose
     author: Umberto Eco
     reading: true
