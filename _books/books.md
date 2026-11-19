@@ -1,9 +1,12 @@
 ---
 - year: 2026
   books:
-  - title: Assassin’s Apprentice
+  - title: Royal Assassin
     author: Robin Hobb
     reading: true
+  - title: Assassin’s Apprentice
+    author: Robin Hobb
+    thoughts: Sucked me right in
   - title: The Name of the Rose
     author: Umberto Eco
     reading: true
